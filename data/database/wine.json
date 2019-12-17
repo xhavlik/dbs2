@@ -1,0 +1,616 @@
+{"id_wine": "KOR.0080", "name":"Muškát moravský - mladé víno", "type":"bile-vino", "category":"polosuché", "id_wine_company":"1", "id_wine_region": ""}
+{"id_wine": "PLA.0062", "name":"Mladé pokušení 2019", "type":"bile-vino", "category":"polosladké", "id_wine_company":"2", "id_wine_region": ""}
+{"id_wine": "LAH.0259", "name":"Prosecco - 2018 DOC Extra Dry", "type":"sekty-a-sumiva-vina", "category":"suché", "id_wine_company":"3", "id_wine_region": ""}
+{"id_wine": "KOR.0081", "name":"Dornfelder rosé - mladé víno", "type":"ruzove-vino", "category":"polosladké", "id_wine_company":"1", "id_wine_region": ""}
+{"id_wine": "JOK.0033", "name":"Zweigeltrebe rosé - Mladé 2019", "type":"ruzove-vino", "category":"polosladké", "id_wine_company":"4", "id_wine_region": ""}
+{"id_wine": "WAL.0295", "name":"Mladé růžové 2019", "type":"ruzove-vino", "category":"polosladké", "id_wine_company":"5", "id_wine_region": ""}
+{"id_wine": "DVP.0017", "name":"Quatre - Štverka 2016", "type":"bile-vino", "category":"", "id_wine_company":"6", "id_wine_region": "1"}
+{"id_wine": "LAH.0260", "name":"Mladý LAHOFER 2019", "type":"bile-vino", "category":"polosuché", "id_wine_company":"3", "id_wine_region": ""}
+{"id_wine": "VSL.0054", "name":"Sauvignon - Mladé víno 2019", "type":"bile-vino", "category":"polosuché", "id_wine_company":"7", "id_wine_region": ""}
+{"id_wine": "LAH.0261", "name":"Mladá LAHOFERka 2019", "type":"ruzove-vino", "category":"polosladké", "id_wine_company":"3", "id_wine_region": ""}
+{"id_wine": "LAH.0262", "name":"Rulandské bílé A", "type":"bile-vino", "category":"suché", "id_wine_company":"3", "id_wine_region": ""}
+{"id_wine": "WAL.0294", "name":"Mladé bílé 2019", "type":"bile-vino", "category":"polosuché", "id_wine_company":"5", "id_wine_region": ""}
+{"id_wine": "HAN.0177", "name":"Martin Růžový 2019", "type":"ruzove-vino", "category":"polosuché", "id_wine_company":"8", "id_wine_region": ""}
+{"id_wine": "VAJ.0006", "name":"Ryzlink vlašský", "type":"bile-vino", "category":"suché", "id_wine_company":"9", "id_wine_region": "2"}
+{"id_wine": "ZNO.0220", "name":"Sauvignon - Pozdrav ze Znojma", "type":"bile-vino", "category":"polosuché", "id_wine_company":"10", "id_wine_region": "3"}
+{"id_wine": "AMP.0079", "name":"Sauvignon", "type":"bile-vino", "category":"polosuché", "id_wine_company":"11", "id_wine_region": "4"}
+{"id_wine": "ZNO.0218", "name":"Ryzlink rýnský - ledové víno", "type":"bile-vino", "category":"sladké", "id_wine_company":"10", "id_wine_region": "5"}
+{"id_wine": "KOR.0078", "name":"Pinot Noir", "type":"cervene-vino", "category":"suché", "id_wine_company":"1", "id_wine_region": "6"}
+{"id_wine": "MAR.0012", "name":"Pálava", "type":"bile-vino", "category":"", "id_wine_company":"12", "id_wine_region": ""}
+{"id_wine": "AMP.0081", "name":"Rulandské šedé", "type":"bile-vino", "category":"polosuché", "id_wine_company":"11", "id_wine_region": "4"}
+{"id_wine": "ZNO.0217", "name":"Ryzlink vlašský - Šobes", "type":"bile-vino", "category":"polosuché", "id_wine_company":"10", "id_wine_region": "7"}
+{"id_wine": "AMP.0082", "name":"Mladý Kerner", "type":"bile-vino", "category":"suché", "id_wine_company":"11", "id_wine_region": ""}
+{"id_wine": "VSL.0052", "name":"Ryzlink vlašský", "type":"bile-vino", "category":"suché", "id_wine_company":"7", "id_wine_region": "8"}
+{"id_wine": "HAN.0176", "name":"Martin Bílý 2019", "type":"bile-vino", "category":"", "id_wine_company":"8", "id_wine_region": ""}
+{"id_wine": "JOK.0031", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"4", "id_wine_region": "9"}
+{"id_wine": "VIH.0131", "name":"Kerner", "type":"bile-vino", "category":"sladké", "id_wine_company":"13", "id_wine_region": "6"}
+{"id_wine": "MOD.0065", "name":"Tramín", "type":"bile-vino", "category":"sladké", "id_wine_company":"14", "id_wine_region": "10"}
+{"id_wine": "MOD.0064", "name":"Chardonnay", "type":"bile-vino", "category":"polosladké", "id_wine_company":"14", "id_wine_region": "10"}
+{"id_wine": "DOB.0030", "name":"Sylvánské zelené", "type":"bile-vino", "category":"polosuché", "id_wine_company":"15", "id_wine_region": "11"}
+{"id_wine": "WAL.0275", "name":"Ryzlink vlašský", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "12"}
+{"id_wine": "HAN.0163", "name":"Hibernal", "type":"bile-vino", "category":"polosladké", "id_wine_company":"8", "id_wine_region": "4"}
+{"id_wine": "HOD.0036", "name":"Müller Thrugau", "type":"bile-vino", "category":"suché", "id_wine_company":"16", "id_wine_region": "13"}
+{"id_wine": "WAL.0276", "name":"Sylvánské zelené - suché", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "14"}
+{"id_wine": "VIZ.0014", "name":"Cabernet Sauvignon Rosé", "type":"ruzove-vino", "category":"polosladké", "id_wine_company":"17", "id_wine_region": "11"}
+{"id_wine": "PAR.0019", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"18", "id_wine_region": ""}
+{"id_wine": "NAP.0028", "name":"Sauvignon - KRAVÁK", "type":"bile-vino", "category":"suché", "id_wine_company":"19", "id_wine_region": "15"}
+{"id_wine": "TAO.0065", "name":"Veltlínské zelené - Staré keře", "type":"bile-vino", "category":"suché", "id_wine_company":"20", "id_wine_region": "16"}
+{"id_wine": "KOR.0077", "name":"Pinot Blanc", "type":"bile-vino", "category":"suché", "id_wine_company":"1", "id_wine_region": "6"}
+{"id_wine": "AMP.0080", "name":"Veritas", "type":"bile-vino", "category":"polosladké", "id_wine_company":"11", "id_wine_region": "4"}
+{"id_wine": "LIB.0043", "name":"Tramín červený", "type":"bile-vino", "category":"polosladké", "id_wine_company":"21", "id_wine_region": "17"}
+{"id_wine": "VSL.0053", "name":"Ryzlink rýnský", "type":"bile-vino", "category":"polosladké", "id_wine_company":"7", "id_wine_region": "18"}
+{"id_wine": "HOR.0066", "name":"Pinot Gris", "type":"bile-vino", "category":"suché", "id_wine_company":"22", "id_wine_region": ""}
+{"id_wine": "LAH.0234", "name":"Neuburské", "type":"bile-vino", "category":"polosuché", "id_wine_company":"3", "id_wine_region": "19"}
+{"id_wine": "VIH.0129", "name":"Sylvánské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"13", "id_wine_region": "4"}
+{"id_wine": "ZNO.0219", "name":"Ryzlink rýnský", "type":"bile-vino", "category":"suché", "id_wine_company":"10", "id_wine_region": "3"}
+{"id_wine": "VIH.0128", "name":"Sauvignon Gris", "type":"bile-vino", "category":"sladké", "id_wine_company":"13", "id_wine_region": "6"}
+{"id_wine": "PLA.0061", "name":"Frankovka", "type":"cervene-vino", "category":"suché", "id_wine_company":"2", "id_wine_region": "20"}
+{"id_wine": "ZNO.0213", "name":"Müller Thurgau", "type":"bile-vino", "category":"suché", "id_wine_company":"10", "id_wine_region": "21"}
+{"id_wine": "LIB.0042", "name":"Chardonnay", "type":"bile-vino", "category":"polosladké", "id_wine_company":"21", "id_wine_region": "22"}
+{"id_wine": "HAN.0161", "name":"Müller Thurgau", "type":"bile-vino", "category":"suché", "id_wine_company":"8", "id_wine_region": "23"}
+{"id_wine": "VIH.0127", "name":"Hibernal", "type":"bile-vino", "category":"polosuché", "id_wine_company":"13", "id_wine_region": "4"}
+{"id_wine": "ZNO.0215", "name":"Chardonnay", "type":"bile-vino", "category":"suché", "id_wine_company":"10", "id_wine_region": "24"}
+{"id_wine": "VIZ.0011", "name":"Sauvignon", "type":"bile-vino", "category":"polosuché", "id_wine_company":"17", "id_wine_region": "11"}
+{"id_wine": "AMP.0078", "name":"Pálava", "type":"bile-vino", "category":"polosladké", "id_wine_company":"11", "id_wine_region": "4"}
+{"id_wine": "LIB.0041", "name":"Sauvignon VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"21", "id_wine_region": "17"}
+{"id_wine": "AMP.0076", "name":"Sauvignon", "type":"bile-vino", "category":"polosuché", "id_wine_company":"11", "id_wine_region": "4"}
+{"id_wine": "LAH.0243", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"3", "id_wine_region": "25"}
+{"id_wine": "VIZ.0013", "name":"Pálava", "type":"bile-vino", "category":"polosladké", "id_wine_company":"17", "id_wine_region": "11"}
+{"id_wine": "VIZ.0010", "name":"Dornfelder", "type":"cervene-vino", "category":"suché", "id_wine_company":"17", "id_wine_region": "11"}
+{"id_wine": "ZNO.0212", "name":"Tramín červený", "type":"bile-vino", "category":"sladké", "id_wine_company":"10", "id_wine_region": "21"}
+{"id_wine": "VIZ.0012", "name":"Neuburské", "type":"bile-vino", "category":"polosladké", "id_wine_company":"17", "id_wine_region": "11"}
+{"id_wine": "LAH.0222", "name":"Muškát moravský", "type":"bile-vino", "category":"sladké", "id_wine_company":"3", "id_wine_region": ""}
+{"id_wine": "VSL.0051", "name":"Frankovka - slámové", "type":"cervene-vino", "category":"sladké", "id_wine_company":"7", "id_wine_region": "26"}
+{"id_wine": "ZNO.0211", "name":"Semillon", "type":"bile-vino", "category":"suché", "id_wine_company":"10", "id_wine_region": "5"}
+{"id_wine": "KOR.0076", "name":"Müller Thurgau", "type":"bile-vino", "category":"suché", "id_wine_company":"1", "id_wine_region": "6"}
+{"id_wine": "PAR.0018", "name":"Tramín červený", "type":"bile-vino", "category":"polosladké", "id_wine_company":"18", "id_wine_region": ""}
+{"id_wine": "HOD.0032", "name":"Veltlínské červené rané", "type":"bile-vino", "category":"polosuché", "id_wine_company":"16", "id_wine_region": "27"}
+{"id_wine": "HOD.0035", "name":"Pálava", "type":"bile-vino", "category":"sladké", "id_wine_company":"16", "id_wine_region": "27"}
+{"id_wine": "AMP.0077", "name":"Symposion", "type":"bile-vino", "category":"polosuché", "id_wine_company":"11", "id_wine_region": ""}
+{"id_wine": "PAR.0017", "name":"Ryzlink rýnský", "type":"bile-vino", "category":"polosladké", "id_wine_company":"18", "id_wine_region": ""}
+{"id_wine": "PAJ.0070", "name":"Grand Veltlin No.5", "type":"bile-vino", "category":"suché", "id_wine_company":"23", "id_wine_region": "21"}
+{"id_wine": "PAJ.0074", "name":"Chardonnay - Dolce Vita", "type":"bile-vino", "category":"sladké", "id_wine_company":"23", "id_wine_region": ""}
+{"id_wine": "PAJ.0071", "name":"Roséčko", "type":"ruzove-vino", "category":"suché", "id_wine_company":"23", "id_wine_region": ""}
+{"id_wine": "VAN.0047", "name":"Rulandské bílé", "type":"bile-vino", "category":"suché", "id_wine_company":"24", "id_wine_region": "4"}
+{"id_wine": "LAH.0258", "name":"Merlot", "type":"cervene-vino", "category":"suché", "id_wine_company":"3", "id_wine_region": ""}
+{"id_wine": "VAN.0046", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"24", "id_wine_region": "28"}
+{"id_wine": "VAN.0048", "name":"Pinot Gris", "type":"bile-vino", "category":"suché", "id_wine_company":"24", "id_wine_region": "28"}
+{"id_wine": "PLA.0060", "name":"Pálava", "type":"bile-vino", "category":"polosladké", "id_wine_company":"2", "id_wine_region": "29"}
+{"id_wine": "VAN.0051", "name":"Ryzlink rýnský - panenský sběr", "type":"bile-vino", "category":"suché", "id_wine_company":"24", "id_wine_region": "10"}
+{"id_wine": "MUS.0022", "name":"Irsai Oliver", "type":"bile-vino", "category":"suché", "id_wine_company":"25", "id_wine_region": ""}
+{"id_wine": "LAH.0257", "name":"Ryzlink rýnský", "type":"bile-vino", "category":"suché", "id_wine_company":"3", "id_wine_region": "23"}
+{"id_wine": "LAH.0249", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"3", "id_wine_region": ""}
+{"id_wine": "VAN.0049", "name":"Tramín", "type":"bile-vino", "category":"polosuché", "id_wine_company":"24", "id_wine_region": "4"}
+{"id_wine": "ZNO.0209", "name":"Mont Pré", "type":"bile-vino", "category":"polosuché", "id_wine_company":"10", "id_wine_region": ""}
+{"id_wine": "HOD.0033", "name":"Veritas", "type":"bile-vino", "category":"polosladké", "id_wine_company":"16", "id_wine_region": "27"}
+{"id_wine": "VAJ.0005", "name":"Tramín červený", "type":"bile-vino", "category":"suché", "id_wine_company":"9", "id_wine_region": "3"}
+{"id_wine": "VAJ.0004", "name":"Ryzlink rýnský", "type":"bile-vino", "category":"suché", "id_wine_company":"9", "id_wine_region": "30"}
+{"id_wine": "VAN.0050", "name":"Rulandské šedé", "type":"bile-vino", "category":"suché", "id_wine_company":"24", "id_wine_region": "4"}
+{"id_wine": "ZNO.0210", "name":"Pálava", "type":"bile-vino", "category":"polosladké", "id_wine_company":"10", "id_wine_region": "6"}
+{"id_wine": "DVP.0016", "name":"Vlašský ryzlink Qvevri Georgia Naturel Orange", "type":"bile-vino", "category":"", "id_wine_company":"6", "id_wine_region": ""}
+{"id_wine": "DVP.0015", "name":"Cuvée Kambrium", "type":"bile-vino", "category":"suché", "id_wine_company":"6", "id_wine_region": ""}
+{"id_wine": "DVP.0014", "name":"Blanc de Pinot noir", "type":"bile-vino", "category":"suché", "id_wine_company":"6", "id_wine_region": ""}
+{"id_wine": "DVP.0013", "name":"Velké dobré červené", "type":"cervene-vino", "category":"", "id_wine_company":"6", "id_wine_region": ""}
+{"id_wine": "HOD.0031", "name":"Muškát moravský", "type":"bile-vino", "category":"polosuché", "id_wine_company":"16", "id_wine_region": "27"}
+{"id_wine": "VSL.0050", "name":"Rulandské bílé", "type":"bile-vino", "category":"polosladké", "id_wine_company":"7", "id_wine_region": "31"}
+{"id_wine": "PAJ.0072", "name":"Ryzlink rýnský Sexenberg", "type":"bile-vino", "category":"suché", "id_wine_company":"23", "id_wine_region": "28"}
+{"id_wine": "HOD.0034", "name":"Tramín červený", "type":"bile-vino", "category":"polosladké", "id_wine_company":"16", "id_wine_region": "27"}
+{"id_wine": "ZNO.0208", "name":"Chardonnay", "type":"bile-vino", "category":"polosuché", "id_wine_company":"10", "id_wine_region": ""}
+{"id_wine": "KOR.0079", "name":"Frankovka", "type":"cervene-vino", "category":"suché", "id_wine_company":"1", "id_wine_region": "6"}
+{"id_wine": "MOD.0061", "name":"Muškát moravský", "type":"bile-vino", "category":"polosladké", "id_wine_company":"14", "id_wine_region": "10"}
+{"id_wine": "LAH.0225", "name":"Tramín červený", "type":"bile-vino", "category":"sladké", "id_wine_company":"3", "id_wine_region": "4"}
+{"id_wine": "TAO.0061", "name":"Merlot Rosé", "type":"ruzove-vino", "category":"polosuché", "id_wine_company":"20", "id_wine_region": "16"}
+{"id_wine": "TAO.0059", "name":"Frankovka", "type":"cervene-vino", "category":"suché", "id_wine_company":"20", "id_wine_region": "16"}
+{"id_wine": "TAO.0060", "name":"Müller Thrugau", "type":"bile-vino", "category":"suché", "id_wine_company":"20", "id_wine_region": "16"}
+{"id_wine": "TAO.0064", "name":"Sauvignon Staré hory", "type":"bile-vino", "category":"suché", "id_wine_company":"20", "id_wine_region": "32"}
+{"id_wine": "TAO.0063", "name":"Pálava", "type":"bile-vino", "category":"polosuché", "id_wine_company":"20", "id_wine_region": "16"}
+{"id_wine": "LAH.0251", "name":"Frizzante LAHOFER", "type":"sekty-a-sumiva-vina", "category":"sladké", "id_wine_company":"3", "id_wine_region": ""}
+{"id_wine": "VSL.0049", "name":"Zweigeltrebe", "type":"cervene-vino", "category":"suché", "id_wine_company":"7", "id_wine_region": "26"}
+{"id_wine": "PLA.0059", "name":"SolarCO2", "type":"sekty-a-sumiva-vina", "category":"sladké", "id_wine_company":"2", "id_wine_region": "29"}
+{"id_wine": "TAO.0062", "name":"Pálava", "type":"bile-vino", "category":"suché", "id_wine_company":"20", "id_wine_region": "16"}
+{"id_wine": "MOD.0059", "name":"Rulandské šedé", "type":"bile-vino", "category":"polosuché", "id_wine_company":"14", "id_wine_region": "10"}
+{"id_wine": "ZNO.0201", "name":"Rulandské modré AKÁT z edice DUEL", "type":"cervene-vino", "category":"suché", "id_wine_company":"10", "id_wine_region": "5"}
+{"id_wine": "PAJ.0073", "name":"Ryzlink rýnský - botritický sběr", "type":"bile-vino", "category":"sladké", "id_wine_company":"23", "id_wine_region": "28"}
+{"id_wine": "ZNO.0203", "name":"Tramín červený GENUS REGIS", "type":"bile-vino", "category":"polosladké", "id_wine_company":"10", "id_wine_region": "5"}
+{"id_wine": "ZNO.0204", "name":"Pálava", "type":"bile-vino", "category":"polosladké", "id_wine_company":"10", "id_wine_region": "27"}
+{"id_wine": "ZNO.0202", "name":"Rulandské modré DUB z edice DUEL", "type":"cervene-vino", "category":"suché", "id_wine_company":"10", "id_wine_region": "5"}
+{"id_wine": "ZNO.0205", "name":"Cabernet Sauvignon Rosé", "type":"ruzove-vino", "category":"polosladké", "id_wine_company":"10", "id_wine_region": "33"}
+{"id_wine": "PLA.0058", "name":"Svatovavřinecké Rosé", "type":"ruzove-vino", "category":"polosladké", "id_wine_company":"2", "id_wine_region": "16"}
+{"id_wine": "KOR.0075", "name":"Veltlínské zelené VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"1", "id_wine_region": "6"}
+{"id_wine": "HOD.0030", "name":"Veltlínské zelené VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"16", "id_wine_region": "13"}
+{"id_wine": "SPA.0090", "name":"Rulandské šedé", "type":"bile-vino", "category":"polosuché", "id_wine_company":"26", "id_wine_region": "34"}
+{"id_wine": "PAR.0016", "name":"Pinot Noir", "type":"cervene-vino", "category":"suché", "id_wine_company":"18", "id_wine_region": "5"}
+{"id_wine": "VAJ.0003", "name":"Frankovka", "type":"cervene-vino", "category":"suché", "id_wine_company":"9", "id_wine_region": "10"}
+{"id_wine": "VAJ.0002", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"9", "id_wine_region": "2"}
+{"id_wine": "VAJ.0001", "name":"Sauvignon", "type":"bile-vino", "category":"suché", "id_wine_company":"9", "id_wine_region": "10"}
+{"id_wine": "SPA.0089", "name":"Veltlínské zelené VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"26", "id_wine_region": "34"}
+{"id_wine": "ART.0056", "name":"Pinot Noir", "type":"cervene-vino", "category":"suché", "id_wine_company":"27", "id_wine_region": "4"}
+{"id_wine": "ART.0055", "name":"Frankovka", "type":"cervene-vino", "category":"suché", "id_wine_company":"27", "id_wine_region": "16"}
+{"id_wine": "HOD.0029", "name":"Sauvignon VOC", "type":"bile-vino", "category":"polosuché", "id_wine_company":"16", "id_wine_region": "27"}
+{"id_wine": "ART.0053", "name":"Chardonnay", "type":"bile-vino", "category":"suché", "id_wine_company":"27", "id_wine_region": ""}
+{"id_wine": "ART.0051", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"27", "id_wine_region": "23"}
+{"id_wine": "SPA.0091", "name":"Gryllus bílý", "type":"bile-vino", "category":"suché", "id_wine_company":"26", "id_wine_region": "34"}
+{"id_wine": "ART.0054", "name":"Pálava", "type":"bile-vino", "category":"sladké", "id_wine_company":"27", "id_wine_region": "35"}
+{"id_wine": "VIH.0126", "name":"Veltlínské zelené VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"13", "id_wine_region": "33"}
+{"id_wine": "VIH.0124", "name":"Sauvignon VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"13", "id_wine_region": "6"}
+{"id_wine": "VIH.0125", "name":"Ryzlink rýnský VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"13", "id_wine_region": "6"}
+{"id_wine": "ART.0049", "name":"Ryzlink rýnský VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"27", "id_wine_region": "9"}
+{"id_wine": "SIM.0029", "name":"Sauvignon Blanc VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"28", "id_wine_region": ""}
+{"id_wine": "ART.0050", "name":"Sauvignon VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"27", "id_wine_region": "34"}
+{"id_wine": "ART.0052", "name":"Ryzlink rýnský", "type":"bile-vino", "category":"suché", "id_wine_company":"27", "id_wine_region": "11"}
+{"id_wine": "SIM.0030", "name":"Ryzlink rýnský VOC", "type":"bile-vino", "category":"polosuché", "id_wine_company":"28", "id_wine_region": ""}
+{"id_wine": "WAL.0274", "name":"Sylvánské zelené - polosladké", "type":"bile-vino", "category":"polosladké", "id_wine_company":"5", "id_wine_region": "14"}
+{"id_wine": "ZNO.0206", "name":"Tramín červený - Lacerta Viridis", "type":"bile-vino", "category":"polosladké", "id_wine_company":"10", "id_wine_region": "6"}
+{"id_wine": "MOD.0060", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"14", "id_wine_region": "10"}
+{"id_wine": "LAH.0186", "name":"LAHOmošt hroznový Veltlínské zelené", "type":"hroznovy-most", "category":"sladké", "id_wine_company":"3", "id_wine_region": "36"}
+{"id_wine": "HOR.0065", "name":"Ryzlink rýnský VOC", "type":"bile-vino", "category":"", "id_wine_company":"22", "id_wine_region": "10"}
+{"id_wine": "VAN.0043", "name":"Frizzante Sauvignon", "type":"sekty-a-sumiva-vina", "category":"polosuché", "id_wine_company":"24", "id_wine_region": "14"}
+{"id_wine": "VAN.0040", "name":"Ryzlink rýnský VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"24", "id_wine_region": "4"}
+{"id_wine": "VAN.0039", "name":"Sauvignon VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"24", "id_wine_region": "4"}
+{"id_wine": "VAN.0041", "name":"Zweigeltrebe Rosé", "type":"ruzove-vino", "category":"suché", "id_wine_company":"24", "id_wine_region": "14"}
+{"id_wine": "WAL.0268", "name":"Hibernal", "type":"bile-vino", "category":"polosladké", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "LAH.0238", "name":"Veltlínské zelené VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"3", "id_wine_region": "4"}
+{"id_wine": "WAL.0267", "name":"Neuburské", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "VAN.0045", "name":"Tramín žlutý", "type":"bile-vino", "category":"sladké", "id_wine_company":"24", "id_wine_region": "4"}
+{"id_wine": "VAN.0042", "name":"Frizzante Zweigeltrebe", "type":"sekty-a-sumiva-vina", "category":"polosuché", "id_wine_company":"24", "id_wine_region": "14"}
+{"id_wine": "LAH.0240", "name":"Rulandské šedé", "type":"bile-vino", "category":"suché", "id_wine_company":"3", "id_wine_region": "19"}
+{"id_wine": "LAH.0244", "name":"Pálava", "type":"bile-vino", "category":"polosladké", "id_wine_company":"3", "id_wine_region": "36"}
+{"id_wine": "HAN.0167", "name":"Pálava", "type":"bile-vino", "category":"polosladké", "id_wine_company":"8", "id_wine_region": "36"}
+{"id_wine": "ZNO.0197", "name":"Sauvignon VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"10", "id_wine_region": "6"}
+{"id_wine": "WAL.0265", "name":"Rinot", "type":"bile-vino", "category":"polosuché", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "ZNO.0199", "name":"Veltlínské zelené VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"10", "id_wine_region": "13"}
+{"id_wine": "ZNO.0207", "name":"Tramín červený", "type":"bile-vino", "category":"polosladké", "id_wine_company":"10", "id_wine_region": ""}
+{"id_wine": "VAN.0044", "name":"Muškát moravský", "type":"bile-vino", "category":"suché", "id_wine_company":"24", "id_wine_region": "4"}
+{"id_wine": "ZNO.0195", "name":"Ryzlink rýnský - Rosnička zelená", "type":"bile-vino", "category":"suché", "id_wine_company":"10", "id_wine_region": "27"}
+{"id_wine": "JOK.0028", "name":"Dornfelder rosé", "type":"ruzove-vino", "category":"polosuché", "id_wine_company":"4", "id_wine_region": "6"}
+{"id_wine": "LAH.0239", "name":"Sauvignon VOC - U Hájku", "type":"bile-vino", "category":"suché", "id_wine_company":"3", "id_wine_region": "19"}
+{"id_wine": "JOK.0029", "name":"Zweigeltrebe Rosé", "type":"ruzove-vino", "category":"polosladké", "id_wine_company":"4", "id_wine_region": "6"}
+{"id_wine": "LAH.0213", "name":"Ryzlink rýnský VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"3", "id_wine_region": "19"}
+{"id_wine": "LAH.0237", "name":"Sauvignon VOC - Šác", "type":"bile-vino", "category":"polosuché", "id_wine_company":"3", "id_wine_region": "4"}
+{"id_wine": "SIM.0031", "name":"Veltlínské zelené VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"28", "id_wine_region": ""}
+{"id_wine": "AMP.0073", "name":"Veltlínské zelené VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"11", "id_wine_region": "4"}
+{"id_wine": "AMP.0074", "name":"Sauvignon VOC", "type":"bile-vino", "category":"polosuché", "id_wine_company":"11", "id_wine_region": "14"}
+{"id_wine": "ZNO.0196", "name":"Ryzlink vlašský - Rosnička zelená", "type":"bile-vino", "category":"suché", "id_wine_company":"10", "id_wine_region": "24"}
+{"id_wine": "AMP.0075", "name":"Ryzlink rýnský VOC", "type":"bile-vino", "category":"polosuché", "id_wine_company":"11", "id_wine_region": "4"}
+{"id_wine": "PAJ.0068", "name":"Ryzlink rýnský VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"23", "id_wine_region": ""}
+{"id_wine": "PAJ.0069", "name":"Veltlínské zelené VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"23", "id_wine_region": ""}
+{"id_wine": "VSL.0048", "name":"Ryzlink rýnský VOC", "type":"bile-vino", "category":"polosuché", "id_wine_company":"7", "id_wine_region": "26"}
+{"id_wine": "WAL.0266", "name":"Chardonnay", "type":"bile-vino", "category":"polosuché", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "LIB.0040", "name":"Ryzlink rýnský VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"21", "id_wine_region": "17"}
+{"id_wine": "PAJ.0067", "name":"Sauvignon VOC", "type":"bile-vino", "category":"polosuché", "id_wine_company":"23", "id_wine_region": ""}
+{"id_wine": "ZNO.0200", "name":"Sauvignon VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"10", "id_wine_region": "6"}
+{"id_wine": "HOR.0064", "name":"Veltlínské zelené VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"22", "id_wine_region": "10"}
+{"id_wine": "WAL.0261", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "ZNO.0193", "name":"Irsai Oliver", "type":"bile-vino", "category":"polosladké", "id_wine_company":"10", "id_wine_region": "6"}
+{"id_wine": "WAL.0262", "name":"Sauvignon VOC", "type":"bile-vino", "category":"polosuché", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "ZNO.0191", "name":"Sauvignon - TROPICAL", "type":"bile-vino", "category":"polosuché", "id_wine_company":"10", "id_wine_region": "27"}
+{"id_wine": "ZNO.0190", "name":"Sauvignon GREEN", "type":"bile-vino", "category":"suché", "id_wine_company":"10", "id_wine_region": "5"}
+{"id_wine": "HOR.0063", "name":"Hort sekt Alsasko", "type":"sekty-a-sumiva-vina", "category":"suché", "id_wine_company":"22", "id_wine_region": ""}
+{"id_wine": "HOR.0062", "name":"Hort sekt Limoux", "type":"sekty-a-sumiva-vina", "category":"suché", "id_wine_company":"22", "id_wine_region": ""}
+{"id_wine": "WAL.0269", "name":"Ryzlink rýnský", "type":"bile-vino", "category":"polosuché", "id_wine_company":"5", "id_wine_region": "12"}
+{"id_wine": "AMP.0070", "name":"Zweigeltrebe Rosé", "type":"ruzove-vino", "category":"polosuché", "id_wine_company":"11", "id_wine_region": "4"}
+{"id_wine": "AMP.0071", "name":"Cabernet Sauvignon / Merlot Rosé", "type":"ruzove-vino", "category":"polosladké", "id_wine_company":"11", "id_wine_region": "4"}
+{"id_wine": "SPA.0088", "name":"GRYLLUS rosé BIO", "type":"ruzove-vino", "category":"", "id_wine_company":"26", "id_wine_region": "34"}
+{"id_wine": "TAO.0058", "name":"Frankovka Rosé", "type":"ruzove-vino", "category":"suché", "id_wine_company":"20", "id_wine_region": "16"}
+{"id_wine": "HAN.0153", "name":"Rulandské modré", "type":"cervene-vino", "category":"suché", "id_wine_company":"8", "id_wine_region": "19"}
+{"id_wine": "ZNO.0192", "name":"Cabernet Sauvignon ROUGE", "type":"ruzove-vino", "category":"polosladké", "id_wine_company":"10", "id_wine_region": "24"}
+{"id_wine": "KOR.0074", "name":"Pinot Noir rosé / Pozdravy z NP Podyjí", "type":"ruzove-vino", "category":"suché", "id_wine_company":"1", "id_wine_region": "6"}
+{"id_wine": "PAJ.0066", "name":"Veltlínské zelené EXTRA", "type":"bile-vino", "category":"suché", "id_wine_company":"23", "id_wine_region": "10"}
+{"id_wine": "LAH.0212", "name":"Rulandské bílé", "type":"bile-vino", "category":"polosuché", "id_wine_company":"3", "id_wine_region": "37"}
+{"id_wine": "VIH.0119", "name":"Muškát moravský", "type":"bile-vino", "category":"polosuché", "id_wine_company":"13", "id_wine_region": "6"}
+{"id_wine": "VIH.0121", "name":"Ryzlink vlašský", "type":"bile-vino", "category":"sladké", "id_wine_company":"13", "id_wine_region": "9"}
+{"id_wine": "VIH.0123", "name":"Cabernet Sauvignon Rosé", "type":"ruzove-vino", "category":"polosladké", "id_wine_company":"13", "id_wine_region": "4"}
+{"id_wine": "VIH.0118", "name":"Irsai Oliver", "type":"bile-vino", "category":"polosladké", "id_wine_company":"13", "id_wine_region": ""}
+{"id_wine": "KOR.0073", "name":"Frankovka rosé / Pozdravy z NP Podyjí", "type":"ruzove-vino", "category":"polosuché", "id_wine_company":"1", "id_wine_region": "6"}
+{"id_wine": "PAR.0014", "name":"Ryzlink vlašský", "type":"bile-vino", "category":"suché", "id_wine_company":"18", "id_wine_region": "12"}
+{"id_wine": "VIH.0122", "name":"Solaris", "type":"bile-vino", "category":"polosladké", "id_wine_company":"13", "id_wine_region": "9"}
+{"id_wine": "PAR.0013", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"18", "id_wine_region": "12"}
+{"id_wine": "KOR.0072", "name":"Muškát moravský / Pozdravy z NP Podyjí", "type":"bile-vino", "category":"polosladké", "id_wine_company":"1", "id_wine_region": "9"}
+{"id_wine": "KOR.0071", "name":"Veltlínské zelené / Pozdravy z NP Podyjí", "type":"bile-vino", "category":"suché", "id_wine_company":"1", "id_wine_region": "9"}
+{"id_wine": "HAN.0164", "name":"Chardonnay", "type":"bile-vino", "category":"polosladké", "id_wine_company":"8", "id_wine_region": "4"}
+{"id_wine": "HAN.0162", "name":"Rotgipfler", "type":"bile-vino", "category":"polosuché", "id_wine_company":"8", "id_wine_region": ""}
+{"id_wine": "KOR.0070", "name":"Tramín červený / Pozdravy z NP Podyjí", "type":"bile-vino", "category":"polosladké", "id_wine_company":"1", "id_wine_region": "9"}
+{"id_wine": "ART.0046", "name":"Sauvignon Blanc", "type":"bile-vino", "category":"suché", "id_wine_company":"27", "id_wine_region": "38"}
+{"id_wine": "PAR.0015", "name":"Muškát moravský", "type":"bile-vino", "category":"polosuché", "id_wine_company":"18", "id_wine_region": "4"}
+{"id_wine": "VSL.0046", "name":"Rulandské modré - klaret", "type":"ruzove-vino", "category":"polosuché", "id_wine_company":"7", "id_wine_region": "18"}
+{"id_wine": "AMP.0068", "name":"Sylvánské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"11", "id_wine_region": "4"}
+{"id_wine": "ART.0047", "name":"Pinot Gris", "type":"bile-vino", "category":"suché", "id_wine_company":"27", "id_wine_region": "30"}
+{"id_wine": "AMP.0072", "name":"Ryzlink rýnský", "type":"bile-vino", "category":"polosuché", "id_wine_company":"11", "id_wine_region": "4"}
+{"id_wine": "AMP.0069", "name":"Muškát moravský", "type":"bile-vino", "category":"polosuché", "id_wine_company":"11", "id_wine_region": "14"}
+{"id_wine": "SPA.0086", "name":"Sauvignon BIO", "type":"bile-vino", "category":"suché", "id_wine_company":"26", "id_wine_region": "34"}
+{"id_wine": "SPA.0085", "name":"Rulandské bílé", "type":"bile-vino", "category":"polosuché", "id_wine_company":"26", "id_wine_region": ""}
+{"id_wine": "MOD.0058", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"14", "id_wine_region": "34"}
+{"id_wine": "KOR.0069", "name":"Sauvignn Blanc / Pozdravy z NP Podyjí", "type":"bile-vino", "category":"suché", "id_wine_company":"1", "id_wine_region": "6"}
+{"id_wine": "ZNO.0189", "name":"πnot noir - červené", "type":"cervene-vino", "category":"suché", "id_wine_company":"10", "id_wine_region": ""}
+{"id_wine": "ZNO.0188", "name":"πnot noir - rosé", "type":"ruzove-vino", "category":"polosladké", "id_wine_company":"10", "id_wine_region": ""}
+{"id_wine": "ZNO.0187", "name":"πnot noir - klaret", "type":"ruzove-vino", "category":"polosladké", "id_wine_company":"10", "id_wine_region": ""}
+{"id_wine": "LAH.0232", "name":"Rulandské šedé", "type":"bile-vino", "category":"polosuché", "id_wine_company":"3", "id_wine_region": ""}
+{"id_wine": "PLA.0057", "name":"Cuvée TRIO", "type":"cervene-vino", "category":"suché", "id_wine_company":"2", "id_wine_region": "20"}
+{"id_wine": "ZNO.0194", "name":"Muškát moravský", "type":"bile-vino", "category":"polosuché", "id_wine_company":"10", "id_wine_region": "27"}
+{"id_wine": "VSL.0047", "name":"Sauvignon VOC", "type":"bile-vino", "category":"polosuché", "id_wine_company":"7", "id_wine_region": "18"}
+{"id_wine": "SIM.0027", "name":"Pinot Gris", "type":"bile-vino", "category":"suché", "id_wine_company":"28", "id_wine_region": "4"}
+{"id_wine": "MOD.0057", "name":"Rulandské modré - klaret", "type":"ruzove-vino", "category":"polosuché", "id_wine_company":"14", "id_wine_region": "34"}
+{"id_wine": "PLA.0051", "name":"Sauvignon", "type":"bile-vino", "category":"polosuché", "id_wine_company":"2", "id_wine_region": "20"}
+{"id_wine": "LAH.0227", "name":"Rulandské šedé", "type":"bile-vino", "category":"polosladké", "id_wine_company":"3", "id_wine_region": "4"}
+{"id_wine": "PLA.0052", "name":"Muškát moravský", "type":"bile-vino", "category":"polosuché", "id_wine_company":"2", "id_wine_region": "20"}
+{"id_wine": "PLA.0050", "name":"Hibernal", "type":"bile-vino", "category":"suché", "id_wine_company":"2", "id_wine_region": "29"}
+{"id_wine": "PLA.0054", "name":"Muscaris", "type":"bile-vino", "category":"polosladké", "id_wine_company":"2", "id_wine_region": "29"}
+{"id_wine": "VIH.0117", "name":"Kerner", "type":"bile-vino", "category":"sladké", "id_wine_company":"13", "id_wine_region": "4"}
+{"id_wine": "VSL.0045", "name":"Sylvánské zelené", "type":"bile-vino", "category":"polosuché", "id_wine_company":"7", "id_wine_region": "26"}
+{"id_wine": "TAO.0052", "name":"Pinot Gris", "type":"bile-vino", "category":"suché", "id_wine_company":"20", "id_wine_region": "16"}
+{"id_wine": "KOR.0068", "name":"Ryzlink rýnský / Pozdravy z NP Podyjí", "type":"bile-vino", "category":"suché", "id_wine_company":"1", "id_wine_region": "6"}
+{"id_wine": "TAO.0054", "name":"Sauvignon - Karlov", "type":"bile-vino", "category":"suché", "id_wine_company":"20", "id_wine_region": "16"}
+{"id_wine": "TAO.0051", "name":"Chardonnay SUR-LIE", "type":"bile-vino", "category":"suché", "id_wine_company":"20", "id_wine_region": "16"}
+{"id_wine": "ART.0048", "name":"GREEN", "type":"bile-vino", "category":"suché", "id_wine_company":"27", "id_wine_region": "23"}
+{"id_wine": "TAO.0053", "name":"Veltlínské zelené - Staré keře", "type":"bile-vino", "category":"suché", "id_wine_company":"20", "id_wine_region": "16"}
+{"id_wine": "TAO.0056", "name":"Pinot Noir - Klaret", "type":"bile-vino", "category":"suché", "id_wine_company":"20", "id_wine_region": "16"}
+{"id_wine": "TAO.0055", "name":"Merlot rosé", "type":"ruzove-vino", "category":"polosuché", "id_wine_company":"20", "id_wine_region": "16"}
+{"id_wine": "SIM.0028", "name":"Ryzlink rýnský", "type":"bile-vino", "category":"suché", "id_wine_company":"28", "id_wine_region": "4"}
+{"id_wine": "PLA.0053", "name":"Rinot", "type":"bile-vino", "category":"polosuché", "id_wine_company":"2", "id_wine_region": "29"}
+{"id_wine": "VSL.0043", "name":"Chardonnay", "type":"bile-vino", "category":"polosuché", "id_wine_company":"7", "id_wine_region": "26"}
+{"id_wine": "HAN.0158", "name":"Rulandské šedé", "type":"bile-vino", "category":"polosladké", "id_wine_company":"8", "id_wine_region": "4"}
+{"id_wine": "HAN.0160", "name":"Zweigeltrebe Rosé", "type":"ruzove-vino", "category":"polosuché", "id_wine_company":"8", "id_wine_region": "23"}
+{"id_wine": "TAO.0057", "name":"Veltlínské červené rané", "type":"bile-vino", "category":"suché", "id_wine_company":"20", "id_wine_region": "16"}
+{"id_wine": "HAN.0159", "name":"Frankovka Rosé", "type":"ruzove-vino", "category":"polosladké", "id_wine_company":"8", "id_wine_region": "37"}
+{"id_wine": "LAH.0230", "name":"Svatovavřinecké Rosé", "type":"ruzove-vino", "category":"polosladké", "id_wine_company":"3", "id_wine_region": "23"}
+{"id_wine": "HOR.0058", "name":"HF Premium", "type":"cervene-vino", "category":"suché", "id_wine_company":"22", "id_wine_region": ""}
+{"id_wine": "VSL.0044", "name":"Muškát moravský", "type":"bile-vino", "category":"polosuché", "id_wine_company":"7", "id_wine_region": "26"}
+{"id_wine": "VSL.0042", "name":"Tramín červený", "type":"bile-vino", "category":"", "id_wine_company":"7", "id_wine_region": "8"}
+{"id_wine": "PLA.0049", "name":"Savilon", "type":"bile-vino", "category":"suché", "id_wine_company":"2", "id_wine_region": "29"}
+{"id_wine": "ZNO.0184", "name":"Sylvánské zelené - Ledňáček říční", "type":"bile-vino", "category":"suché", "id_wine_company":"10", "id_wine_region": "21"}
+{"id_wine": "ZNO.0185", "name":"Ryzlink rýnský", "type":"bile-vino", "category":"polosuché", "id_wine_company":"10", "id_wine_region": "3"}
+{"id_wine": "SPA.0084", "name":"Ryzlink rýnský z velkého sudu", "type":"bile-vino", "category":"suché", "id_wine_company":"26", "id_wine_region": "34"}
+{"id_wine": "LAH.0231", "name":"Müller Thurgau", "type":"bile-vino", "category":"suché", "id_wine_company":"3", "id_wine_region": "23"}
+{"id_wine": "ZNO.0186", "name":"Sauvignon - Lacerta Viridis", "type":"bile-vino", "category":"suché", "id_wine_company":"10", "id_wine_region": "6"}
+{"id_wine": "KOR.0066", "name":"Ryzlink rýnský - BETON", "type":"bile-vino", "category":"suché", "id_wine_company":"1", "id_wine_region": "6"}
+{"id_wine": "HAN.0152", "name":"Rulandské bílé", "type":"bile-vino", "category":"polosuché", "id_wine_company":"8", "id_wine_region": "37"}
+{"id_wine": "VSL.0041", "name":"Frankovka Rosé", "type":"ruzove-vino", "category":"polosladké", "id_wine_company":"7", "id_wine_region": ""}
+{"id_wine": "PLA.0055", "name":"RoseCO2 - perlivé víno", "type":"sekty-a-sumiva-vina", "category":"polosladké", "id_wine_company":"2", "id_wine_region": "16"}
+{"id_wine": "SPA.0083", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"26", "id_wine_region": ""}
+{"id_wine": "VSL.0040", "name":"Hroznový mošt - Sylvánské zelené", "type":"hroznovy-most", "category":"sladké", "id_wine_company":"7", "id_wine_region": ""}
+{"id_wine": "VSL.0039", "name":"Rulandské šedé", "type":"bile-vino", "category":"polosuché", "id_wine_company":"7", "id_wine_region": "8"}
+{"id_wine": "JZM.0010", "name":"Rulandské šedé", "type":"bile-vino", "category":"sladké", "id_wine_company":"29", "id_wine_region": ""}
+{"id_wine": "PAJ.0064", "name":"FREŠ - známkové cuvée", "type":"bile-vino", "category":"suché", "id_wine_company":"23", "id_wine_region": ""}
+{"id_wine": "ZNO.0179", "name":"Modrý Janek", "type":"bile-vino", "category":"suché", "id_wine_company":"10", "id_wine_region": ""}
+{"id_wine": "ZNO.0183", "name":"Veltlínské zelené - Ledňáček říční", "type":"bile-vino", "category":"suché", "id_wine_company":"10", "id_wine_region": "13"}
+{"id_wine": "JZM.0009", "name":"Tramín červený", "type":"bile-vino", "category":"sladké", "id_wine_company":"29", "id_wine_region": ""}
+{"id_wine": "MUS.0021", "name":"Frankovka rosé", "type":"ruzove-vino", "category":"suché", "id_wine_company":"25", "id_wine_region": "16"}
+{"id_wine": "LAH.0223", "name":"Pálava", "type":"bile-vino", "category":"sladké", "id_wine_company":"3", "id_wine_region": "4"}
+{"id_wine": "KOR.0067", "name":"Ryzlink vlašský / Pozdravy z NP Podyjí", "type":"bile-vino", "category":"suché", "id_wine_company":"1", "id_wine_region": "6"}
+{"id_wine": "KOR.0065", "name":"Sauvignon", "type":"bile-vino", "category":"suché", "id_wine_company":"1", "id_wine_region": "6"}
+{"id_wine": "TAO.0050", "name":"Frankovka", "type":"cervene-vino", "category":"suché", "id_wine_company":"20", "id_wine_region": "16"}
+{"id_wine": "WAL.0097", "name":"Zweigeltrebe", "type":"cervene-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "WAL.0090", "name":"Svatovařinecké", "type":"cervene-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "WAL.0086", "name":"Ryzlink rýnský", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "WAL.0065", "name":"Cuvée Rosé", "type":"ruzove-vino", "category":"polosladké", "id_wine_company":"5", "id_wine_region": "12"}
+{"id_wine": "HAN.0154", "name":"Sauvignon", "type":"bile-vino", "category":"polosuché", "id_wine_company":"8", "id_wine_region": "23"}
+{"id_wine": "WAL.0072", "name":"Chardonnay", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "JZM.0008", "name":"Chardonnay", "type":"bile-vino", "category":"sladké", "id_wine_company":"29", "id_wine_region": ""}
+{"id_wine": "WAL.0096", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "WAL.0081", "name":"Rulandské šedé", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "12"}
+{"id_wine": "WAL.0084", "name":"Ryzlink rýnský", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "12"}
+{"id_wine": "ART.0045", "name":"Red Reserve", "type":"cervene-vino", "category":"suché", "id_wine_company":"27", "id_wine_region": ""}
+{"id_wine": "WAL.0087", "name":"Ryzlink vlašský", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "12"}
+{"id_wine": "WAL.0083", "name":"Ryzlink rýnský", "type":"bile-vino", "category":"polosladké", "id_wine_company":"5", "id_wine_region": "12"}
+{"id_wine": "WAL.0088", "name":"Sauvignon", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "WAL.0075", "name":"Müller Thurgau", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "WAL.0080", "name":"Rulandské bílé", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "12"}
+{"id_wine": "WAL.0078", "name":"Muškát moravský", "type":"bile-vino", "category":"polosuché", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "WAL.0071", "name":"Chardonnay", "type":"bile-vino", "category":"polosladké", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "WAL.0076", "name":"Müller Thurgau", "type":"bile-vino", "category":"polosladké", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "WAL.0089", "name":"Sauvignon", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "WAL.0091", "name":"Tramín červený", "type":"bile-vino", "category":"polosladké", "id_wine_company":"5", "id_wine_region": "12"}
+{"id_wine": "WAL.0066", "name":"Cuvée sv. Urban", "type":"bile-vino", "category":"polosladké", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "WAL.0099", "name":"Zweigeltrebe Rosé", "type":"ruzove-vino", "category":"polosuché", "id_wine_company":"5", "id_wine_region": "14"}
+{"id_wine": "PAJ.0065", "name":"Hibernal", "type":"bile-vino", "category":"polosuché", "id_wine_company":"23", "id_wine_region": ""}
+{"id_wine": "ZNO.0180", "name":"Veritas", "type":"bile-vino", "category":"polosuché", "id_wine_company":"10", "id_wine_region": "27"}
+{"id_wine": "WAL.0070", "name":"Hibernal", "type":"bile-vino", "category":"polosuché", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "LAH.0229", "name":"Veltlínské červené rané", "type":"bile-vino", "category":"suché", "id_wine_company":"3", "id_wine_region": ""}
+{"id_wine": "HAN.0150", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"8", "id_wine_region": "37"}
+{"id_wine": "JOK.0026", "name":"Muškát moravský", "type":"bile-vino", "category":"suché", "id_wine_company":"4", "id_wine_region": ""}
+{"id_wine": "WAL.0098", "name":"Zweigeltrebe Rosé", "type":"ruzove-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "14"}
+{"id_wine": "WAL.0077", "name":"Müller Thurgau", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "SPA.0076", "name":"der Ilgner SPRUDEL", "type":"bile-vino", "category":"sladké", "id_wine_company":"26", "id_wine_region": ""}
+{"id_wine": "LAH.0214", "name":"Frankovka", "type":"cervene-vino", "category":"suché", "id_wine_company":"3", "id_wine_region": "37"}
+{"id_wine": "LAH.0211", "name":"Ryzlink rýnský", "type":"bile-vino", "category":"polosuché", "id_wine_company":"3", "id_wine_region": "4"}
+{"id_wine": "ZNO.0176", "name":"Sauvignon TROPICAL", "type":"bile-vino", "category":"polosuché", "id_wine_company":"10", "id_wine_region": "6"}
+{"id_wine": "ZNO.0178", "name":"Denis d´ Or Barrique", "type":"cervene-vino", "category":"suché", "id_wine_company":"10", "id_wine_region": ""}
+{"id_wine": "WAL.0092", "name":"Tramín červený", "type":"bile-vino", "category":"polosladké", "id_wine_company":"5", "id_wine_region": "12"}
+{"id_wine": "WAL.0082", "name":"Rulandské šedé", "type":"bile-vino", "category":"sladké", "id_wine_company":"5", "id_wine_region": "14"}
+{"id_wine": "HOR.0056", "name":"Merlot Nature 2016 HF", "type":"cervene-vino", "category":"suché", "id_wine_company":"22", "id_wine_region": ""}
+{"id_wine": "HOR.0057", "name":"MOŠT HORT - Pinot Noir", "type":"hroznovy-most", "category":"sladké", "id_wine_company":"22", "id_wine_region": ""}
+{"id_wine": "WAL.0068", "name":"Cuvée Waldberg", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "VSL.0038", "name":"Tramín červený", "type":"bile-vino", "category":"sladké", "id_wine_company":"7", "id_wine_region": "26"}
+{"id_wine": "VSL.0036", "name":"Sekt Lechovice DEMI SEC", "type":"sekty-a-sumiva-vina", "category":"polosuché", "id_wine_company":"7", "id_wine_region": ""}
+{"id_wine": "VSL.0037", "name":"Ryzlink rýnský - slámové víno", "type":"bile-vino", "category":"sladké", "id_wine_company":"7", "id_wine_region": "26"}
+{"id_wine": "LIB.0039", "name":"Pálava", "type":"bile-vino", "category":"polosladké", "id_wine_company":"21", "id_wine_region": "17"}
+{"id_wine": "SPA.0081", "name":"Sauvignon - KRAVÁK", "type":"bile-vino", "category":"", "id_wine_company":"26", "id_wine_region": "34"}
+{"id_wine": "PAJ.0063", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"23", "id_wine_region": ""}
+{"id_wine": "JOK.0027", "name":"Solaris", "type":"bile-vino", "category":"polosuché", "id_wine_company":"4", "id_wine_region": "11"}
+{"id_wine": "TAO.0047", "name":"Pinot Noir", "type":"cervene-vino", "category":"suché", "id_wine_company":"20", "id_wine_region": "16"}
+{"id_wine": "ART.0044", "name":"Sauvignon KRAVÁK", "type":"bile-vino", "category":"suché", "id_wine_company":"27", "id_wine_region": "34"}
+{"id_wine": "VAN.0038", "name":"Dornfelder", "type":"cervene-vino", "category":"suché", "id_wine_company":"24", "id_wine_region": "14"}
+{"id_wine": "PAJ.0061", "name":"Chardonnay SUR-LIE", "type":"bile-vino", "category":"suché", "id_wine_company":"23", "id_wine_region": ""}
+{"id_wine": "SPA.0074", "name":"Šaler červený", "type":"cervene-vino", "category":"sladké", "id_wine_company":"26", "id_wine_region": "34"}
+{"id_wine": "SPA.0073", "name":"Šaler bílý", "type":"bile-vino", "category":"sladké", "id_wine_company":"26", "id_wine_region": "34"}
+{"id_wine": "PAJ.0062", "name":"Sauvignon KRAVÁK", "type":"bile-vino", "category":"suché", "id_wine_company":"23", "id_wine_region": "34"}
+{"id_wine": "VSL.0035", "name":"Sekt Lechovice BRUT", "type":"sekty-a-sumiva-vina", "category":"suché", "id_wine_company":"7", "id_wine_region": ""}
+{"id_wine": "JOK.0024", "name":"Veltlínské zelené PÉT-NAT", "type":"bile-vino", "category":"", "id_wine_company":"4", "id_wine_region": "9"}
+{"id_wine": "LAH.0209", "name":"Ryzlink vlašský", "type":"bile-vino", "category":"polosladké", "id_wine_company":"3", "id_wine_region": "35"}
+{"id_wine": "SIM.0026", "name":"Frizzanté 2018", "type":"sekty-a-sumiva-vina", "category":"polosladké", "id_wine_company":"28", "id_wine_region": ""}
+{"id_wine": "VAN.0037", "name":"PINOT BLANC Sur-lie", "type":"bile-vino", "category":"suché", "id_wine_company":"24", "id_wine_region": ""}
+{"id_wine": "VIH.0113", "name":"Irsai Oliver", "type":"bile-vino", "category":"polosuché", "id_wine_company":"13", "id_wine_region": "6"}
+{"id_wine": "VIH.0114", "name":"Müller Thrugau", "type":"bile-vino", "category":"polosuché", "id_wine_company":"13", "id_wine_region": ""}
+{"id_wine": "DOB.0028", "name":"Ryzlink rýnský VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"15", "id_wine_region": ""}
+{"id_wine": "DOB.0029", "name":"Sauvignon - KRAVÁK", "type":"bile-vino", "category":"suché", "id_wine_company":"15", "id_wine_region": "34"}
+{"id_wine": "NAP.0027", "name":"Sauvignon - KRAVÁK", "type":"bile-vino", "category":"suché", "id_wine_company":"19", "id_wine_region": "34"}
+{"id_wine": "VSL.0034", "name":"Irsai Oliver", "type":"bile-vino", "category":"polosuché", "id_wine_company":"7", "id_wine_region": "26"}
+{"id_wine": "ZNO.0170", "name":"Ryzlink vlašský - Terroir Club", "type":"bile-vino", "category":"polosladké", "id_wine_company":"10", "id_wine_region": "7"}
+{"id_wine": "SIM.0025", "name":"Moje Cuvée 2018", "type":"bile-vino", "category":"polosuché", "id_wine_company":"28", "id_wine_region": "4"}
+{"id_wine": "ZNO.0171", "name":"Rulandské bílé - SUR LIE", "type":"bile-vino", "category":"suché", "id_wine_company":"10", "id_wine_region": ""}
+{"id_wine": "HAN.0155", "name":"Martin Růžový 2018", "type":"ruzove-vino", "category":"polosuché", "id_wine_company":"8", "id_wine_region": ""}
+{"id_wine": "AMP.0066", "name":"Rulandské šedé", "type":"bile-vino", "category":"polosladké", "id_wine_company":"11", "id_wine_region": "4"}
+{"id_wine": "AMP.0065", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"11", "id_wine_region": "4"}
+{"id_wine": "ZNO.0169", "name":"ROBINIA - Ryzlink rýnský", "type":"bile-vino", "category":"suché", "id_wine_company":"10", "id_wine_region": "24"}
+{"id_wine": "HOR.0053", "name":"Ryzlink rýnský VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"22", "id_wine_region": "19"}
+{"id_wine": "VIH.0111", "name":"Cuvée Terasy VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"13", "id_wine_region": "9"}
+{"id_wine": "SPA.0075", "name":"Svatováclavské 2018", "type":"cervene-vino", "category":"suché", "id_wine_company":"26", "id_wine_region": ""}
+{"id_wine": "SPA.0082", "name":"Zweigeltrebe", "type":"cervene-vino", "category":"suché", "id_wine_company":"26", "id_wine_region": ""}
+{"id_wine": "PLA.0045", "name":"Rulandské bílé", "type":"bile-vino", "category":"suché", "id_wine_company":"2", "id_wine_region": "16"}
+{"id_wine": "PAR.0010", "name":"Chardonnay", "type":"bile-vino", "category":"suché", "id_wine_company":"18", "id_wine_region": ""}
+{"id_wine": "MUS.0019", "name":"Cuvée Ejbešic", "type":"bile-vino", "category":"suché", "id_wine_company":"25", "id_wine_region": ""}
+{"id_wine": "VSL.0032", "name":"Pálava", "type":"bile-vino", "category":"polosladké", "id_wine_company":"7", "id_wine_region": "26"}
+{"id_wine": "HAN.0112", "name":"Ryzlink rýnský VOC - Královská řada", "type":"bile-vino", "category":"suché", "id_wine_company":"8", "id_wine_region": "37"}
+{"id_wine": "JOK.0025", "name":"Müller Thurgau", "type":"bile-vino", "category":"suché", "id_wine_company":"4", "id_wine_region": ""}
+{"id_wine": "VIH.0105", "name":"Kerka", "type":"bile-vino", "category":"polosladké", "id_wine_company":"13", "id_wine_region": "6"}
+{"id_wine": "ZNO.0166", "name":"Neuburské", "type":"bile-vino", "category":"polosuché", "id_wine_company":"10", "id_wine_region": "21"}
+{"id_wine": "ZNO.0164", "name":"πnot noir - rosé", "type":"ruzove-vino", "category":"polosuché", "id_wine_company":"10", "id_wine_region": ""}
+{"id_wine": "MUS.0018", "name":"Ryzlink rýnský", "type":"bile-vino", "category":"suché", "id_wine_company":"25", "id_wine_region": "16"}
+{"id_wine": "JZM.0007", "name":"Cabernet Sauvignon Rosé", "type":"ruzove-vino", "category":"polosladké", "id_wine_company":"29", "id_wine_region": ""}
+{"id_wine": "JZM.0005", "name":"Ryzlink rýnský", "type":"bile-vino", "category":"polosladké", "id_wine_company":"29", "id_wine_region": ""}
+{"id_wine": "JZM.0003", "name":"Rulandské šedé", "type":"bile-vino", "category":"polosladké", "id_wine_company":"29", "id_wine_region": ""}
+{"id_wine": "JZM.0002", "name":"Chardonnay", "type":"bile-vino", "category":"polosuché", "id_wine_company":"29", "id_wine_region": ""}
+{"id_wine": "JZM.0004", "name":"Sauvignon", "type":"bile-vino", "category":"polosuché", "id_wine_company":"29", "id_wine_region": ""}
+{"id_wine": "WAL.0063", "name":"Ryzlink rýnský VOC - Královská řada", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": ""}
+{"id_wine": "HOR.0054", "name":"Selection Cabernet Sauvignon 2017 HF", "type":"cervene-vino", "category":"suché", "id_wine_company":"22", "id_wine_region": ""}
+{"id_wine": "ZNO.0165", "name":"πnot noir - červené", "type":"cervene-vino", "category":"suché", "id_wine_company":"10", "id_wine_region": ""}
+{"id_wine": "HAN.0149", "name":"Tramín červený", "type":"bile-vino", "category":"polosuché", "id_wine_company":"8", "id_wine_region": "35"}
+{"id_wine": "KOR.0062", "name":"Frankovka", "type":"cervene-vino", "category":"suché", "id_wine_company":"1", "id_wine_region": "9"}
+{"id_wine": "AMP.0063", "name":"Ryzlink rýnský / pro vegany", "type":"bile-vino", "category":"suché", "id_wine_company":"11", "id_wine_region": "4"}
+{"id_wine": "WAL.0062", "name":"Veltlínské zelené VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "AMP.0062", "name":"Müller Thrugau", "type":"bile-vino", "category":"polosuché", "id_wine_company":"11", "id_wine_region": ""}
+{"id_wine": "VIZ.0009", "name":"Tramín červený", "type":"bile-vino", "category":"polosuché", "id_wine_company":"17", "id_wine_region": "11"}
+{"id_wine": "TAO.0045", "name":"Sauvignon - Staré hory", "type":"bile-vino", "category":"suché", "id_wine_company":"20", "id_wine_region": "32"}
+{"id_wine": "DOB.0027", "name":"Sylvánské zelené", "type":"bile-vino", "category":"polosuché", "id_wine_company":"15", "id_wine_region": "11"}
+{"id_wine": "MAR.0009", "name":"Ryzlink rýnský", "type":"bile-vino", "category":"suché", "id_wine_company":"12", "id_wine_region": "27"}
+{"id_wine": "VIZ.0008", "name":"Cabernet sauvignon Rosé", "type":"ruzove-vino", "category":"polosladké", "id_wine_company":"17", "id_wine_region": "11"}
+{"id_wine": "MUS.0020", "name":"Frankovka", "type":"cervene-vino", "category":"suché", "id_wine_company":"25", "id_wine_region": "16"}
+{"id_wine": "MAR.0008", "name":"Tramín červený", "type":"bile-vino", "category":"polosladké", "id_wine_company":"12", "id_wine_region": "33"}
+{"id_wine": "MAR.0007", "name":"Pálava", "type":"bile-vino", "category":"polosladké", "id_wine_company":"12", "id_wine_region": "33"}
+{"id_wine": "MAR.0010", "name":"Ryzlink vlašský", "type":"bile-vino", "category":"suché", "id_wine_company":"12", "id_wine_region": ""}
+{"id_wine": "WAL.0052", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "AMP.0064", "name":"Rulandské šedé", "type":"bile-vino", "category":"polosuché", "id_wine_company":"11", "id_wine_region": "4"}
+{"id_wine": "HOR.0052", "name":"Selection HF 2015", "type":"cervene-vino", "category":"suché", "id_wine_company":"22", "id_wine_region": ""}
+{"id_wine": "KOR.0060", "name":"Frankovka rosé / Pozdravy z NP Podyjí", "type":"ruzove-vino", "category":"", "id_wine_company":"1", "id_wine_region": ""}
+{"id_wine": "PAR.0003", "name":"Sauvignon", "type":"bile-vino", "category":"polosuché", "id_wine_company":"18", "id_wine_region": "4"}
+{"id_wine": "ZNO.0158", "name":"Znovín de Lux Demi Sec", "type":"sekty-a-sumiva-vina", "category":"polosladké", "id_wine_company":"10", "id_wine_region": ""}
+{"id_wine": "MAR.0011", "name":"Rulandské bílé", "type":"bile-vino", "category":"suché", "id_wine_company":"12", "id_wine_region": "8"}
+{"id_wine": "VSL.0030", "name":"Ryzlink rýnský", "type":"bile-vino", "category":"polosladké", "id_wine_company":"7", "id_wine_region": "18"}
+{"id_wine": "VSL.0029", "name":"Rulandské šedé", "type":"bile-vino", "category":"polosuché", "id_wine_company":"7", "id_wine_region": ""}
+{"id_wine": "MUS.0016", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"25", "id_wine_region": "16"}
+{"id_wine": "HAN.0146", "name":"Sylvánské zelené", "type":"bile-vino", "category":"polosuché", "id_wine_company":"8", "id_wine_region": "36"}
+{"id_wine": "MUS.0015", "name":"Rulandské bílé", "type":"bile-vino", "category":"suché", "id_wine_company":"25", "id_wine_region": "16"}
+{"id_wine": "MOD.0054", "name":"Müller Thurgau", "type":"bile-vino", "category":"polosuché", "id_wine_company":"14", "id_wine_region": "34"}
+{"id_wine": "MOD.0055", "name":"Svatovavřinecké Rosé", "type":"ruzove-vino", "category":"polosuché", "id_wine_company":"14", "id_wine_region": "34"}
+{"id_wine": "KOR.0050", "name":"Cuvée VzPg 2015", "type":"bile-vino", "category":"suché", "id_wine_company":"1", "id_wine_region": "6"}
+{"id_wine": "LAH.0200", "name":"Rulandské modré", "type":"cervene-vino", "category":"suché", "id_wine_company":"3", "id_wine_region": "4"}
+{"id_wine": "MOD.0050", "name":"Sauvignon", "type":"bile-vino", "category":"polosuché", "id_wine_company":"14", "id_wine_region": "34"}
+{"id_wine": "JOK.0023", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"4", "id_wine_region": "9"}
+{"id_wine": "VAN.0034", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"24", "id_wine_region": "28"}
+{"id_wine": "MOD.0051", "name":"Tramín", "type":"bile-vino", "category":"polosladké", "id_wine_company":"14", "id_wine_region": "10"}
+{"id_wine": "AMP.0061", "name":"Chardonnay", "type":"bile-vino", "category":"polosladké", "id_wine_company":"11", "id_wine_region": "4"}
+{"id_wine": "ART.0042", "name":"Ryzlink rýnský VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"27", "id_wine_region": "28"}
+{"id_wine": "VAN.0033", "name":"Pinot Gris", "type":"bile-vino", "category":"polosuché", "id_wine_company":"24", "id_wine_region": "4"}
+{"id_wine": "ART.0041", "name":"Sauvignon VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"27", "id_wine_region": "19"}
+{"id_wine": "MUS.0017", "name":"Chardonnay", "type":"bile-vino", "category":"suché", "id_wine_company":"25", "id_wine_region": "16"}
+{"id_wine": "VIH.0103", "name":"Pálava", "type":"bile-vino", "category":"sladké", "id_wine_company":"13", "id_wine_region": "6"}
+{"id_wine": "VAN.0035", "name":"Tramín", "type":"bile-vino", "category":"polosuché", "id_wine_company":"24", "id_wine_region": "4"}
+{"id_wine": "PAJ.0058", "name":"Rulandské šedé", "type":"bile-vino", "category":"polosladké", "id_wine_company":"23", "id_wine_region": ""}
+{"id_wine": "HAN.0147", "name":"Chardonnay", "type":"bile-vino", "category":"polosuché", "id_wine_company":"8", "id_wine_region": "4"}
+{"id_wine": "ART.0043", "name":"Veltlínské zelené VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"27", "id_wine_region": "37"}
+{"id_wine": "MOD.0052", "name":"Ryzlink rýnský", "type":"bile-vino", "category":"polosuché", "id_wine_company":"14", "id_wine_region": "34"}
+{"id_wine": "MOD.0053", "name":"Rulandské šedé", "type":"bile-vino", "category":"polosuché", "id_wine_company":"14", "id_wine_region": "10"}
+{"id_wine": "HOD.0027", "name":"Sauvignon VOC", "type":"bile-vino", "category":"polosuché", "id_wine_company":"16", "id_wine_region": "27"}
+{"id_wine": "LAH.0194", "name":"LAHOFER červený Sladký - Dornfelder", "type":"cervene-vino", "category":"sladké", "id_wine_company":"3", "id_wine_region": ""}
+{"id_wine": "JZM.0001", "name":"Hroznový mošt - Rulandské modré", "type":"hroznovy-most", "category":"sladké", "id_wine_company":"29", "id_wine_region": ""}
+{"id_wine": "HOD.0028", "name":"Veltlínské zelené VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"16", "id_wine_region": "13"}
+{"id_wine": "WAL.0061", "name":"Sylvánské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "14"}
+{"id_wine": "ZNO.0155", "name":"Znovín De Lux Brut", "type":"sekty-a-sumiva-vina", "category":"suché", "id_wine_company":"10", "id_wine_region": ""}
+{"id_wine": "AMP.0058", "name":"Sauvignon VOC", "type":"bile-vino", "category":"polosuché", "id_wine_company":"11", "id_wine_region": "14"}
+{"id_wine": "SPA.0071", "name":"Ryzlink rýnský z velkého sudu", "type":"bile-vino", "category":"suché", "id_wine_company":"26", "id_wine_region": "34"}
+{"id_wine": "AMP.0059", "name":"Ryzlink rýnský VOC", "type":"bile-vino", "category":"polosuché", "id_wine_company":"11", "id_wine_region": "4"}
+{"id_wine": "AMP.0060", "name":"Veltlínské zelené VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"11", "id_wine_region": "4"}
+{"id_wine": "LAH.0207", "name":"André", "type":"cervene-vino", "category":"suché", "id_wine_company":"3", "id_wine_region": ""}
+{"id_wine": "HOR.0051", "name":"Veltlínské zelené VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"22", "id_wine_region": "37"}
+{"id_wine": "SPA.0069", "name":"Veltlínské zelené VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"26", "id_wine_region": "37"}
+{"id_wine": "WAL.0060", "name":"Rulandské šedé", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "12"}
+{"id_wine": "LAH.0204", "name":"Veltlínské zelené VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"3", "id_wine_region": "25"}
+{"id_wine": "PAJ.0053", "name":"Pálava", "type":"bile-vino", "category":"polosladké", "id_wine_company":"23", "id_wine_region": ""}
+{"id_wine": "HOR.0049", "name":"Sauvignon VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"22", "id_wine_region": "10"}
+{"id_wine": "DOB.0026", "name":"Veltlínské zelené VOC", "type":"bile-vino", "category":"polosuché", "id_wine_company":"15", "id_wine_region": "11"}
+{"id_wine": "KOR.0057", "name":"Sauvignon VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"1", "id_wine_region": "6"}
+{"id_wine": "HAN.0144", "name":"Sauvignon VOC", "type":"bile-vino", "category":"polosuché", "id_wine_company":"8", "id_wine_region": "23"}
+{"id_wine": "VSL.0026", "name":"Sauvignon VOC", "type":"bile-vino", "category":"", "id_wine_company":"7", "id_wine_region": "18"}
+{"id_wine": "KOR.0058", "name":"Ryzlink rýnský VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"1", "id_wine_region": "6"}
+{"id_wine": "VIH.0100", "name":"Sauvignon VOC", "type":"bile-vino", "category":"polosuché", "id_wine_company":"13", "id_wine_region": "6"}
+{"id_wine": "SPA.0066", "name":"Sauvignon VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"26", "id_wine_region": "34"}
+{"id_wine": "VAN.0032", "name":"Ryzlink rýnský VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"24", "id_wine_region": "4"}
+{"id_wine": "HAN.0127", "name":"DNA - Tramín červený - Vinohrady - Cuvée", "type":"bile-vino", "category":"polosuché", "id_wine_company":"8", "id_wine_region": "35"}
+{"id_wine": "HOR.0050", "name":"Sauvignon VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"22", "id_wine_region": "19"}
+{"id_wine": "HAN.0126", "name":"DNA - Tramín červený - Nerez", "type":"bile-vino", "category":"polosuché", "id_wine_company":"8", "id_wine_region": "35"}
+{"id_wine": "HAN.0124", "name":"DNA - Tramín červený - Dub", "type":"bile-vino", "category":"polosuché", "id_wine_company":"8", "id_wine_region": "35"}
+{"id_wine": "HAN.0141", "name":"Kerner", "type":"bile-vino", "category":"polosladké", "id_wine_company":"8", "id_wine_region": "4"}
+{"id_wine": "SPA.0067", "name":"Gryllus bílý BIO VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"26", "id_wine_region": "11"}
+{"id_wine": "NAP.0024", "name":"Muškát moravský", "type":"bile-vino", "category":"polosladké", "id_wine_company":"19", "id_wine_region": "11"}
+{"id_wine": "NAP.0023", "name":"Rulandské modré - KLARET", "type":"ruzove-vino", "category":"", "id_wine_company":"19", "id_wine_region": "4"}
+{"id_wine": "NAP.0026", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"19", "id_wine_region": "4"}
+{"id_wine": "VIZ.0007", "name":"Ryzlink vlašský", "type":"bile-vino", "category":"polosuché", "id_wine_company":"17", "id_wine_region": "11"}
+{"id_wine": "NAP.0025", "name":"Sylvánské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"19", "id_wine_region": "11"}
+{"id_wine": "ZNO.0145", "name":"Znovín Classi Demi", "type":"sekty-a-sumiva-vina", "category":"polosladké", "id_wine_company":"10", "id_wine_region": ""}
+{"id_wine": "ZNO.0143", "name":"Znovín De Lux rosé Cabernet Sauvignon Demi sec", "type":"sekty-a-sumiva-vina", "category":"polosladké", "id_wine_company":"10", "id_wine_region": ""}
+{"id_wine": "HAN.0143", "name":"Sylvánské zelené - HANZEL DNA", "type":"bile-vino", "category":"suché", "id_wine_company":"8", "id_wine_region": "36"}
+{"id_wine": "DOB.0025", "name":"Zweigeltrebe Rosé", "type":"ruzove-vino", "category":"polosuché", "id_wine_company":"15", "id_wine_region": "11"}
+{"id_wine": "MOD.0049", "name":"Hibernal / panenská sklizeň", "type":"bile-vino", "category":"suché", "id_wine_company":"14", "id_wine_region": "34"}
+{"id_wine": "TAO.0044", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"20", "id_wine_region": "16"}
+{"id_wine": "SPA.0063", "name":"Gryllus červený", "type":"cervene-vino", "category":"suché", "id_wine_company":"26", "id_wine_region": "34"}
+{"id_wine": "KOR.0052", "name":"Müller Thurgau", "type":"bile-vino", "category":"polosuché", "id_wine_company":"1", "id_wine_region": "9"}
+{"id_wine": "KOR.0051", "name":"Veltlínské zelené", "type":"bile-vino", "category":"", "id_wine_company":"1", "id_wine_region": "6"}
+{"id_wine": "HAN.0125", "name":"DNA - Tramín červený - akát", "type":"bile-vino", "category":"polosuché", "id_wine_company":"8", "id_wine_region": "35"}
+{"id_wine": "AMP.0056", "name":"Sylvánské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"11", "id_wine_region": "4"}
+{"id_wine": "SIM.0024", "name":"Pálava", "type":"bile-vino", "category":"polosladké", "id_wine_company":"28", "id_wine_region": "35"}
+{"id_wine": "PLA.0038", "name":"Cabernet Cortis", "type":"cervene-vino", "category":"suché", "id_wine_company":"2", "id_wine_region": "29"}
+{"id_wine": "ART.0040", "name":"White RESERVE", "type":"bile-vino", "category":"suché", "id_wine_company":"27", "id_wine_region": "4"}
+{"id_wine": "HAN.0139", "name":"Müller Thrugau", "type":"bile-vino", "category":"polosuché", "id_wine_company":"8", "id_wine_region": "19"}
+{"id_wine": "VIH.0095", "name":"Müller Thurgau", "type":"bile-vino", "category":"polosladké", "id_wine_company":"13", "id_wine_region": "33"}
+{"id_wine": "LAH.0193", "name":"Rosé LAHOFER", "type":"ruzove-vino", "category":"sladké", "id_wine_company":"3", "id_wine_region": ""}
+{"id_wine": "LAH.0192", "name":"Müller Thrugau", "type":"bile-vino", "category":"sladké", "id_wine_company":"3", "id_wine_region": "19"}
+{"id_wine": "MOD.0047", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"14", "id_wine_region": "34"}
+{"id_wine": "SIM.0023", "name":"Sauvignon Blanc", "type":"bile-vino", "category":"suché", "id_wine_company":"28", "id_wine_region": "11"}
+{"id_wine": "SIM.0021", "name":"RESERVE Pinot Cuvée 2016", "type":"bile-vino", "category":"", "id_wine_company":"28", "id_wine_region": ""}
+{"id_wine": "HAN.0132", "name":"Ryzlink rýnský VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"8", "id_wine_region": "19"}
+{"id_wine": "LAH.0176", "name":"Rulandské bílé", "type":"bile-vino", "category":"suché", "id_wine_company":"3", "id_wine_region": ""}
+{"id_wine": "HAN.0131", "name":"Rulandské bílé", "type":"bile-vino", "category":"suché", "id_wine_company":"8", "id_wine_region": "4"}
+{"id_wine": "SPA.0068", "name":"Veltlínské zelené VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"26", "id_wine_region": "34"}
+{"id_wine": "PLA.0035", "name":"Cabernet Sauvignon", "type":"cervene-vino", "category":"suché", "id_wine_company":"2", "id_wine_region": "20"}
+{"id_wine": "ZNO.0139", "name":"Cabernet Sauvignon Rosé", "type":"ruzove-vino", "category":"polosladké", "id_wine_company":"10", "id_wine_region": "33"}
+{"id_wine": "PLA.0034", "name":"Cuvée Premiéra", "type":"bile-vino", "category":"", "id_wine_company":"2", "id_wine_region": ""}
+{"id_wine": "TAO.0040", "name":"Cuvé 25", "type":"cervene-vino", "category":"suché", "id_wine_company":"20", "id_wine_region": ""}
+{"id_wine": "PAJ.0050", "name":"100% Hroznový mošt", "type":"hroznovy-most", "category":"sladké", "id_wine_company":"23", "id_wine_region": ""}
+{"id_wine": "SPA.0060", "name":"Meruňkový nektar - der Ilgner", "type":"hroznovy-most", "category":"", "id_wine_company":"26", "id_wine_region": ""}
+{"id_wine": "PAJ.0046", "name":"Veltlínské zelené EXTRA", "type":"bile-vino", "category":"suché", "id_wine_company":"23", "id_wine_region": "10"}
+{"id_wine": "LAH.0163", "name":"Sauvignon", "type":"bile-vino", "category":"sladké", "id_wine_company":"3", "id_wine_region": "19"}
+{"id_wine": "LAH.0202", "name":"Muškát moravský", "type":"bile-vino", "category":"polosladké", "id_wine_company":"3", "id_wine_region": "37"}
+{"id_wine": "ZNO.0136", "name":"Sauvignon RETRO STYL", "type":"bile-vino", "category":"suché", "id_wine_company":"10", "id_wine_region": "3"}
+{"id_wine": "ZNO.0138", "name":"Znovín Classic Brut", "type":"sekty-a-sumiva-vina", "category":"suché", "id_wine_company":"10", "id_wine_region": ""}
+{"id_wine": "VIH.0094", "name":"Cuvée Terasy VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"13", "id_wine_region": ""}
+{"id_wine": "VAN.0031", "name":"Sauvignon VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"24", "id_wine_region": "4"}
+{"id_wine": "KOR.0049", "name":"Sauvignon VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"1", "id_wine_region": "6"}
+{"id_wine": "MUS.0013", "name":"Rulandské šedé", "type":"bile-vino", "category":"suché", "id_wine_company":"25", "id_wine_region": ""}
+{"id_wine": "MUS.0011", "name":"Zweigeltrebe", "type":"cervene-vino", "category":"suché", "id_wine_company":"25", "id_wine_region": ""}
+{"id_wine": "HOR.0045", "name":"Ryzlink rýnský VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"22", "id_wine_region": "19"}
+{"id_wine": "HAN.0135", "name":"Muškát žlutý", "type":"bile-vino", "category":"sladké", "id_wine_company":"8", "id_wine_region": "4"}
+{"id_wine": "MOD.0045", "name":"Rulandské šedé", "type":"bile-vino", "category":"polosuché", "id_wine_company":"14", "id_wine_region": "10"}
+{"id_wine": "ZNO.0131", "name":"Znovín Classic Sekt Demi sec - červený", "type":"sekty-a-sumiva-vina", "category":"polosladké", "id_wine_company":"10", "id_wine_region": ""}
+{"id_wine": "KOR.0048", "name":"Chardonnay APRI 2015", "type":"bile-vino", "category":"suché", "id_wine_company":"1", "id_wine_region": "6"}
+{"id_wine": "LAH.0173", "name":"Rulandské bílé", "type":"bile-vino", "category":"polosladké", "id_wine_company":"3", "id_wine_region": "23"}
+{"id_wine": "LAH.0171", "name":"Ryzlink rýnský", "type":"bile-vino", "category":"polosladké", "id_wine_company":"3", "id_wine_region": "19"}
+{"id_wine": "WAL.0054", "name":"Rulandské bílé", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": ""}
+{"id_wine": "WAL.0053", "name":"Ryzlink vlašský", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "12"}
+{"id_wine": "WAL.0051", "name":"Ryzlink rýnský", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "12"}
+{"id_wine": "AMP.0054", "name":"Sauvignon", "type":"bile-vino", "category":"polosuché", "id_wine_company":"11", "id_wine_region": "14"}
+{"id_wine": "WAL.0055", "name":"Sauvignon", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": ""}
+{"id_wine": "LIB.0036", "name":"Zweigeltrebe - barrique", "type":"cervene-vino", "category":"suché", "id_wine_company":"21", "id_wine_region": "17"}
+{"id_wine": "TAO.0039", "name":"Merlot - barrique", "type":"cervene-vino", "category":"suché", "id_wine_company":"20", "id_wine_region": "16"}
+{"id_wine": "ZNO.0128", "name":"Pálava", "type":"bile-vino", "category":"polosladké", "id_wine_company":"10", "id_wine_region": "39"}
+{"id_wine": "ZNO.0132", "name":"Veltlínské zelené - Terroir Club", "type":"bile-vino", "category":"polosladké", "id_wine_company":"10", "id_wine_region": "4"}
+{"id_wine": "MUS.0010", "name":"Svatovavřinecké", "type":"cervene-vino", "category":"suché", "id_wine_company":"25", "id_wine_region": ""}
+{"id_wine": "LAH.0184", "name":"Zweigeltrebe", "type":"cervene-vino", "category":"suché", "id_wine_company":"3", "id_wine_region": "23"}
+{"id_wine": "ART.0037", "name":"Sauvignon - KRAVÁK", "type":"bile-vino", "category":"suché", "id_wine_company":"27", "id_wine_region": "34"}
+{"id_wine": "HOD.0026", "name":"Veritas", "type":"bile-vino", "category":"polosladké", "id_wine_company":"16", "id_wine_region": "27"}
+{"id_wine": "VAN.0024", "name":"Rulandské bílé", "type":"bile-vino", "category":"polosuché", "id_wine_company":"24", "id_wine_region": "4"}
+{"id_wine": "NAP.0022", "name":"Sauvignon - KRAVÁK", "type":"bile-vino", "category":"suché", "id_wine_company":"19", "id_wine_region": "34"}
+{"id_wine": "TAO.0036", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"20", "id_wine_region": "16"}
+{"id_wine": "AMP.0053", "name":"Pinot Noir - Blanc de Noir", "type":"bile-vino", "category":"polosladké", "id_wine_company":"11", "id_wine_region": "4"}
+{"id_wine": "MUS.0012", "name":"Modrý Portugal", "type":"cervene-vino", "category":"suché", "id_wine_company":"25", "id_wine_region": "16"}
+{"id_wine": "ART.0035", "name":"Pinot Gris", "type":"bile-vino", "category":"", "id_wine_company":"27", "id_wine_region": ""}
+{"id_wine": "ART.0033", "name":"Sauvignon Blanc", "type":"bile-vino", "category":"suché", "id_wine_company":"27", "id_wine_region": "38"}
+{"id_wine": "TAO.0037", "name":"Chardonnay", "type":"bile-vino", "category":"suché", "id_wine_company":"20", "id_wine_region": "16"}
+{"id_wine": "LIB.0034", "name":"Sauvignon", "type":"bile-vino", "category":"polosladké", "id_wine_company":"21", "id_wine_region": "17"}
+{"id_wine": "ZNO.0124", "name":"Pálava", "type":"bile-vino", "category":"", "id_wine_company":"10", "id_wine_region": "39"}
+{"id_wine": "LAH.0175", "name":"Ryzlink vlašský", "type":"bile-vino", "category":"suché", "id_wine_company":"3", "id_wine_region": "4"}
+{"id_wine": "PAJ.0044", "name":"Sauvignon - KRAVÁK", "type":"bile-vino", "category":"suché", "id_wine_company":"23", "id_wine_region": "34"}
+{"id_wine": "WAL.0050", "name":"Müller Thurgau", "type":"bile-vino", "category":"polosuché", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "PAJ.0043", "name":"SAUVIGNON dolce vita", "type":"bile-vino", "category":"polosladké", "id_wine_company":"23", "id_wine_region": ""}
+{"id_wine": "VSL.0023", "name":"Frankovka Rosé", "type":"ruzove-vino", "category":"", "id_wine_company":"7", "id_wine_region": "18"}
+{"id_wine": "PAJ.0042", "name":"Chardonnay - Grand Reserva No.3", "type":"bile-vino", "category":"suché", "id_wine_company":"23", "id_wine_region": ""}
+{"id_wine": "WAL.0047", "name":"Sylvánské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "14"}
+{"id_wine": "VSL.0022", "name":"Svatovavřinecké", "type":"cervene-vino", "category":"suché", "id_wine_company":"7", "id_wine_region": "26"}
+{"id_wine": "WAL.0049", "name":"Sylvánské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "DOB.0019", "name":"Sauvignon VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"15", "id_wine_region": "11"}
+{"id_wine": "HOR.0042", "name":"Viognier", "type":"bile-vino", "category":"suché", "id_wine_company":"22", "id_wine_region": ""}
+{"id_wine": "VIZ.0005", "name":"Rulandské šedé", "type":"bile-vino", "category":"polosladké", "id_wine_company":"17", "id_wine_region": "30"}
+{"id_wine": "HOD.0025", "name":"Sauvignon VOC", "type":"bile-vino", "category":"polosuché", "id_wine_company":"16", "id_wine_region": "27"}
+{"id_wine": "SPA.0061", "name":"KRAVÍ HORA Pinot Blanc SUR LIE", "type":"bile-vino", "category":"suché", "id_wine_company":"26", "id_wine_region": "34"}
+{"id_wine": "HOR.0040", "name":"Sauvignon VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"22", "id_wine_region": "19"}
+{"id_wine": "HOR.0038", "name":"CH sir lie 2011 - Chardonnay & Pinot Blanc", "type":"bile-vino", "category":"suché", "id_wine_company":"22", "id_wine_region": "4"}
+{"id_wine": "LIB.0033", "name":"Veltlínské zelené VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"21", "id_wine_region": "17"}
+{"id_wine": "KOR.0043", "name":"Ryzlink rýnský VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"1", "id_wine_region": "6"}
+{"id_wine": "SPA.0052", "name":"EDELSPITZ PIGAGE - oranžové víno", "type":"bile-vino", "category":"suché", "id_wine_company":"26", "id_wine_region": "34"}
+{"id_wine": "VSL.0021", "name":"Veltlínské zelené VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"7", "id_wine_region": "8"}
+{"id_wine": "PAJ.0055", "name":"Ryzlink rýnský VOC", "type":"bile-vino", "category":"polosuché", "id_wine_company":"23", "id_wine_region": "14"}
+{"id_wine": "VAN.0021", "name":"Sauvignon VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"24", "id_wine_region": "4"}
+{"id_wine": "HAN.0120", "name":"Sauvignon VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"8", "id_wine_region": "23"}
+{"id_wine": "VIZ.0004", "name":"Chardonnay", "type":"bile-vino", "category":"polosladké", "id_wine_company":"17", "id_wine_region": "11"}
+{"id_wine": "WAL.0043", "name":"Sauvignon VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "12"}
+{"id_wine": "SPA.0049", "name":"KRAVÍ HORA Sauvignon", "type":"bile-vino", "category":"suché", "id_wine_company":"26", "id_wine_region": "34"}
+{"id_wine": "WAL.0044", "name":"Veltlínské zelené VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "LAH.0165", "name":"Neuburské", "type":"bile-vino", "category":"polosladké", "id_wine_company":"3", "id_wine_region": ""}
+{"id_wine": "HAN.0117", "name":"Müller Thrugau", "type":"bile-vino", "category":"suché", "id_wine_company":"8", "id_wine_region": "23"}
+{"id_wine": "HAN.0105", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"8", "id_wine_region": "36"}
+{"id_wine": "SIM.0014", "name":"Chardonnay", "type":"bile-vino", "category":"suché", "id_wine_company":"28", "id_wine_region": ""}
+{"id_wine": "HAN.0103", "name":"Sauvignon", "type":"bile-vino", "category":"polosuché", "id_wine_company":"8", "id_wine_region": "23"}
+{"id_wine": "PAJ.0057", "name":"Tramín červený", "type":"bile-vino", "category":"sladké", "id_wine_company":"23", "id_wine_region": ""}
+{"id_wine": "HAN.0084", "name":"Sauvignon", "type":"bile-vino", "category":"polosuché", "id_wine_company":"8", "id_wine_region": "23"}
+{"id_wine": "VIZ.0001", "name":"Neuburské", "type":"bile-vino", "category":"suché", "id_wine_company":"17", "id_wine_region": "11"}
+{"id_wine": "VIZ.0003", "name":"Pálava", "type":"bile-vino", "category":"polosladké", "id_wine_company":"17", "id_wine_region": "11"}
+{"id_wine": "VSL.0015", "name":"Sauvignon", "type":"bile-vino", "category":"suché", "id_wine_company":"7", "id_wine_region": "8"}
+{"id_wine": "HOD.0021", "name":"Ryzlink rýnský", "type":"bile-vino", "category":"polosuché", "id_wine_company":"16", "id_wine_region": "27"}
+{"id_wine": "AMP.0044", "name":"100% Hroznový mošt", "type":"hroznovy-most", "category":"sladké", "id_wine_company":"11", "id_wine_region": ""}
+{"id_wine": "SPA.0044", "name":"Tramín červený", "type":"bile-vino", "category":"sladké", "id_wine_company":"26", "id_wine_region": "34"}
+{"id_wine": "DVP.0011", "name":"Quatre - Štverka 2014", "type":"bile-vino", "category":"suché", "id_wine_company":"6", "id_wine_region": ""}
+{"id_wine": "HAN.0110", "name":"Rulandské šedé", "type":"bile-vino", "category":"polosuché", "id_wine_company":"8", "id_wine_region": "4"}
+{"id_wine": "DVP.0012", "name":"Cuvée Národní Park", "type":"bile-vino", "category":"suché", "id_wine_company":"6", "id_wine_region": ""}
+{"id_wine": "VSL.0013", "name":"Tramín červený", "type":"bile-vino", "category":"polosuché", "id_wine_company":"7", "id_wine_region": "8"}
+{"id_wine": "ZNO.0091", "name":"Kerner", "type":"bile-vino", "category":"sladké", "id_wine_company":"10", "id_wine_region": "21"}
+{"id_wine": "ZNO.0102", "name":"Veltlínské zelené", "type":"bile-vino", "category":"polosuché", "id_wine_company":"10", "id_wine_region": "39"}
+{"id_wine": "WAL.0035", "name":"Ryzlink rýnský VOC - Královská řada", "type":"bile-vino", "category":"suché", "id_wine_company":"5", "id_wine_region": "14"}
+{"id_wine": "SIM.0016", "name":"Veltlínské zelené", "type":"bile-vino", "category":"polosuché", "id_wine_company":"28", "id_wine_region": ""}
+{"id_wine": "AMP.0039", "name":"Ryzlink rýnský", "type":"bile-vino", "category":"polosladké", "id_wine_company":"11", "id_wine_region": "4"}
+{"id_wine": "NAP.0020", "name":"Sauvignon - KRAVÁK", "type":"bile-vino", "category":"suché", "id_wine_company":"19", "id_wine_region": "34"}
+{"id_wine": "WAL.0048", "name":"Muškát moravský", "type":"bile-vino", "category":"polosladké", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "HAN.0087", "name":"Ryzlink rýnský", "type":"bile-vino", "category":"suché", "id_wine_company":"8", "id_wine_region": "37"}
+{"id_wine": "HAN.0099", "name":"Rulandské šedé", "type":"bile-vino", "category":"sladké", "id_wine_company":"8", "id_wine_region": "4"}
+{"id_wine": "HAN.0104", "name":"André", "type":"cervene-vino", "category":"suché", "id_wine_company":"8", "id_wine_region": "23"}
+{"id_wine": "AMP.0038", "name":"Müller Thrugau", "type":"bile-vino", "category":"polosladké", "id_wine_company":"11", "id_wine_region": "4"}
+{"id_wine": "LAH.0084", "name":"SEKT Neuburské", "type":"sekty-a-sumiva-vina", "category":"polosuché", "id_wine_company":"3", "id_wine_region": "19"}
+{"id_wine": "HOD.0020", "name":"Tasovjanka", "type":"bile-vino", "category":"polosladké", "id_wine_company":"16", "id_wine_region": ""}
+{"id_wine": "DVP.0008", "name":"Sauvignon Blanc qvevri", "type":"bile-vino", "category":"suché", "id_wine_company":"6", "id_wine_region": ""}
+{"id_wine": "ART.0029", "name":"ORANGE RESERVE 2015", "type":"bile-vino", "category":"suché", "id_wine_company":"27", "id_wine_region": ""}
+{"id_wine": "VSL.0011", "name":"Cabernet Sauvignon", "type":"cervene-vino", "category":"suché", "id_wine_company":"7", "id_wine_region": "8"}
+{"id_wine": "DOB.0017", "name":"Sauvignon (VOC)", "type":"bile-vino", "category":"polosladké", "id_wine_company":"15", "id_wine_region": "11"}
+{"id_wine": "HOD.0017", "name":"Sauvignon (VOC)", "type":"bile-vino", "category":"suché", "id_wine_company":"16", "id_wine_region": "27"}
+{"id_wine": "LAH.0169", "name":"Veltlínské zelené VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"3", "id_wine_region": "37"}
+{"id_wine": "WAL.0032", "name":"Veltlínské zelené (VOC)", "type":"bile-vino", "category":"polosuché", "id_wine_company":"5", "id_wine_region": "4"}
+{"id_wine": "VAN.0013", "name":"Zweigeltrebe", "type":"cervene-vino", "category":"suché", "id_wine_company":"24", "id_wine_region": "14"}
+{"id_wine": "HOR.0029", "name":"Sauvignon (VOC)", "type":"bile-vino", "category":"suché", "id_wine_company":"22", "id_wine_region": "19"}
+{"id_wine": "HAN.0086", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"8", "id_wine_region": "25"}
+{"id_wine": "LIB.0025", "name":"Sauvignon (VOC)", "type":"bile-vino", "category":"polosladké", "id_wine_company":"21", "id_wine_region": "17"}
+{"id_wine": "LAH.0144", "name":"A-SEKT Neuburské", "type":"sekty-a-sumiva-vina", "category":"", "id_wine_company":"3", "id_wine_region": "19"}
+{"id_wine": "NAP.0019", "name":"Sauvignon - KRAVÁK", "type":"bile-vino", "category":"suché", "id_wine_company":"19", "id_wine_region": "34"}
+{"id_wine": "MUS.0002", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"25", "id_wine_region": "16"}
+{"id_wine": "DVP.0007", "name":"Nejedlík Orange", "type":"bile-vino", "category":"suché", "id_wine_company":"6", "id_wine_region": ""}
+{"id_wine": "HOR.0020", "name":"Sauvignon VOC", "type":"bile-vino", "category":"suché", "id_wine_company":"22", "id_wine_region": "19"}
+{"id_wine": "ZNO.0045", "name":"Znovín de Lux rosé Demi", "type":"sekty-a-sumiva-vina", "category":"", "id_wine_company":"10", "id_wine_region": ""}
+{"id_wine": "LIB.0024", "name":"Rulandské bílé", "type":"bile-vino", "category":"polosladké", "id_wine_company":"21", "id_wine_region": ""}
+{"id_wine": "PAJ.0034", "name":"Sauvignon - Grand Reserva No.2", "type":"bile-vino", "category":"suché", "id_wine_company":"23", "id_wine_region": ""}
+{"id_wine": "LAH.0072", "name":"Sauvignon Francie", "type":"bile-vino", "category":"suché", "id_wine_company":"3", "id_wine_region": ""}
+{"id_wine": "VAN.0020", "name":"Sauvignon Blanc VOC", "type":"bile-vino", "category":"", "id_wine_company":"24", "id_wine_region": "4"}
+{"id_wine": "HOR.0016", "name":"HORT FRANCE Premium", "type":"cervene-vino", "category":"suché", "id_wine_company":"22", "id_wine_region": ""}
+{"id_wine": "LIB.0016", "name":"Aurélius", "type":"bile-vino", "category":"suché", "id_wine_company":"21", "id_wine_region": ""}
+{"id_wine": "HOD.0011", "name":"Veltlínské zelené", "type":"bile-vino", "category":"suché", "id_wine_company":"16", "id_wine_region": "13"}
+{"id_wine": "NAP.0010", "name":"Rulandské bílé", "type":"bile-vino", "category":"sladké", "id_wine_company":"19", "id_wine_region": ""}
+{"id_wine": "LAH.0021", "name":"Rulandské šedé", "type":"bile-vino", "category":"sladké", "id_wine_company":"3", "id_wine_region": "4"}
+{"id_wine": "NAP.0011", "name":"Ryzlink vlašský", "type":"bile-vino", "category":"sladké", "id_wine_company":"19", "id_wine_region": ""}
+{"id_wine": "DOB.0015", "name":"Veltlínské zelené", "type":"bile-vino", "category":"", "id_wine_company":"15", "id_wine_region": "11"}
+{"id_wine": "LAH.0129", "name":"Svatovavřinecké", "type":"cervene-vino", "category":"suché", "id_wine_company":"3", "id_wine_region": "23"}
+{"id_wine": "DOB.0018", "name":"Ryzlink rýnský (VOC)", "type":"bile-vino", "category":"polosladké", "id_wine_company":"15", "id_wine_region": "40"}
