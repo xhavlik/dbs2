@@ -54,8 +54,8 @@ sub recreateHash {
 						my $day = 1;
 						foreach my $data (@{$month_hash->{$month}->{$data_label}}) {
 							my ($month_numeric) = grep{ $months->{$_} eq $month } keys %$months;
-							if ($data  and $month_numeric) {
-								my $date = $year . "-" . $month_numeric . "-" . $day;
+							if ($data and $month_numeric) {
+								my $date = $year . "-" . $month_numeric . "-" . ($day < 10 ? "0" . $day : $day);
 								$new_hash->{$date} = $data;
 							}
 							$day++;
@@ -65,6 +65,8 @@ sub recreateHash {
 			}
 		}
 	}
+
+	return $new_hash;
 }
 
 my $weather_avg_air_pressure = readJsonFile($file_input_press);
@@ -85,14 +87,22 @@ $weather_avg_temperature = recreateHash($weather_avg_temperature);
 $weather_sunshine = recreateHash($weather_sunshine);
 $weather_avg_wind_speed = recreateHash($weather_avg_wind_speed);
 
-# {"date": "2019-12-01","avg_air_pressure": 990.7,"avg_humid": 92.0,"avg_temp": -3.1}
+
 foreach my $year (1999 .. 2018) {
 	foreach my $month (sort keys %$months) {
 		foreach my $day (1 .. 31) {
-
-			# $nosql_output_weather .= $year . "-" . $month . "-" . $day . "\n";
+			my $date = $year . "-" . $month . "-" . ($day < 10 ? "0" . $day : $day);
+			$nosql_output_weather .= "{\"date\": \"" . $date . "\", ";
+			$nosql_output_weather .= "\"weather_avg_air_pressure\": \"" . ($weather_avg_air_pressure->{$date} || "") . "\", ";
+			$nosql_output_weather .= "\"weather_avg_humidity\": \"" . ($weather_avg_humidity->{$date} || "") . "\", ";
+			$nosql_output_weather .= "\"weather_total_rainfall\": \"" . ($weather_total_rainfall->{$date} || "") . "\", ";
+			$nosql_output_weather .= "\"weather_min_temperature\": \"" . ($weather_min_temperature->{$date} || "") . "\", ";
+			$nosql_output_weather .= "\"weather_max_temperature\": \"" . ($weather_max_temperature->{$date} || "") . "\", ";
+			$nosql_output_weather .= "\"weather_avg_temperature\": \"" . ($weather_avg_temperature->{$date} || "") . "\", ";
+			$nosql_output_weather .= "\"weather_sunshine\": \"" . ($weather_sunshine->{$date} || "") . "\", ";
+			$nosql_output_weather .= "\"weather_avg_wind_speed\": \"" . ($weather_avg_wind_speed->{$date} || "") . "\"}\n";
 		}
 	}
 }
 
-print $nosql_output_weather;
+writeInFile($file_output_nosql_weather, $nosql_output_weather);
