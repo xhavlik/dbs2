@@ -3,21 +3,33 @@ DROP TABLE IF EXISTS wine_company;
 DROP TABLE IF EXISTS wine_region;
 
 CREATE TABLE wine(
-	id_wine VARCHAR2(25) NOT NULL, --PK
-    name VARCHAR2(50) NOT NULL,
-    type VARCHAR2(25) NOT NULL,
-    category VARCHAR2(25) NOT NULL,
-	id_wine_company NUMBER NOT NULL, --FK
-	id_wine_region NUMBER NOT NULL --FK
+	id_wine VARCHAR(25) NOT NULL, --PK
+	id_wine_company INT NOT NULL, --FK
+	id_wine_region INT NOT NULL, --FK
+    type VARCHAR(50) NOT NULL,
+    name VARCHAR(50) NOT NULL,
+    category VARCHAR(50) NOT NULL,
+    subcategory VARCHAR(50),
+    volume VARCHAR(50),
+    alcohol VARCHAR(50),
+    sugar_left VARCHAR(50),
+    acids VARCHAR(50),
+    extract_sugar_free VARCHAR(50),
+    grapes_sugar VARCHAR(50),
+    archivation VARCHAR(50),
+    cooled VARCHAR(50),
+    sulfur_dioxide VARCHAR(50),
+    grapes_collected VARCHAR(50),
+    wine_yard VARCHAR(50)
 );
 
 CREATE TABLE wine_company(
-	id_wine_company NUMBER NOT NULL, --PK
+	id_wine_company INT NOT NULL, --PK
     name VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE wine_region(
-    id_wine_region NUMBER NOT NULL, --PK
+    id_wine_region INT NOT NULL, --PK
     region VARCHAR(50) NOT NULL
 );
 
@@ -102,1235 +114,1235 @@ INSERT INTO wine_region (id_wine_region, region) VALUES('38', 'Sedlešovice');
 INSERT INTO wine_region (id_wine_region, region) VALUES('39', 'Petrovice');
 INSERT INTO wine_region (id_wine_region, region) VALUES('40', 'Těšetice');
 
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('KOR.0080', 'Muškát moravský - mladé víno', 'bile-vino', 'polosuché', '1', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PLA.0062', 'Mladé pokušení 2019', 'bile-vino', 'polosladké', '2', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0259', 'Prosecco - 2018 DOC Extra Dry', 'sekty-a-sumiva-vina', 'suché', '3', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('KOR.0081', 'Dornfelder rosé - mladé víno', 'ruzove-vino', 'polosladké', '1', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('JOK.0033', 'Zweigeltrebe rosé - Mladé 2019', 'ruzove-vino', 'polosladké', '4', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0295', 'Mladé růžové 2019', 'ruzove-vino', 'polosladké', '5', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('DVP.0017', 'Quatre - Štverka 2016', 'bile-vino', '', '6', '1');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0260', 'Mladý LAHOFER 2019', 'bile-vino', 'polosuché', '3', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0054', 'Sauvignon - Mladé víno 2019', 'bile-vino', 'polosuché', '7', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0261', 'Mladá LAHOFERka 2019', 'ruzove-vino', 'polosladké', '3', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0262', 'Rulandské bílé A', 'bile-vino', 'suché', '3', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0294', 'Mladé bílé 2019', 'bile-vino', 'polosuché', '5', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0177', 'Martin Růžový 2019', 'ruzove-vino', 'polosuché', '8', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAJ.0006', 'Ryzlink vlašský', 'bile-vino', 'suché', '9', '2');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0220', 'Sauvignon - Pozdrav ze Znojma', 'bile-vino', 'polosuché', '10', '3');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0079', 'Sauvignon', 'bile-vino', 'polosuché', '11', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0218', 'Ryzlink rýnský - ledové víno', 'bile-vino', 'sladké', '10', '5');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('KOR.0078', 'Pinot Noir', 'cervene-vino', 'suché', '1', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MAR.0012', 'Pálava', 'bile-vino', '', '12', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0081', 'Rulandské šedé', 'bile-vino', 'polosuché', '11', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0217', 'Ryzlink vlašský - Šobes', 'bile-vino', 'polosuché', '10', '7');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0082', 'Mladý Kerner', 'bile-vino', 'suché', '11', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0052', 'Ryzlink vlašský', 'bile-vino', 'suché', '7', '8');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0176', 'Martin Bílý 2019', 'bile-vino', '', '8', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('JOK.0031', 'Veltlínské zelené', 'bile-vino', 'suché', '4', '9');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIH.0131', 'Kerner', 'bile-vino', 'sladké', '13', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MOD.0065', 'Tramín', 'bile-vino', 'sladké', '14', '10');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MOD.0064', 'Chardonnay', 'bile-vino', 'polosladké', '14', '10');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('DOB.0030', 'Sylvánské zelené', 'bile-vino', 'polosuché', '15', '11');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0275', 'Ryzlink vlašský', 'bile-vino', 'suché', '5', '12');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0163', 'Hibernal', 'bile-vino', 'polosladké', '8', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOD.0036', 'Müller Thrugau', 'bile-vino', 'suché', '16', '13');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0276', 'Sylvánské zelené - suché', 'bile-vino', 'suché', '5', '14');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIZ.0014', 'Cabernet Sauvignon Rosé', 'ruzove-vino', 'polosladké', '17', '11');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAR.0019', 'Veltlínské zelené', 'bile-vino', 'suché', '18', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('NAP.0028', 'Sauvignon - KRAVÁK', 'bile-vino', 'suché', '19', '15');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('TAO.0065', 'Veltlínské zelené - Staré keře', 'bile-vino', 'suché', '20', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('KOR.0077', 'Pinot Blanc', 'bile-vino', 'suché', '1', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0080', 'Veritas', 'bile-vino', 'polosladké', '11', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LIB.0043', 'Tramín červený', 'bile-vino', 'polosladké', '21', '17');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0053', 'Ryzlink rýnský', 'bile-vino', 'polosladké', '7', '18');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOR.0066', 'Pinot Gris', 'bile-vino', 'suché', '22', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0234', 'Neuburské', 'bile-vino', 'polosuché', '3', '19');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIH.0129', 'Sylvánské zelené', 'bile-vino', 'suché', '13', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0219', 'Ryzlink rýnský', 'bile-vino', 'suché', '10', '3');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIH.0128', 'Sauvignon Gris', 'bile-vino', 'sladké', '13', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PLA.0061', 'Frankovka', 'cervene-vino', 'suché', '2', '20');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0213', 'Müller Thurgau', 'bile-vino', 'suché', '10', '21');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LIB.0042', 'Chardonnay', 'bile-vino', 'polosladké', '21', '22');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0161', 'Müller Thurgau', 'bile-vino', 'suché', '8', '23');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIH.0127', 'Hibernal', 'bile-vino', 'polosuché', '13', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0215', 'Chardonnay', 'bile-vino', 'suché', '10', '24');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIZ.0011', 'Sauvignon', 'bile-vino', 'polosuché', '17', '11');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0078', 'Pálava', 'bile-vino', 'polosladké', '11', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LIB.0041', 'Sauvignon VOC', 'bile-vino', 'suché', '21', '17');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0076', 'Sauvignon', 'bile-vino', 'polosuché', '11', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0243', 'Veltlínské zelené', 'bile-vino', 'suché', '3', '25');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIZ.0013', 'Pálava', 'bile-vino', 'polosladké', '17', '11');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIZ.0010', 'Dornfelder', 'cervene-vino', 'suché', '17', '11');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0212', 'Tramín červený', 'bile-vino', 'sladké', '10', '21');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIZ.0012', 'Neuburské', 'bile-vino', 'polosladké', '17', '11');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0222', 'Muškát moravský', 'bile-vino', 'sladké', '3', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0051', 'Frankovka - slámové', 'cervene-vino', 'sladké', '7', '26');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0211', 'Semillon', 'bile-vino', 'suché', '10', '5');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('KOR.0076', 'Müller Thurgau', 'bile-vino', 'suché', '1', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAR.0018', 'Tramín červený', 'bile-vino', 'polosladké', '18', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOD.0032', 'Veltlínské červené rané', 'bile-vino', 'polosuché', '16', '27');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOD.0035', 'Pálava', 'bile-vino', 'sladké', '16', '27');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0077', 'Symposion', 'bile-vino', 'polosuché', '11', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAR.0017', 'Ryzlink rýnský', 'bile-vino', 'polosladké', '18', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAJ.0070', 'Grand Veltlin No.5', 'bile-vino', 'suché', '23', '21');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAJ.0074', 'Chardonnay - Dolce Vita', 'bile-vino', 'sladké', '23', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAJ.0071', 'Roséčko', 'ruzove-vino', 'suché', '23', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAN.0047', 'Rulandské bílé', 'bile-vino', 'suché', '24', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0258', 'Merlot', 'cervene-vino', 'suché', '3', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAN.0046', 'Veltlínské zelené', 'bile-vino', 'suché', '24', '28');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAN.0048', 'Pinot Gris', 'bile-vino', 'suché', '24', '28');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PLA.0060', 'Pálava', 'bile-vino', 'polosladké', '2', '29');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAN.0051', 'Ryzlink rýnský - panenský sběr', 'bile-vino', 'suché', '24', '10');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MUS.0022', 'Irsai Oliver', 'bile-vino', 'suché', '25', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0257', 'Ryzlink rýnský', 'bile-vino', 'suché', '3', '23');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0249', 'Veltlínské zelené', 'bile-vino', 'suché', '3', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAN.0049', 'Tramín', 'bile-vino', 'polosuché', '24', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0209', 'Mont Pré', 'bile-vino', 'polosuché', '10', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOD.0033', 'Veritas', 'bile-vino', 'polosladké', '16', '27');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAJ.0005', 'Tramín červený', 'bile-vino', 'suché', '9', '3');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAJ.0004', 'Ryzlink rýnský', 'bile-vino', 'suché', '9', '30');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAN.0050', 'Rulandské šedé', 'bile-vino', 'suché', '24', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0210', 'Pálava', 'bile-vino', 'polosladké', '10', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('DVP.0016', 'Vlašský ryzlink Qvevri Georgia Naturel Orange', 'bile-vino', '', '6', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('DVP.0015', 'Cuvée Kambrium', 'bile-vino', 'suché', '6', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('DVP.0014', 'Blanc de Pinot noir', 'bile-vino', 'suché', '6', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('DVP.0013', 'Velké dobré červené', 'cervene-vino', '', '6', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOD.0031', 'Muškát moravský', 'bile-vino', 'polosuché', '16', '27');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0050', 'Rulandské bílé', 'bile-vino', 'polosladké', '7', '31');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAJ.0072', 'Ryzlink rýnský Sexenberg', 'bile-vino', 'suché', '23', '28');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOD.0034', 'Tramín červený', 'bile-vino', 'polosladké', '16', '27');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0208', 'Chardonnay', 'bile-vino', 'polosuché', '10', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('KOR.0079', 'Frankovka', 'cervene-vino', 'suché', '1', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MOD.0061', 'Muškát moravský', 'bile-vino', 'polosladké', '14', '10');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0225', 'Tramín červený', 'bile-vino', 'sladké', '3', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('TAO.0061', 'Merlot Rosé', 'ruzove-vino', 'polosuché', '20', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('TAO.0059', 'Frankovka', 'cervene-vino', 'suché', '20', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('TAO.0060', 'Müller Thrugau', 'bile-vino', 'suché', '20', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('TAO.0064', 'Sauvignon Staré hory', 'bile-vino', 'suché', '20', '32');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('TAO.0063', 'Pálava', 'bile-vino', 'polosuché', '20', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0251', 'Frizzante LAHOFER', 'sekty-a-sumiva-vina', 'sladké', '3', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0049', 'Zweigeltrebe', 'cervene-vino', 'suché', '7', '26');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PLA.0059', 'SolarCO2', 'sekty-a-sumiva-vina', 'sladké', '2', '29');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('TAO.0062', 'Pálava', 'bile-vino', 'suché', '20', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MOD.0059', 'Rulandské šedé', 'bile-vino', 'polosuché', '14', '10');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0201', 'Rulandské modré AKÁT z edice DUEL', 'cervene-vino', 'suché', '10', '5');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAJ.0073', 'Ryzlink rýnský - botritický sběr', 'bile-vino', 'sladké', '23', '28');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0203', 'Tramín červený GENUS REGIS', 'bile-vino', 'polosladké', '10', '5');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0204', 'Pálava', 'bile-vino', 'polosladké', '10', '27');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0202', 'Rulandské modré DUB z edice DUEL', 'cervene-vino', 'suché', '10', '5');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0205', 'Cabernet Sauvignon Rosé', 'ruzove-vino', 'polosladké', '10', '33');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PLA.0058', 'Svatovavřinecké Rosé', 'ruzove-vino', 'polosladké', '2', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('KOR.0075', 'Veltlínské zelené VOC', 'bile-vino', 'suché', '1', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOD.0030', 'Veltlínské zelené VOC', 'bile-vino', 'suché', '16', '13');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SPA.0090', 'Rulandské šedé', 'bile-vino', 'polosuché', '26', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAR.0016', 'Pinot Noir', 'cervene-vino', 'suché', '18', '5');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAJ.0003', 'Frankovka', 'cervene-vino', 'suché', '9', '10');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAJ.0002', 'Veltlínské zelené', 'bile-vino', 'suché', '9', '2');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAJ.0001', 'Sauvignon', 'bile-vino', 'suché', '9', '10');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SPA.0089', 'Veltlínské zelené VOC', 'bile-vino', 'suché', '26', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ART.0056', 'Pinot Noir', 'cervene-vino', 'suché', '27', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ART.0055', 'Frankovka', 'cervene-vino', 'suché', '27', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOD.0029', 'Sauvignon VOC', 'bile-vino', 'polosuché', '16', '27');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ART.0053', 'Chardonnay', 'bile-vino', 'suché', '27', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ART.0051', 'Veltlínské zelené', 'bile-vino', 'suché', '27', '23');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SPA.0091', 'Gryllus bílý', 'bile-vino', 'suché', '26', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ART.0054', 'Pálava', 'bile-vino', 'sladké', '27', '35');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIH.0126', 'Veltlínské zelené VOC', 'bile-vino', 'suché', '13', '33');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIH.0124', 'Sauvignon VOC', 'bile-vino', 'suché', '13', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIH.0125', 'Ryzlink rýnský VOC', 'bile-vino', 'suché', '13', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ART.0049', 'Ryzlink rýnský VOC', 'bile-vino', 'suché', '27', '9');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SIM.0029', 'Sauvignon Blanc VOC', 'bile-vino', 'suché', '28', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ART.0050', 'Sauvignon VOC', 'bile-vino', 'suché', '27', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ART.0052', 'Ryzlink rýnský', 'bile-vino', 'suché', '27', '11');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SIM.0030', 'Ryzlink rýnský VOC', 'bile-vino', 'polosuché', '28', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0274', 'Sylvánské zelené - polosladké', 'bile-vino', 'polosladké', '5', '14');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0206', 'Tramín červený - Lacerta Viridis', 'bile-vino', 'polosladké', '10', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MOD.0060', 'Veltlínské zelené', 'bile-vino', 'suché', '14', '10');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0186', 'LAHOmošt hroznový Veltlínské zelené', 'hroznovy-most', 'sladké', '3', '36');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOR.0065', 'Ryzlink rýnský VOC', 'bile-vino', '', '22', '10');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAN.0043', 'Frizzante Sauvignon', 'sekty-a-sumiva-vina', 'polosuché', '24', '14');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAN.0040', 'Ryzlink rýnský VOC', 'bile-vino', 'suché', '24', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAN.0039', 'Sauvignon VOC', 'bile-vino', 'suché', '24', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAN.0041', 'Zweigeltrebe Rosé', 'ruzove-vino', 'suché', '24', '14');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0268', 'Hibernal', 'bile-vino', 'polosladké', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0238', 'Veltlínské zelené VOC', 'bile-vino', 'suché', '3', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0267', 'Neuburské', 'bile-vino', 'suché', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAN.0045', 'Tramín žlutý', 'bile-vino', 'sladké', '24', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAN.0042', 'Frizzante Zweigeltrebe', 'sekty-a-sumiva-vina', 'polosuché', '24', '14');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0240', 'Rulandské šedé', 'bile-vino', 'suché', '3', '19');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0244', 'Pálava', 'bile-vino', 'polosladké', '3', '36');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0167', 'Pálava', 'bile-vino', 'polosladké', '8', '36');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0197', 'Sauvignon VOC', 'bile-vino', 'suché', '10', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0265', 'Rinot', 'bile-vino', 'polosuché', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0199', 'Veltlínské zelené VOC', 'bile-vino', 'suché', '10', '13');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0207', 'Tramín červený', 'bile-vino', 'polosladké', '10', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAN.0044', 'Muškát moravský', 'bile-vino', 'suché', '24', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0195', 'Ryzlink rýnský - Rosnička zelená', 'bile-vino', 'suché', '10', '27');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('JOK.0028', 'Dornfelder rosé', 'ruzove-vino', 'polosuché', '4', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0239', 'Sauvignon VOC - U Hájku', 'bile-vino', 'suché', '3', '19');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('JOK.0029', 'Zweigeltrebe Rosé', 'ruzove-vino', 'polosladké', '4', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0213', 'Ryzlink rýnský VOC', 'bile-vino', 'suché', '3', '19');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0237', 'Sauvignon VOC - Šác', 'bile-vino', 'polosuché', '3', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SIM.0031', 'Veltlínské zelené VOC', 'bile-vino', 'suché', '28', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0073', 'Veltlínské zelené VOC', 'bile-vino', 'suché', '11', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0074', 'Sauvignon VOC', 'bile-vino', 'polosuché', '11', '14');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0196', 'Ryzlink vlašský - Rosnička zelená', 'bile-vino', 'suché', '10', '24');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0075', 'Ryzlink rýnský VOC', 'bile-vino', 'polosuché', '11', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAJ.0068', 'Ryzlink rýnský VOC', 'bile-vino', 'suché', '23', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAJ.0069', 'Veltlínské zelené VOC', 'bile-vino', 'suché', '23', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0048', 'Ryzlink rýnský VOC', 'bile-vino', 'polosuché', '7', '26');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0266', 'Chardonnay', 'bile-vino', 'polosuché', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LIB.0040', 'Ryzlink rýnský VOC', 'bile-vino', 'suché', '21', '17');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAJ.0067', 'Sauvignon VOC', 'bile-vino', 'polosuché', '23', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0200', 'Sauvignon VOC', 'bile-vino', 'suché', '10', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOR.0064', 'Veltlínské zelené VOC', 'bile-vino', 'suché', '22', '10');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0261', 'Veltlínské zelené', 'bile-vino', 'suché', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0193', 'Irsai Oliver', 'bile-vino', 'polosladké', '10', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0262', 'Sauvignon VOC', 'bile-vino', 'polosuché', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0191', 'Sauvignon - TROPICAL', 'bile-vino', 'polosuché', '10', '27');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0190', 'Sauvignon GREEN', 'bile-vino', 'suché', '10', '5');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOR.0063', 'Hort sekt Alsasko', 'sekty-a-sumiva-vina', 'suché', '22', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOR.0062', 'Hort sekt Limoux', 'sekty-a-sumiva-vina', 'suché', '22', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0269', 'Ryzlink rýnský', 'bile-vino', 'polosuché', '5', '12');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0070', 'Zweigeltrebe Rosé', 'ruzove-vino', 'polosuché', '11', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0071', 'Cabernet Sauvignon / Merlot Rosé', 'ruzove-vino', 'polosladké', '11', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SPA.0088', 'GRYLLUS rosé BIO', 'ruzove-vino', '', '26', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('TAO.0058', 'Frankovka Rosé', 'ruzove-vino', 'suché', '20', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0153', 'Rulandské modré', 'cervene-vino', 'suché', '8', '19');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0192', 'Cabernet Sauvignon ROUGE', 'ruzove-vino', 'polosladké', '10', '24');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('KOR.0074', 'Pinot Noir rosé / Pozdravy z NP Podyjí', 'ruzove-vino', 'suché', '1', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAJ.0066', 'Veltlínské zelené EXTRA', 'bile-vino', 'suché', '23', '10');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0212', 'Rulandské bílé', 'bile-vino', 'polosuché', '3', '37');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIH.0119', 'Muškát moravský', 'bile-vino', 'polosuché', '13', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIH.0121', 'Ryzlink vlašský', 'bile-vino', 'sladké', '13', '9');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIH.0123', 'Cabernet Sauvignon Rosé', 'ruzove-vino', 'polosladké', '13', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIH.0118', 'Irsai Oliver', 'bile-vino', 'polosladké', '13', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('KOR.0073', 'Frankovka rosé / Pozdravy z NP Podyjí', 'ruzove-vino', 'polosuché', '1', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAR.0014', 'Ryzlink vlašský', 'bile-vino', 'suché', '18', '12');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIH.0122', 'Solaris', 'bile-vino', 'polosladké', '13', '9');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAR.0013', 'Veltlínské zelené', 'bile-vino', 'suché', '18', '12');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('KOR.0072', 'Muškát moravský / Pozdravy z NP Podyjí', 'bile-vino', 'polosladké', '1', '9');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('KOR.0071', 'Veltlínské zelené / Pozdravy z NP Podyjí', 'bile-vino', 'suché', '1', '9');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0164', 'Chardonnay', 'bile-vino', 'polosladké', '8', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0162', 'Rotgipfler', 'bile-vino', 'polosuché', '8', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('KOR.0070', 'Tramín červený / Pozdravy z NP Podyjí', 'bile-vino', 'polosladké', '1', '9');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ART.0046', 'Sauvignon Blanc', 'bile-vino', 'suché', '27', '38');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAR.0015', 'Muškát moravský', 'bile-vino', 'polosuché', '18', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0046', 'Rulandské modré - klaret', 'ruzove-vino', 'polosuché', '7', '18');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0068', 'Sylvánské zelené', 'bile-vino', 'suché', '11', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ART.0047', 'Pinot Gris', 'bile-vino', 'suché', '27', '30');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0072', 'Ryzlink rýnský', 'bile-vino', 'polosuché', '11', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0069', 'Muškát moravský', 'bile-vino', 'polosuché', '11', '14');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SPA.0086', 'Sauvignon BIO', 'bile-vino', 'suché', '26', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SPA.0085', 'Rulandské bílé', 'bile-vino', 'polosuché', '26', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MOD.0058', 'Veltlínské zelené', 'bile-vino', 'suché', '14', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('KOR.0069', 'Sauvignn Blanc / Pozdravy z NP Podyjí', 'bile-vino', 'suché', '1', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0189', 'πnot noir - červené', 'cervene-vino', 'suché', '10', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0188', 'πnot noir - rosé', 'ruzove-vino', 'polosladké', '10', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0187', 'πnot noir - klaret', 'ruzove-vino', 'polosladké', '10', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0232', 'Rulandské šedé', 'bile-vino', 'polosuché', '3', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PLA.0057', 'Cuvée TRIO', 'cervene-vino', 'suché', '2', '20');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0194', 'Muškát moravský', 'bile-vino', 'polosuché', '10', '27');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0047', 'Sauvignon VOC', 'bile-vino', 'polosuché', '7', '18');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SIM.0027', 'Pinot Gris', 'bile-vino', 'suché', '28', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MOD.0057', 'Rulandské modré - klaret', 'ruzove-vino', 'polosuché', '14', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PLA.0051', 'Sauvignon', 'bile-vino', 'polosuché', '2', '20');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0227', 'Rulandské šedé', 'bile-vino', 'polosladké', '3', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PLA.0052', 'Muškát moravský', 'bile-vino', 'polosuché', '2', '20');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PLA.0050', 'Hibernal', 'bile-vino', 'suché', '2', '29');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PLA.0054', 'Muscaris', 'bile-vino', 'polosladké', '2', '29');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIH.0117', 'Kerner', 'bile-vino', 'sladké', '13', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0045', 'Sylvánské zelené', 'bile-vino', 'polosuché', '7', '26');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('TAO.0052', 'Pinot Gris', 'bile-vino', 'suché', '20', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('KOR.0068', 'Ryzlink rýnský / Pozdravy z NP Podyjí', 'bile-vino', 'suché', '1', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('TAO.0054', 'Sauvignon - Karlov', 'bile-vino', 'suché', '20', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('TAO.0051', 'Chardonnay SUR-LIE', 'bile-vino', 'suché', '20', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ART.0048', 'GREEN', 'bile-vino', 'suché', '27', '23');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('TAO.0053', 'Veltlínské zelené - Staré keře', 'bile-vino', 'suché', '20', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('TAO.0056', 'Pinot Noir - Klaret', 'bile-vino', 'suché', '20', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('TAO.0055', 'Merlot rosé', 'ruzove-vino', 'polosuché', '20', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SIM.0028', 'Ryzlink rýnský', 'bile-vino', 'suché', '28', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PLA.0053', 'Rinot', 'bile-vino', 'polosuché', '2', '29');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0043', 'Chardonnay', 'bile-vino', 'polosuché', '7', '26');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0158', 'Rulandské šedé', 'bile-vino', 'polosladké', '8', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0160', 'Zweigeltrebe Rosé', 'ruzove-vino', 'polosuché', '8', '23');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('TAO.0057', 'Veltlínské červené rané', 'bile-vino', 'suché', '20', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0159', 'Frankovka Rosé', 'ruzove-vino', 'polosladké', '8', '37');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0230', 'Svatovavřinecké Rosé', 'ruzove-vino', 'polosladké', '3', '23');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOR.0058', 'HF Premium', 'cervene-vino', 'suché', '22', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0044', 'Muškát moravský', 'bile-vino', 'polosuché', '7', '26');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0042', 'Tramín červený', 'bile-vino', '', '7', '8');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PLA.0049', 'Savilon', 'bile-vino', 'suché', '2', '29');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0184', 'Sylvánské zelené - Ledňáček říční', 'bile-vino', 'suché', '10', '21');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0185', 'Ryzlink rýnský', 'bile-vino', 'polosuché', '10', '3');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SPA.0084', 'Ryzlink rýnský z velkého sudu', 'bile-vino', 'suché', '26', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0231', 'Müller Thurgau', 'bile-vino', 'suché', '3', '23');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0186', 'Sauvignon - Lacerta Viridis', 'bile-vino', 'suché', '10', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('KOR.0066', 'Ryzlink rýnský - BETON', 'bile-vino', 'suché', '1', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0152', 'Rulandské bílé', 'bile-vino', 'polosuché', '8', '37');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0041', 'Frankovka Rosé', 'ruzove-vino', 'polosladké', '7', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PLA.0055', 'RoseCO2 - perlivé víno', 'sekty-a-sumiva-vina', 'polosladké', '2', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SPA.0083', 'Veltlínské zelené', 'bile-vino', 'suché', '26', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0040', 'Hroznový mošt - Sylvánské zelené', 'hroznovy-most', 'sladké', '7', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0039', 'Rulandské šedé', 'bile-vino', 'polosuché', '7', '8');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('JZM.0010', 'Rulandské šedé', 'bile-vino', 'sladké', '29', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAJ.0064', 'FREŠ - známkové cuvée', 'bile-vino', 'suché', '23', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0179', 'Modrý Janek', 'bile-vino', 'suché', '10', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0183', 'Veltlínské zelené - Ledňáček říční', 'bile-vino', 'suché', '10', '13');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('JZM.0009', 'Tramín červený', 'bile-vino', 'sladké', '29', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MUS.0021', 'Frankovka rosé', 'ruzove-vino', 'suché', '25', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0223', 'Pálava', 'bile-vino', 'sladké', '3', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('KOR.0067', 'Ryzlink vlašský / Pozdravy z NP Podyjí', 'bile-vino', 'suché', '1', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('KOR.0065', 'Sauvignon', 'bile-vino', 'suché', '1', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('TAO.0050', 'Frankovka', 'cervene-vino', 'suché', '20', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0097', 'Zweigeltrebe', 'cervene-vino', 'suché', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0090', 'Svatovařinecké', 'cervene-vino', 'suché', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0086', 'Ryzlink rýnský', 'bile-vino', 'suché', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0065', 'Cuvée Rosé', 'ruzove-vino', 'polosladké', '5', '12');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0154', 'Sauvignon', 'bile-vino', 'polosuché', '8', '23');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0072', 'Chardonnay', 'bile-vino', 'suché', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('JZM.0008', 'Chardonnay', 'bile-vino', 'sladké', '29', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0096', 'Veltlínské zelené', 'bile-vino', 'suché', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0081', 'Rulandské šedé', 'bile-vino', 'suché', '5', '12');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0084', 'Ryzlink rýnský', 'bile-vino', 'suché', '5', '12');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ART.0045', 'Red Reserve', 'cervene-vino', 'suché', '27', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0087', 'Ryzlink vlašský', 'bile-vino', 'suché', '5', '12');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0083', 'Ryzlink rýnský', 'bile-vino', 'polosladké', '5', '12');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0088', 'Sauvignon', 'bile-vino', 'suché', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0075', 'Müller Thurgau', 'bile-vino', 'suché', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0080', 'Rulandské bílé', 'bile-vino', 'suché', '5', '12');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0078', 'Muškát moravský', 'bile-vino', 'polosuché', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0071', 'Chardonnay', 'bile-vino', 'polosladké', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0076', 'Müller Thurgau', 'bile-vino', 'polosladké', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0089', 'Sauvignon', 'bile-vino', 'suché', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0091', 'Tramín červený', 'bile-vino', 'polosladké', '5', '12');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0066', 'Cuvée sv. Urban', 'bile-vino', 'polosladké', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0099', 'Zweigeltrebe Rosé', 'ruzove-vino', 'polosuché', '5', '14');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAJ.0065', 'Hibernal', 'bile-vino', 'polosuché', '23', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0180', 'Veritas', 'bile-vino', 'polosuché', '10', '27');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0070', 'Hibernal', 'bile-vino', 'polosuché', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0229', 'Veltlínské červené rané', 'bile-vino', 'suché', '3', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0150', 'Veltlínské zelené', 'bile-vino', 'suché', '8', '37');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('JOK.0026', 'Muškát moravský', 'bile-vino', 'suché', '4', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0098', 'Zweigeltrebe Rosé', 'ruzove-vino', 'suché', '5', '14');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0077', 'Müller Thurgau', 'bile-vino', 'suché', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SPA.0076', 'der Ilgner SPRUDEL', 'bile-vino', 'sladké', '26', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0214', 'Frankovka', 'cervene-vino', 'suché', '3', '37');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0211', 'Ryzlink rýnský', 'bile-vino', 'polosuché', '3', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0176', 'Sauvignon TROPICAL', 'bile-vino', 'polosuché', '10', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0178', 'Denis d´ Or Barrique', 'cervene-vino', 'suché', '10', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0092', 'Tramín červený', 'bile-vino', 'polosladké', '5', '12');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0082', 'Rulandské šedé', 'bile-vino', 'sladké', '5', '14');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOR.0056', 'Merlot Nature 2016 HF', 'cervene-vino', 'suché', '22', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOR.0057', 'MOŠT HORT - Pinot Noir', 'hroznovy-most', 'sladké', '22', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0068', 'Cuvée Waldberg', 'bile-vino', 'suché', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0038', 'Tramín červený', 'bile-vino', 'sladké', '7', '26');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0036', 'Sekt Lechovice DEMI SEC', 'sekty-a-sumiva-vina', 'polosuché', '7', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0037', 'Ryzlink rýnský - slámové víno', 'bile-vino', 'sladké', '7', '26');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LIB.0039', 'Pálava', 'bile-vino', 'polosladké', '21', '17');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SPA.0081', 'Sauvignon - KRAVÁK', 'bile-vino', '', '26', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAJ.0063', 'Veltlínské zelené', 'bile-vino', 'suché', '23', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('JOK.0027', 'Solaris', 'bile-vino', 'polosuché', '4', '11');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('TAO.0047', 'Pinot Noir', 'cervene-vino', 'suché', '20', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ART.0044', 'Sauvignon KRAVÁK', 'bile-vino', 'suché', '27', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAN.0038', 'Dornfelder', 'cervene-vino', 'suché', '24', '14');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAJ.0061', 'Chardonnay SUR-LIE', 'bile-vino', 'suché', '23', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SPA.0074', 'Šaler červený', 'cervene-vino', 'sladké', '26', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SPA.0073', 'Šaler bílý', 'bile-vino', 'sladké', '26', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAJ.0062', 'Sauvignon KRAVÁK', 'bile-vino', 'suché', '23', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0035', 'Sekt Lechovice BRUT', 'sekty-a-sumiva-vina', 'suché', '7', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('JOK.0024', 'Veltlínské zelené PÉT-NAT', 'bile-vino', '', '4', '9');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0209', 'Ryzlink vlašský', 'bile-vino', 'polosladké', '3', '35');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SIM.0026', 'Frizzanté 2018', 'sekty-a-sumiva-vina', 'polosladké', '28', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAN.0037', 'PINOT BLANC Sur-lie', 'bile-vino', 'suché', '24', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIH.0113', 'Irsai Oliver', 'bile-vino', 'polosuché', '13', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIH.0114', 'Müller Thrugau', 'bile-vino', 'polosuché', '13', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('DOB.0028', 'Ryzlink rýnský VOC', 'bile-vino', 'suché', '15', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('DOB.0029', 'Sauvignon - KRAVÁK', 'bile-vino', 'suché', '15', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('NAP.0027', 'Sauvignon - KRAVÁK', 'bile-vino', 'suché', '19', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0034', 'Irsai Oliver', 'bile-vino', 'polosuché', '7', '26');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0170', 'Ryzlink vlašský - Terroir Club', 'bile-vino', 'polosladké', '10', '7');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SIM.0025', 'Moje Cuvée 2018', 'bile-vino', 'polosuché', '28', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0171', 'Rulandské bílé - SUR LIE', 'bile-vino', 'suché', '10', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0155', 'Martin Růžový 2018', 'ruzove-vino', 'polosuché', '8', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0066', 'Rulandské šedé', 'bile-vino', 'polosladké', '11', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0065', 'Veltlínské zelené', 'bile-vino', 'suché', '11', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0169', 'ROBINIA - Ryzlink rýnský', 'bile-vino', 'suché', '10', '24');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOR.0053', 'Ryzlink rýnský VOC', 'bile-vino', 'suché', '22', '19');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIH.0111', 'Cuvée Terasy VOC', 'bile-vino', 'suché', '13', '9');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SPA.0075', 'Svatováclavské 2018', 'cervene-vino', 'suché', '26', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SPA.0082', 'Zweigeltrebe', 'cervene-vino', 'suché', '26', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PLA.0045', 'Rulandské bílé', 'bile-vino', 'suché', '2', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAR.0010', 'Chardonnay', 'bile-vino', 'suché', '18', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MUS.0019', 'Cuvée Ejbešic', 'bile-vino', 'suché', '25', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0032', 'Pálava', 'bile-vino', 'polosladké', '7', '26');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0112', 'Ryzlink rýnský VOC - Královská řada', 'bile-vino', 'suché', '8', '37');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('JOK.0025', 'Müller Thurgau', 'bile-vino', 'suché', '4', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIH.0105', 'Kerka', 'bile-vino', 'polosladké', '13', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0166', 'Neuburské', 'bile-vino', 'polosuché', '10', '21');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0164', 'πnot noir - rosé', 'ruzove-vino', 'polosuché', '10', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MUS.0018', 'Ryzlink rýnský', 'bile-vino', 'suché', '25', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('JZM.0007', 'Cabernet Sauvignon Rosé', 'ruzove-vino', 'polosladké', '29', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('JZM.0005', 'Ryzlink rýnský', 'bile-vino', 'polosladké', '29', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('JZM.0003', 'Rulandské šedé', 'bile-vino', 'polosladké', '29', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('JZM.0002', 'Chardonnay', 'bile-vino', 'polosuché', '29', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('JZM.0004', 'Sauvignon', 'bile-vino', 'polosuché', '29', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0063', 'Ryzlink rýnský VOC - Královská řada', 'bile-vino', 'suché', '5', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOR.0054', 'Selection Cabernet Sauvignon 2017 HF', 'cervene-vino', 'suché', '22', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0165', 'πnot noir - červené', 'cervene-vino', 'suché', '10', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0149', 'Tramín červený', 'bile-vino', 'polosuché', '8', '35');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('KOR.0062', 'Frankovka', 'cervene-vino', 'suché', '1', '9');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0063', 'Ryzlink rýnský / pro vegany', 'bile-vino', 'suché', '11', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0062', 'Veltlínské zelené VOC', 'bile-vino', 'suché', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0062', 'Müller Thrugau', 'bile-vino', 'polosuché', '11', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIZ.0009', 'Tramín červený', 'bile-vino', 'polosuché', '17', '11');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('TAO.0045', 'Sauvignon - Staré hory', 'bile-vino', 'suché', '20', '32');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('DOB.0027', 'Sylvánské zelené', 'bile-vino', 'polosuché', '15', '11');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MAR.0009', 'Ryzlink rýnský', 'bile-vino', 'suché', '12', '27');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIZ.0008', 'Cabernet sauvignon Rosé', 'ruzove-vino', 'polosladké', '17', '11');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MUS.0020', 'Frankovka', 'cervene-vino', 'suché', '25', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MAR.0008', 'Tramín červený', 'bile-vino', 'polosladké', '12', '33');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MAR.0007', 'Pálava', 'bile-vino', 'polosladké', '12', '33');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MAR.0010', 'Ryzlink vlašský', 'bile-vino', 'suché', '12', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0052', 'Veltlínské zelené', 'bile-vino', 'suché', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0064', 'Rulandské šedé', 'bile-vino', 'polosuché', '11', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOR.0052', 'Selection HF 2015', 'cervene-vino', 'suché', '22', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('KOR.0060', 'Frankovka rosé / Pozdravy z NP Podyjí', 'ruzove-vino', '', '1', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAR.0003', 'Sauvignon', 'bile-vino', 'polosuché', '18', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0158', 'Znovín de Lux Demi Sec', 'sekty-a-sumiva-vina', 'polosladké', '10', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MAR.0011', 'Rulandské bílé', 'bile-vino', 'suché', '12', '8');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0030', 'Ryzlink rýnský', 'bile-vino', 'polosladké', '7', '18');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0029', 'Rulandské šedé', 'bile-vino', 'polosuché', '7', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MUS.0016', 'Veltlínské zelené', 'bile-vino', 'suché', '25', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0146', 'Sylvánské zelené', 'bile-vino', 'polosuché', '8', '36');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MUS.0015', 'Rulandské bílé', 'bile-vino', 'suché', '25', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MOD.0054', 'Müller Thurgau', 'bile-vino', 'polosuché', '14', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MOD.0055', 'Svatovavřinecké Rosé', 'ruzove-vino', 'polosuché', '14', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('KOR.0050', 'Cuvée VzPg 2015', 'bile-vino', 'suché', '1', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0200', 'Rulandské modré', 'cervene-vino', 'suché', '3', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MOD.0050', 'Sauvignon', 'bile-vino', 'polosuché', '14', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('JOK.0023', 'Veltlínské zelené', 'bile-vino', 'suché', '4', '9');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAN.0034', 'Veltlínské zelené', 'bile-vino', 'suché', '24', '28');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MOD.0051', 'Tramín', 'bile-vino', 'polosladké', '14', '10');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0061', 'Chardonnay', 'bile-vino', 'polosladké', '11', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ART.0042', 'Ryzlink rýnský VOC', 'bile-vino', 'suché', '27', '28');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAN.0033', 'Pinot Gris', 'bile-vino', 'polosuché', '24', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ART.0041', 'Sauvignon VOC', 'bile-vino', 'suché', '27', '19');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MUS.0017', 'Chardonnay', 'bile-vino', 'suché', '25', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIH.0103', 'Pálava', 'bile-vino', 'sladké', '13', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAN.0035', 'Tramín', 'bile-vino', 'polosuché', '24', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAJ.0058', 'Rulandské šedé', 'bile-vino', 'polosladké', '23', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0147', 'Chardonnay', 'bile-vino', 'polosuché', '8', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ART.0043', 'Veltlínské zelené VOC', 'bile-vino', 'suché', '27', '37');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MOD.0052', 'Ryzlink rýnský', 'bile-vino', 'polosuché', '14', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MOD.0053', 'Rulandské šedé', 'bile-vino', 'polosuché', '14', '10');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOD.0027', 'Sauvignon VOC', 'bile-vino', 'polosuché', '16', '27');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0194', 'LAHOFER červený Sladký - Dornfelder', 'cervene-vino', 'sladké', '3', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('JZM.0001', 'Hroznový mošt - Rulandské modré', 'hroznovy-most', 'sladké', '29', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOD.0028', 'Veltlínské zelené VOC', 'bile-vino', 'suché', '16', '13');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0061', 'Sylvánské zelené', 'bile-vino', 'suché', '5', '14');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0155', 'Znovín De Lux Brut', 'sekty-a-sumiva-vina', 'suché', '10', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0058', 'Sauvignon VOC', 'bile-vino', 'polosuché', '11', '14');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SPA.0071', 'Ryzlink rýnský z velkého sudu', 'bile-vino', 'suché', '26', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0059', 'Ryzlink rýnský VOC', 'bile-vino', 'polosuché', '11', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0060', 'Veltlínské zelené VOC', 'bile-vino', 'suché', '11', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0207', 'André', 'cervene-vino', 'suché', '3', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOR.0051', 'Veltlínské zelené VOC', 'bile-vino', 'suché', '22', '37');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SPA.0069', 'Veltlínské zelené VOC', 'bile-vino', 'suché', '26', '37');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0060', 'Rulandské šedé', 'bile-vino', 'suché', '5', '12');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0204', 'Veltlínské zelené VOC', 'bile-vino', 'suché', '3', '25');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAJ.0053', 'Pálava', 'bile-vino', 'polosladké', '23', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOR.0049', 'Sauvignon VOC', 'bile-vino', 'suché', '22', '10');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('DOB.0026', 'Veltlínské zelené VOC', 'bile-vino', 'polosuché', '15', '11');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('KOR.0057', 'Sauvignon VOC', 'bile-vino', 'suché', '1', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0144', 'Sauvignon VOC', 'bile-vino', 'polosuché', '8', '23');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0026', 'Sauvignon VOC', 'bile-vino', '', '7', '18');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('KOR.0058', 'Ryzlink rýnský VOC', 'bile-vino', 'suché', '1', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIH.0100', 'Sauvignon VOC', 'bile-vino', 'polosuché', '13', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SPA.0066', 'Sauvignon VOC', 'bile-vino', 'suché', '26', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAN.0032', 'Ryzlink rýnský VOC', 'bile-vino', 'suché', '24', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0127', 'DNA - Tramín červený - Vinohrady - Cuvée', 'bile-vino', 'polosuché', '8', '35');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOR.0050', 'Sauvignon VOC', 'bile-vino', 'suché', '22', '19');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0126', 'DNA - Tramín červený - Nerez', 'bile-vino', 'polosuché', '8', '35');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0124', 'DNA - Tramín červený - Dub', 'bile-vino', 'polosuché', '8', '35');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0141', 'Kerner', 'bile-vino', 'polosladké', '8', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SPA.0067', 'Gryllus bílý BIO VOC', 'bile-vino', 'suché', '26', '11');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('NAP.0024', 'Muškát moravský', 'bile-vino', 'polosladké', '19', '11');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('NAP.0023', 'Rulandské modré - KLARET', 'ruzove-vino', '', '19', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('NAP.0026', 'Veltlínské zelené', 'bile-vino', 'suché', '19', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIZ.0007', 'Ryzlink vlašský', 'bile-vino', 'polosuché', '17', '11');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('NAP.0025', 'Sylvánské zelené', 'bile-vino', 'suché', '19', '11');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0145', 'Znovín Classi Demi', 'sekty-a-sumiva-vina', 'polosladké', '10', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0143', 'Znovín De Lux rosé Cabernet Sauvignon Demi sec', 'sekty-a-sumiva-vina', 'polosladké', '10', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0143', 'Sylvánské zelené - HANZEL DNA', 'bile-vino', 'suché', '8', '36');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('DOB.0025', 'Zweigeltrebe Rosé', 'ruzove-vino', 'polosuché', '15', '11');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MOD.0049', 'Hibernal / panenská sklizeň', 'bile-vino', 'suché', '14', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('TAO.0044', 'Veltlínské zelené', 'bile-vino', 'suché', '20', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SPA.0063', 'Gryllus červený', 'cervene-vino', 'suché', '26', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('KOR.0052', 'Müller Thurgau', 'bile-vino', 'polosuché', '1', '9');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('KOR.0051', 'Veltlínské zelené', 'bile-vino', '', '1', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0125', 'DNA - Tramín červený - akát', 'bile-vino', 'polosuché', '8', '35');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0056', 'Sylvánské zelené', 'bile-vino', 'suché', '11', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SIM.0024', 'Pálava', 'bile-vino', 'polosladké', '28', '35');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PLA.0038', 'Cabernet Cortis', 'cervene-vino', 'suché', '2', '29');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ART.0040', 'White RESERVE', 'bile-vino', 'suché', '27', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0139', 'Müller Thrugau', 'bile-vino', 'polosuché', '8', '19');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIH.0095', 'Müller Thurgau', 'bile-vino', 'polosladké', '13', '33');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0193', 'Rosé LAHOFER', 'ruzove-vino', 'sladké', '3', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0192', 'Müller Thrugau', 'bile-vino', 'sladké', '3', '19');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MOD.0047', 'Veltlínské zelené', 'bile-vino', 'suché', '14', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SIM.0023', 'Sauvignon Blanc', 'bile-vino', 'suché', '28', '11');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SIM.0021', 'RESERVE Pinot Cuvée 2016', 'bile-vino', '', '28', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0132', 'Ryzlink rýnský VOC', 'bile-vino', 'suché', '8', '19');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0176', 'Rulandské bílé', 'bile-vino', 'suché', '3', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0131', 'Rulandské bílé', 'bile-vino', 'suché', '8', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SPA.0068', 'Veltlínské zelené VOC', 'bile-vino', 'suché', '26', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PLA.0035', 'Cabernet Sauvignon', 'cervene-vino', 'suché', '2', '20');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0139', 'Cabernet Sauvignon Rosé', 'ruzove-vino', 'polosladké', '10', '33');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PLA.0034', 'Cuvée Premiéra', 'bile-vino', '', '2', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('TAO.0040', 'Cuvé 25', 'cervene-vino', 'suché', '20', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAJ.0050', '100% Hroznový mošt', 'hroznovy-most', 'sladké', '23', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SPA.0060', 'Meruňkový nektar - der Ilgner', 'hroznovy-most', '', '26', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAJ.0046', 'Veltlínské zelené EXTRA', 'bile-vino', 'suché', '23', '10');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0163', 'Sauvignon', 'bile-vino', 'sladké', '3', '19');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0202', 'Muškát moravský', 'bile-vino', 'polosladké', '3', '37');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0136', 'Sauvignon RETRO STYL', 'bile-vino', 'suché', '10', '3');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0138', 'Znovín Classic Brut', 'sekty-a-sumiva-vina', 'suché', '10', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIH.0094', 'Cuvée Terasy VOC', 'bile-vino', 'suché', '13', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAN.0031', 'Sauvignon VOC', 'bile-vino', 'suché', '24', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('KOR.0049', 'Sauvignon VOC', 'bile-vino', 'suché', '1', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MUS.0013', 'Rulandské šedé', 'bile-vino', 'suché', '25', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MUS.0011', 'Zweigeltrebe', 'cervene-vino', 'suché', '25', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOR.0045', 'Ryzlink rýnský VOC', 'bile-vino', 'suché', '22', '19');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0135', 'Muškát žlutý', 'bile-vino', 'sladké', '8', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MOD.0045', 'Rulandské šedé', 'bile-vino', 'polosuché', '14', '10');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0131', 'Znovín Classic Sekt Demi sec - červený', 'sekty-a-sumiva-vina', 'polosladké', '10', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('KOR.0048', 'Chardonnay APRI 2015', 'bile-vino', 'suché', '1', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0173', 'Rulandské bílé', 'bile-vino', 'polosladké', '3', '23');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0171', 'Ryzlink rýnský', 'bile-vino', 'polosladké', '3', '19');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0054', 'Rulandské bílé', 'bile-vino', 'suché', '5', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0053', 'Ryzlink vlašský', 'bile-vino', 'suché', '5', '12');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0051', 'Ryzlink rýnský', 'bile-vino', 'suché', '5', '12');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0054', 'Sauvignon', 'bile-vino', 'polosuché', '11', '14');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0055', 'Sauvignon', 'bile-vino', 'suché', '5', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LIB.0036', 'Zweigeltrebe - barrique', 'cervene-vino', 'suché', '21', '17');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('TAO.0039', 'Merlot - barrique', 'cervene-vino', 'suché', '20', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0128', 'Pálava', 'bile-vino', 'polosladké', '10', '39');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0132', 'Veltlínské zelené - Terroir Club', 'bile-vino', 'polosladké', '10', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MUS.0010', 'Svatovavřinecké', 'cervene-vino', 'suché', '25', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0184', 'Zweigeltrebe', 'cervene-vino', 'suché', '3', '23');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ART.0037', 'Sauvignon - KRAVÁK', 'bile-vino', 'suché', '27', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOD.0026', 'Veritas', 'bile-vino', 'polosladké', '16', '27');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAN.0024', 'Rulandské bílé', 'bile-vino', 'polosuché', '24', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('NAP.0022', 'Sauvignon - KRAVÁK', 'bile-vino', 'suché', '19', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('TAO.0036', 'Veltlínské zelené', 'bile-vino', 'suché', '20', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0053', 'Pinot Noir - Blanc de Noir', 'bile-vino', 'polosladké', '11', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MUS.0012', 'Modrý Portugal', 'cervene-vino', 'suché', '25', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ART.0035', 'Pinot Gris', 'bile-vino', '', '27', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ART.0033', 'Sauvignon Blanc', 'bile-vino', 'suché', '27', '38');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('TAO.0037', 'Chardonnay', 'bile-vino', 'suché', '20', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LIB.0034', 'Sauvignon', 'bile-vino', 'polosladké', '21', '17');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0124', 'Pálava', 'bile-vino', '', '10', '39');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0175', 'Ryzlink vlašský', 'bile-vino', 'suché', '3', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAJ.0044', 'Sauvignon - KRAVÁK', 'bile-vino', 'suché', '23', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0050', 'Müller Thurgau', 'bile-vino', 'polosuché', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAJ.0043', 'SAUVIGNON dolce vita', 'bile-vino', 'polosladké', '23', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0023', 'Frankovka Rosé', 'ruzove-vino', '', '7', '18');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAJ.0042', 'Chardonnay - Grand Reserva No.3', 'bile-vino', 'suché', '23', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0047', 'Sylvánské zelené', 'bile-vino', 'suché', '5', '14');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0022', 'Svatovavřinecké', 'cervene-vino', 'suché', '7', '26');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0049', 'Sylvánské zelené', 'bile-vino', 'suché', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('DOB.0019', 'Sauvignon VOC', 'bile-vino', 'suché', '15', '11');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOR.0042', 'Viognier', 'bile-vino', 'suché', '22', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIZ.0005', 'Rulandské šedé', 'bile-vino', 'polosladké', '17', '30');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOD.0025', 'Sauvignon VOC', 'bile-vino', 'polosuché', '16', '27');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SPA.0061', 'KRAVÍ HORA Pinot Blanc SUR LIE', 'bile-vino', 'suché', '26', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOR.0040', 'Sauvignon VOC', 'bile-vino', 'suché', '22', '19');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOR.0038', 'CH sir lie 2011 - Chardonnay & Pinot Blanc', 'bile-vino', 'suché', '22', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LIB.0033', 'Veltlínské zelené VOC', 'bile-vino', 'suché', '21', '17');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('KOR.0043', 'Ryzlink rýnský VOC', 'bile-vino', 'suché', '1', '6');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SPA.0052', 'EDELSPITZ PIGAGE - oranžové víno', 'bile-vino', 'suché', '26', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0021', 'Veltlínské zelené VOC', 'bile-vino', 'suché', '7', '8');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAJ.0055', 'Ryzlink rýnský VOC', 'bile-vino', 'polosuché', '23', '14');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAN.0021', 'Sauvignon VOC', 'bile-vino', 'suché', '24', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0120', 'Sauvignon VOC', 'bile-vino', 'suché', '8', '23');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIZ.0004', 'Chardonnay', 'bile-vino', 'polosladké', '17', '11');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0043', 'Sauvignon VOC', 'bile-vino', 'suché', '5', '12');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SPA.0049', 'KRAVÍ HORA Sauvignon', 'bile-vino', 'suché', '26', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0044', 'Veltlínské zelené VOC', 'bile-vino', 'suché', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0165', 'Neuburské', 'bile-vino', 'polosladké', '3', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0117', 'Müller Thrugau', 'bile-vino', 'suché', '8', '23');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0105', 'Veltlínské zelené', 'bile-vino', 'suché', '8', '36');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SIM.0014', 'Chardonnay', 'bile-vino', 'suché', '28', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0103', 'Sauvignon', 'bile-vino', 'polosuché', '8', '23');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAJ.0057', 'Tramín červený', 'bile-vino', 'sladké', '23', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0084', 'Sauvignon', 'bile-vino', 'polosuché', '8', '23');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIZ.0001', 'Neuburské', 'bile-vino', 'suché', '17', '11');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VIZ.0003', 'Pálava', 'bile-vino', 'polosladké', '17', '11');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0015', 'Sauvignon', 'bile-vino', 'suché', '7', '8');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOD.0021', 'Ryzlink rýnský', 'bile-vino', 'polosuché', '16', '27');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0044', '100% Hroznový mošt', 'hroznovy-most', 'sladké', '11', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SPA.0044', 'Tramín červený', 'bile-vino', 'sladké', '26', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('DVP.0011', 'Quatre - Štverka 2014', 'bile-vino', 'suché', '6', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0110', 'Rulandské šedé', 'bile-vino', 'polosuché', '8', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('DVP.0012', 'Cuvée Národní Park', 'bile-vino', 'suché', '6', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0013', 'Tramín červený', 'bile-vino', 'polosuché', '7', '8');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0091', 'Kerner', 'bile-vino', 'sladké', '10', '21');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0102', 'Veltlínské zelené', 'bile-vino', 'polosuché', '10', '39');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0035', 'Ryzlink rýnský VOC - Královská řada', 'bile-vino', 'suché', '5', '14');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('SIM.0016', 'Veltlínské zelené', 'bile-vino', 'polosuché', '28', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0039', 'Ryzlink rýnský', 'bile-vino', 'polosladké', '11', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('NAP.0020', 'Sauvignon - KRAVÁK', 'bile-vino', 'suché', '19', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0048', 'Muškát moravský', 'bile-vino', 'polosladké', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0087', 'Ryzlink rýnský', 'bile-vino', 'suché', '8', '37');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0099', 'Rulandské šedé', 'bile-vino', 'sladké', '8', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0104', 'André', 'cervene-vino', 'suché', '8', '23');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('AMP.0038', 'Müller Thrugau', 'bile-vino', 'polosladké', '11', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0084', 'SEKT Neuburské', 'sekty-a-sumiva-vina', 'polosuché', '3', '19');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOD.0020', 'Tasovjanka', 'bile-vino', 'polosladké', '16', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('DVP.0008', 'Sauvignon Blanc qvevri', 'bile-vino', 'suché', '6', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ART.0029', 'ORANGE RESERVE 2015', 'bile-vino', 'suché', '27', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VSL.0011', 'Cabernet Sauvignon', 'cervene-vino', 'suché', '7', '8');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('DOB.0017', 'Sauvignon (VOC)', 'bile-vino', 'polosladké', '15', '11');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOD.0017', 'Sauvignon (VOC)', 'bile-vino', 'suché', '16', '27');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0169', 'Veltlínské zelené VOC', 'bile-vino', 'suché', '3', '37');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('WAL.0032', 'Veltlínské zelené (VOC)', 'bile-vino', 'polosuché', '5', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAN.0013', 'Zweigeltrebe', 'cervene-vino', 'suché', '24', '14');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOR.0029', 'Sauvignon (VOC)', 'bile-vino', 'suché', '22', '19');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HAN.0086', 'Veltlínské zelené', 'bile-vino', 'suché', '8', '25');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LIB.0025', 'Sauvignon (VOC)', 'bile-vino', 'polosladké', '21', '17');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0144', 'A-SEKT Neuburské', 'sekty-a-sumiva-vina', '', '3', '19');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('NAP.0019', 'Sauvignon - KRAVÁK', 'bile-vino', 'suché', '19', '34');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('MUS.0002', 'Veltlínské zelené', 'bile-vino', 'suché', '25', '16');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('DVP.0007', 'Nejedlík Orange', 'bile-vino', 'suché', '6', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOR.0020', 'Sauvignon VOC', 'bile-vino', 'suché', '22', '19');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('ZNO.0045', 'Znovín de Lux rosé Demi', 'sekty-a-sumiva-vina', '', '10', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LIB.0024', 'Rulandské bílé', 'bile-vino', 'polosladké', '21', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('PAJ.0034', 'Sauvignon - Grand Reserva No.2', 'bile-vino', 'suché', '23', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0072', 'Sauvignon Francie', 'bile-vino', 'suché', '3', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('VAN.0020', 'Sauvignon Blanc VOC', 'bile-vino', '', '24', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOR.0016', 'HORT FRANCE Premium', 'cervene-vino', 'suché', '22', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LIB.0016', 'Aurélius', 'bile-vino', 'suché', '21', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('HOD.0011', 'Veltlínské zelené', 'bile-vino', 'suché', '16', '13');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('NAP.0010', 'Rulandské bílé', 'bile-vino', 'sladké', '19', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0021', 'Rulandské šedé', 'bile-vino', 'sladké', '3', '4');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('NAP.0011', 'Ryzlink vlašský', 'bile-vino', 'sladké', '19', '');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('DOB.0015', 'Veltlínské zelené', 'bile-vino', '', '15', '11');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('LAH.0129', 'Svatovavřinecké', 'cervene-vino', 'suché', '3', '23');
-INSERT INTO wine (id_wine, name, type, category, id_wine_company, id_wine_region)
-VALUES('DOB.0018', 'Ryzlink rýnský (VOC)', 'bile-vino', 'polosladké', '15', '40');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('KOR.0080', '1', 'null', 'bile-vino', 'Muškát moravský - mladé víno', 'polosuché', 'moravské zemské', '0,75 l ', '  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ne', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PLA.0062', '2', 'null', 'bile-vino', 'Mladé pokušení 2019', 'polosladké', 'moravské zemské', '0,75 l ', '  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ne', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0259', '3', 'null', 'sekty-a-sumiva-vina', 'Prosecco - 2018 DOC Extra Dry', 'suché', 'perlivé', '0,75 l ', '11 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('KOR.0081', '1', 'null', 'ruzove-vino', 'Dornfelder rosé - mladé víno', 'polosladké', 'moravské zemské', '0,75 l ', '  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ne', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('JOK.0033', '4', 'null', 'ruzove-vino', 'Zweigeltrebe rosé - Mladé 2019', 'polosladké', 'moravské zemské', '0,75 l ', '  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ne', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0295', '5', 'null', 'ruzove-vino', 'Mladé růžové 2019', 'polosladké', 'moravské zemské', '0,75 l ', '11,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('DVP.0017', '6', '1', 'bile-vino', 'Quatre - Štverka 2016', 'null', 'moravské zemské', '0,75 l ', '13 %  ', '1 g/l ', '5,4 g/l', 'null', '24,6 °NM', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0260', '3', 'null', 'bile-vino', 'Mladý LAHOFER 2019', 'polosuché', 'moravské zemské', '0,75 l ', '11,5 %  ', '14,3 g/l ', '6,7 g/l', 'null', 'null', 'o 1 roku', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0054', '7', 'null', 'bile-vino', 'Sauvignon - Mladé víno 2019', 'polosuché', 'moravské zemské', '0,75 l ', '  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ne', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0261', '3', 'null', 'ruzove-vino', 'Mladá LAHOFERka 2019', 'polosladké', 'moravské zemské', '0,75 l ', '11,5 %  ', ' ', 'null', 'null', 'null', 'o 1 roku', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0262', '3', 'null', 'bile-vino', 'Rulandské bílé A', 'suché', 'výběr z hroznů', '0,75 l ', '12,5 %  ', '7,8 g/l ', '6,5 g/l', '25,3 g/l', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0294', '5', 'null', 'bile-vino', 'Mladé bílé 2019', 'polosuché', 'moravské zemské', '0,75 l ', '13 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0177', '8', 'null', 'ruzove-vino', 'Martin Růžový 2019', 'polosuché', 'moravské zemské', '0,75 l ', '12 %  ', '12,8 g/l ', '6,6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAJ.0006', '9', '2', 'bile-vino', 'Ryzlink vlašský', 'suché', 'moravské zemské', '0,75 l ', '13,9 %  ', '2 g/l ', '5,9 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0220', '10', '3', 'bile-vino', 'Sauvignon - Pozdrav ze Znojma', 'polosuché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '7,9 g/l ', '6,4 g/l', '22,8 g/l', 'null', '7 – 9', 'null', 'Ano', 'null', 'Dívčí vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0079', '11', '4', 'bile-vino', 'Sauvignon', 'polosuché', 'pozdní sběr', '0,75 l ', '12 %  ', '12,3 g/l ', '5,7 g/l', '19,1 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Nad Sklepy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0218', '10', '5', 'bile-vino', 'Ryzlink rýnský - ledové víno', 'sladké', 'ledové', '0,2 l ', '8,5 %  ', '194,8 g/l ', '9 g/l', '53,6 g/l', 'null', '10 -12', 'null', 'Ano', 'null', 'U tří dubů');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('KOR.0078', '1', '6', 'cervene-vino', 'Pinot Noir', 'suché', 'moravské zemské', '0,75 l ', '13 %  ', '0,3 g/l ', '5,6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MAR.0012', '12', 'null', 'bile-vino', 'Pálava', 'null', 'výběr z hroznů', '0,75 l ', '  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ne', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0081', '11', '4', 'bile-vino', 'Rulandské šedé', 'polosuché', 'pozdní sběr', '0,75 l ', '12 %  ', '14,6 g/l ', '6,3 g/l', '20,7 g/l', '21 °NM', 'null', 'null', 'Ano', 'null', 'Nad Sklepy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0217', '10', '7', 'bile-vino', 'Ryzlink vlašský - Šobes', 'polosuché', 'pozdní sběr', '0,75 l ', '12 %  ', '10,6 g/l ', '7 g/l', '23,9 g/l', 'null', '7 – 9', 'null', 'Ano', 'null', 'Šobes');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0082', '11', 'null', 'bile-vino', 'Mladý Kerner', 'suché', 'moravské zemské', '0,75 l ', '  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ne', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0052', '7', '8', 'bile-vino', 'Ryzlink vlašský', 'suché', 'pozdní sběr', '0,75 l ', '12 %  ', '2,6 g/l ', '6,7 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Stará hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0176', '8', 'null', 'bile-vino', 'Martin Bílý 2019', 'null', 'moravské zemské', '0,75 l ', '12,5 %  ', '38,6 g/l ', '7,6 g/l', 'null', 'null', 'o 1 roku', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('JOK.0031', '4', '9', 'bile-vino', 'Veltlínské zelené', 'suché', 'moravské zemské', '0,75 l ', '12,5 %  ', '6,8 g/l ', '6,5 g/l', 'null', '22,9 °NM', 'null', 'null', 'Ano', 'null', 'Skalka');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIH.0131', '13', '6', 'bile-vino', 'Kerner', 'sladké', 'pozdní sběr', '0,75 l ', '10 %  ', '57,3 g/l ', '8,3 g/l', '31,2 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Knížecí vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MOD.0065', '14', '10', 'bile-vino', 'Tramín', 'sladké', 'výběr z bobulí', '0,75 l ', '11 %  ', '69,9 g/l ', '5,9 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Načeratický kopec');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MOD.0064', '14', '10', 'bile-vino', 'Chardonnay', 'polosladké', 'pozdní sběr', '0,75 l ', '14 %  ', '20,1 g/l ', '5,6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Načeratický kopec');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('DOB.0030', '15', '11', 'bile-vino', 'Sylvánské zelené', 'polosuché', 'kabinetní', '0,75 l ', '11 %  ', '10,9 g/l ', '7,8 g/l', '20,1 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0275', '5', '12', 'bile-vino', 'Ryzlink vlašský', 'suché', 'pozdní sběr', '0,75 l ', '12 %  ', '5,2 g/l ', '5,6 g/l', '20,9 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Šác');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0163', '8', '4', 'bile-vino', 'Hibernal', 'polosladké', 'pozdní sběr', '0,75 l ', '11,5 %  ', '26,5 g/l ', '7 g/l', '28,7 g/l', 'null', '2 - 4', 'null', 'Ano', 'null', 'Šác');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOD.0036', '16', '13', 'bile-vino', 'Müller Thrugau', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '4 g/l ', '5,3 g/l', '23,4 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Skalka');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0276', '5', '14', 'bile-vino', 'Sylvánské zelené - suché', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', '5,6 g/l ', '5,2 g/l', '21,5 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Dívčí hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIZ.0014', '17', '11', 'ruzove-vino', 'Cabernet Sauvignon Rosé', 'polosladké', 'moravské zemské', '0,75 l ', '12 %  ', '22 g/l ', '7,3 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAR.0019', '18', 'null', 'bile-vino', 'Veltlínské zelené', 'suché', 'moravské zemské', '0,75 l ', '13,5 %  ', '1 g/l ', '5,6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('NAP.0028', '19', '15', 'bile-vino', 'Sauvignon - KRAVÁK', 'suché', 'pozdní sběr', '0,75 l ', '14 %  ', '2,1 g/l ', '6,2 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('TAO.0065', '20', '16', 'bile-vino', 'Veltlínské zelené - Staré keře', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', '1,2 g/l ', '6,5 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Šibeniční hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('KOR.0077', '1', '6', 'bile-vino', 'Pinot Blanc', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '0,8 g/l ', '7 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'U Chlupa');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0080', '11', '4', 'bile-vino', 'Veritas', 'polosladké', 'pozdní sběr', '0,75 l ', '12 %  ', '22,8 g/l ', '6,3 g/l', '21,5 g/l', '22 °NM', 'null', 'null', 'Ano', 'null', 'Nad Sklepy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LIB.0043', '21', '17', 'bile-vino', 'Tramín červený', 'polosladké', 'pozdní sběr', '0,75 l ', '12 %  ', '28,3 g/l ', '5,3 g/l', '21,8 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Frédy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0053', '7', '18', 'bile-vino', 'Ryzlink rýnský', 'polosladké', 'pozdní sběr', '0,75 l ', '12 %  ', '31,8 g/l ', '7,5 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'U lipky');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOR.0066', '22', 'null', 'bile-vino', 'Pinot Gris', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '3,6 g/l ', '5,5 g/l', 'null', 'null', '6 - 8', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0234', '3', '19', 'bile-vino', 'Neuburské', 'polosuché', 'pozdní sběr', '0,75 l ', '12 %  ', '10,6 g/l ', '6,5 g/l', '23,8 g/l', '21,4 °NM', '4 - 6', 'null', 'Ano', '19.09.2018', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIH.0129', '13', '4', 'bile-vino', 'Sylvánské zelené', 'suché', 'kabinetní', '0,75 l ', '11,5 %  ', '0,7 g/l ', '5,5 g/l', '21,2 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Waldberg');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0219', '10', '3', 'bile-vino', 'Ryzlink rýnský', 'suché', 'VOC', '0,75 l ', '12 %  ', '7 g/l ', '7 g/l', '27,6 g/l', 'null', '6 - 8', 'null', 'Ano', 'null', 'Dívčí vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIH.0128', '13', '6', 'bile-vino', 'Sauvignon Gris', 'sladké', 'výběr z bobulí', '0,75 l ', '11 %  ', '87,7 g/l ', '7,5 g/l', '30,9 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Fládnická');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PLA.0061', '2', '20', 'cervene-vino', 'Frankovka', 'suché', 'jakostní', '0,75 l ', '12 %  ', '0,4 g/l ', '3,8 g/l', '22,4 g/l', 'null', '1 - 3 roky', 'null', 'Ano', 'null', 'Nová hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0213', '10', '21', 'bile-vino', 'Müller Thurgau', 'suché', 'pozdní sběr', '0,75 l ', '12 %  ', '6 g/l ', '6,2 g/l', '21,4 g/l', 'null', '5-7 le', 'null', 'Ano', 'null', 'Weinperky');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LIB.0042', '21', '22', 'bile-vino', 'Chardonnay', 'polosladké', 'výběr z hroznů', '0,75 l ', '12 %  ', '30 g/l ', '6,8 g/l', '29,8 g/l', '24,5 °NM', 'null', 'null', 'Ano', 'null', 'Frédy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0161', '8', '23', 'bile-vino', 'Müller Thurgau', 'suché', 'pozdní sběr', '0,75 l ', '12 %  ', '7,6 g/l ', '6,2 g/l', '23,1 g/l', '21,2 °NM', '4 - 6', 'null', 'Ano', '10.09.2018', 'Volné pole');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIH.0127', '13', '4', 'bile-vino', 'Hibernal', 'polosuché', 'pozdní sběr', '0,75 l ', '12 %  ', '7,3 g/l ', '7 g/l', '24,7 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Lampelberg');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0215', '10', '24', 'bile-vino', 'Chardonnay', 'suché', 'pozdní sběr', '0,75 l ', '12 %  ', '5,6 g/l ', '6,8 g/l', '24,6 g/l', 'null', '6 - 8', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIZ.0011', '17', '11', 'bile-vino', 'Sauvignon', 'polosuché', 'moravské zemské', '0,75 l ', '13 %  ', '13 g/l ', '7 g/l', 'null', '23,5 °NM', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0078', '11', '4', 'bile-vino', 'Pálava', 'polosladké', 'pozdní sběr', '0,75 l ', '12,5 %  ', '22,6 g/l ', '5,3 g/l', '23,1 g/l', '24 °NM', 'null', 'null', 'Ano', 'null', 'Nad Sklepy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LIB.0041', '21', '17', 'bile-vino', 'Sauvignon VOC', 'suché', 'VOC', '0,75 l ', '11,5 %  ', '5,6 g/l ', '5,6 g/l', '20,4 g/l', '21,5 °NM', 'null', 'null', 'Ano', 'null', 'Frédy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0076', '11', '4', 'bile-vino', 'Sauvignon', 'polosuché', 'pozdní sběr', '0,75 l ', '12 %  ', '10,9 g/l ', '4,9 g/l', '21,9 g/l', '21 °NM', 'null', 'null', 'Ano', 'null', 'Nad Sklepy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0243', '3', '25', 'bile-vino', 'Veltlínské zelené', 'suché', 'pozdní sběr', '0,75 l ', '11,5 %  ', '5,2 g/l ', '6,4 g/l', '24,2 g/l', '21 °NM', '2 - 4', 'null', 'Ano', '03.09.2018', 'Vinohrady ke Křidlůvkám');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIZ.0013', '17', '11', 'bile-vino', 'Pálava', 'polosladké', 'moravské zemské', '0,75 l ', '12 %  ', '39 g/l ', '7,2 g/l', 'null', '26 °NM', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIZ.0010', '17', '11', 'cervene-vino', 'Dornfelder', 'suché', 'moravské zemské', '0,75 l ', '14 %  ', '0,1 g/l ', '5,8 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0212', '10', '21', 'bile-vino', 'Tramín červený', 'sladké', 'výběr z bobulí', '0,5 l ', '11 %  ', '66,8 g/l ', '7,7 g/l', '35,6 g/l', 'null', '8 - 10 le', 'null', 'Ano', 'null', 'Weinperky');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIZ.0012', '17', '11', 'bile-vino', 'Neuburské', 'polosladké', 'moravské zemské', '0,75 l ', '11,5 %  ', '23 g/l ', '7 g/l', 'null', '23 °NM', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0222', '3', 'null', 'bile-vino', 'Muškát moravský', 'sladké', 'pozdní sběr', '0,75 l ', '9 %  ', '45,3 g/l ', '6,9 g/l', '25,1 g/l', '21,2 °NM', '2 - 4', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0051', '7', '26', 'cervene-vino', 'Frankovka - slámové', 'sladké', 'slámové', '0,2 l ', '11 %  ', '180 g/l ', '6,7 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0211', '10', '5', 'bile-vino', 'Semillon', 'suché', 'pozdní sběr', '0,75 l ', '12 %  ', '7 g/l ', '7 g/l', '25 g/l', 'null', '2 - 4', 'null', 'Ano', 'null', 'U tří dubů');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('KOR.0076', '1', '6', 'bile-vino', 'Müller Thurgau', 'suché', 'kabinetní', '0,75 l ', '12,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAR.0018', '18', 'null', 'bile-vino', 'Tramín červený', 'polosladké', 'moravské zemské', '0,75 l ', '12,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOD.0032', '16', '27', 'bile-vino', 'Veltlínské červené rané', 'polosuché', 'pozdní sběr', '0,75 l ', '11,5 %  ', '8,1 g/l ', '5,9 g/l', '23,7 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Kamenný vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOD.0035', '16', '27', 'bile-vino', 'Pálava', 'sladké', 'výběr z hroznů', '0,75 l ', '11,5 %  ', '56,9 g/l ', '6,3 g/l', '29,6 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Staré vinohrady');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0077', '11', 'null', 'bile-vino', 'Symposion', 'polosuché', 'jakostní', '0,75 l ', '10 %  ', '15,5 g/l ', '5,9 g/l', 'null', '21 °NM', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAR.0017', '18', 'null', 'bile-vino', 'Ryzlink rýnský', 'polosladké', 'moravské zemské', '0,75 l ', '12,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ne', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAJ.0070', '23', '21', 'bile-vino', 'Grand Veltlin No.5', 'suché', 'pozdní sběr', '0,75 l ', '13,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Weinperky');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAJ.0074', '23', 'null', 'bile-vino', 'Chardonnay - Dolce Vita', 'sladké', 'výběr z hroznů', '0,75 l ', '13,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAJ.0071', '23', 'null', 'ruzove-vino', 'Roséčko', 'suché', 'kabinetní', '0,75 l ', '11 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAN.0047', '24', '4', 'bile-vino', 'Rulandské bílé', 'suché', 'pozdní sběr', '0,75 l ', '12 %  ', '7 g/l ', '5,6 g/l', '24,8 g/l', '22 °NM', 'null', 'null', 'Ano', 'null', 'U sv. Urbana');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0258', '3', 'null', 'cervene-vino', 'Merlot', 'suché', 'odrůdové', '0,75 l ', '13 %  ', '0,4 g/l ', '4 g/l', '22,4 g/l', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAN.0046', '24', '28', 'bile-vino', 'Veltlínské zelené', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '2,6 g/l ', '6,3 g/l', '22,7 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAN.0048', '24', '28', 'bile-vino', 'Pinot Gris', 'suché', 'výběr z hroznů', '0,75 l ', '13 %  ', '7,6 g/l ', '6 g/l', '26,5 g/l', '24,2 °NM', 'null', 'null', 'Ano', 'null', 'Načeratický kopec');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PLA.0060', '2', '29', 'bile-vino', 'Pálava', 'polosladké', 'pozdní sběr', '0,75 l ', '13 %  ', '28,9 g/l ', '5,9 g/l', '24,4 g/l', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAN.0051', '24', '10', 'bile-vino', 'Ryzlink rýnský - panenský sběr', 'suché', 'moravské zemské', '0,75 l ', '12 %  ', '4 g/l ', '6 g/l', 'null', '21 °NM', 'null', 'null', 'Ano', 'null', 'Načeratický kopec');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MUS.0022', '25', 'null', 'bile-vino', 'Irsai Oliver', 'suché', 'pozdní sběr', '0,75 l ', '11,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Seslice');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0257', '3', '23', 'bile-vino', 'Ryzlink rýnský', 'suché', 'kabinetní', '0,75 l ', '12 %  ', '5,7 g/l ', '6,7 g/l', '24,2 g/l', '21 °NM', '3 - 5', 'null', 'Ano', '17.10.2018', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0249', '3', 'null', 'bile-vino', 'Veltlínské zelené', 'suché', 'kabinetní', '0,75 l ', '12 %  ', '5,9 g/l ', '6,4 g/l', '23,1 g/l', '21,3 °NM', '2 - 4', 'null', 'Ano', '08.10.2018', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAN.0049', '24', '4', 'bile-vino', 'Tramín', 'polosuché', 'výběr z hroznů', '0,75 l ', '13 %  ', '11,3 g/l ', '5,9 g/l', '23,6 g/l', '24,3 °NM', 'null', 'null', 'Ano', 'null', 'U sv. Urbana');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0209', '10', 'null', 'bile-vino', 'Mont Pré', 'polosuché', 'známkové', '0,75 l ', '12 %  ', '9,5 g/l ', '7 g/l', '20,4 g/l', 'null', '4 - 6', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOD.0033', '16', '27', 'bile-vino', 'Veritas', 'polosladké', 'výběr z hroznů', '0,75 l ', '12,5 %  ', '30,3 g/l ', '6,4 g/l', '24,8 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Staré vinohrady');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAJ.0005', '9', '3', 'bile-vino', 'Tramín červený', 'suché', 'moravské zemské', '0,75 l ', '11,3 %  ', '1 g/l ', '5,8 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Dívčí vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAJ.0004', '9', '30', 'bile-vino', 'Ryzlink rýnský', 'suché', 'moravské zemské', '0,75 l ', '11,5 %  ', '0,5 g/l ', '6,2 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Načeratický kopec');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAN.0050', '24', '4', 'bile-vino', 'Rulandské šedé', 'suché', 'pozdní sběr', '0,75 l ', '13,5 %  ', '3,9 g/l ', '6,2 g/l', '26,8 g/l', '22,8 °NM', 'null', 'null', 'Ano', 'null', 'U sv. Urbana');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0210', '10', '6', 'bile-vino', 'Pálava', 'polosladké', 'výběr z hroznů', '0,75 l ', '12 %  ', '23,8 g/l ', '6,9 g/l', '23,2 g/l', 'null', '6 - 8', 'null', 'Ano', 'null', 'U Chlupa');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('DVP.0016', '6', 'null', 'bile-vino', 'Vlašský ryzlink Qvevri Georgia Naturel Orange', 'null', 'moravské zemské', '0,75 l ', '12,5 %  ', '0,1 g/l ', '6,5 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('DVP.0015', '6', 'null', 'bile-vino', 'Cuvée Kambrium', 'suché', 'moravské zemské', '0,75 l ', '12,5 %  ', '0,5 g/l ', '5,9 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('DVP.0014', '6', 'null', 'bile-vino', 'Blanc de Pinot noir', 'suché', 'moravské zemské', '0,75 l ', '13 %  ', ' ', '6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('DVP.0013', '6', 'null', 'cervene-vino', 'Velké dobré červené', 'null', 'moravské zemské', '0,75 l ', '13 %  ', ' ', '5,9 g/l', 'null', 'null', 'null', 'null', 'Ne', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOD.0031', '16', '27', 'bile-vino', 'Muškát moravský', 'polosuché', 'pozdní sběr', '0,75 l ', '13 %  ', '9,1 g/l ', '5,6 g/l', '22,3 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Stará hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0050', '7', '31', 'bile-vino', 'Rulandské bílé', 'polosladké', 'pozdní sběr', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Nad Kolářovým sklepem');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAJ.0072', '23', '28', 'bile-vino', 'Ryzlink rýnský Sexenberg', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '1 g/l ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Načeratický kopec');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOD.0034', '16', '27', 'bile-vino', 'Tramín červený', 'polosladké', 'výběr z hroznů', '0,75 l ', '13,5 %  ', '22,6 g/l ', '6,4 g/l', '27,3 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Kamenný vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0208', '10', 'null', 'bile-vino', 'Chardonnay', 'polosuché', 'jakostní', '0,75 l ', '12,5 %  ', '9,6 g/l ', '6,5 g/l', '23,5 g/l', 'null', '4 - 6', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('KOR.0079', '1', '6', 'cervene-vino', 'Frankovka', 'suché', 'moravské zemské', '0,75 l ', '13 %  ', '0,1 g/l ', '5,9 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MOD.0061', '14', '10', 'bile-vino', 'Muškát moravský', 'polosladké', 'jakostní', '0,75 l ', '11 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Načeratický kopec');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0225', '3', '4', 'bile-vino', 'Tramín červený', 'sladké', 'výběr z bobulí', '0,75 l ', '11 %  ', '57,6 g/l ', '6,9 g/l', '28 g/l', '27,2 °NM', '4 - 6', 'null', 'Ano', '01.10.2018', 'Šác');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('TAO.0061', '20', '16', 'ruzove-vino', 'Merlot Rosé', 'polosuché', 'pozdní sběr', '0,75 l ', '13,5 %  ', '11,6 g/l ', '6,6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Šibeniční hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('TAO.0059', '20', '16', 'cervene-vino', 'Frankovka', 'suché', 'moravské zemské', '0,75 l ', '13 %  ', '0,2 g/l ', '6,2 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Karlov');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('TAO.0060', '20', '16', 'bile-vino', 'Müller Thrugau', 'suché', 'moravské zemské', '0,75 l ', '12 %  ', '2 g/l ', '5,8 g/l', 'null', '20 °NM', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('TAO.0064', '20', '32', 'bile-vino', 'Sauvignon Staré hory', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '4 g/l ', '6,7 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Staré hory');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('TAO.0063', '20', '16', 'bile-vino', 'Pálava', 'polosuché', 'pozdní sběr', '0,75 l ', '13 %  ', '15,2 g/l ', '6,5 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Šibeniční hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0251', '3', 'null', 'sekty-a-sumiva-vina', 'Frizzante LAHOFER', 'sladké', 'perlivé', '0,75 l ', '9,5 %  ', '51 g/l ', '7,1 g/l', 'null', 'null', '1 - 2', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0049', '7', '26', 'cervene-vino', 'Zweigeltrebe', 'suché', 'výběr z hroznů', '0,75 l ', '14,5 %  ', ' ', 'null', 'null', '25,1 °NM', 'null', 'null', 'Ne', '12.10.2018', 'Nad Kolářovým sklepem');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PLA.0059', '2', '29', 'sekty-a-sumiva-vina', 'SolarCO2', 'sladké', 'perlivé', '0,75 l ', '9 %  ', '72,4 g/l ', '7,7 g/l', '22,2 g/l', 'null', '1 - 3 roky', 'null', 'Ano', 'null', 'Seslice');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('TAO.0062', '20', '16', 'bile-vino', 'Pálava', 'suché', 'moravské zemské', '0,75 l ', '13 %  ', '5,5 g/l ', '6,7 g/l', 'null', '22,4 °NM', 'null', 'null', 'Ano', 'null', 'Šibeniční hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MOD.0059', '14', '10', 'bile-vino', 'Rulandské šedé', 'polosuché', 'jakostní', '0,75 l ', '12,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Načeratický kopec');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0201', '10', '5', 'cervene-vino', 'Rulandské modré AKÁT z edice DUEL', 'suché', 'výběr z hroznů', '0,75 l ', '13 %  ', '1,1 g/l ', '5,4 g/l', '29,9 g/l', 'null', '6-8le', 'null', 'Ano', 'null', 'U tří dubů');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAJ.0073', '23', '28', 'bile-vino', 'Ryzlink rýnský - botritický sběr', 'sladké', 'výběr z bobulí', '0,5 l ', '8 %  ', '125 g/l ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Načeratický kopec');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0203', '10', '5', 'bile-vino', 'Tramín červený GENUS REGIS', 'polosladké', 'výběr z hroznů', '0,5 l ', '12 %  ', '40,3 g/l ', '6,7 g/l', '28,5 g/l', 'null', '6 - 8', 'null', 'Ano', 'null', 'U tří dubů');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0204', '10', '27', 'bile-vino', 'Pálava', 'polosladké', 'výběr z hroznů', '0,5 l ', '12,5 %  ', '36,4 g/l ', '7 g/l', '27,3 g/l', 'null', '7 – 9', 'null', 'Ano', 'null', 'Staré vinohrady');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0202', '10', '5', 'cervene-vino', 'Rulandské modré DUB z edice DUEL', 'suché', 'výběr z hroznů', '0,75 l ', '13 %  ', '1,1 g/l ', '5,3 g/l', '29,6 g/l', 'null', '6-8le', 'null', 'Ano', 'null', 'U tří dubů');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0205', '10', '33', 'ruzove-vino', 'Cabernet Sauvignon Rosé', 'polosladké', 'pozdní sběr', '0,75 l ', '13 %  ', '19,8 g/l ', '7,2 g/l', '24,9 g/l', 'null', '2 - 4', 'null', 'Ano', 'null', 'Dívčí vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PLA.0058', '2', '16', 'ruzove-vino', 'Svatovavřinecké Rosé', 'polosladké', 'kabinetní', '0,75 l ', '11 %  ', '15,9 g/l ', '4,9 g/l', 'null', 'null', '1 - 3 roky', 'null', 'Ano', 'null', 'Karlov');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('KOR.0075', '1', '6', 'bile-vino', 'Veltlínské zelené VOC', 'suché', 'VOC', '0,75 l ', '13,5 %  ', '2,6 g/l ', '6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Knížecí vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOD.0030', '16', '13', 'bile-vino', 'Veltlínské zelené VOC', 'suché', 'VOC', '0,75 l ', '13 %  ', '0,3 g/l ', '5,6 g/l', '22,1 g/l', 'null', 'null', 'null', 'Ano', '24.09.2018', 'Skalka');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SPA.0090', '26', '34', 'bile-vino', 'Rulandské šedé', 'polosuché', 'pozdní sběr', '0,75 l ', '13 %  ', '4,6 g/l ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAR.0016', '18', '5', 'cervene-vino', 'Pinot Noir', 'suché', 'moravské zemské', '0,75 l ', '13 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'U tří dubů');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAJ.0003', '9', '10', 'cervene-vino', 'Frankovka', 'suché', 'moravské zemské', '0,75 l ', '11,5 %  ', '1,4 g/l ', '6,3 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Načeratický kopec');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAJ.0002', '9', '2', 'bile-vino', 'Veltlínské zelené', 'suché', 'moravské zemské', '0,75 l ', '12,2 %  ', '2,4 g/l ', '6,1 g/l', 'null', 'null', 'null', 'null', 'Ne', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAJ.0001', '9', '10', 'bile-vino', 'Sauvignon', 'suché', 'moravské zemské', '0,75 l ', '11,6 %  ', '2 g/l ', '6,4 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Načeratický kopec');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SPA.0089', '26', '34', 'bile-vino', 'Veltlínské zelené VOC', 'suché', 'VOC', '0,75 l ', '12,5 %  ', '2,7 g/l ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ART.0056', '27', '4', 'cervene-vino', 'Pinot Noir', 'suché', 'moravské zemské', '0,75 l ', '13 %  ', '1 g/l ', '5,5 g/l', 'null', '24 °NM', 'null', 'null', 'Ano', 'null', 'Lampelberg');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ART.0055', '27', '16', 'cervene-vino', 'Frankovka', 'suché', 'moravské zemské', '0,75 l ', '13,5 %  ', '1 g/l ', '5,5 g/l', 'null', '22 °NM', 'null', 'null', 'Ano', 'null', 'Šibeniční hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOD.0029', '16', '27', 'bile-vino', 'Sauvignon VOC', 'polosuché', 'VOC', '0,75 l ', '13 %  ', '13,4 g/l ', '6 g/l', '23,6 g/l', 'null', 'null', 'null', 'Ano', '12.09.2018', 'Kamenný vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ART.0053', '27', 'null', 'bile-vino', 'Chardonnay', 'suché', 'moravské zemské', '0,75 l ', '13 %  ', '4 g/l ', '6,5 g/l', 'null', '22,5 °NM', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ART.0051', '27', '23', 'bile-vino', 'Veltlínské zelené', 'suché', 'moravské zemské', '0,75 l ', '12,5 %  ', '2 g/l ', '6 g/l', 'null', '22 °NM', 'null', 'null', 'Ne', 'null', 'Volné pole');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SPA.0091', '26', '34', 'bile-vino', 'Gryllus bílý', 'suché', 'kabinetní', '0,75 l ', '12,5 %  ', '2,8 g/l ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ART.0054', '27', '35', 'bile-vino', 'Pálava', 'sladké', 'moravské zemské', '0,75 l ', '12,5 %  ', '33 g/l ', '6,5 g/l', 'null', '24,5 °NM', 'null', 'null', 'Ano', 'null', 'Vinohrady');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIH.0126', '13', '33', 'bile-vino', 'Veltlínské zelené VOC', 'suché', 'VOC', '0,75 l ', '12 %  ', '2 g/l ', '5,6 g/l', '20,4 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Dolní vinohrady');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIH.0124', '13', '6', 'bile-vino', 'Sauvignon VOC', 'suché', 'VOC', '0,75 l ', '12 %  ', '3,2 g/l ', '5,2 g/l', '20,3 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Knížecí vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIH.0125', '13', '6', 'bile-vino', 'Ryzlink rýnský VOC', 'suché', 'VOC', '0,75 l ', '12,5 %  ', '2,8 g/l ', '6,3 g/l', '22,2 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Fládnická');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ART.0049', '27', '9', 'bile-vino', 'Ryzlink rýnský VOC', 'suché', 'VOC', '0,75 l ', '12 %  ', '3 g/l ', '6,5 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Staré vinice');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SIM.0029', '28', 'null', 'bile-vino', 'Sauvignon Blanc VOC', 'suché', 'VOC', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ART.0050', '27', '34', 'bile-vino', 'Sauvignon VOC', 'suché', 'VOC', '0,75 l ', '11,5 %  ', '6 g/l ', '5,5 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ART.0052', '27', '11', 'bile-vino', 'Ryzlink rýnský', 'suché', 'moravské zemské', '0,75 l ', '12,5 %  ', '4 g/l ', '6,5 g/l', 'null', '22,5 °NM', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SIM.0030', '28', 'null', 'bile-vino', 'Ryzlink rýnský VOC', 'polosuché', 'VOC', '0,75 l ', '  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0274', '5', '14', 'bile-vino', 'Sylvánské zelené - polosladké', 'polosladké', 'pozdní sběr', '0,75 l ', '11,5 %  ', '25,6 g/l ', '6,1 g/l', '25,3 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Dívčí hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0206', '10', '6', 'bile-vino', 'Tramín červený - Lacerta Viridis', 'polosladké', 'pozdní sběr', '0,75 l ', '12,5 %  ', '25 g/l ', '7 g/l', '25,9 g/l', 'null', '4 - 6', 'null', 'Ano', 'null', 'U Chlupa');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MOD.0060', '14', '10', 'bile-vino', 'Veltlínské zelené', 'suché', 'jakostní', '0,75 l ', '13 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Načeratický kopec');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0186', '3', '36', 'hroznovy-most', 'LAHOmošt hroznový Veltlínské zelené', 'sladké', 'null', '0,75 l ', '  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ne', 'null', 'Babičák');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOR.0065', '22', '10', 'bile-vino', 'Ryzlink rýnský VOC', 'null', 'VOC', '0,75 l ', '11,5 %  ', '8,8 g/l ', '7,1 g/l', 'null', 'null', '6 - 8', 'null', 'Ano', 'null', 'Načeratický kopec');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAN.0043', '24', '14', 'sekty-a-sumiva-vina', 'Frizzante Sauvignon', 'polosuché', 'jakostní šumivé', '0,75 l ', '11 %  ', ' ', 'null', 'null', '21,3 °NM', 'null', 'null', 'Ano', 'null', 'Dívčí hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAN.0040', '24', '4', 'bile-vino', 'Ryzlink rýnský VOC', 'suché', 'VOC', '0,75 l ', '12 %  ', '2,5 g/l ', '6,3 g/l', '26,4 g/l', '21 °NM', 'null', 'null', 'Ano', 'null', 'U sv. Urbana');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAN.0039', '24', '4', 'bile-vino', 'Sauvignon VOC', 'suché', 'VOC', '0,75 l ', '12,5 %  ', '2,3 g/l ', '6,7 g/l', '25,1 g/l', '21,3 °NM', 'null', 'null', 'Ano', 'null', 'U sv. Urbana');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAN.0041', '24', '14', 'ruzove-vino', 'Zweigeltrebe Rosé', 'suché', 'kabinetní', '0,75 l ', '11 %  ', '3,8 g/l ', '6,1 g/l', '23,3 g/l', '19,8 °NM', 'null', 'null', 'Ano', 'null', 'Dívčí hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0268', '5', '4', 'bile-vino', 'Hibernal', 'polosladké', 'pozdní sběr', '0,75 l ', '12 %  ', '25,1 g/l ', '6,4 g/l', '26,9 g/l', 'null', 'null', 'null', 'Ano', 'null', 'U sv. Urbana');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0238', '3', '4', 'bile-vino', 'Veltlínské zelené VOC', 'suché', 'VOC', '0,75 l ', '12,5 %  ', '8,6 g/l ', '6,7 g/l', '25,5 g/l', '22,6 °NM', '4 - 6', 'null', 'Ano', '27.09.2018', 'Dolina');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0267', '5', '4', 'bile-vino', 'Neuburské', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '5,5 g/l ', '6,6 g/l', '24,5 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Waldberg');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAN.0045', '24', '4', 'bile-vino', 'Tramín žlutý', 'sladké', 'moravské zemské', '0,5 l ', '11,5 %  ', '46 g/l ', '6,6 g/l', 'null', '27,1 °NM', 'null', 'null', 'Ano', 'null', 'U sv. Urbana');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAN.0042', '24', '14', 'sekty-a-sumiva-vina', 'Frizzante Zweigeltrebe', 'polosuché', 'jakostní šumivé', '0,75 l ', '10,5 %  ', ' ', 'null', 'null', '19,8 °NM', 'null', 'null', 'Ano', 'null', 'Dívčí hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0240', '3', '19', 'bile-vino', 'Rulandské šedé', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', '7,9 g/l ', '6,3 g/l', '24,3 g/l', '23 °NM', '4 - 6', 'null', 'Ano', '17.09.2018', 'U Hájku');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0244', '3', '36', 'bile-vino', 'Pálava', 'polosladké', 'výběr z hroznů', '0,75 l ', '12 %  ', '31,6 g/l ', '7,1 g/l', '24,5 g/l', '25,6 °NM', '4 - 6', 'null', 'Ano', '04.10.2018', 'Babičák');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0167', '8', '36', 'bile-vino', 'Pálava', 'polosladké', 'výběr z hroznů', '0,75 l ', '12 %  ', '31,2 g/l ', '7,2 g/l', '26,2 g/l', '25,6 °NM', '4 - 6', 'null', 'Ano', '04.10.2018', 'Babičák');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0197', '10', '6', 'bile-vino', 'Sauvignon VOC', 'suché', 'VOC', '0,75 l ', '13 %  ', '3,2 g/l ', '6,9 g/l', '25,2 g/l', 'null', '6 - 8', 'null', 'Ano', 'null', 'Knížecí vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0265', '5', '4', 'bile-vino', 'Rinot', 'polosuché', 'výběr z hroznů', '0,75 l ', '13 %  ', '13,9 g/l ', '6,8 g/l', '25,9 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Waldberg');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0199', '10', '13', 'bile-vino', 'Veltlínské zelené VOC', 'suché', 'VOC', '0,75 l ', '12,5 %  ', '6,9 g/l ', '6,7 g/l', '24,1 g/l', 'null', '4 - 6', 'null', 'Ano', 'null', 'Skalka');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0207', '10', 'null', 'bile-vino', 'Tramín červený', 'polosladké', 'jakostní', '0,75 l ', '12 %  ', '23,1 g/l ', '6,6 g/l', '23,1 g/l', 'null', '4 - 6', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAN.0044', '24', '4', 'bile-vino', 'Muškát moravský', 'suché', 'kabinetní', '0,75 l ', '11 %  ', '3,1 g/l ', '5,4 g/l', '19,7 g/l', '19,2 °NM', 'null', 'null', 'Ano', 'null', 'U sv. Urbana');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0195', '10', '27', 'bile-vino', 'Ryzlink rýnský - Rosnička zelená', 'suché', 'pozdní sběr', '0,75 l ', '12 %  ', '6,8 g/l ', '7,2 g/l', '26,8 g/l', 'null', '6 - 8', 'null', 'Ano', 'null', 'Kamenný vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('JOK.0028', '4', '6', 'ruzove-vino', 'Dornfelder rosé', 'polosuché', 'kabinetní', '0,75 l ', '11 %  ', '10,9 g/l ', '6,4 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Fládnická');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0239', '3', '19', 'bile-vino', 'Sauvignon VOC - U Hájku', 'suché', 'VOC', '0,75 l ', '12 %  ', '7,3 g/l ', '7,2 g/l', '22,4 g/l', '21,2 °NM', '4 - 6', 'null', 'Ano', 'null', 'U Hájku');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('JOK.0029', '4', '6', 'ruzove-vino', 'Zweigeltrebe Rosé', 'polosladké', 'výběr z hroznů', '0,75 l ', '12 %  ', '25,5 g/l ', '7,8 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Fládnická');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0213', '3', '19', 'bile-vino', 'Ryzlink rýnský VOC', 'suché', 'VOC', '0,75 l ', '13 %  ', '7,8 g/l ', '7,3 g/l', '24,8 g/l', '22,6 °NM', '4 - 6', 'null', 'Ano', '17.10.2017', 'U Hájku');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0237', '3', '4', 'bile-vino', 'Sauvignon VOC - Šác', 'polosuché', 'VOC', '0,75 l ', '12 %  ', '11,6 g/l ', '7 g/l', '23,6 g/l', '21,5 °NM', '4 - 6', 'null', 'Ano', 'null', 'Šác');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SIM.0031', '28', 'null', 'bile-vino', 'Veltlínské zelené VOC', 'suché', 'VOC', '0,75 l ', '11 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0073', '11', '4', 'bile-vino', 'Veltlínské zelené VOC', 'suché', 'VOC', '0,75 l ', '13 %  ', '7,7 g/l ', '5,8 g/l', '23,3 g/l', '22 °NM', 'null', 'null', 'Ano', 'null', 'Nad Sklepy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0074', '11', '14', 'bile-vino', 'Sauvignon VOC', 'polosuché', 'VOC', '0,75 l ', '12 %  ', '11,5 g/l ', '5,4 g/l', '21,8 g/l', '20 °NM', 'null', 'null', 'Ano', 'null', 'Dívčí hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0196', '10', '24', 'bile-vino', 'Ryzlink vlašský - Rosnička zelená', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '7,9 g/l ', '7,1 g/l', '24,4 g/l', 'null', '6 - 8', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0075', '11', '4', 'bile-vino', 'Ryzlink rýnský VOC', 'polosuché', 'VOC', '0,75 l ', '12,5 %  ', '12,4 g/l ', '6,6 g/l', '26,4 g/l', '22 °NM', 'null', 'null', 'Ano', 'null', 'Nad Sklepy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAJ.0068', '23', 'null', 'bile-vino', 'Ryzlink rýnský VOC', 'suché', 'VOC', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAJ.0069', '23', 'null', 'bile-vino', 'Veltlínské zelené VOC', 'suché', 'VOC', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0048', '7', '26', 'bile-vino', 'Ryzlink rýnský VOC', 'polosuché', 'VOC', '0,75 l ', '12,5 %  ', ' ', 'null', 'null', '22,5 °NM', 'null', 'null', 'Ano', 'null', 'Nad Kolářovým sklepem');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0266', '5', '4', 'bile-vino', 'Chardonnay', 'polosuché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '10,9 g/l ', '5,6 g/l', '26,3 g/l', 'null', 'null', 'null', 'Ano', 'null', 'U sv. Urbana');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LIB.0040', '21', '17', 'bile-vino', 'Ryzlink rýnský VOC', 'suché', 'VOC', '0,75 l ', '13 %  ', '4,7 g/l ', '6,4 g/l', '27,7 g/l', '22,5 °NM', 'null', 'null', 'Ano', 'null', 'Frédy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAJ.0067', '23', 'null', 'bile-vino', 'Sauvignon VOC', 'polosuché', 'VOC', '0,75 l ', '13 %  ', '10 g/l ', '6,5 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0200', '10', '6', 'bile-vino', 'Sauvignon VOC', 'suché', 'VOC', '0,75 l ', '12 %  ', '8,5 g/l ', '6,7 g/l', '22,8 g/l', 'null', '6 - 8', 'null', 'Ano', 'null', 'U kapličky');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOR.0064', '22', '10', 'bile-vino', 'Veltlínské zelené VOC', 'suché', 'VOC', '0,75 l ', '11 %  ', '4,7 g/l ', '5,7 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Načeratický kopec');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0261', '5', '4', 'bile-vino', 'Veltlínské zelené', 'suché', 'VOC', '0,75 l ', '13 %  ', '5,4 g/l ', '5,4 g/l', '23,8 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Slunný vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0193', '10', '6', 'bile-vino', 'Irsai Oliver', 'polosladké', 'jakostní', '0,75 l ', '11,5 %  ', '16 g/l ', '6,4 g/l', '22,8 g/l', 'null', '3 - 5', 'null', 'Ne', 'null', 'U Chlupa');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0262', '5', '4', 'bile-vino', 'Sauvignon VOC', 'polosuché', 'VOC', '0,75 l ', '12 %  ', '8,4 g/l ', '6,4 g/l', '23,6 g/l', 'null', 'null', 'null', 'Ano', 'null', 'U sv. Urbana');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0191', '10', '27', 'bile-vino', 'Sauvignon - TROPICAL', 'polosuché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '7,8 g/l ', '7,1 g/l', '25,5 g/l', 'null', '7 – 9', 'null', 'Ano', 'null', 'Kamenný vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0190', '10', '5', 'bile-vino', 'Sauvignon GREEN', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '5,9 g/l ', '6,3 g/l', '23 g/l', 'null', '7 – 9', 'null', 'Ano', 'null', 'U tří dubů');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOR.0063', '22', 'null', 'sekty-a-sumiva-vina', 'Hort sekt Alsasko', 'suché', 'jakostní šumivé', '0,75 l ', '12,5 %  ', '4,6 g/l ', '6,4 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOR.0062', '22', 'null', 'sekty-a-sumiva-vina', 'Hort sekt Limoux', 'suché', 'jakostní šumivé', '0,75 l ', '12 %  ', '7 g/l ', '5 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0269', '5', '12', 'bile-vino', 'Ryzlink rýnský', 'polosuché', 'pozdní sběr', '0,75 l ', '12 %  ', '12,7 g/l ', '6,6 g/l', '26,1 g/l', 'null', 'null', 'null', 'Ano', 'null', 'U sklepů');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0070', '11', '4', 'ruzove-vino', 'Zweigeltrebe Rosé', 'polosuché', 'kabinetní', '0,75 l ', '11 %  ', '14,2 g/l ', '5,7 g/l', '21,1 g/l', '20 °NM', '1 - 3 roky', 'null', 'Ano', 'null', 'Nad Sklepy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0071', '11', '4', 'ruzove-vino', 'Cabernet Sauvignon / Merlot Rosé', 'polosladké', 'pozdní sběr', '0,75 l ', '12,5 %  ', '16 g/l ', '5,9 g/l', '21,4 g/l', '22,5 °NM', '2 - 3', 'null', 'Ano', 'null', 'Nad Sklepy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SPA.0088', '26', '34', 'ruzove-vino', 'GRYLLUS rosé BIO', 'null', 'kabinetní', '0,75 l ', '12,5 %  ', '0,5 g/l ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('TAO.0058', '20', '16', 'ruzove-vino', 'Frankovka Rosé', 'suché', 'moravské zemské', '0,75 l ', '12 %  ', '1,3 g/l ', '6,2 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Šibeniční hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0153', '8', '19', 'cervene-vino', 'Rulandské modré', 'suché', 'výběr z hroznů', '0,75 l ', '12,5 %  ', '0,2 g/l ', '4,7 g/l', '26,1 g/l', '24 °NM', '4 - 6', 'null', 'Ano', '09.10.2017', 'U Hájku');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0192', '10', '24', 'ruzove-vino', 'Cabernet Sauvignon ROUGE', 'polosladké', 'výběr z hroznů', '0,75 l ', '13 %  ', '24,7 g/l ', '7 g/l', '24,1 g/l', 'null', '4 - 6', 'null', 'Ano', 'null', 'Achtele');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('KOR.0074', '1', '6', 'ruzove-vino', 'Pinot Noir rosé / Pozdravy z NP Podyjí', 'suché', 'kabinetní', '0,75 l ', '13 %  ', ' ', 'null', 'null', 'null', '2 - 3', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAJ.0066', '23', '10', 'bile-vino', 'Veltlínské zelené EXTRA', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', ' ', 'null', 'null', 'null', '4 - 6', 'null', 'Ano', 'null', 'Načeratický kopec');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0212', '3', '37', 'bile-vino', 'Rulandské bílé', 'polosuché', 'pozdní sběr', '0,75 l ', '12 %  ', '9,6 g/l ', '6,6 g/l', '23,2 g/l', '21,4 °NM', '4 - 6', 'null', 'Ano', '27.09.2017', 'Na vyhlídce');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIH.0119', '13', '6', 'bile-vino', 'Muškát moravský', 'polosuché', 'kabinetní', '0,75 l ', '11 %  ', '15,2 g/l ', '7 g/l', '23,2 g/l', 'null', 'null', 'null', 'Ano', 'null', 'U Chlupa');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIH.0121', '13', '9', 'bile-vino', 'Ryzlink vlašský', 'sladké', 'výběr z bobulí', '0,75 l ', '12,5 %  ', '50,3 g/l ', '7 g/l', '36,2 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Staré vinice');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIH.0123', '13', '4', 'ruzove-vino', 'Cabernet Sauvignon Rosé', 'polosladké', 'výběr z hroznů', '0,75 l ', '12,5 %  ', '25,8 g/l ', '6,4 g/l', '28,5 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Vinná hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIH.0118', '13', 'null', 'bile-vino', 'Irsai Oliver', 'polosladké', 'kabinetní', '0,75 l ', '10,5 %  ', '19 g/l ', '5,2 g/l', '19,5 g/l', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('KOR.0073', '1', '6', 'ruzove-vino', 'Frankovka rosé / Pozdravy z NP Podyjí', 'polosuché', 'kabinetní', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', '2 - 3', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAR.0014', '18', '12', 'bile-vino', 'Ryzlink vlašský', 'suché', 'moravské zemské', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'U sklepů');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIH.0122', '13', '9', 'bile-vino', 'Solaris', 'polosladké', 'pozdní sběr', '0,75 l ', '12,5 %  ', '25,6 g/l ', '7,5 g/l', '30,3 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Staré vinice');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAR.0013', '18', '12', 'bile-vino', 'Veltlínské zelené', 'suché', 'moravské zemské', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'U sklepů');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('KOR.0072', '1', '9', 'bile-vino', 'Muškát moravský / Pozdravy z NP Podyjí', 'polosladké', 'kabinetní', '0,75 l ', '11 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('KOR.0071', '1', '9', 'bile-vino', 'Veltlínské zelené / Pozdravy z NP Podyjí', 'suché', 'kabinetní', '0,75 l ', '13 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0164', '8', '4', 'bile-vino', 'Chardonnay', 'polosladké', 'pozdní sběr', '0,75 l ', '11 %  ', '38,2 g/l ', '7,1 g/l', '24,7 g/l', '22,8 °NM', '4-6', 'null', 'Ano', '13.09.2018', 'Lampelberg');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0162', '8', 'null', 'bile-vino', 'Rotgipfler', 'polosuché', 'moravské zemské', '0,75 l ', '12 %  ', '10,5 g/l ', '6,5 g/l', '22,6 g/l', 'null', '2 - 4', 'null', 'Ano', '21.09.2018', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('KOR.0070', '1', '9', 'bile-vino', 'Tramín červený / Pozdravy z NP Podyjí', 'polosladké', 'pozdní sběr', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ART.0046', '27', '38', 'bile-vino', 'Sauvignon Blanc', 'suché', 'moravské zemské', '0,75 l ', '13 %  ', '9 g/l ', '7 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAR.0015', '18', '4', 'bile-vino', 'Muškát moravský', 'polosuché', 'moravské zemské', '0,75 l ', '11,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Slunný vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0046', '7', '18', 'ruzove-vino', 'Rulandské modré - klaret', 'polosuché', 'pozdní sběr', '0,75 l ', '13 %  ', '9,8 g/l ', '7 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'U lipky');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0068', '11', '4', 'bile-vino', 'Sylvánské zelené', 'suché', 'kabinetní', '0,75 l ', '11 %  ', '6,6 g/l ', '5,1 g/l', '20,4 g/l', '20 °NM', '4', 'null', 'Ano', 'null', 'Nad Sklepy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ART.0047', '27', '30', 'bile-vino', 'Pinot Gris', 'suché', 'moravské zemské', '0,75 l ', '13 %  ', '7 g/l ', '6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Načeratický kopec');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0072', '11', '4', 'bile-vino', 'Ryzlink rýnský', 'polosuché', 'pozdní sběr', '0,75 l ', '11 %  ', '14,4 g/l ', '7,4 g/l', '24 g/l', '23 °NM', 'null', 'null', 'Ne', 'null', 'Nad Sklepy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0069', '11', '14', 'bile-vino', 'Muškát moravský', 'polosuché', 'kabinetní', '0,75 l ', '11 %  ', '13,2 g/l ', '5,2 g/l', '19,3 g/l', '20 °NM', '2 - 3', 'null', 'Ano', 'null', 'Dívčí hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SPA.0086', '26', '34', 'bile-vino', 'Sauvignon BIO', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', '0,4 g/l ', '5,7 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SPA.0085', '26', 'null', 'bile-vino', 'Rulandské bílé', 'polosuché', 'moravské zemské', '0,75 l ', '12,5 %  ', '10,9 g/l ', '5,3 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MOD.0058', '14', '34', 'bile-vino', 'Veltlínské zelené', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', '3,1 g/l ', '5 g/l', 'null', 'null', '6 - 8', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('KOR.0069', '1', '6', 'bile-vino', 'Sauvignn Blanc / Pozdravy z NP Podyjí', 'suché', 'pozdní sběr', '0,75 l ', '14,5 %  ', ' ', 'null', 'null', 'null', '4 - 6', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0189', '10', 'null', 'cervene-vino', 'πnot noir - červené', 'suché', 'výběr z hroznů', '0,75 l ', '13 %  ', '4 g/l ', '4,3 g/l', 'null', 'null', '7 – 9', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0188', '10', 'null', 'ruzove-vino', 'πnot noir - rosé', 'polosladké', 'pozdní sběr', '0,75 l ', '13 %  ', '18 g/l ', '7 g/l', 'null', 'null', '4 - 6', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0187', '10', 'null', 'ruzove-vino', 'πnot noir - klaret', 'polosladké', 'výběr z hroznů', '0,75 l ', '13 %  ', '17 g/l ', '6,7 g/l', 'null', 'null', '7 – 9', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0232', '3', 'null', 'bile-vino', 'Rulandské šedé', 'polosuché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '12,7 g/l ', '6,4 g/l', '26,4 g/l', '23 °NM', '4 - 6', 'null', 'Ano', '02.10.2018', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PLA.0057', '2', '20', 'cervene-vino', 'Cuvée TRIO', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', '0,4 g/l ', '5,1 g/l', '25,1 g/l', 'null', '3 - 6', 'null', 'Ano', 'null', 'Nová hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0194', '10', '27', 'bile-vino', 'Muškát moravský', 'polosuché', 'jakostní', '0,75 l ', '12 %  ', '16,1 g/l ', '6,3 g/l', '19,6 g/l', 'null', '2 - 4', 'null', 'Ano', 'null', 'Staré vinohrady');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0047', '7', '18', 'bile-vino', 'Sauvignon VOC', 'polosuché', 'VOC', '0,75 l ', '11,5 %  ', ' ', 'null', 'null', '22 °NM', 'null', 'null', 'Ano', 'null', 'U lipky');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SIM.0027', '28', '4', 'bile-vino', 'Pinot Gris', 'suché', 'moravské zemské', '0,75 l ', '13,5 %  ', '5 g/l ', '6,5 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Lampelberg');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MOD.0057', '14', '34', 'ruzove-vino', 'Rulandské modré - klaret', 'polosuché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '11,9 g/l ', '6,2 g/l', 'null', 'null', '2 - 4', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PLA.0051', '2', '20', 'bile-vino', 'Sauvignon', 'polosuché', 'kabinetní', '0,75 l ', '12 %  ', '7,5 g/l ', '5 g/l', '19,3 g/l', 'null', '1 - 3 roky', 'null', 'Ano', 'null', 'Nová hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0227', '3', '4', 'bile-vino', 'Rulandské šedé', 'polosladké', 'výběr z hroznů', '0,75 l ', '11,5 %  ', '38,6 g/l ', '6,7 g/l', '29,3 g/l', '25 °NM', '4 - 6', 'null', 'Ano', '19.11.2018', 'Šác');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PLA.0052', '2', '20', 'bile-vino', 'Muškát moravský', 'polosuché', 'kabinetní', '0,75 l ', '11,5 %  ', '7 g/l ', '4,7 g/l', '20,8 g/l', 'null', '1 - 3 roky', 'null', 'Ano', 'null', 'Nová hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PLA.0050', '2', '29', 'bile-vino', 'Hibernal', 'suché', 'kabinetní', '0,75 l ', '11,5 %  ', '6,1 g/l ', '5,3 g/l', '23,1 g/l', 'null', '1 - 3 roky', 'null', 'Ano', 'null', 'Seslice');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PLA.0054', '2', '29', 'bile-vino', 'Muscaris', 'polosladké', 'pozdní sběr', '0,75 l ', '12 %  ', '22,5 g/l ', '6,4 g/l', '22,5 g/l', 'null', '1 - 3 roky', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIH.0117', '13', '4', 'bile-vino', 'Kerner', 'sladké', 'výběr z bobulí', '0,75 l ', '11 %  ', '53,1 g/l ', '8,3 g/l', '31,1 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Lampelberg');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0045', '7', '26', 'bile-vino', 'Sylvánské zelené', 'polosuché', 'pozdní sběr', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', '03.10.2016', 'Nad Kolářovým sklepem');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('TAO.0052', '20', '16', 'bile-vino', 'Pinot Gris', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', '5,6 g/l ', '7,5 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Šibeniční hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('KOR.0068', '1', '6', 'bile-vino', 'Ryzlink rýnský / Pozdravy z NP Podyjí', 'suché', 'pozdní sběr', '0,75 l ', '14 %  ', ' ', 'null', 'null', 'null', '2 - 4', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('TAO.0054', '20', '16', 'bile-vino', 'Sauvignon - Karlov', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '3,1 g/l ', '7,4 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Karlov');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('TAO.0051', '20', '16', 'bile-vino', 'Chardonnay SUR-LIE', 'suché', 'pozdní sběr', '0,75 l ', '14 %  ', '4 g/l ', '5,4 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Karlov');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ART.0048', '27', '23', 'bile-vino', 'GREEN', 'suché', 'moravské zemské', '0,75 l ', '  ', '2 g/l ', '6,5 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Volné pole');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('TAO.0053', '20', '16', 'bile-vino', 'Veltlínské zelené - Staré keře', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '0,5 g/l ', '6,5 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Šibeniční hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('TAO.0056', '20', '16', 'bile-vino', 'Pinot Noir - Klaret', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', '3 g/l ', '7,3 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Šibeniční hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('TAO.0055', '20', '16', 'ruzove-vino', 'Merlot rosé', 'polosuché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '9,3 g/l ', '8,1 g/l', 'null', '9,3 °NM', 'null', 'null', 'Ano', 'null', 'Šibeniční hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SIM.0028', '28', '4', 'bile-vino', 'Ryzlink rýnský', 'suché', 'moravské zemské', '0,75 l ', '13 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'U sv. Urbana');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PLA.0053', '2', '29', 'bile-vino', 'Rinot', 'polosuché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '7,7 g/l ', '6,3 g/l', '22,2 g/l', 'null', '1 - 3 roky', 'null', 'Ano', 'null', 'Seslice');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0043', '7', '26', 'bile-vino', 'Chardonnay', 'polosuché', 'pozdní sběr', '0,75 l ', '12,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Nad Kolářovým sklepem');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0158', '8', '4', 'bile-vino', 'Rulandské šedé', 'polosladké', 'výběr z hroznů', '0,75 l ', '12,5 %  ', '29,8 g/l ', '7,2 g/l', '35,4 g/l', '26,5 °NM', '4 - 6', 'null', 'Ano', '01.10.2018', 'Lampelberg');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0160', '8', '23', 'ruzove-vino', 'Zweigeltrebe Rosé', 'polosuché', 'kabinetní', '0,75 l ', '10,5 %  ', '13,8 g/l ', '6,9 g/l', '23,4 g/l', '20,8 °NM', '2 - 3', 'null', 'Ano', '14.10.2018', 'Volné pole');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('TAO.0057', '20', '16', 'bile-vino', 'Veltlínské červené rané', 'suché', 'moravské zemské', '0,75 l ', '12 %  ', '0,7 g/l ', '6 g/l', 'null', '19,8 °NM', 'null', 'null', 'Ano', 'null', 'Karlov');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0159', '8', '37', 'ruzove-vino', 'Frankovka Rosé', 'polosladké', 'kabinetní', '0,75 l ', '9,5 %  ', '25,2 g/l ', '6,7 g/l', '23,4 g/l', '19,5 °NM', '2 - 3', 'null', 'Ano', '15.10.2018', 'Na vyhlídce');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0230', '3', '23', 'ruzove-vino', 'Svatovavřinecké Rosé', 'polosladké', 'kabinetní', '0,75 l ', '10 %  ', '18,2 g/l ', '6,7 g/l', '24,4 g/l', '19,2 °NM', '2 - 4', 'null', 'Ano', '11.09.2018', 'Volné pole');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOR.0058', '22', 'null', 'cervene-vino', 'HF Premium', 'suché', 'známkové', '0,75 l ', '13,5 %  ', '0,4 g/l ', '4,6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0044', '7', '26', 'bile-vino', 'Muškát moravský', 'polosuché', 'moravské zemské', '0,75 l ', '11,5 %  ', ' ', 'null', 'null', '18,5 °NM', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0042', '7', '8', 'bile-vino', 'Tramín červený', 'null', 'pozdní sběr', '0,75 l ', '12,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Stará hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PLA.0049', '2', '29', 'bile-vino', 'Savilon', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', '3,5 g/l ', '5,2 g/l', '21,1 g/l', 'null', '1 - 3 roky', 'null', 'Ano', 'null', 'Seslice');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0184', '10', '21', 'bile-vino', 'Sylvánské zelené - Ledňáček říční', 'suché', 'pozdní sběr', '0,75 l ', '11,5 %  ', '6,5 g/l ', '7,1 g/l', '25 g/l', 'null', '3 - 5', 'null', 'Ano', 'null', 'Weinperky');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0185', '10', '3', 'bile-vino', 'Ryzlink rýnský', 'polosuché', 'výběr z hroznů', '0,75 l ', '13 %  ', '9,8 g/l ', '7,1 g/l', '24,3 g/l', 'null', '7 – 9', 'null', 'Ano', 'null', 'Dívčí vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SPA.0084', '26', '34', 'bile-vino', 'Ryzlink rýnský z velkého sudu', 'suché', 'pozdní sběr', '0,75 l ', '13,5 %  ', '1 g/l ', '6,6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0231', '3', '23', 'bile-vino', 'Müller Thurgau', 'suché', 'kabinetní', '0,75 l ', '11 %  ', '6,7 g/l ', '6,4 g/l', '23 g/l', '19,8 °NM', '2 - 4', 'null', 'Ano', '29.08.2018', 'Volné pole');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0186', '10', '6', 'bile-vino', 'Sauvignon - Lacerta Viridis', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '7,1 g/l ', '6,9 g/l', '24,7 g/l', 'null', '4 - 6', 'null', 'Ano', 'null', 'Knížecí vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('KOR.0066', '1', '6', 'bile-vino', 'Ryzlink rýnský - BETON', 'suché', 'pozdní sběr', '0,75 l ', '13,5 %  ', '5,7 g/l ', '8,7 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Knížecí vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0152', '8', '37', 'bile-vino', 'Rulandské bílé', 'polosuché', 'pozdní sběr', '0,75 l ', '12 %  ', '10,9 g/l ', '6,7 g/l', '22,6 g/l', '22 °NM', '4 - 6', 'null', 'Ano', '27.09.2017', 'Leskoun');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0041', '7', 'null', 'ruzove-vino', 'Frankovka Rosé', 'polosladké', 'moravské zemské', '0,75 l ', '10 %  ', ' ', 'null', 'null', '18,9 °NM', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PLA.0055', '2', '16', 'sekty-a-sumiva-vina', 'RoseCO2 - perlivé víno', 'polosladké', 'perlivé', '0,75 l ', '9,5 %  ', '40 g/l ', '4,9 g/l', '22,2 g/l', 'null', '1 - 3 roky', 'null', 'Ano', 'null', 'Karlov');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SPA.0083', '26', 'null', 'bile-vino', 'Veltlínské zelené', 'suché', 'kabinetní', '0,75 l ', '12 %  ', '0,6 g/l ', '6,3 g/l', 'null', 'null', '2 - 3', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0040', '7', 'null', 'hroznovy-most', 'Hroznový mošt - Sylvánské zelené', 'sladké', 'null', '0,75 l ', '  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0039', '7', '8', 'bile-vino', 'Rulandské šedé', 'polosuché', 'pozdní sběr', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', '6', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('JZM.0010', '29', 'null', 'bile-vino', 'Rulandské šedé', 'sladké', 'moravské zemské', '0,75 l ', '8 %  ', ' ', 'null', 'null', 'null', 'o 1 roku', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAJ.0064', '23', 'null', 'bile-vino', 'FREŠ - známkové cuvée', 'suché', 'moravské zemské', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0179', '10', 'null', 'bile-vino', 'Modrý Janek', 'suché', 'moravské zemské', '0,75 l ', '12 %  ', '3,2 g/l ', '6,2 g/l', '22,8 g/l', 'null', '4 - 6', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0183', '10', '13', 'bile-vino', 'Veltlínské zelené - Ledňáček říční', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '7,3 g/l ', '6,9 g/l', '25,7 g/l', 'null', '2 - 4', 'null', 'Ano', 'null', 'Skalka');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('JZM.0009', '29', 'null', 'bile-vino', 'Tramín červený', 'sladké', 'moravské zemské', '0,75 l ', '9 %  ', ' ', 'null', 'null', 'null', '1', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MUS.0021', '25', '16', 'ruzove-vino', 'Frankovka rosé', 'suché', 'pozdní sběr', '0,75 l ', '11 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Karlov');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0223', '3', '4', 'bile-vino', 'Pálava', 'sladké', 'výběr z hroznů', '0,75 l ', '10,5 %  ', '53,8 g/l ', '7,5 g/l', '27 g/l', '24,2 °NM', '5-7 le', 'null', 'Ano', '03.10.2018', 'Lampelberg');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('KOR.0067', '1', '6', 'bile-vino', 'Ryzlink vlašský / Pozdravy z NP Podyjí', 'suché', 'kabinetní', '0,75 l ', '13,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('KOR.0065', '1', '6', 'bile-vino', 'Sauvignon', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', '2,1 g/l ', '7,6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Knížecí vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('TAO.0050', '20', '16', 'cervene-vino', 'Frankovka', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '0,3 g/l ', '6,7 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Na nivách');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0097', '5', '4', 'cervene-vino', 'Zweigeltrebe', 'suché', 'jakostní', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0090', '5', '4', 'cervene-vino', 'Svatovařinecké', 'suché', 'jakostní', '0,75 l ', '12,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0086', '5', '4', 'bile-vino', 'Ryzlink rýnský', 'suché', 'jakostní', '0,75 l ', '11,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0065', '5', '12', 'ruzove-vino', 'Cuvée Rosé', 'polosladké', 'kabinetní', '0,75 l ', '10,5 %  ', '25,8 g/l ', '6,1 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Ořechový vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0154', '8', '23', 'bile-vino', 'Sauvignon', 'polosuché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '12,3 g/l ', '6,7 g/l', 'null', '22 °NM', '4 - 6', 'null', 'Ano', '26.09.2017', 'Volné pole');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0072', '5', '4', 'bile-vino', 'Chardonnay', 'suché', 'jakostní', '0,75 l ', '11,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('JZM.0008', '29', 'null', 'bile-vino', 'Chardonnay', 'sladké', 'moravské zemské', '0,75 l ', '9 %  ', ' ', 'null', 'null', 'null', 'o 1 roku', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0096', '5', '4', 'bile-vino', 'Veltlínské zelené', 'suché', 'jakostní', '0,75 l ', '  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0081', '5', '12', 'bile-vino', 'Rulandské šedé', 'suché', 'pozdní sběr', '0,75 l ', '12 %  ', '5,8 g/l ', '7 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Ořechový vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0084', '5', '12', 'bile-vino', 'Ryzlink rýnský', 'suché', 'VOC', '0,75 l ', '12,5 %  ', '1,2 g/l ', '7,9 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'U sklepů');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ART.0045', '27', 'null', 'cervene-vino', 'Red Reserve', 'suché', 'moravské zemské', '0,75 l ', '13,5 %  ', '1 g/l ', '5,5 g/l', 'null', '25 °NM', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0087', '5', '12', 'bile-vino', 'Ryzlink vlašský', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '3,3 g/l ', '7 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Šác');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0083', '5', '12', 'bile-vino', 'Ryzlink rýnský', 'polosladké', 'pozdní sběr', '0,75 l ', '11 %  ', '31,9 g/l ', '8 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'U sklepů');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0088', '5', '4', 'bile-vino', 'Sauvignon', 'suché', 'kabinetní', '0,75 l ', '11,5 %  ', '1,2 g/l ', '8 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'U sv. Urbana');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0075', '5', '4', 'bile-vino', 'Müller Thurgau', 'suché', 'jakostní', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0080', '5', '12', 'bile-vino', 'Rulandské bílé', 'suché', 'kabinetní', '0,75 l ', '12 %  ', '1,5 g/l ', '6,6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Ořechový vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0078', '5', '4', 'bile-vino', 'Muškát moravský', 'polosuché', 'pozdní sběr', '0,75 l ', '13 %  ', '11,1 g/l ', '5,6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Slunný vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0071', '5', '4', 'bile-vino', 'Chardonnay', 'polosladké', 'výběr z hroznů', '0,75 l ', '13 %  ', '16,5 g/l ', '6,7 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'U sv. Urbana');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0076', '5', '4', 'bile-vino', 'Müller Thurgau', 'polosladké', 'pozdní sběr', '0,75 l ', '11,5 %  ', '17,2 g/l ', '6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Slunný vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0089', '5', '4', 'bile-vino', 'Sauvignon', 'suché', 'VOC', '0,75 l ', '13 %  ', '2,1 g/l ', '5,3 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'U sv. Urbana');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0091', '5', '12', 'bile-vino', 'Tramín červený', 'polosladké', 'pozdní sběr', '0,75 l ', '12,5 %  ', '21,5 g/l ', '5,6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'U sklepů');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0066', '5', '4', 'bile-vino', 'Cuvée sv. Urban', 'polosladké', 'pozdní sběr', '0,75 l ', '11,5 %  ', '23,3 g/l ', '5,2 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'U sv. Urbana');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0099', '5', '14', 'ruzove-vino', 'Zweigeltrebe Rosé', 'polosuché', 'pozdní sběr', '0,75 l ', '12 %  ', '8,2 g/l ', '7,7 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Dívčí hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAJ.0065', '23', 'null', 'bile-vino', 'Hibernal', 'polosuché', 'pozdní sběr', '0,75 l ', '12,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0180', '10', '27', 'bile-vino', 'Veritas', 'polosuché', 'výběr z hroznů', '0,75 l ', '12 %  ', '9,8 g/l ', '6,2 g/l', '21,5 g/l', 'null', '4 - 6', 'null', 'Ano', 'null', 'Staré vinohrady');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0070', '5', '4', 'bile-vino', 'Hibernal', 'polosuché', 'výběr z hroznů', '0,75 l ', '13 %  ', '15,4 g/l ', '7,5 g/l', '25 g/l', 'null', 'null', 'null', 'Ano', 'null', 'U sv. Urbana');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0229', '3', 'null', 'bile-vino', 'Veltlínské červené rané', 'suché', 'kabinetní', '0,75 l ', '11,5 %  ', '5,6 g/l ', '6,4 g/l', '22,3 g/l', '20 °NM', '2 - 4', 'null', 'Ano', '23.08.2018', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0150', '8', '37', 'bile-vino', 'Veltlínské zelené', 'suché', 'VOC', '0,75 l ', '12,5 %  ', '6 g/l ', '6,5 g/l', '22,1 g/l', '21,5 °NM', '4 - 6', 'null', 'Ano', '04.10.2017', 'Olbramovická hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('JOK.0026', '4', 'null', 'bile-vino', 'Muškát moravský', 'suché', 'moravské zemské', '0,75 l ', '11,3 %  ', '2,1 g/l ', '6,7 g/l', 'null', 'null', '2', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0098', '5', '14', 'ruzove-vino', 'Zweigeltrebe Rosé', 'suché', 'pozdní sběr', '0,75 l ', '12 %  ', '5,3 g/l ', '7,3 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Dívčí hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0077', '5', '4', 'bile-vino', 'Müller Thurgau', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', '1 g/l ', '5,6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Dolina');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SPA.0076', '26', 'null', 'bile-vino', 'der Ilgner SPRUDEL', 'sladké', 'perlivé', '0,75 l ', '5,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ne', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0214', '3', '37', 'cervene-vino', 'Frankovka', 'suché', 'pozdní sběr', '0,75 l ', '12 %  ', '0,3 g/l ', '4,8 g/l', '30,7 g/l', '22 °NM', '5-7 le', 'null', 'Ano', 'null', 'Na vyhlídce');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0211', '3', '4', 'bile-vino', 'Ryzlink rýnský', 'polosuché', 'VOC', '0,75 l ', '13 %  ', '11,9 g/l ', '7,2 g/l', '24,4 g/l', '22,6 °NM', '4 - 6', 'null', 'Ano', '10.10.2017', 'Lampelberg');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0176', '10', '6', 'bile-vino', 'Sauvignon TROPICAL', 'polosuché', 'pozdní sběr', '0,75 l ', '12 %  ', '10 g/l ', '7 g/l', '20,1 g/l', 'null', '7 – 9', 'null', 'Ano', 'null', 'U kapličky');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0178', '10', 'null', 'cervene-vino', 'Denis d´ Or Barrique', 'suché', 'známkové', '0,75 l ', '13,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0092', '5', '12', 'bile-vino', 'Tramín červený', 'polosladké', 'výběr z hroznů', '0,75 l ', '12,5 %  ', '18,3 g/l ', '6,4 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'U sklepů');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0082', '5', '14', 'bile-vino', 'Rulandské šedé', 'sladké', 'výběr z bobulí', '0,75 l ', '12 %  ', '53,6 g/l ', '7,9 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Dívčí hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOR.0056', '22', 'null', 'cervene-vino', 'Merlot Nature 2016 HF', 'suché', 'známkové', '0,75 l ', '13,5 %  ', '0,3 g/l ', '4,7 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOR.0057', '22', 'null', 'hroznovy-most', 'MOŠT HORT - Pinot Noir', 'sladké', 'null', '0,75 l ', '  ', ' ', 'null', 'null', 'null', 'o 31.12.2019', 'null', 'Ne', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0068', '5', '4', 'bile-vino', 'Cuvée Waldberg', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', '0,4 g/l ', '6,9 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Waldberg');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0038', '7', '26', 'bile-vino', 'Tramín červený', 'sladké', 'výběr z bobulí', '0,5 l ', '13 %  ', '88,3 g/l ', '5,8 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Nad Kolářovým sklepem');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0036', '7', 'null', 'sekty-a-sumiva-vina', 'Sekt Lechovice DEMI SEC', 'polosuché', 'jakostní šumivé', '0,75 l ', '12,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0037', '7', '26', 'bile-vino', 'Ryzlink rýnský - slámové víno', 'sladké', 'slámové', '0,2 l ', '9,5 %  ', '218 g/l ', '9,6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Nad Kolářovým sklepem');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LIB.0039', '21', '17', 'bile-vino', 'Pálava', 'polosladké', 'výběr z hroznů', '0,75 l ', '11,5 %  ', '36,3 g/l ', '7,1 g/l', '26,3 g/l', '24,5 °NM', 'null', 'null', 'Ano', 'null', 'Fládnická');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SPA.0081', '26', '34', 'bile-vino', 'Sauvignon - KRAVÁK', 'null', 'pozdní sběr', '0,75 l ', '  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAJ.0063', '23', 'null', 'bile-vino', 'Veltlínské zelené', 'suché', 'pozdní sběr', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('JOK.0027', '4', '11', 'bile-vino', 'Solaris', 'polosuché', 'moravské zemské', '0,75 l ', '13 %  ', '8,1 g/l ', '7 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('TAO.0047', '20', '16', 'cervene-vino', 'Pinot Noir', 'suché', 'pozdní sběr', '0,75 l ', '13,5 %  ', '0,3 g/l ', '5,6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Šibeniční hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ART.0044', '27', '34', 'bile-vino', 'Sauvignon KRAVÁK', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '6 g/l ', '6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAN.0038', '24', '14', 'cervene-vino', 'Dornfelder', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', '0,3 g/l ', '5,1 g/l', '23,9 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Dívčí hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAJ.0061', '23', 'null', 'bile-vino', 'Chardonnay SUR-LIE', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SPA.0074', '26', '34', 'cervene-vino', 'Šaler červený', 'sladké', 'likérové', '0,5 l ', '16 %  ', '96 g/l ', '4,7 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SPA.0073', '26', '34', 'bile-vino', 'Šaler bílý', 'sladké', 'likérové', '0,5 l ', '17 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAJ.0062', '23', '34', 'bile-vino', 'Sauvignon KRAVÁK', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '0,3 g/l ', '6,1 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0035', '7', 'null', 'sekty-a-sumiva-vina', 'Sekt Lechovice BRUT', 'suché', 'jakostní šumivé', '0,75 l ', '13 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('JOK.0024', '4', '9', 'bile-vino', 'Veltlínské zelené PÉT-NAT', 'null', 'moravské zemské', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ne', 'null', 'Skalka');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0209', '3', '35', 'bile-vino', 'Ryzlink vlašský', 'polosladké', 'výběr z hroznů', '0,75 l ', '12 %  ', '39,5 g/l ', '7,1 g/l', '25,9 g/l', '24,2 °NM', '4 - 6', 'null', 'Ano', '12.10.2017', 'Vinohrady');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SIM.0026', '28', 'null', 'sekty-a-sumiva-vina', 'Frizzanté 2018', 'polosladké', 'perlivé', '0,75 l ', '11,5 %  ', '30 g/l ', '7 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAN.0037', '24', 'null', 'bile-vino', 'PINOT BLANC Sur-lie', 'suché', 'pozdní sběr', '0,75 l ', '12 %  ', '3,1 g/l ', '6,4 g/l', '19,3 g/l', '21,2 °NM', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIH.0113', '13', '6', 'bile-vino', 'Irsai Oliver', 'polosuché', 'kabinetní', '0,75 l ', '11 %  ', '4,4 g/l ', '5,3 g/l', '22,2 g/l', 'null', 'null', 'null', 'Ano', 'null', 'U Chlupa');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIH.0114', '13', 'null', 'bile-vino', 'Müller Thrugau', 'polosuché', 'kabinetní', '0,75 l ', '11,5 %  ', '5,9 g/l ', '6,3 g/l', '23,1 g/l', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('DOB.0028', '15', 'null', 'bile-vino', 'Ryzlink rýnský VOC', 'suché', 'VOC', '0,75 l ', '13 %  ', '8,6 g/l ', '7,7 g/l', '22,4 g/l', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('DOB.0029', '15', '34', 'bile-vino', 'Sauvignon - KRAVÁK', 'suché', 'pozdní sběr', '0,75 l ', '12 %  ', '4,5 g/l ', '6,6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('NAP.0027', '19', '34', 'bile-vino', 'Sauvignon - KRAVÁK', 'suché', 'pozdní sběr', '0,75 l ', '14 %  ', '7,4 g/l ', '6,9 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0034', '7', '26', 'bile-vino', 'Irsai Oliver', 'polosuché', 'moravské zemské', '0,75 l ', '11,5 %  ', ' ', 'null', 'null', '22,1 °NM', '1 - 2', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0170', '10', '7', 'bile-vino', 'Ryzlink vlašský - Terroir Club', 'polosladké', 'pozdní sběr', '0,75 l ', '12,5 %  ', '19,9 g/l ', '6,6 g/l', '22,7 g/l', 'null', '7 – 9', 'null', 'Ano', 'null', 'Šobes');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SIM.0025', '28', '4', 'bile-vino', 'Moje Cuvée 2018', 'polosuché', 'moravské zemské', '0,75 l ', '11,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0171', '10', 'null', 'bile-vino', 'Rulandské bílé - SUR LIE', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '1 g/l ', '5,8 g/l', '19,6 g/l', 'null', '6 - 8', 'null', 'Ano', 'null', 'Na vinici');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0155', '8', 'null', 'ruzove-vino', 'Martin Růžový 2018', 'polosuché', 'moravské zemské', '0,75 l ', '10,5 %  ', '14,9 g/l ', '6,5 g/l', 'null', 'null', 'o 1 roku', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0066', '11', '4', 'bile-vino', 'Rulandské šedé', 'polosladké', 'pozdní sběr', '0,75 l ', '12 %  ', '17,9 g/l ', '6,5 g/l', '22,5 g/l', '23 °NM', 'null', 'null', 'Ano', 'null', 'Nad Sklepy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0065', '11', '4', 'bile-vino', 'Veltlínské zelené', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', '6,2 g/l ', '5,6 g/l', '20,1 g/l', '22 °NM', 'null', 'null', 'Ano', 'null', 'Nad Sklepy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0169', '10', '24', 'bile-vino', 'ROBINIA - Ryzlink rýnský', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '6,8 g/l ', '6,4 g/l', '22,7 g/l', 'null', '7 – 9', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOR.0053', '22', '19', 'bile-vino', 'Ryzlink rýnský VOC', 'suché', 'VOC', '0,75 l ', '12 %  ', '6,3 g/l ', '7,7 g/l', 'null', 'null', '4', 'null', 'Ano', 'null', 'U Hájku');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIH.0111', '13', '9', 'bile-vino', 'Cuvée Terasy VOC', 'suché', 'VOC', '0,75 l ', '13 %  ', '3,3 g/l ', '5 g/l', '20,4 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Staré vinice');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SPA.0075', '26', 'null', 'cervene-vino', 'Svatováclavské 2018', 'suché', 'moravské zemské', '0,75 l ', '12,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SPA.0082', '26', 'null', 'cervene-vino', 'Zweigeltrebe', 'suché', 'jakostní', '0,75 l ', '13 %  ', '0,3 g/l ', '4,8 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PLA.0045', '2', '16', 'bile-vino', 'Rulandské bílé', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '4,6 g/l ', '6,2 g/l', '20,4 g/l', 'null', '1 - 3 roky', 'null', 'Ano', 'null', 'Karlov');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAR.0010', '18', 'null', 'bile-vino', 'Chardonnay', 'suché', 'moravské zemské', '0,75 l ', '13,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MUS.0019', '25', 'null', 'bile-vino', 'Cuvée Ejbešic', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0032', '7', '26', 'bile-vino', 'Pálava', 'polosladké', 'výběr z hroznů', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', '16.10.2017', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0112', '8', '37', 'bile-vino', 'Ryzlink rýnský VOC - Královská řada', 'suché', 'VOC', '0,75 l ', '12,5 %  ', '8,6 g/l ', '7,3 g/l', '21,2 g/l', '21,5 °NM', '10 -12', 'null', 'Ano', '20.10.2015', 'Olbramovická hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('JOK.0025', '4', 'null', 'bile-vino', 'Müller Thurgau', 'suché', 'moravské zemské', '0,75 l ', '11,5 %  ', '5,8 g/l ', '5,5 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIH.0105', '13', '6', 'bile-vino', 'Kerka', 'polosladké', 'pozdní sběr', '0,75 l ', '10,5 %  ', '42,2 g/l ', '8,6 g/l', '27 g/l', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0166', '10', '21', 'bile-vino', 'Neuburské', 'polosuché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '11,6 g/l ', '6,8 g/l', '25 g/l', 'null', '5-7 le', 'null', 'Ano', 'null', 'Weinperky');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0164', '10', 'null', 'ruzove-vino', 'πnot noir - rosé', 'polosuché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '14,4 g/l ', '7 g/l', '22,5 g/l', 'null', '4 - 6', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MUS.0018', '25', '16', 'bile-vino', 'Ryzlink rýnský', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Šibeniční hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('JZM.0007', '29', 'null', 'ruzove-vino', 'Cabernet Sauvignon Rosé', 'polosladké', 'moravské zemské', '0,75 l ', '10 %  ', '37 g/l ', 'null', 'null', 'null', 'o 2 le', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('JZM.0005', '29', 'null', 'bile-vino', 'Ryzlink rýnský', 'polosladké', 'pozdní sběr', '0,75 l ', '11,5 %  ', '37 g/l ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('JZM.0003', '29', 'null', 'bile-vino', 'Rulandské šedé', 'polosladké', 'pozdní sběr', '0,75 l ', '14 %  ', '17 g/l ', 'null', 'null', 'null', 'null', 'null', 'Ne', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('JZM.0002', '29', 'null', 'bile-vino', 'Chardonnay', 'polosuché', 'pozdní sběr', '0,75 l ', '13 %  ', '9,9 g/l ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('JZM.0004', '29', 'null', 'bile-vino', 'Sauvignon', 'polosuché', 'pozdní sběr', '0,75 l ', '13,5 %  ', '11,9 g/l ', 'null', 'null', 'null', 'null', 'null', 'Ne', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0063', '5', 'null', 'bile-vino', 'Ryzlink rýnský VOC - Královská řada', 'suché', 'VOC', '0,75 l ', '13,5 %  ', '4,4 g/l ', '6,3 g/l', '23,2 g/l', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOR.0054', '22', 'null', 'cervene-vino', 'Selection Cabernet Sauvignon 2017 HF', 'suché', 'null', '0,75 l ', '14,5 %  ', '0,4 g/l ', '4,5 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0165', '10', 'null', 'cervene-vino', 'πnot noir - červené', 'suché', 'výběr z hroznů', '0,75 l ', '13 %  ', '3,3 g/l ', '4,4 g/l', '31,9 g/l', 'null', '7 – 9', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0149', '8', '35', 'bile-vino', 'Tramín červený', 'polosuché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '8,8 g/l ', '6,6 g/l', '25,1 g/l', '23 °NM', '4 - 6', 'null', 'Ano', '05.10.2017', 'Vinohrady');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('KOR.0062', '1', '9', 'cervene-vino', 'Frankovka', 'suché', 'pozdní sběr', '0,75 l ', '11 %  ', '0,1 g/l ', '5,9 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Staré vinice');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0063', '11', '4', 'bile-vino', 'Ryzlink rýnský / pro vegany', 'suché', 'pozdní sběr', '0,75 l ', '12 %  ', '8,3 g/l ', '7,9 g/l', '23,2 g/l', '21 °NM', 'null', 'null', 'Ano', 'null', 'Nad Sklepy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0062', '5', '4', 'bile-vino', 'Veltlínské zelené VOC', 'suché', 'VOC', '0,75 l ', '13,5 %  ', '0,9 g/l ', '5 g/l', '21 g/l', '24,2 °NM', 'null', 'null', 'Ano', 'null', 'Slunný vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0062', '11', 'null', 'bile-vino', 'Müller Thrugau', 'polosuché', 'kabinetní', '0,75 l ', '12 %  ', '8,6 g/l ', '5,9 g/l', '19,2 g/l', '20 °NM', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIZ.0009', '17', '11', 'bile-vino', 'Tramín červený', 'polosuché', 'moravské zemské', '0,75 l ', '12,5 %  ', '11,5 g/l ', '7,3 g/l', 'null', '23 °NM', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('TAO.0045', '20', '32', 'bile-vino', 'Sauvignon - Staré hory', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '2,7 g/l ', '7,3 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Staré hory');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('DOB.0027', '15', '11', 'bile-vino', 'Sylvánské zelené', 'polosuché', 'pozdní sběr', '0,75 l ', '13 %  ', '11,3 g/l ', '7,4 g/l', '22 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MAR.0009', '12', '27', 'bile-vino', 'Ryzlink rýnský', 'suché', 'moravské zemské', '0,75 l ', '13 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kamenný vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIZ.0008', '17', '11', 'ruzove-vino', 'Cabernet sauvignon Rosé', 'polosladké', 'moravské zemské', '0,75 l ', '11,5 %  ', '22,5 g/l ', '7,2 g/l', 'null', '22,5 °NM', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MUS.0020', '25', '16', 'cervene-vino', 'Frankovka', 'suché', 'pozdní sběr', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Karlov');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MAR.0008', '12', '33', 'bile-vino', 'Tramín červený', 'polosladké', 'výběr z hroznů', '0,75 l ', '14 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kacperky');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MAR.0007', '12', '33', 'bile-vino', 'Pálava', 'polosladké', 'výběr z hroznů', '0,75 l ', '13,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kacperky');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MAR.0010', '12', 'null', 'bile-vino', 'Ryzlink vlašský', 'suché', 'pozdní sběr', '0,75 l ', '13,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0052', '5', '4', 'bile-vino', 'Veltlínské zelené', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', '2,1 g/l ', '5,6 g/l', '21,6 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Slunný vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0064', '11', '4', 'bile-vino', 'Rulandské šedé', 'polosuché', 'pozdní sběr', '0,75 l ', '12 %  ', '14,6 g/l ', '6,3 g/l', '20,7 g/l', '21 °NM', 'null', 'null', 'Ano', 'null', 'Nad Sklepy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOR.0052', '22', 'null', 'cervene-vino', 'Selection HF 2015', 'suché', 'známkové', '0,75 l ', '14 %  ', '0,4 g/l ', '4,4 g/l', 'null', 'null', '10', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('KOR.0060', '1', 'null', 'ruzove-vino', 'Frankovka rosé / Pozdravy z NP Podyjí', 'null', 'kabinetní', '0,75 l ', '12 %  ', '16,9 g/l ', '7,7 g/l', 'null', 'null', 'null', 'null', 'Ne', 'null', 'Staré vinice');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAR.0003', '18', '4', 'bile-vino', 'Sauvignon', 'polosuché', 'moravské zemské', '0,75 l ', '12,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'U sv. Urbana');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0158', '10', 'null', 'sekty-a-sumiva-vina', 'Znovín de Lux Demi Sec', 'polosladké', 'jakostní šumivé', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MAR.0011', '12', '8', 'bile-vino', 'Rulandské bílé', 'suché', 'moravské zemské', '0,75 l ', '14 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0030', '7', '18', 'bile-vino', 'Ryzlink rýnský', 'polosladké', 'pozdní sběr', '0,75 l ', '10,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ne', '18.10.2016', 'U lipky');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0029', '7', 'null', 'bile-vino', 'Rulandské šedé', 'polosuché', 'moravské zemské', '0,75 l ', '12 %  ', ' ', 'null', 'null', '21,2 °NM', 'null', 'null', 'Ano', '10.09.2017', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MUS.0016', '25', '16', 'bile-vino', 'Veltlínské zelené', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Šibeniční hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0146', '8', '36', 'bile-vino', 'Sylvánské zelené', 'polosuché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '12,8 g/l ', '6,7 g/l', '23,6 g/l', '23,2 °NM', '4 - 6', 'null', 'Ano', '18.10.2017', 'Babičák');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MUS.0015', '25', '16', 'bile-vino', 'Rulandské bílé', 'suché', 'výběr z hroznů', '0,75 l ', '14 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Karlov');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MOD.0054', '14', '34', 'bile-vino', 'Müller Thurgau', 'polosuché', 'jakostní', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MOD.0055', '14', '34', 'ruzove-vino', 'Svatovavřinecké Rosé', 'polosuché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '10,4 g/l ', '6,2 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('KOR.0050', '1', '6', 'bile-vino', 'Cuvée VzPg 2015', 'suché', 'moravské zemské', '0,75 l ', '12,5 %  ', '0,3 g/l ', '6,8 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Fládnická');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0200', '3', '4', 'cervene-vino', 'Rulandské modré', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '2,4 g/l ', '4,9 g/l', '30,8 g/l', '23,2 °NM', '6 - 8', 'null', 'Ano', '09.11.2016', 'Lampelberg');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MOD.0050', '14', '34', 'bile-vino', 'Sauvignon', 'polosuché', 'pozdní sběr', '0,75 l ', '13 %  ', '12 g/l ', '5,6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('JOK.0023', '4', '9', 'bile-vino', 'Veltlínské zelené', 'suché', 'pozdní sběr', '0,75 l ', '12 %  ', '5,5 g/l ', '7,2 g/l', 'null', '21,6 °NM', 'null', 'null', 'Ano', 'null', 'Skalka');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAN.0034', '24', '28', 'bile-vino', 'Veltlínské zelené', 'suché', 'pozdní sběr', '0,75 l ', '12 %  ', '3,4 g/l ', '6,1 g/l', '19,5 g/l', '22,1 °NM', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MOD.0051', '14', '10', 'bile-vino', 'Tramín', 'polosladké', 'výběr z hroznů', '0,75 l ', '13,5 %  ', '28,1 g/l ', '5,8 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Načeratický kopec');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0061', '11', '4', 'bile-vino', 'Chardonnay', 'polosladké', 'výběr z hroznů', '0,75 l ', '12,5 %  ', '19,1 g/l ', '7 g/l', '25,8 g/l', '24 °NM', 'null', 'null', 'Ano', 'null', 'Nad Sklepy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ART.0042', '27', '28', 'bile-vino', 'Ryzlink rýnský VOC', 'suché', 'VOC', '0,75 l ', '12,5 %  ', '8 g/l ', '7,5 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAN.0033', '24', '4', 'bile-vino', 'Pinot Gris', 'polosuché', 'výběr z hroznů', '0,75 l ', '12,5 %  ', '12,6 g/l ', '6,6 g/l', '22,6 g/l', '24 °NM', 'null', 'null', 'Ano', 'null', 'U sv. Urbana');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ART.0041', '27', '19', 'bile-vino', 'Sauvignon VOC', 'suché', 'VOC', '0,75 l ', '12 %  ', '5,5 g/l ', '6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'U Hájku');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MUS.0017', '25', '16', 'bile-vino', 'Chardonnay', 'suché', 'výběr z hroznů', '0,75 l ', '13 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Karlov');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIH.0103', '13', '6', 'bile-vino', 'Pálava', 'sladké', 'výběr z cibéb', '0,38 l ', '12,5 %  ', '97,8 g/l ', '6,6 g/l', '46,1 g/l', 'null', 'null', 'null', 'Ano', 'null', 'U Chlupa');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAN.0035', '24', '4', 'bile-vino', 'Tramín', 'polosuché', 'výběr z hroznů', '0,75 l ', '13 %  ', '10,6 g/l ', '6,2 g/l', '22,2 g/l', '24,2 °NM', 'null', 'null', 'Ano', 'null', 'U sv. Urbana');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAJ.0058', '23', 'null', 'bile-vino', 'Rulandské šedé', 'polosladké', 'pozdní sběr', '0,75 l ', '11,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0147', '8', '4', 'bile-vino', 'Chardonnay', 'polosuché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '14,4 g/l ', '6,9 g/l', '23,1 g/l', '23 °NM', '3 - 5', 'null', 'Ano', '25.09.2017', 'Lampelberg');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ART.0043', '27', '37', 'bile-vino', 'Veltlínské zelené VOC', 'suché', 'VOC', '0,75 l ', '11,5 %  ', '2 g/l ', '6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Leskoun');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MOD.0052', '14', '34', 'bile-vino', 'Ryzlink rýnský', 'polosuché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '15,9 g/l ', '7 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MOD.0053', '14', '10', 'bile-vino', 'Rulandské šedé', 'polosuché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '13,9 g/l ', '5,9 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Načeratický kopec');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOD.0027', '16', '27', 'bile-vino', 'Sauvignon VOC', 'polosuché', 'VOC', '0,75 l ', '13 %  ', '8,1 g/l ', '6,4 g/l', '22,1 g/l', '22,5 °NM', 'null', 'null', 'Ano', 'null', 'Kamenný vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0194', '3', 'null', 'cervene-vino', 'LAHOFER červený Sladký - Dornfelder', 'sladké', 'null', '0,75 l ', '12 %  ', '40,9 g/l ', '5,7 g/l', 'null', '21,8 °NM', 'o 31.12.2021', 'null', 'Ano', '05.10.2016', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('JZM.0001', '29', 'null', 'hroznovy-most', 'Hroznový mošt - Rulandské modré', 'sladké', 'null', '0,75 l ', '  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ne', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOD.0028', '16', '13', 'bile-vino', 'Veltlínské zelené VOC', 'suché', 'VOC', '0,75 l ', '13 %  ', '5,5 g/l ', '5,4 g/l', '20,6 g/l', '22,5 °NM', 'null', 'null', 'Ano', 'null', 'Skalka');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0061', '5', '14', 'bile-vino', 'Sylvánské zelené', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '6,1 g/l ', '7 g/l', '23,3 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Dívčí hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0155', '10', 'null', 'sekty-a-sumiva-vina', 'Znovín De Lux Brut', 'suché', 'jakostní šumivé', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0058', '11', '14', 'bile-vino', 'Sauvignon VOC', 'polosuché', 'VOC', '0,75 l ', '12 %  ', '10,9 g/l ', '5,9 g/l', '21,1 g/l', '22 °NM', 'null', 'null', 'Ano', 'null', 'Dívčí hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SPA.0071', '26', '34', 'bile-vino', 'Ryzlink rýnský z velkého sudu', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '0,1 g/l ', '5,5 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0059', '11', '4', 'bile-vino', 'Ryzlink rýnský VOC', 'polosuché', 'VOC', '0,75 l ', '12,5 %  ', '14,5 g/l ', '7,6 g/l', '26,6 g/l', '21 °NM', 'null', 'null', 'Ano', 'null', 'Nad Sklepy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0060', '11', '4', 'bile-vino', 'Veltlínské zelené VOC', 'suché', 'VOC', '0,75 l ', '13 %  ', '6,1 g/l ', '5,4 g/l', '21,9 g/l', '22 °NM', 'null', 'null', 'Ano', 'null', 'Nad Sklepy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0207', '3', 'null', 'cervene-vino', 'André', 'suché', 'jakostní', '0,75 l ', '12,5 %  ', '1 g/l ', '4,8 g/l', '30,5 g/l', 'null', '3-5', 'null', 'Ano', '25.09.2017', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOR.0051', '22', '37', 'bile-vino', 'Veltlínské zelené VOC', 'suché', 'VOC', '0,75 l ', '12 %  ', '4 g/l ', '5,8 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Olbramovická hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SPA.0069', '26', '37', 'bile-vino', 'Veltlínské zelené VOC', 'suché', 'VOC', '0,75 l ', '13 %  ', '0,3 g/l ', '6,6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Leskoun');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0060', '5', '12', 'bile-vino', 'Rulandské šedé', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '6,6 g/l ', '6,4 g/l', '22,3 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Ořechový vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0204', '3', '25', 'bile-vino', 'Veltlínské zelené VOC', 'suché', 'VOC', '0,75 l ', '11,5 %  ', '8,2 g/l ', '6,8 g/l', '22 g/l', '20,4 °NM', '4 - 6', 'null', 'Ano', '27.09.2017', 'Vinohrady ke Křidlůvkám');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAJ.0053', '23', 'null', 'bile-vino', 'Pálava', 'polosladké', 'výběr z hroznů', '0,75 l ', '13,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOR.0049', '22', '10', 'bile-vino', 'Sauvignon VOC', 'suché', 'VOC', '0,75 l ', '13,5 %  ', '8,3 g/l ', '6,3 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Načeratický kopec');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('DOB.0026', '15', '11', 'bile-vino', 'Veltlínské zelené VOC', 'polosuché', 'VOC', '0,75 l ', '12,5 %  ', '10,4 g/l ', '7,6 g/l', '23,5 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('KOR.0057', '1', '6', 'bile-vino', 'Sauvignon VOC', 'suché', 'VOC', '0,75 l ', '13 %  ', '0,4 g/l ', '7,4 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Knížecí vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0144', '8', '23', 'bile-vino', 'Sauvignon VOC', 'polosuché', 'VOC', '0,75 l ', '12 %  ', '12,3 g/l ', '6,8 g/l', '22,3 g/l', '22 °NM', '4 - 6', 'null', 'Ano', '26.09.2017', 'Volné pole');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0026', '7', '18', 'bile-vino', 'Sauvignon VOC', 'null', 'VOC', '0,75 l ', '12,5 %  ', '0,7 g/l ', '6,3 g/l', '21,1 g/l', 'null', 'null', 'null', 'Ano', 'null', 'U lipky');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('KOR.0058', '1', '6', 'bile-vino', 'Ryzlink rýnský VOC', 'suché', 'VOC', '0,75 l ', '12,5 %  ', '4,5 g/l ', '7,9 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Knížecí vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIH.0100', '13', '6', 'bile-vino', 'Sauvignon VOC', 'polosuché', 'VOC', '0,75 l ', '11 %  ', '13,2 g/l ', '7 g/l', '20,8 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Knížecí vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SPA.0066', '26', '34', 'bile-vino', 'Sauvignon VOC', 'suché', 'VOC', '0,75 l ', '13 %  ', '0,6 g/l ', '5,7 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAN.0032', '24', '4', 'bile-vino', 'Ryzlink rýnský VOC', 'suché', 'VOC', '0,75 l ', '13 %  ', '5,1 g/l ', '6,6 g/l', '25,6 g/l', '22,8 °NM', 'null', 'null', 'Ano', 'null', 'U sv. Urbana');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0127', '8', '35', 'bile-vino', 'DNA - Tramín červený - Vinohrady - Cuvée', 'polosuché', 'moravské zemské', '0,75 l ', '13,5 %  ', '9,4 g/l ', '6,4 g/l', 'null', '24 °NM', '6-8le', 'null', 'Ano', '22.09.2015', 'Vinohrady');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOR.0050', '22', '19', 'bile-vino', 'Sauvignon VOC', 'suché', 'VOC', '0,75 l ', '13 %  ', '6,3 g/l ', '6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'U Hájku');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0126', '8', '35', 'bile-vino', 'DNA - Tramín červený - Nerez', 'polosuché', 'moravské zemské', '0,75 l ', '13,5 %  ', '10,7 g/l ', '6,2 g/l', 'null', '24 °NM', '6-8le', 'null', 'Ano', '22.09.2015', 'Vinohrady');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0124', '8', '35', 'bile-vino', 'DNA - Tramín červený - Dub', 'polosuché', 'moravské zemské', '0,75 l ', '13,5 %  ', '9,3 g/l ', '6,6 g/l', 'null', '24 °NM', '6-8le', 'null', 'Ano', '22.09.2015', 'Vinohrady');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0141', '8', '4', 'bile-vino', 'Kerner', 'polosladké', 'pozdní sběr', '0,75 l ', '11,5 %  ', '37 g/l ', '7,2 g/l', '21,2 g/l', '22,6 °NM', '4 - 6', 'null', 'Ano', '15.09.2017', 'Šác');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SPA.0067', '26', '11', 'bile-vino', 'Gryllus bílý BIO VOC', 'suché', 'VOC', '0,75 l ', '13 %  ', '2 g/l ', '5,9 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('NAP.0024', '19', '11', 'bile-vino', 'Muškát moravský', 'polosladké', 'kabinetní', '0,75 l ', '11 %  ', '18,4 g/l ', '6,2 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('NAP.0023', '19', '4', 'ruzove-vino', 'Rulandské modré - KLARET', 'null', 'moravské zemské', '0,75 l ', '14 %  ', '7,9 g/l ', '6,6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Vinná hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('NAP.0026', '19', '4', 'bile-vino', 'Veltlínské zelené', 'suché', 'pozdní sběr', '0,75 l ', '12 %  ', '4,7 g/l ', '6,7 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Vinná hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIZ.0007', '17', '11', 'bile-vino', 'Ryzlink vlašský', 'polosuché', 'moravské zemské', '0,75 l ', '12 %  ', '15,5 g/l ', '7,5 g/l', 'null', '23,5 °NM', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('NAP.0025', '19', '11', 'bile-vino', 'Sylvánské zelené', 'suché', 'kabinetní', '0,75 l ', '12,5 %  ', '6,2 g/l ', '6,4 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0145', '10', 'null', 'sekty-a-sumiva-vina', 'Znovín Classi Demi', 'polosladké', 'jakostní šumivé', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0143', '10', 'null', 'sekty-a-sumiva-vina', 'Znovín De Lux rosé Cabernet Sauvignon Demi sec', 'polosladké', 'jakostní šumivé', '0,75 l ', '12 %  ', '47 g/l ', '6,6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0143', '8', '36', 'bile-vino', 'Sylvánské zelené - HANZEL DNA', 'suché', 'moravské zemské', '0,75 l ', '13 %  ', '3 g/l ', '6,3 g/l', '23,3 g/l', '23 °NM', '10 -12', 'null', 'Ano', '27.09.2016', 'Babičák');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('DOB.0025', '15', '11', 'ruzove-vino', 'Zweigeltrebe Rosé', 'polosuché', 'kabinetní', '0,75 l ', '11 %  ', '9,4 g/l ', '7,2 g/l', '20,3 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MOD.0049', '14', '34', 'bile-vino', 'Hibernal / panenská sklizeň', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', '7,1 g/l ', '7,2 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('TAO.0044', '20', '16', 'bile-vino', 'Veltlínské zelené', 'suché', 'moravské zemské', ' ', '12,5 %  ', '0,9 g/l ', '6,4 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Šibeniční hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SPA.0063', '26', '34', 'cervene-vino', 'Gryllus červený', 'suché', 'známkové', '0,75 l ', '13 %  ', '0,2 g/l ', '4,7 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('KOR.0052', '1', '9', 'bile-vino', 'Müller Thurgau', 'polosuché', 'kabinetní', '0,75 l ', '11,5 %  ', '6,2 g/l ', '6,9 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Staré vinice');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('KOR.0051', '1', '6', 'bile-vino', 'Veltlínské zelené', 'null', 'kabinetní', '0,75 l ', '11 %  ', '0,3 g/l ', '6,5 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Fládnická');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0125', '8', '35', 'bile-vino', 'DNA - Tramín červený - akát', 'polosuché', 'moravské zemské', '0,75 l ', '13,5 %  ', '10 g/l ', '6,4 g/l', 'null', '24 °NM', '6-8le', 'null', 'Ano', '22.09.2015', 'Vinohrady');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0056', '11', '4', 'bile-vino', 'Sylvánské zelené', 'suché', 'kabinetní', '0,75 l ', '10,5 %  ', '6,4 g/l ', '6,4 g/l', '19,3 g/l', '19 °NM', 'null', 'null', 'Ano', 'null', 'Nad Sklepy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SIM.0024', '28', '35', 'bile-vino', 'Pálava', 'polosladké', 'moravské zemské', '0,75 l ', '13,5 %  ', '35 g/l ', '7,5 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PLA.0038', '2', '29', 'cervene-vino', 'Cabernet Cortis', 'suché', 'výběr z bobulí', '0,75 l ', '14 %  ', '1,9 g/l ', '5,5 g/l', '29,7 g/l', 'null', '1 - 3 roky', 'null', 'Ano', 'null', 'Seslice');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ART.0040', '27', '4', 'bile-vino', 'White RESERVE', 'suché', 'moravské zemské', '0,75 l ', '13,5 %  ', '6 g/l ', '7 g/l', 'null', '23 °NM', 'až 10 le', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0139', '8', '19', 'bile-vino', 'Müller Thrugau', 'polosuché', 'pozdní sběr', '0,75 l ', '13 %  ', '9,1 g/l ', '6,5 g/l', '21,6 g/l', '22 °NM', '3 - 5', 'null', 'Ano', '11.10.2017', 'U Hájku');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIH.0095', '13', '33', 'bile-vino', 'Müller Thurgau', 'polosladké', 'kabinetní', '0,75 l ', '10,5 %  ', '20,1 g/l ', '6,4 g/l', '19,2 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Kacperky');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0193', '3', 'null', 'ruzove-vino', 'Rosé LAHOFER', 'sladké', 'pozdní sběr', '0,75 l ', '9,5 %  ', '50,9 g/l ', '7 g/l', '23,6 g/l', '22 °NM', '2 - 4', 'null', 'Ano', '04.10.2017', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0192', '3', '19', 'bile-vino', 'Müller Thrugau', 'sladké', 'pozdní sběr', '0,75 l ', '10 %  ', '50,8 g/l ', '6,8 g/l', '23,8 g/l', '22 °NM', '2 - 4', 'null', 'Ano', '09.10.2017', 'U Hájku');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MOD.0047', '14', '34', 'bile-vino', 'Veltlínské zelené', 'suché', 'jakostní', '0,75 l ', '13 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SIM.0023', '28', '11', 'bile-vino', 'Sauvignon Blanc', 'suché', 'moravské zemské', '0,75 l ', '14 %  ', '8 g/l ', '7 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SIM.0021', '28', 'null', 'bile-vino', 'RESERVE Pinot Cuvée 2016', 'null', 'moravské zemské', '0,75 l ', '14 %  ', '3 g/l ', '6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0132', '8', '19', 'bile-vino', 'Ryzlink rýnský VOC', 'suché', 'VOC', '0,75 l ', '12,5 %  ', '3,8 g/l ', '7,5 g/l', '25,9 g/l', '21 °NM', '7 – 9', 'null', 'Ano', '12.10.2016', 'U Hájku');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0176', '3', 'null', 'bile-vino', 'Rulandské bílé', 'suché', 'pozdní sběr', '0,75 l ', '12 %  ', '3,8 g/l ', '6,8 g/l', '25,4 g/l', '21,2 °NM', '4 - 6', 'null', 'Ano', '25.10.2016', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0131', '8', '4', 'bile-vino', 'Rulandské bílé', 'suché', 'pozdní sběr', '0,75 l ', '11,5 %  ', '3,4 g/l ', '6,6 g/l', '23,6 g/l', '21 °NM', '3 - 4', 'null', 'Ano', '21.10.2016', 'Dolina');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SPA.0068', '26', '34', 'bile-vino', 'Veltlínské zelené VOC', 'suché', 'VOC', '0,75 l ', '13 %  ', '0,3 g/l ', '5,4 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PLA.0035', '2', '20', 'cervene-vino', 'Cabernet Sauvignon', 'suché', 'pozdní sběr', '0,75 l ', '12 %  ', '0,1 g/l ', '4,8 g/l', '21,8 g/l', 'null', '1 - 3 roky', 'null', 'Ano', 'null', 'Nová hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0139', '10', '33', 'ruzove-vino', 'Cabernet Sauvignon Rosé', 'polosladké', 'pozdní sběr', '0,75 l ', '12,5 %  ', '18,1 g/l ', '6,7 g/l', '21,7 g/l', 'null', '2 - 3', 'null', 'Ano', 'null', 'Dívčí vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PLA.0034', '2', 'null', 'bile-vino', 'Cuvée Premiéra', 'null', 'pozdní sběr', '0,75 l ', '  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ne', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('TAO.0040', '20', 'null', 'cervene-vino', 'Cuvé 25', 'suché', 'moravské zemské', '0,75 l ', '13 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAJ.0050', '23', 'null', 'hroznovy-most', '100% Hroznový mošt', 'sladké', 'null', '1 l ', '  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ne', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SPA.0060', '26', 'null', 'hroznovy-most', 'Meruňkový nektar - der Ilgner', 'null', 'null', '0,75 l ', '  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ne', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAJ.0046', '23', '10', 'bile-vino', 'Veltlínské zelené EXTRA', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '4,9 g/l ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0163', '3', '19', 'bile-vino', 'Sauvignon', 'sladké', 'výběr z hroznů', '0,75 l ', '10 %  ', '71,3 g/l ', '7,5 g/l', '23,4 g/l', '24,6 °NM', '5-7 le', 'null', 'Ano', '23.10.2016', 'U Hájku');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0202', '3', '37', 'bile-vino', 'Muškát moravský', 'polosladké', 'kabinetní', '0,75 l ', '10 %  ', '23,5 g/l ', '7 g/l', '23,5 g/l', '19,4 °NM', '2-4', 'null', 'Ano', '18.09.2017', 'Olbramovická hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0136', '10', '3', 'bile-vino', 'Sauvignon RETRO STYL', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '1,5 g/l ', '7,4 g/l', '20,8 g/l', 'null', '4 - 6', 'null', 'Ano', 'null', 'Dívčí vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0138', '10', 'null', 'sekty-a-sumiva-vina', 'Znovín Classic Brut', 'suché', 'jakostní šumivé', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIH.0094', '13', 'null', 'bile-vino', 'Cuvée Terasy VOC', 'suché', 'VOC', '0,75 l ', '12,5 %  ', '0,8 g/l ', '6,5 g/l', '21,4 g/l', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAN.0031', '24', '4', 'bile-vino', 'Sauvignon VOC', 'suché', 'VOC', '0,75 l ', '13 %  ', '6,4 g/l ', '5,7 g/l', '23,7 g/l', 'null', 'null', 'null', 'Ano', 'null', 'U sv. Urbana');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('KOR.0049', '1', '6', 'bile-vino', 'Sauvignon VOC', 'suché', 'VOC', '0,75 l ', '13 %  ', '0,6 g/l ', '7,7 g/l', 'null', 'null', '4 - 6', 'null', 'Ano', 'null', 'Knížecí vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MUS.0013', '25', 'null', 'bile-vino', 'Rulandské šedé', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MUS.0011', '25', 'null', 'cervene-vino', 'Zweigeltrebe', 'suché', 'pozdní sběr', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOR.0045', '22', '19', 'bile-vino', 'Ryzlink rýnský VOC', 'suché', 'VOC', '0,75 l ', '12 %  ', '6,3 g/l ', '7,7 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'U Hájku');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0135', '8', '4', 'bile-vino', 'Muškát žlutý', 'sladké', 'moravské zemské', '0,75 l ', '9,5 %  ', '54 g/l ', '7,5 g/l', 'null', '20 °NM', '2 - 4', 'null', 'Ano', '28.09.2017', 'Šác');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MOD.0045', '14', '10', 'bile-vino', 'Rulandské šedé', 'polosuché', 'výběr z hroznů', '0,75 l ', '13,5 %  ', '7,6 g/l ', '5,9 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Načeratický kopec');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0131', '10', 'null', 'sekty-a-sumiva-vina', 'Znovín Classic Sekt Demi sec - červený', 'polosladké', 'jakostní šumivé', '0,75 l ', '13 %  ', '43,1 g/l ', '7,3 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('KOR.0048', '1', '6', 'bile-vino', 'Chardonnay APRI 2015', 'suché', 'moravské zemské', '0,75 l ', '13,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ne', 'null', 'U Chlupa');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0173', '3', '23', 'bile-vino', 'Rulandské bílé', 'polosladké', 'pozdní sběr', '0,75 l ', '10,5 %  ', '29,8 g/l ', '7,1 g/l', '27,5 g/l', '21,2 °NM', '6 - 8', 'null', 'Ano', '25.10.2016', 'Volné pole');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0171', '3', '19', 'bile-vino', 'Ryzlink rýnský', 'polosladké', 'kabinetní', '0,75 l ', '10,5 %  ', '19,6 g/l ', '7,2 g/l', '24,5 g/l', '20,4 °NM', '4 - 6', 'null', 'Ano', '10.10.2016', 'U Hájku');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0054', '5', 'null', 'bile-vino', 'Rulandské bílé', 'suché', 'jakostní', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0053', '5', '12', 'bile-vino', 'Ryzlink vlašský', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '3,1 g/l ', '6 g/l', '21,7 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Šác');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0051', '5', '12', 'bile-vino', 'Ryzlink rýnský', 'suché', 'pozdní sběr', '0,75 l ', '12 %  ', '7,4 g/l ', '7,3 g/l', '28 g/l', 'null', 'null', 'null', 'Ano', 'null', 'U sklepů');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0054', '11', '14', 'bile-vino', 'Sauvignon', 'polosuché', 'pozdní sběr', '0,75 l ', '12 %  ', '13,1 g/l ', '6,6 g/l', '21,5 g/l', '22 °NM', 'null', 'null', 'Ano', 'null', 'Dívčí hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0055', '5', 'null', 'bile-vino', 'Sauvignon', 'suché', 'jakostní', '0,75 l ', '11,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LIB.0036', '21', '17', 'cervene-vino', 'Zweigeltrebe - barrique', 'suché', 'jakostní', '0,75 l ', '12,5 %  ', '0,3 g/l ', '5,7 g/l', '23,2 g/l', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('TAO.0039', '20', '16', 'cervene-vino', 'Merlot - barrique', 'suché', 'výběr z hroznů', '0,75 l ', '14,5 %  ', '0,2 g/l ', '5,7 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Šibeniční hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0128', '10', '39', 'bile-vino', 'Pálava', 'polosladké', 'výběr z hroznů', '0,5 l ', '12,5 %  ', '28,7 g/l ', '6,9 g/l', '27 g/l', 'null', '6 - 8', 'null', 'Ano', 'null', 'Kokusové hory');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0132', '10', '4', 'bile-vino', 'Veltlínské zelené - Terroir Club', 'polosladké', 'pozdní sběr', '0,75 l ', '12 %  ', '16,4 g/l ', '6,3 g/l', '22,6 g/l', 'null', '4 - 6', 'null', 'Ano', 'null', 'Šác');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MUS.0010', '25', 'null', 'cervene-vino', 'Svatovavřinecké', 'suché', 'pozdní sběr', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0184', '3', '23', 'cervene-vino', 'Zweigeltrebe', 'suché', 'pozdní sběr', '0,75 l ', '12 %  ', '0,3 g/l ', '4,6 g/l', '28,6 g/l', '22 °NM', '6 - 8', 'null', 'Ano', '22.10.2016', 'Volné pole');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ART.0037', '27', '34', 'bile-vino', 'Sauvignon - KRAVÁK', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', '0,7 g/l ', '6,5 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOD.0026', '16', '27', 'bile-vino', 'Veritas', 'polosladké', 'výběr z hroznů', '0,75 l ', '12,5 %  ', '20,1 g/l ', '6,5 g/l', '24,6 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Staré vinohrady');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAN.0024', '24', '4', 'bile-vino', 'Rulandské bílé', 'polosuché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '10,3 g/l ', '6,2 g/l', '24,9 g/l', '22,4 °NM', 'null', 'null', 'Ano', 'null', 'U sv. Urbana');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('NAP.0022', '19', '34', 'bile-vino', 'Sauvignon - KRAVÁK', 'suché', 'pozdní sběr', '0,75 l ', '13,3 %  ', '4,7 g/l ', '6,2 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('TAO.0036', '20', '16', 'bile-vino', 'Veltlínské zelené', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', '1,5 g/l ', '7,6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Šibeniční hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0053', '11', '4', 'bile-vino', 'Pinot Noir - Blanc de Noir', 'polosladké', 'výběr z hroznů', '0,75 l ', '13 %  ', '34,5 g/l ', '6,9 g/l', '35,1 g/l', '26,5 °NM', 'null', 'null', 'Ano', 'null', 'Nad Sklepy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MUS.0012', '25', '16', 'cervene-vino', 'Modrý Portugal', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Karlov');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ART.0035', '27', 'null', 'bile-vino', 'Pinot Gris', 'null', 'moravské zemské', '0,75 l ', '12,5 %  ', '2,5 g/l ', '6,5 g/l', 'null', '22,5 °NM', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ART.0033', '27', '38', 'bile-vino', 'Sauvignon Blanc', 'suché', 'moravské zemské', '0,75 l ', '13 %  ', '1 g/l ', '6,5 g/l', 'null', 'null', '3 - 4', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('TAO.0037', '20', '16', 'bile-vino', 'Chardonnay', 'suché', 'pozdní sběr', '0,75 l ', '14 %  ', '4,3 g/l ', '8,1 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Karlov');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LIB.0034', '21', '17', 'bile-vino', 'Sauvignon', 'polosladké', 'pozdní sběr', '0,75 l ', '11,5 %  ', '28,6 g/l ', '7,4 g/l', '21,3 g/l', '22 °NM', 'null', 'null', 'Ano', 'null', 'Frédy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0124', '10', '39', 'bile-vino', 'Pálava', 'null', 'výběr z hroznů', '0,75 l ', '12 %  ', '26,1 g/l ', '6,8 g/l', '25,6 g/l', 'null', '5-7 le', 'null', 'Ano', 'null', 'Kokusové hory');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0175', '3', '4', 'bile-vino', 'Ryzlink vlašský', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', '7,4 g/l ', '6,4 g/l', '22,6 g/l', '23 °NM', '6 - 8', 'null', 'Ano', '27.10.2016', 'Waldberg');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAJ.0044', '23', '34', 'bile-vino', 'Sauvignon - KRAVÁK', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', '2,1 g/l ', '6 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0050', '5', '4', 'bile-vino', 'Müller Thurgau', 'polosuché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '8,6 g/l ', '5,5 g/l', '21,6 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Dolina');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAJ.0043', '23', 'null', 'bile-vino', 'SAUVIGNON dolce vita', 'polosladké', 'pozdní sběr', '0,75 l ', '10 %  ', '27,1 g/l ', '6,8 g/l', 'null', 'null', '2 - 3', 'null', 'Ano', 'null', 'Šác');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0023', '7', '18', 'ruzove-vino', 'Frankovka Rosé', 'null', 'moravské zemské', '0,75 l ', '12,5 %  ', ' ', 'null', 'null', '22,5 °NM', 'null', 'null', 'Ne', '20.09.2016', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAJ.0042', '23', 'null', 'bile-vino', 'Chardonnay - Grand Reserva No.3', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', '1,7 g/l ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0047', '5', '14', 'bile-vino', 'Sylvánské zelené', 'suché', 'pozdní sběr', '0,75 l ', '13 %  ', '5,1 g/l ', '6,8 g/l', '23,3 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Dívčí hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0022', '7', '26', 'cervene-vino', 'Svatovavřinecké', 'suché', 'moravské zemské', '0,75 l ', '12 %  ', ' ', 'null', 'null', '20,5 °NM', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0049', '5', '4', 'bile-vino', 'Sylvánské zelené', 'suché', 'kabinetní', '0,75 l ', '11 %  ', '3 g/l ', '7,3 g/l', '23,3 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Dívčí hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('DOB.0019', '15', '11', 'bile-vino', 'Sauvignon VOC', 'suché', 'VOC', '0,75 l ', '12,5 %  ', '5,2 g/l ', '7,4 g/l', '20,7 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOR.0042', '22', 'null', 'bile-vino', 'Viognier', 'suché', 'známkové', '0,75 l ', '12,5 %  ', '0,5 g/l ', '5,9 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIZ.0005', '17', '30', 'bile-vino', 'Rulandské šedé', 'polosladké', 'výběr z hroznů', '0,75 l ', '12 %  ', '40,8 g/l ', '7,5 g/l', '26,5 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Načeratický kopec');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOD.0025', '16', '27', 'bile-vino', 'Sauvignon VOC', 'polosuché', 'VOC', '0,75 l ', '12 %  ', '9,2 g/l ', '8,2 g/l', '24,2 g/l', '21,5 °NM', '4 - 6', 'null', 'Ano', 'null', 'Kamenný vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SPA.0061', '26', '34', 'bile-vino', 'KRAVÍ HORA Pinot Blanc SUR LIE', 'suché', 'pozdní sběr', '0,75 l ', '12,5 %  ', '0,1 g/l ', '4,4 g/l', '17,4 g/l', '22,5 °NM', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOR.0040', '22', '19', 'bile-vino', 'Sauvignon VOC', 'suché', 'VOC', '0,75 l ', '12 %  ', '8,5 g/l ', '7,3 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'U Hájku');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOR.0038', '22', '4', 'bile-vino', 'CH sir lie 2011 - Chardonnay & Pinot Blanc', 'suché', 'pozdní sběr', '0,75 l ', '13,5 %  ', '1 g/l ', '4,4 g/l', 'null', 'null', '8 - 10 le', 'null', 'Ano', 'null', 'Lampelberg');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LIB.0033', '21', '17', 'bile-vino', 'Veltlínské zelené VOC', 'suché', 'VOC', '0,75 l ', '11,5 %  ', '6,6 g/l ', '5,4 g/l', '19,6 g/l', '21,5 °NM', '4 - 6', 'null', 'Ano', 'null', 'Stará hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('KOR.0043', '1', '6', 'bile-vino', 'Ryzlink rýnský VOC', 'suché', 'VOC', '0,75 l ', '13 %  ', '0,5 g/l ', '7,2 g/l', 'null', 'null', '5 - 6 le', 'null', 'Ano', 'null', 'Knížecí vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SPA.0052', '26', '34', 'bile-vino', 'EDELSPITZ PIGAGE - oranžové víno', 'suché', 'moravské zemské', '0,75 l ', '13 %  ', '0,1 g/l ', '4,4 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0021', '7', '8', 'bile-vino', 'Veltlínské zelené VOC', 'suché', 'VOC', '0,75 l ', '12 %  ', '2,3 g/l ', '5,5 g/l', '20,7 g/l', '21,1 °NM', '4 - 6', 'null', 'Ano', '17.10.2016', 'Nová hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAJ.0055', '23', '14', 'bile-vino', 'Ryzlink rýnský VOC', 'polosuché', 'VOC', '0,75 l ', '13,5 %  ', '10,9 g/l ', '8 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Dívčí hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAN.0021', '24', '4', 'bile-vino', 'Sauvignon VOC', 'suché', 'VOC', '0,75 l ', '12,5 %  ', '3,5 g/l ', '6,3 g/l', '22 g/l', '21,5 °NM', 'null', 'null', 'Ano', 'null', 'U sv. Urbana');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0120', '8', '23', 'bile-vino', 'Sauvignon VOC', 'suché', 'VOC', '0,75 l ', '13 %  ', '3,1 g/l ', '6,7 g/l', '22,8 g/l', '21 °NM', '3 - 5', 'null', 'Ano', '12.10.2016', 'Volné pole');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIZ.0004', '17', '11', 'bile-vino', 'Chardonnay', 'polosladké', 'pozdní sběr', '0,75 l ', '12 %  ', '31,5 g/l ', '7,6 g/l', '22,8 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0043', '5', '12', 'bile-vino', 'Sauvignon VOC', 'suché', 'VOC', '0,75 l ', '12,5 %  ', '6,4 g/l ', '7 g/l', '22,5 g/l', '21,8 °NM', 'null', 'null', 'Ano', 'null', 'U sklepů');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SPA.0049', '26', '34', 'bile-vino', 'KRAVÍ HORA Sauvignon', 'suché', 'moravské zemské', '0,75 l ', '12,5 %  ', '0,6 g/l ', '6,8 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0044', '5', '4', 'bile-vino', 'Veltlínské zelené VOC', 'suché', 'VOC', '0,75 l ', '13 %  ', '1,4 g/l ', '5,1 g/l', '19,2 g/l', '21,8 °NM', 'null', 'null', 'Ano', 'null', 'Slunný vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0165', '3', 'null', 'bile-vino', 'Neuburské', 'polosladké', 'pozdní sběr', '0,75 l ', '10,5 %  ', '22,3 g/l ', '8,3 g/l', '26,1 g/l', '21 °NM', '4 - 6', 'null', 'Ano', '19.09.2016', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0117', '8', '23', 'bile-vino', 'Müller Thrugau', 'suché', 'pozdní sběr', '0,75 l ', '11,5 %  ', '3,7 g/l ', '6,4 g/l', '19,8 g/l', '21 °NM', '2 - 4', 'null', 'Ano', '21.09.2016', 'Volné pole');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0105', '8', '36', 'bile-vino', 'Veltlínské zelené', 'suché', 'VOC', '0,75 l ', '12,5 %  ', '3,5 g/l ', '6,6 g/l', '20,2 g/l', '21 °NM', '4 - 6', 'null', 'Ano', '05.10.2015', 'Babičák');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SIM.0014', '28', 'null', 'bile-vino', 'Chardonnay', 'suché', 'moravské zemské', '0,75 l ', '12,5 %  ', '5 g/l ', '7,5 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0103', '8', '23', 'bile-vino', 'Sauvignon', 'polosuché', 'VOC', '0,75 l ', '13 %  ', '13,5 g/l ', '7 g/l', '20,4 g/l', '23 °NM', '4 - 6', 'null', 'Ano', '01.10.2015', 'Volné pole');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAJ.0057', '23', 'null', 'bile-vino', 'Tramín červený', 'sladké', 'výběr z hroznů', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0084', '8', '23', 'bile-vino', 'Sauvignon', 'polosuché', 'VOC', '0,75 l ', '11 %  ', '13,7 g/l ', '7,6 g/l', '27,5 g/l', '20 °NM', '3 - 4', 'null', 'Ano', '11.10.2014', 'Volné pole');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIZ.0001', '17', '11', 'bile-vino', 'Neuburské', 'suché', 'moravské zemské', '0,75 l ', '11,5 %  ', '1,8 g/l ', '8 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VIZ.0003', '17', '11', 'bile-vino', 'Pálava', 'polosladké', 'moravské zemské', '0,5 l ', '11 %  ', '33,9 g/l ', '6,2 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0015', '7', '8', 'bile-vino', 'Sauvignon', 'suché', 'moravské zemské', '0,75 l ', '12,5 %  ', ' ', 'null', 'null', '20,5 °NM', 'null', 'null', 'Ano', '19.09.2016', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOD.0021', '16', '27', 'bile-vino', 'Ryzlink rýnský', 'polosuché', 'pozdní sběr', '0,75 l ', '11,5 %  ', '8,2 g/l ', '7,3 g/l', 'null', '21 °NM', 'null', 'null', 'Ano', 'null', 'Kamenný vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0044', '11', 'null', 'hroznovy-most', '100% Hroznový mošt', 'sladké', 'null', '0,75 l ', '  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ne', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SPA.0044', '26', '34', 'bile-vino', 'Tramín červený', 'sladké', 'výběr z bobulí', '0,38 l ', '11 %  ', '76,4 g/l ', '5,9 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('DVP.0011', '6', 'null', 'bile-vino', 'Quatre - Štverka 2014', 'suché', 'moravské zemské', '0,75 l ', '13 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0110', '8', '4', 'bile-vino', 'Rulandské šedé', 'polosuché', 'pozdní sběr', '0,75 l ', '13,5 %  ', '9,2 g/l ', '6,8 g/l', '20,4 g/l', '23 °NM', '4 - 6', 'null', 'Ano', 'null', 'Dolina');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('DVP.0012', '6', 'null', 'bile-vino', 'Cuvée Národní Park', 'suché', 'moravské zemské', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0013', '7', '8', 'bile-vino', 'Tramín červený', 'polosuché', 'moravské zemské', '0,75 l ', '12,5 %  ', ' ', 'null', 'null', '23,3 °NM', 'null', 'null', 'Ano', '10.10.2016', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0091', '10', '21', 'bile-vino', 'Kerner', 'sladké', 'výběr z bobulí', '0,5 l ', '11 %  ', '69,3 g/l ', '7,6 g/l', '33,8 g/l', 'null', '8 - 10 le', 'null', 'Ano', 'null', 'Weinperky');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0102', '10', '39', 'bile-vino', 'Veltlínské zelené', 'polosuché', 'výběr z hroznů', '0,75 l ', '12,5 %  ', '7 g/l ', '6,6 g/l', '24,3 g/l', 'null', '4 - 6', 'null', 'Ano', 'null', 'Kokusové hory');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0035', '5', '14', 'bile-vino', 'Ryzlink rýnský VOC - Královská řada', 'suché', 'VOC', '0,75 l ', '12 %  ', '2,5 g/l ', '8,1 g/l', '24,3 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Dívčí hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('SIM.0016', '28', 'null', 'bile-vino', 'Veltlínské zelené', 'polosuché', 'moravské zemské', '0,75 l ', '12,5 %  ', '11 g/l ', '7 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0039', '11', '4', 'bile-vino', 'Ryzlink rýnský', 'polosladké', 'pozdní sběr', '0,75 l ', '12,5 %  ', '25,2 g/l ', '9,2 g/l', '30,4 g/l', '24,5 °NM', 'null', 'null', 'Ano', 'null', 'Nad Sklepy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('NAP.0020', '19', '34', 'bile-vino', 'Sauvignon - KRAVÁK', 'suché', 'pozdní sběr', '0,75 l ', '14 %  ', '5,7 g/l ', '6,5 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0048', '5', '4', 'bile-vino', 'Muškát moravský', 'polosladké', 'pozdní sběr', '0,75 l ', '11,5 %  ', '30,7 g/l ', '6,1 g/l', '21 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Slunný vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0087', '8', '37', 'bile-vino', 'Ryzlink rýnský', 'suché', 'kabinetní', '0,75 l ', '  ', '6,4 g/l ', '8 g/l', '26 g/l', '19 °NM', '2-4le', 'null', 'Ano', '22.10.2014', 'Olbramovická hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0099', '8', '4', 'bile-vino', 'Rulandské šedé', 'sladké', 'výběr z cibéb', '0,38 l ', '  ', '112 g/l ', '7,2 g/l', '53,3 g/l', '32,4 °NM', '10-12le', 'null', 'Ano', '11.11.2015', 'Lampelberg');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0104', '8', '23', 'cervene-vino', 'André', 'suché', 'jakostní', '0,75 l ', '  ', '0,2 g/l ', '5,3 g/l', '25,7 g/l', '20 °NM', '4-6 le', 'null', 'Ano', '06.11.2015', 'Volné pole');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('AMP.0038', '11', '4', 'bile-vino', 'Müller Thrugau', 'polosladké', 'pozdní sběr', '0,75 l ', '12 %  ', '21,7 g/l ', '5,9 g/l', '19,6 g/l', '21,5 °NM', 'null', 'null', 'Ano', 'null', 'Nad Sklepy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0084', '3', '19', 'sekty-a-sumiva-vina', 'SEKT Neuburské', 'polosuché', 'jakostní šumivé', '0,75 l ', '12,5 %  ', '6 g/l ', 'null', 'null', 'null', 'null', 'null', 'Ne', 'null', 'U Hájku');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOD.0020', '16', 'null', 'bile-vino', 'Tasovjanka', 'polosladké', 'moravské zemské', '0,75 l ', '12 %  ', '14 g/l ', '6,3 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('DVP.0008', '6', 'null', 'bile-vino', 'Sauvignon Blanc qvevri', 'suché', 'moravské zemské', '0,75 l ', '12 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ART.0029', '27', 'null', 'bile-vino', 'ORANGE RESERVE 2015', 'suché', 'moravské zemské', '0,75 l ', '13,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VSL.0011', '7', '8', 'cervene-vino', 'Cabernet Sauvignon', 'suché', 'pozdní sběr', '0,75 l ', '11,5 %  ', '0,8 g/l ', '5,5 g/l', '27,5 g/l', '21,1 °NM', 'null', 'null', 'Ano', '10.11.2011', 'Stará hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('DOB.0017', '15', '11', 'bile-vino', 'Sauvignon (VOC)', 'polosladké', 'VOC', '0,75 l ', '13 %  ', '13,5 g/l ', '7,7 g/l', '21,2 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOD.0017', '16', '27', 'bile-vino', 'Sauvignon (VOC)', 'suché', 'VOC', '0,75 l ', '12,5 %  ', '8,7 g/l ', '6,3 g/l', '21,3 g/l', '23 °NM', 'null', 'null', 'Ano', 'null', 'Kamenný vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0169', '3', '37', 'bile-vino', 'Veltlínské zelené VOC', 'suché', 'VOC', '0,75 l ', '12,5 %  ', '6 g/l ', '6,4 g/l', '22,8 g/l', '21 °NM', '3 - 5', 'null', 'Ano', '01.11.2016', 'Olbramovická hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('WAL.0032', '5', '4', 'bile-vino', 'Veltlínské zelené (VOC)', 'polosuché', 'VOC', '0,75 l ', '12 %  ', '14,5 g/l ', '6,3 g/l', 'null', '22 °NM', 'null', 'null', 'Ano', 'null', 'Slunný vrch');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAN.0013', '24', '14', 'cervene-vino', 'Zweigeltrebe', 'suché', 'pozdní sběr', '0,75 l ', '12 %  ', '0,2 g/l ', '5,5 g/l', '22,2 g/l', '21,6 °NM', 'null', 'null', 'Ano', 'null', 'Dívčí hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOR.0029', '22', '19', 'bile-vino', 'Sauvignon (VOC)', 'suché', 'VOC', '0,75 l ', '12 %  ', '8,4 g/l ', '7,5 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'U Hájku');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HAN.0086', '8', '25', 'bile-vino', 'Veltlínské zelené', 'suché', 'VOC', '0,75 l ', '11,5 %  ', '1,6 g/l ', '5,9 g/l', '21,3 g/l', '19 °NM', '3 - 5', 'null', 'Ano', '20.10.2014', 'Vinohrady ke Křidlůvkám');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LIB.0025', '21', '17', 'bile-vino', 'Sauvignon (VOC)', 'polosladké', 'VOC', '0,75 l ', '12 %  ', '13,8 g/l ', '5,8 g/l', '22,2 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Frédy');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0144', '3', '19', 'sekty-a-sumiva-vina', 'A-SEKT Neuburské', 'null', 'jakostní šumivé', '0,75 l ', '12,5 %  ', '6 g/l ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'U Hájku');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('NAP.0019', '19', '34', 'bile-vino', 'Sauvignon - KRAVÁK', 'suché', 'kabinetní', '0,75 l ', '12 %  ', '1,8 g/l ', '6,7 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('MUS.0002', '25', '16', 'bile-vino', 'Veltlínské zelené', 'suché', 'pozdní sběr', '0,75 l ', '14 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'Šibeniční hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('DVP.0007', '6', 'null', 'bile-vino', 'Nejedlík Orange', 'suché', 'moravské zemské', '0,75 l ', '13,5 %  ', '2 g/l ', '5,7 g/l', 'null', 'null', '8 a více', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOR.0020', '22', '19', 'bile-vino', 'Sauvignon VOC', 'suché', 'VOC', '0,75 l ', '10,5 %  ', '6 g/l ', '8,5 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'U Hájku');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('ZNO.0045', '10', 'null', 'sekty-a-sumiva-vina', 'Znovín de Lux rosé Demi', 'null', 'jakostní šumivé', '0,75 l ', '12 %  ', '36,7 g/l ', '6,5 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LIB.0024', '21', 'null', 'bile-vino', 'Rulandské bílé', 'polosladké', 'pozdní sběr', '0,75 l ', '11,5 %  ', '32,6 g/l ', '7,5 g/l', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('PAJ.0034', '23', 'null', 'bile-vino', 'Sauvignon - Grand Reserva No.2', 'suché', 'pozdní sběr', '0,75 l ', '13,5 %  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0072', '3', 'null', 'bile-vino', 'Sauvignon Francie', 'suché', 'odrůdové', '0,75 l ', '12 %  ', '2,3 g/l ', '6,4 g/l', '21,7 g/l', 'null', '2 - 3 roky', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('VAN.0020', '24', '4', 'bile-vino', 'Sauvignon Blanc VOC', 'null', 'VOC', '0,75 l ', '12,5 %  ', '10,3 g/l ', '6,3 g/l', '21,4 g/l', '21,5 °NM', 'null', 'null', 'Ano', 'null', 'U sv. Urbana');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOR.0016', '22', 'null', 'cervene-vino', 'HORT FRANCE Premium', 'suché', 'null', '0,75 l ', '13,5 %  ', '0,3 g/l ', '4,9 g/l', 'null', 'null', 'o roku 2030', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LIB.0016', '21', 'null', 'bile-vino', 'Aurélius', 'suché', 'null', '0,75 l ', '  ', ' ', 'null', 'null', 'null', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('HOD.0011', '16', '13', 'bile-vino', 'Veltlínské zelené', 'suché', 'VOC', '0,75 l ', '11 %  ', '3,5 g/l ', '7,3 g/l', '22,3 g/l', '21,2 °NM', 'null', 'null', 'Ano', 'null', 'Skalka');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('NAP.0010', '19', 'null', 'bile-vino', 'Rulandské bílé', 'sladké', 'slámové', '0,2 l ', '11 %  ', '186,6 g/l ', '9,1 g/l', 'null', '37 °NM', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0021', '3', '4', 'bile-vino', 'Rulandské šedé', 'sladké', 'výběr z cibéb', '0,38 l ', '13,5 %  ', '59,3 g/l ', '6,7 g/l', '31,6 g/l', '32,6 °NM', '5', 'null', 'Ano', '23.11.2011', 'Lampelberg');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('NAP.0011', '19', 'null', 'bile-vino', 'Ryzlink vlašský', 'sladké', 'slámové', '0,2 l ', '10 %  ', '271,7 g/l ', '8,7 g/l', 'null', '45,2 °NM', 'null', 'null', 'Ano', 'null', 'null');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('DOB.0015', '15', '11', 'bile-vino', 'Veltlínské zelené', 'null', 'VOC', '0,75 l ', '12 %  ', '6,5 g/l ', '6,8 g/l', '19 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Kraví hora');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('LAH.0129', '3', '23', 'cervene-vino', 'Svatovavřinecké', 'suché', 'pozdní sběr', '0,75 l ', '12 %  ', '0,1 g/l ', '5,2 g/l', '26,9 g/l', '21,2 °NM', 'null', 'null', 'Ano', 'null', 'Volné pole');
+INSERT INTO wine (id_wine, id_wine_company, id_wine_region, type, name, category, subcategory, volume, alcohol, sugar_left, acids, extract_sugar_free, grapes_sugar, archivation, cooled, sulfur_dioxide, grapes_collected, wine_yard)
+VALUES('DOB.0018', '15', '40', 'bile-vino', 'Ryzlink rýnský (VOC)', 'polosladké', 'VOC', '0,75 l ', '12,5 %  ', '13,3 g/l ', '8,1 g/l', '23,1 g/l', 'null', 'null', 'null', 'Ano', 'null', 'Tři díly');

@@ -92,15 +92,25 @@ foreach my $year (1999 .. 2018) {
 	foreach my $month (sort keys %$months) {
 		foreach my $day (1 .. 31) {
 			my $date = $year . "-" . $month . "-" . ($day < 10 ? "0" . $day : $day);
+			if (    not $weather_avg_air_pressure->{$date}
+				and not $weather_avg_humidity->{$date}
+				and not $weather_total_rainfall->{$date}
+				and not $weather_min_temperature->{$date}
+				and not $weather_max_temperature->{$date}
+				and not $weather_avg_temperature->{$date}
+				and not $weather_sunshine->{$date}
+				and not $weather_avg_wind_speed->{$date}) {
+				next;
+			}
 			$nosql_output_weather .= "{\"date\": \"" . $date . "\", ";
-			$nosql_output_weather .= "\"weather_avg_air_pressure\": \"" . ($weather_avg_air_pressure->{$date} || "") . "\", ";
-			$nosql_output_weather .= "\"weather_avg_humidity\": \"" . ($weather_avg_humidity->{$date} || "") . "\", ";
-			$nosql_output_weather .= "\"weather_total_rainfall\": \"" . ($weather_total_rainfall->{$date} || "") . "\", ";
-			$nosql_output_weather .= "\"weather_min_temperature\": \"" . ($weather_min_temperature->{$date} || "") . "\", ";
-			$nosql_output_weather .= "\"weather_max_temperature\": \"" . ($weather_max_temperature->{$date} || "") . "\", ";
-			$nosql_output_weather .= "\"weather_avg_temperature\": \"" . ($weather_avg_temperature->{$date} || "") . "\", ";
-			$nosql_output_weather .= "\"weather_sunshine\": \"" . ($weather_sunshine->{$date} || "") . "\", ";
-			$nosql_output_weather .= "\"weather_avg_wind_speed\": \"" . ($weather_avg_wind_speed->{$date} || "") . "\"}\n";
+			$nosql_output_weather .= "\"avg_air_pressure\": " . ($weather_avg_air_pressure->{$date} || "null") . ", ";
+			$nosql_output_weather .= "\"avg_humidity\": " . ($weather_avg_humidity->{$date} || "null") . ", ";
+			$nosql_output_weather .= "\"total_rainfall\": " . ($weather_total_rainfall->{$date} || "null") . ", ";
+			$nosql_output_weather .= "\"min_temperature\": " . ($weather_min_temperature->{$date} || "null") . ", ";
+			$nosql_output_weather .= "\"max_temperature\": " . ($weather_max_temperature->{$date} || "null") . ", ";
+			$nosql_output_weather .= "\"avg_temperature\": " . ($weather_avg_temperature->{$date} || "null") . ", ";
+			$nosql_output_weather .= "\"sunshine\": " . ($weather_sunshine->{$date} || "null") . ", ";
+			$nosql_output_weather .= "\"avg_wind_speed\": " . ($weather_avg_wind_speed->{$date} || "null") . "}\n";
 		}
 	}
 }
