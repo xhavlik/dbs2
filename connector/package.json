@@ -1,0 +1,9 @@
+{
+    "name": "db-connector",
+    "version": "1.0.0",
+    "author": "Pat&Hans",
+    "dependencies": {
+        "lodash": "^4.17.15",
+        "mysql": "^2.17.1"
+    }
+}
