@@ -35,11 +35,8 @@ sub floatOrNull {
 	my $value = valueOrNull(@_);
 
 	if ($value ne "null") {
-		if ($value =~ /(\-?\d+)[\.,]?(\d+)/) {
-			return "$1.$2";
-		}
-		if ($value =~ /(\-?\d+)/) {
-			return "$1";
+		if ($value =~ /([-+]?[0-9]*)[\.,]?([0-9]*)/) {
+			return $1 . "." . ($2 ? $2 : "0");
 		}
 	}
 	return "null";
@@ -50,11 +47,8 @@ sub floatOrZero {
 	my $value = valueOrNull(@_);
 
 	if ($value ne "null") {
-		if ($value =~ /(\-?\d+)[\.,]?(\d+)/) {
-			return "$1.$2";
-		}
-		if ($value =~ /(\-?\d+)/) {
-			return "$1";
+		if ($value =~ /([-+]?[0-9]*)[\.,]?([0-9]*)/) {
+			return $1 . "." . ($2 ? $2 : "0");
 		}
 	}
 	return "0.0";
