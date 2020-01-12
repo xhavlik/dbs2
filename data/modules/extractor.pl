@@ -1,7 +1,7 @@
 sub valueOrNull {
 	my ($value) = @_;
 
-	if (not $value or $value =~ /^\s+$/) {
+	if (not defined $value or $value =~ /^\s+$/) {
 		return "null";
 	} else {
 		return $value;
@@ -43,6 +43,21 @@ sub floatOrNull {
 		}
 	}
 	return "null";
+}
+
+
+sub floatOrZero {
+	my $value = valueOrNull(@_);
+
+	if ($value ne "null") {
+		if ($value =~ /(\-?\d+)[\.,]?(\d+)/) {
+			return "$1.$2";
+		}
+		if ($value =~ /(\-?\d+)/) {
+			return "$1";
+		}
+	}
+	return "0.0";
 }
 
 

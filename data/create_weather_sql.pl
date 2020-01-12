@@ -114,14 +114,14 @@ foreach my $year (1999 .. 2018) {
 			$sql_output_weather .= ")\n";
 			$sql_output_weather .= "VALUES(";
 			$sql_output_weather .= "'$date', ";
-			$sql_output_weather .= floatOrNull($weather_avg_air_pressure->{$date}) . $sql_val_delim;
-			$sql_output_weather .= floatOrNull($weather_avg_humidity->{$date}) . $sql_val_delim;
-			$sql_output_weather .= floatOrNull($weather_total_rainfall->{$date}) . $sql_val_delim;
-			$sql_output_weather .= floatOrNull($weather_min_temperature->{$date}) . $sql_val_delim;
-			$sql_output_weather .= floatOrNull($weather_max_temperature->{$date}) . $sql_val_delim;
-			$sql_output_weather .= floatOrNull($weather_avg_temperature->{$date}) . $sql_val_delim;
-			$sql_output_weather .= floatOrNull($weather_sunshine->{$date}) . $sql_val_delim;
-			$sql_output_weather .= floatOrNull($weather_avg_wind_speed->{$date}) . $sql_val_end;
+			$sql_output_weather .= floatOrZero($weather_avg_air_pressure->{$date}) . $sql_val_delim;
+			$sql_output_weather .= floatOrZero($weather_avg_humidity->{$date}) . $sql_val_delim;
+			$sql_output_weather .= floatOrZero($weather_total_rainfall->{$date}) . $sql_val_delim;
+			$sql_output_weather .= floatOrZero($weather_min_temperature->{$date}) . $sql_val_delim;
+			$sql_output_weather .= floatOrZero($weather_max_temperature->{$date}) . $sql_val_delim;
+			$sql_output_weather .= floatOrZero($weather_avg_temperature->{$date}) . $sql_val_delim;
+			$sql_output_weather .= floatOrZero($weather_sunshine->{$date}) . $sql_val_delim;
+			$sql_output_weather .= floatOrZero($weather_avg_wind_speed->{$date}) . $sql_val_end;
 		}
 	}
 }
