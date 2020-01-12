@@ -1,17 +1,10 @@
 sub valueOrNull {
 	my ($value) = @_;
 
-	if ($value and $value !~ /^(?![\s\S])/) {
-		if ($value =~ /\s+(.*)/) {
-			$value = $1;
-		}
-		if ($value =~ /(.*)\s+/) {
-			$value = $1;
-		}
-
-		return $value;
-	} else {
+	if (not $value or $value =~ /^\s+$/) {
 		return "null";
+	} else {
+		return $value;
 	}
 }
 
@@ -65,6 +58,17 @@ sub dateOrNull {
 		}
 	}
 	return "null";
+}
+
+
+sub isValidValue {
+	my ($value) = @_;
+
+	if ($value and $value !~ /^(?![\s\S])/) {
+		return 1;
+	} else {
+		return 0;
+	}
 }
 
 

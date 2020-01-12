@@ -1,0 +1,2 @@
+INSERT INTO wine (id_wine, fk_wine_company, fk_wine_region, name, fk_wine_type, price, year, fk_wine_category, fk_wine_subcategory, volume, alcohol, sugar, acids, extract_sugar_free, grapes_sugar, archivation, recommend_temp, sulfur_dioxide, harvest, batchnum)
+VALUES("samplewine", 1, 1, "Sample wine", 1, 110, 2019, 1, 1, 0.75, 12, '42', '42', '42', '42', '2-3', '10°C', '42', "2019-09-01", '12345');

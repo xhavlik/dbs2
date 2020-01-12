@@ -1,5 +1,3 @@
-sub getWineSqlSchema {
-	my $sql_schema = << "END_SQL";
 DROP TABLE IF EXISTS wine;
 DROP TABLE IF EXISTS wine_company;
 DROP TABLE IF EXISTS wine_region;
@@ -8,9 +6,9 @@ DROP TABLE IF EXISTS wine_category;
 DROP TABLE IF EXISTS wine_subcategory;
 
 CREATE TABLE wine(
-	id_wine VARCHAR(50) NOT NULL,
-	fk_wine_company INT,
-	fk_wine_region INT,
+    id_wine VARCHAR(50) NOT NULL,
+	fk_wine_company INT NOT NULL,
+	fk_wine_region INT NOT NULL,
     name VARCHAR(50) NOT NULL,
     fk_wine_type INT,
     price INT,
@@ -70,41 +68,20 @@ ALTER TABLE wine_type ADD CONSTRAINT pk_wine_type PRIMARY KEY (id_wine_type);
 ALTER TABLE wine_category ADD CONSTRAINT pk_wine_category PRIMARY KEY (id_wine_category);
 ALTER TABLE wine_subcategory ADD CONSTRAINT pk_wine_subcategory PRIMARY KEY (id_wine_subcategory);
 
-END_SQL
+INSERT INTO wine_subcategory (id_wine_subcategory, name)
+VALUES(1, "moravské zemské");
 
-# ALTER TABLE wine ADD CONSTRAINT FK_wine_company FOREIGN KEY (fk_wine_company) REFERENCES wine_company(id_wine_company);
-# ALTER TABLE wine ADD CONSTRAINT FK_wine_region FOREIGN KEY (fk_wine_region) REFERENCES wine_region(id_wine_region);
-# ALTER TABLE wine ADD CONSTRAINT FK_wine_type FOREIGN KEY (fk_wine_type) REFERENCES wine_type(id_wine_type);
-# ALTER TABLE wine ADD CONSTRAINT FK_wine_category FOREIGN KEY (fk_wine_category) REFERENCES wine_category(id_wine_category);
-# ALTER TABLE wine ADD CONSTRAINT FK_wine_subcategory FOREIGN KEY (fk_wine_subcategory) REFERENCES wine_subcategory(id_wine_subcategory);
+INSERT INTO wine_category (id_wine_category, name)
+VALUES(1, "polosuché");
 
-	return $sql_schema;
+INSERT INTO wine_type (id_wine_type, name)
+VALUES(1, "bile-vino");
 
-}
+INSERT INTO wine_region (id_wine_region, area_name, area_ha, productivity, price_per_m_sq, protection_class)
+VALUES(1, "Dívčí vrch, Strachotice", 76.67, 90.26, 19.30, 1);
 
+INSERT INTO wine_company (id_wine_company, name, headquarters, created_at, employees, initial_deposit)
+VALUES(1, "Vinařství Trávníček a Kořínek", "Hnanice", "2011-09-01", 29, 78780000);
 
-sub getWeatherSqlSchema {
-	my $sql_schema = << "END_SQL";
-DROP TABLE IF EXISTS weather;
-
-CREATE TABLE weather(
-    date DATE NOT NULL,
-    avg_air_pressure FLOAT,
-    avg_humidity FLOAT,
-    total_rainfall FLOAT,
-    min_temperature FLOAT,
-    max_temperature FLOAT,
-    avg_temperature FLOAT,
-    sunshine FLOAT,
-    avg_wind_speed FLOAT
-);
-
-ALTER TABLE weather ADD CONSTRAINT pk_weather PRIMARY KEY (date);
-
-END_SQL
-
-	return $sql_schema;
-}
-
-
-1;
+INSERT INTO wine (id_wine, fk_wine_company, fk_wine_region, name, fk_wine_type, price, year, fk_wine_category, fk_wine_subcategory, volume, alcohol, sugar, acids, extract_sugar_free, grapes_sugar, archivation, recommend_temp, sulfur_dioxide, harvest, batchnum)
+VALUES("1", 1, 1, "Muškát moravský - mladé víno", 1, 110, 2019, 1, 1, 0.75, 12, '42', '42', '42', '42', '2-3', '10°C', '42', "2019-09-01", '12345');
