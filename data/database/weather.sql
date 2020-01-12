@@ -15,71 +15,71 @@ CREATE TABLE weather(
 ALTER TABLE weather ADD CONSTRAINT pk_weather PRIMARY KEY (date);
 
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-01', 992.4, 9.0, null, 2.7, 1.3, 2.3, null, 6);
+VALUES('1999-01-01', 992.4, 9.0, null, -2.7, -1.3, -2.3, null, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-02', 98.8, 9.4, null, 3.1, null, 1.1, null, 1);
+VALUES('1999-01-02', 98.8, 9.4, null, -3.1, null, -1.1, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-03', 984.4, 9.8, 0.6, 1.8, 0.3, 1.2, null, 1.7);
+VALUES('1999-01-03', 984.4, 9.8, 0.6, -1.8, 0.3, -1.2, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-04', 988.6, 9.2, 0.2, 1.9, 4.9, 2.2, 3.2, 1.7);
+VALUES('1999-01-04', 988.6, 9.2, 0.2, -1.9, 4.9, 2.2, 3.2, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('1999-01-05', 99.3, 9.9, null, 2.6, 6.7, 3.8, 0.8, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-06', 992.1, 10.0, 0.5, 0.7, 3.5, 0.3, null, 1.3);
+VALUES('1999-01-06', 992.1, 10.0, 0.5, -0.7, 3.5, -0.3, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-07', 980.7, 9.9, 0.6, 1.9, 0.2, 0.8, null, 2.3);
+VALUES('1999-01-07', 980.7, 9.9, 0.6, -1.9, -0.2, -0.8, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-08', 974.7, 10.0, 1.6, 0.8, 3, 0.8, null, 1);
+VALUES('1999-01-08', 974.7, 10.0, 1.6, -0.8, 3, 0.8, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-09', 974.8, 9.8, 0.1, 1.7, 3.4, 1.3, null, 2.3);
+VALUES('1999-01-09', 974.8, 9.8, 0.1, -1.7, 3.4, 1.3, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-10', 985.2, 9.6, 0.3, 0.7, 2.1, 0.2, 1.2, 4.3);
+VALUES('1999-01-10', 985.2, 9.6, 0.3, -0.7, 2.1, 0.2, 1.2, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-11', 979.5, 9.6, 0.7, 0.8, 2.8, 2, null, 7.7);
+VALUES('1999-01-11', 979.5, 9.6, 0.7, -0.8, 2.8, 2, null, 7.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-12', 982.5, 7.3, null, 3.2, 2.9, 0.7, 0.2, 4.7);
+VALUES('1999-01-12', 982.5, 7.3, null, -3.2, 2.9, -0.7, 0.2, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-13', 978.8, 8.7, null, 6, 0.8, 1.3, 0.3, 2);
+VALUES('1999-01-13', 978.8, 8.7, null, -6, 0.8, -1.3, 0.3, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-14', 979.5, 8.9, null, 2.6, 2.8, 1.3, 1.2, 2.7);
+VALUES('1999-01-14', 979.5, 8.9, null, -2.6, 2.8, 1.3, 1.2, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-15', 985.9, 8.2, null, 2.4, 5.5, 2.2, null, 3.3);
+VALUES('1999-01-15', 985.9, 8.2, null, -2.4, 5.5, 2.2, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-16', 98.7, 8.7, null, 1.4, 3, 1.5, 0.2, 1.3);
+VALUES('1999-01-16', 98.7, 8.7, null, -1.4, 3, 1.5, 0.2, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-17', 99.0, 8.8, null, 2.4, 4.8, 2.9, 2.1, 2.3);
+VALUES('1999-01-17', 99.0, 8.8, null, -2.4, 4.8, 2.9, 2.1, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-18', 994.9, 9.3, null, 0.9, 4.1, 1.1, 0.5, 1.3);
+VALUES('1999-01-18', 994.9, 9.3, null, -0.9, 4.1, 1.1, 0.5, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-19', 998.2, 9.9, null, 2, 1.1, 0.2, null, 0.7);
+VALUES('1999-01-19', 998.2, 9.9, null, -2, 1.1, 0.2, null, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-20', 999.3, 9.9, 0.1, 2.3, 0.4, 1.5, null, 1.7);
+VALUES('1999-01-20', 999.3, 9.9, 0.1, -2.3, 0.4, -1.5, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-21', 998.9, 9.4, null, 2.6, 1.1, 2.1, null, 2.3);
+VALUES('1999-01-21', 998.9, 9.4, null, -2.6, -1.1, -2.1, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-22', 997.2, 9.7, null, 3.5, 2, 2.4, null, 1.3);
+VALUES('1999-01-22', 997.2, 9.7, null, -3.5, -2, -2.4, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-23', 996.8, 10.0, 0.2, 2.2, 1.2, 1.9, null, 1.7);
+VALUES('1999-01-23', 996.8, 10.0, 0.2, -2.2, -1.2, -1.9, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-24', 997.6, 9.9, 0.1, 3.6, 1.9, 2.9, null, 2.7);
+VALUES('1999-01-24', 997.6, 9.9, 0.1, -3.6, -1.9, -2.9, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-25', 994.8, 10.0, 0.2, 3.1, 1.7, 2.1, null, 3);
+VALUES('1999-01-25', 994.8, 10.0, 0.2, -3.1, -1.7, -2.1, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-26', 982.7, 9.8, 1.3, 1.9, 1.5, 0.4, null, 2.3);
+VALUES('1999-01-26', 982.7, 9.8, 1.3, -1.9, 1.5, -0.4, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-27', 974.5, 10.0, 0.2, 1.3, 0.1, 0.5, null, 4.7);
+VALUES('1999-01-27', 974.5, 10.0, 0.2, -1.3, 0.1, -0.5, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-28', 97.5, 8.6, 2.3, 1.3, 3.7, 0.9, 4, 2.7);
+VALUES('1999-01-28', 97.5, 8.6, 2.3, -1.3, 3.7, 0.9, 4, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-29', 987.2, 6.6, null, 7, 0.4, 4.7, 3.6, 8.7);
+VALUES('1999-01-29', 987.2, 6.6, null, -7, 0.4, -4.7, 3.6, 8.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-30', 998.3, 7.2, null, 1.0, 4.5, 7.5, 6.6, 5);
+VALUES('1999-01-30', 998.3, 7.2, null, -1.0, -4.5, -7.5, 6.6, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-01-31', 100.4, 7.0, null, 11.7, 7.4, 10.1, 0.2, 4.3);
+VALUES('1999-01-31', 100.4, 7.0, null, -11.7, -7.4, -10.1, 0.2, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-02-01', 100.1, 8.4, 2.4, 14.1, 3.9, 7.1, 2.2, 2);
+VALUES('1999-02-01', 100.1, 8.4, 2.4, -14.1, -3.9, -7.1, 2.2, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-02-02', 998.6, 9.0, null, 4.7, 2.5, 0.9, null, 1.3);
+VALUES('1999-02-02', 998.6, 9.0, null, -4.7, 2.5, 0.9, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('1999-02-03', 997.2, 9.1, 1.7, 0.9, 4, 3.3, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -87,53 +87,53 @@ VALUES('1999-02-04', 98.7, 9.1, 0.1, 1.8, 6.7, 4, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('1999-02-05', 968.9, 7.7, 3.5, 1.2, 8.2, 3.6, 2.1, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-02-06', 970.2, 6.9, null, 0.3, 3.9, 1.6, 3.4, 5.3);
+VALUES('1999-02-06', 970.2, 6.9, null, -0.3, 3.9, 1.6, 3.4, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-02-07', 966.1, 9.1, 3.2, 2.9, 1.2, 0.8, 0.1, 3);
+VALUES('1999-02-07', 966.1, 9.1, 3.2, -2.9, 1.2, -0.8, 0.1, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-02-08', 971.2, 8.7, 0.1, 5.8, 1.2, 2.6, 1.9, 3.3);
+VALUES('1999-02-08', 971.2, 8.7, 0.1, -5.8, 1.2, -2.6, 1.9, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-02-09', 969.6, 8.3, null, 8.9, 0.8, 3.5, null, 2.7);
+VALUES('1999-02-09', 969.6, 8.3, null, -8.9, -0.8, -3.5, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-02-10', 976.7, 7.7, null, 5.1, 0.8, 3.8, 2.4, 5);
+VALUES('1999-02-10', 976.7, 7.7, null, -5.1, -0.8, -3.8, 2.4, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-02-11', 981.3, 7.5, 0.5, 6.3, 2.7, 5, null, 5.7);
+VALUES('1999-02-11', 981.3, 7.5, 0.5, -6.3, -2.7, -5, null, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-02-12', 989.2, 7.5, 2.5, 7, 2.7, 5.3, 0.1, 8.7);
+VALUES('1999-02-12', 989.2, 7.5, 2.5, -7, -2.7, -5.3, 0.1, 8.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-02-13', 992.3, 8.2, 0.3, 5.8, 0.9, 2.8, null, 4);
+VALUES('1999-02-13', 992.3, 8.2, 0.3, -5.8, -0.9, -2.8, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-02-14', 994.7, 8.9, 0.8, 3.2, 0.6, 2, null, 1.3);
+VALUES('1999-02-14', 994.7, 8.9, 0.8, -3.2, -0.6, -2, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-02-15', 994.3, 8.5, null, 5.3, 0.6, 4, 3, 3.7);
+VALUES('1999-02-15', 994.3, 8.5, null, -5.3, -0.6, -4, 3, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-02-16', 97.8, 9.6, 2.3, 10.2, 2.4, 2.5, null, 2.3);
+VALUES('1999-02-16', 97.8, 9.6, 2.3, -10.2, 2.4, -2.5, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-02-17', 971.7, 7.5, 1, 5, 3.4, 1.3, 1, 6);
+VALUES('1999-02-17', 971.7, 7.5, 1, -5, 3.4, -1.3, 1, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-02-18', 982.5, 7.4, null, 4.2, 2, 1.5, 3.2, 4.3);
+VALUES('1999-02-18', 982.5, 7.4, null, -4.2, 2, -1.5, 3.2, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-02-19', 986.2, 9.6, 3.2, 6.8, 0.5, 1.2, null, 1.3);
+VALUES('1999-02-19', 986.2, 9.6, 3.2, -6.8, 0.5, -1.2, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-02-20', 981.8, 9.8, 3.2, 0.1, 5.2, 3.5, 0.2, 2.3);
+VALUES('1999-02-20', 981.8, 9.8, 3.2, -0.1, 5.2, 3.5, 0.2, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-02-21', 977.3, 9.5, 1.5, 2.6, 3.6, 0.9, 0.6, 1.7);
+VALUES('1999-02-21', 977.3, 9.5, 1.5, -2.6, 3.6, 0.9, 0.6, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('1999-02-22', 963.7, 8.1, 0.5, 0.8, 5, 2, 1.5, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-02-23', 96.8, 8.0, 0.1, 2.2, 3.8, 0.4, 2.9, 3);
+VALUES('1999-02-23', 96.8, 8.0, 0.1, -2.2, 3.8, 0.4, 2.9, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-02-24', 976.4, 8.4, 0.7, 1.9, 4.8, 0.2, 1.9, 4.3);
+VALUES('1999-02-24', 976.4, 8.4, 0.7, -1.9, 4.8, -0.2, 1.9, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-02-25', 987.1, 7.2, null, 5.4, 3.6, 0.2, 5.8, 4);
+VALUES('1999-02-25', 987.1, 7.2, null, -5.4, 3.6, 0.2, 5.8, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-02-26', 988.1, 8.1, null, 2.4, 4, 1.8, null, 2.7);
+VALUES('1999-02-26', 988.1, 8.1, null, -2.4, 4, 1.8, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('1999-02-27', 986.6, 8.1, null, 0.4, 9.5, 4.4, 8.3, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-02-28', 991.7, 9.3, null, 1, 11.1, 3.8, 4.7, 1.3);
+VALUES('1999-02-28', 991.7, 9.3, null, -1, 11.1, 3.8, 4.7, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-03-01', 987.5, 7.7, 0.4, 1.6, 12.7, 7, 9.1, 5.3);
+VALUES('1999-03-01', 987.5, 7.7, 0.4, -1.6, 12.7, 7, 9.1, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('1999-03-02', 980.3, 8.1, 0.2, 5.5, 1.1, 8.1, 0.7, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -155,21 +155,21 @@ VALUES('1999-03-10', 98.2, 9.1, 0.2, 3.2, 10.7, 7.7, 1.5, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('1999-03-11', 988.3, 7.2, null, 2.6, 9.3, 4, 4.2, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-03-12', 992.2, 7.9, null, 2.9, 6.8, 1.4, 10.3, 3);
+VALUES('1999-03-12', 992.2, 7.9, null, -2.9, 6.8, 1.4, 10.3, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-03-13', 992.3, 7.4, null, 2.3, 7.3, 1.8, 8.8, 4.3);
+VALUES('1999-03-13', 992.3, 7.4, null, -2.3, 7.3, 1.8, 8.8, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-03-14', 995.5, 8.0, 1, 2.8, 6.9, 3, 7, 3);
+VALUES('1999-03-14', 995.5, 8.0, 1, -2.8, 6.9, 3, 7, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('1999-03-15', 995.6, 8.0, 0.6, 2.4, 9.5, 4.9, 0.3, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('1999-03-16', 100.0, 7.7, null, 0.1, 4.7, 1.3, 1, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-03-17', 1000.7, 6.8, null, 0.8, 4.3, 0.5, 1.6, 4.7);
+VALUES('1999-03-17', 1000.7, 6.8, null, -0.8, 4.3, 0.5, 1.6, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-03-18', 99.4, 7.2, null, 3.5, 6.2, 1.3, 9.8, 3);
+VALUES('1999-03-18', 99.4, 7.2, null, -3.5, 6.2, 1.3, 9.8, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-03-19', 986.4, 7.0, null, 3.7, 10.3, 3.4, 9.2, 2);
+VALUES('1999-03-19', 986.4, 7.0, null, -3.7, 10.3, 3.4, 9.2, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('1999-03-20', 988.4, 7.1, null, 2, 8.7, 3.9, 5.9, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -229,13 +229,13 @@ VALUES('1999-04-16', 975.7, 9.8, 11.8, 3.3, 13.5, 8.3, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('1999-04-17', 972.9, 8.6, 7.4, 3.2, 10.2, 5.2, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-04-18', 980.7, 7.5, null, 0.2, 11.6, 5.5, 8.5, 2);
+VALUES('1999-04-18', 980.7, 7.5, null, -0.2, 11.6, 5.5, 8.5, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('1999-04-19', 985.9, 6.0, null, null, 11.9, 6.5, 8.1, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-04-20', 98.6, 5.5, null, 0.2, 12.9, 7, 10.2, 2.3);
+VALUES('1999-04-20', 98.6, 5.5, null, -0.2, 12.9, 7, 10.2, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-04-21', 982.3, 7.4, 4.6, 0.7, 16.2, 10.4, 9, 4.3);
+VALUES('1999-04-21', 982.3, 7.4, 4.6, -0.7, 16.2, 10.4, 9, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('1999-04-22', 985.6, 8.1, null, 9, 17.4, 11.6, 4.6, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -595,11 +595,11 @@ VALUES('1999-10-16', 992.1, 7.7, null, 1.3, 10.6, 4.6, 4.8, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('1999-10-17', 995.1, 7.4, null, 0.4, 8.6, 4, 3.1, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-10-18', 994.9, 7.4, null, 1.9, 1.0, 5.1, 8.5, 3.7);
+VALUES('1999-10-18', 994.9, 7.4, null, -1.9, 1.0, 5.1, 8.5, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('1999-10-19', 990.1, 6.1, null, 1.6, 9.1, 4.4, 8.9, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-10-20', 990.2, 7.2, null, 0.5, 8.4, 3.9, 7.8, 6);
+VALUES('1999-10-20', 990.2, 7.2, null, -0.5, 8.4, 3.9, 7.8, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('1999-10-21', 98.7, 8.4, null, 4, 7, 6.4, null, 8.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -651,55 +651,55 @@ VALUES('1999-11-13', 991.1, 9.4, 0.1, 2.3, 6.1, 4.4, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('1999-11-14', 98.0, 9.2, 0.9, 2.4, 5.4, 3.9, 0.1, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-11-15', 990.8, 8.5, null, 2, 4.6, null, 3, 3);
+VALUES('1999-11-15', 990.8, 8.5, null, -2, 4.6, null, 3, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-11-16', 989.8, 7.6, null, 3.4, 2.5, 0.1, 2.7, 5);
+VALUES('1999-11-16', 989.8, 7.6, null, -3.4, 2.5, 0.1, 2.7, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-11-17', 981.4, 9.2, 1.4, 0.8, 1.9, 0.2, 0.4, 1.7);
+VALUES('1999-11-17', 981.4, 9.2, 1.4, -0.8, 1.9, 0.2, 0.4, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-11-18', 97.5, 8.7, null, 1.1, 4.5, 0.5, 3.3, 3);
+VALUES('1999-11-18', 97.5, 8.7, null, -1.1, 4.5, 0.5, 3.3, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-11-19', 976.3, 9.2, 0.1, 4.3, 0.3, 1.3, null, 2);
+VALUES('1999-11-19', 976.3, 9.2, 0.1, -4.3, 0.3, -1.3, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-11-20', 983.2, 7.4, null, 2.1, 1.4, 0.7, 2.9, 4);
+VALUES('1999-11-20', 983.2, 7.4, null, -2.1, 1.4, -0.7, 2.9, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-11-21', 984.9, 8.8, null, 3.7, 0.3, 1.5, 0.2, 1.3);
+VALUES('1999-11-21', 984.9, 8.8, null, -3.7, -0.3, -1.5, 0.2, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-11-22', 983.1, 7.4, null, 1.8, 1.9, 0.6, 2, 2.7);
+VALUES('1999-11-22', 983.1, 7.4, null, -1.8, 1.9, -0.6, 2, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-11-23', 986.4, 7.7, 0.3, 2.9, 2.1, 0.2, 3.9, 4.7);
+VALUES('1999-11-23', 986.4, 7.7, 0.3, -2.9, 2.1, -0.2, 3.9, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-11-24', 992.7, 8.3, null, 2, 2, 1, null, 4.3);
+VALUES('1999-11-24', 992.7, 8.3, null, -2, 2, 1, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-11-25', 1001.1, 8.3, null, 1.5, 3.7, 2.1, 0.3, 1);
+VALUES('1999-11-25', 1001.1, 8.3, null, -1.5, 3.7, 2.1, 0.3, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-11-26', 1002.6, 9.2, null, 0.5, 7.2, 1.5, 3.1, 1);
+VALUES('1999-11-26', 1002.6, 9.2, null, -0.5, 7.2, 1.5, 3.1, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-11-27', 1001.7, 9.8, 0.1, 0.9, 0.8, 0.3, null, 2.7);
+VALUES('1999-11-27', 1001.7, 9.8, 0.1, -0.9, 0.8, -0.3, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-11-28', 1005.1, 9.6, null, 1.2, 1.5, 0.3, null, 2);
+VALUES('1999-11-28', 1005.1, 9.6, null, -1.2, 1.5, 0.3, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-11-29', 1003.4, 9.6, null, 2, 0.1, 1.2, null, 3);
+VALUES('1999-11-29', 1003.4, 9.6, null, -2, 0.1, -1.2, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-11-30', 1001.2, 9.5, null, 3.2, 1, 2.6, null, 3);
+VALUES('1999-11-30', 1001.2, 9.5, null, -3.2, -1, -2.6, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-12-01', 989.9, 9.4, null, 4.7, 1.3, 0.7, null, 1.7);
+VALUES('1999-12-01', 989.9, 9.4, null, -4.7, 1.3, -0.7, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('1999-12-02', 98.8, 8.6, 0.6, 0.2, 11.3, 4.6, 1.1, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-12-03', 986.7, 8.0, null, 1.4, 8, 3.1, 2.9, 3.3);
+VALUES('1999-12-03', 986.7, 8.0, null, -1.4, 8, 3.1, 2.9, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('1999-12-04', 980.9, 8.0, 0.1, 1.6, 7.2, 3.8, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-12-05', 985.9, 8.0, null, 0.6, 4.2, 1.3, 0.7, 3.3);
+VALUES('1999-12-05', 985.9, 8.0, null, -0.6, 4.2, 1.3, 0.7, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-12-06', 995.7, 7.1, null, 1.8, 3.3, 1.1, 6.1, 3.7);
+VALUES('1999-12-06', 995.7, 7.1, null, -1.8, 3.3, 1.1, 6.1, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-12-07', 988.5, 6.9, null, 0.2, 8.4, 2.8, 2.5, 4);
+VALUES('1999-12-07', 988.5, 6.9, null, -0.2, 8.4, 2.8, 2.5, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('1999-12-08', 986.9, 7.7, null, 0.6, 9.7, 4, 5, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-12-09', 98.1, 9.2, null, 0.9, 6.1, 2.1, 1.5, 3.7);
+VALUES('1999-12-09', 98.1, 9.2, null, -0.9, 6.1, 2.1, 1.5, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('1999-12-10', 977.8, 9.8, 0.9, 0.2, 3.4, 1.7, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -709,99 +709,99 @@ VALUES('1999-12-12', 971.6, 9.5, 0.1, 1.1, 4.6, 3.8, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('1999-12-13', 976.1, 7.9, null, 2.2, 7.8, 4.1, 2.1, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-12-14', 970.2, 9.4, 0.3, 2.5, 2.9, 1.2, 0.3, 3);
+VALUES('1999-12-14', 970.2, 9.4, 0.3, -2.5, 2.9, 1.2, 0.3, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-12-15', 974.4, 7.2, null, 1.9, 3.6, 1.1, 2.9, 2.3);
+VALUES('1999-12-15', 974.4, 7.2, null, -1.9, 3.6, 1.1, 2.9, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-12-16', 989.3, 7.4, null, 1.7, 0.7, 0.6, 0.4, 4.7);
+VALUES('1999-12-16', 989.3, 7.4, null, -1.7, 0.7, -0.6, 0.4, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-12-17', 993.5, 8.3, 0.6, 6.2, 0.1, 3.9, 6.8, 2.7);
+VALUES('1999-12-17', 993.5, 8.3, 0.6, -6.2, 0.1, -3.9, 6.8, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-12-18', 983.4, 9.7, 4.6, 5.5, 1.9, 0.8, null, 2);
+VALUES('1999-12-18', 983.4, 9.7, 4.6, -5.5, 1.9, 0.8, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-12-19', 980.4, 9.4, 3.9, 4.2, 1, 1.9, null, 1.3);
+VALUES('1999-12-19', 980.4, 9.4, 3.9, -4.2, 1, -1.9, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-12-20', 988.3, 9.2, 0.1, 6.2, 0.6, 3.3, 2.9, 3.7);
+VALUES('1999-12-20', 988.3, 9.2, 0.1, -6.2, -0.6, -3.3, 2.9, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-12-21', 998.5, 8.5, 0.1, 5, 0.4, 2.6, 4.3, 2.3);
+VALUES('1999-12-21', 998.5, 8.5, 0.1, -5, 0.4, -2.6, 4.3, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-12-22', 1007.6, 8.9, null, 11.9, 3, 8.6, 7.1, 1.3);
+VALUES('1999-12-22', 1007.6, 8.9, null, -11.9, -3, -8.6, 7.1, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-12-23', 1003.7, 8.2, null, 13.1, 4.5, 7.7, 6.7, 3.7);
+VALUES('1999-12-23', 1003.7, 8.2, null, -13.1, -4.5, -7.7, 6.7, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-12-24', 999.1, 8.9, null, 9.5, 5.8, 7.4, null, 4);
+VALUES('1999-12-24', 999.1, 8.9, null, -9.5, -5.8, -7.4, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-12-25', 982.5, 9.2, 5.9, 9.7, 7.1, 8.2, null, 3.7);
+VALUES('1999-12-25', 982.5, 9.2, 5.9, -9.7, -7.1, -8.2, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-12-26', 965.5, 8.9, 0.7, 10.1, 4.9, 0.6, null, 6.7);
+VALUES('1999-12-26', 965.5, 8.9, 0.7, -10.1, 4.9, -0.6, null, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('1999-12-27', 961.9, 8.1, 0.1, 0.4, 5.1, 2.5, 0.5, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-12-28', 96.1, 9.4, 3.5, 2.6, 2.5, 1, null, 6.3);
+VALUES('1999-12-28', 96.1, 9.4, 3.5, -2.6, 2.5, 1, null, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-12-29', 977.7, 8.6, 0.1, 1.9, 2.2, 0.6, 0.7, 3.3);
+VALUES('1999-12-29', 977.7, 8.6, 0.1, -1.9, 2.2, -0.6, 0.7, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-12-30', 99.1, 8.4, 0.2, 3.4, 2.3, 0.6, 1.5, 4);
+VALUES('1999-12-30', 99.1, 8.4, 0.2, -3.4, 2.3, -0.6, 1.5, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('1999-12-31', 994.7, 9.2, null, 7.9, 0.1, 3.3, 2.6, 1);
+VALUES('1999-12-31', 994.7, 9.2, null, -7.9, 0.1, -3.3, 2.6, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-01', 995.2, 9.5, 3.2, 6.2, 2.4, 3.8, null, 1);
+VALUES('2000-01-01', 995.2, 9.5, 3.2, -6.2, -2.4, -3.8, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-02', 998.4, 10.0, null, 3.3, 1.3, 2.1, null, 1.3);
+VALUES('2000-01-02', 998.4, 10.0, null, -3.3, -1.3, -2.1, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-03', 997.2, 10.0, null, 6.8, 1.7, 5, null, 1.3);
+VALUES('2000-01-03', 997.2, 10.0, null, -6.8, -1.7, -5, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-04', 992.9, 9.9, 1.2, 7.1, null, 1.7, 0.2, 1);
+VALUES('2000-01-04', 992.9, 9.9, 1.2, -7.1, null, -1.7, 0.2, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-05', 992.4, 9.7, null, 2.2, 5.3, 0.1, 3.6, 2.7);
+VALUES('2000-01-05', 992.4, 9.7, null, -2.2, 5.3, -0.1, 3.6, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-06', 995.3, 9.7, null, 7.7, 0.3, 5.8, 7, 2);
+VALUES('2000-01-06', 995.3, 9.7, null, -7.7, -0.3, -5.8, 7, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-07', 997.5, 9.9, 0.2, 9.2, 3, 3.8, null, 1.7);
+VALUES('2000-01-07', 997.5, 9.9, 0.2, -9.2, -3, -3.8, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-08', 996.8, 9.9, 0.1, 3.3, 1.4, 2.1, null, 1.7);
+VALUES('2000-01-08', 996.8, 9.9, 0.1, -3.3, -1.4, -2.1, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-09', 997.2, 9.9, null, 2.4, 1.2, 1.6, null, 1.7);
+VALUES('2000-01-09', 997.2, 9.9, null, -2.4, -1.2, -1.6, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-10', 1003.8, 9.6, null, 2.7, 0.9, 0.5, null, 1.3);
+VALUES('2000-01-10', 1003.8, 9.6, null, -2.7, 0.9, -0.5, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-11', 1008.5, 9.0, null, 4.1, 2.6, 1.7, 1.6, 1.3);
+VALUES('2000-01-11', 1008.5, 9.0, null, -4.1, 2.6, -1.7, 1.6, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-12', 1005.5, 9.6, null, 9.9, 2.1, 6.7, 0.7, 0.3);
+VALUES('2000-01-12', 1005.5, 9.6, null, -9.9, -2.1, -6.7, 0.7, 0.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-13', 998.1, 9.4, null, 9.7, 3.2, 4.5, null, 4.3);
+VALUES('2000-01-13', 998.1, 9.4, null, -9.7, -3.2, -4.5, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-14', 996.6, 9.6, null, 4, 1.8, 2.4, null, 3);
+VALUES('2000-01-14', 996.6, 9.6, null, -4, -1.8, -2.4, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-15', 999.3, 9.3, 0.1, 3.4, 1.3, 2.5, null, 2);
+VALUES('2000-01-15', 999.3, 9.3, 0.1, -3.4, -1.3, -2.5, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-16', 999.7, 8.6, null, 5.4, 0.8, 3, 3.6, 4.3);
+VALUES('2000-01-16', 999.7, 8.6, null, -5.4, 0.8, -3, 3.6, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-17', 980.5, 9.3, 1.9, 5.4, 4.8, 3.1, null, 8.7);
+VALUES('2000-01-17', 980.5, 9.3, 1.9, -5.4, 4.8, 3.1, null, 8.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-18', 97.4, 9.0, 6.8, 0.5, 5.1, 1.6, 1.6, 5.7);
+VALUES('2000-01-18', 97.4, 9.0, 6.8, -0.5, 5.1, 1.6, 1.6, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-19', 988.2, 8.4, 0.6, 1.6, 1.3, 0.2, 4.8, 9);
+VALUES('2000-01-19', 988.2, 8.4, 0.6, -1.6, 1.3, -0.2, 4.8, 9);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-20', 990.4, 8.4, 0.5, 4.6, 2, 0.4, 1.3, 5);
+VALUES('2000-01-20', 990.4, 8.4, 0.5, -4.6, 2, 0.4, 1.3, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-21', 979.7, 8.5, 3.8, 5.1, 2.7, 1.9, 1, 8);
+VALUES('2000-01-21', 979.7, 8.5, 3.8, -5.1, 2.7, -1.9, 1, 8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-22', 983.8, 9.2, 0.9, 7.6, 3.9, 5, null, 4);
+VALUES('2000-01-22', 983.8, 9.2, 0.9, -7.6, -3.9, -5, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-23', 98.2, 8.7, 1, 7.3, 4.1, 6, null, 4);
+VALUES('2000-01-23', 98.2, 8.7, 1, -7.3, -4.1, -6, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-24', 990.8, 7.9, null, 11.7, 4.2, 8, 7, 5);
+VALUES('2000-01-24', 990.8, 7.9, null, -11.7, -4.2, -8, 7, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-25', 998.1, 8.7, null, 13.4, 5, 10.2, 7, 2);
+VALUES('2000-01-25', 998.1, 8.7, null, -13.4, -5, -10.2, 7, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-26', 997.4, 8.3, null, 13.4, 1.4, 5.4, 1.5, 3);
+VALUES('2000-01-26', 997.4, 8.3, null, -13.4, -1.4, -5.4, 1.5, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-27', 995.9, 8.1, null, 3.4, 2.8, 0.1, 0.7, 4);
+VALUES('2000-01-27', 995.9, 8.1, null, -3.4, 2.8, 0.1, 0.7, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-28', 990.2, 7.2, null, 6, 1.7, 1.7, 7, 3.3);
+VALUES('2000-01-28', 990.2, 7.2, null, -6, 1.7, -1.7, 7, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-01-29', 977.8, 8.8, 4.5, 3.4, 5.2, 1.9, 0.1, 3.3);
+VALUES('2000-01-29', 977.8, 8.8, 4.5, -3.4, 5.2, 1.9, 0.1, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-01-30', 978.9, 7.4, 5.7, 2.1, 7.6, 4.9, 7.4, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -809,15 +809,15 @@ VALUES('2000-01-31', 987.7, 8.7, 0.3, 1.3, 10.3, 6.6, 0.8, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-02-01', 991.8, 9.0, null, 2.9, 11.6, 6.4, 7.1, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-02-02', 985.2, 8.0, null, 3.1, 10.6, 6, 6.4, 1);
+VALUES('2000-02-02', 985.2, 8.0, null, -3.1, 10.6, 6, 6.4, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-02-03', 99.5, 7.2, 0.1, 2.7, 9.1, 4.3, 4.4, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-02-04', 1004.1, 8.5, 0.3, 2.3, 5.9, 2.8, 4.8, 3.7);
+VALUES('2000-02-04', 1004.1, 8.5, 0.3, -2.3, 5.9, 2.8, 4.8, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-02-05', 997.6, 9.3, null, 2.5, 9.2, 5.9, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-02-06', 995.6, 9.2, null, 0.2, 10.1, 5.3, 5.8, 1.3);
+VALUES('2000-02-06', 995.6, 9.2, null, -0.2, 10.1, 5.3, 5.8, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-02-07', 99.0, 9.9, 0.1, 1.5, 6.3, 4, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -827,57 +827,57 @@ VALUES('2000-02-09', 984.7, 7.6, 0.4, 0.2, 9.1, 4.5, 4.3, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-02-10', 993.8, 7.5, null, 1.6, 8.6, 3.9, 3.6, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-02-11', 996.7, 9.4, 0.9, 0.1, 4.9, 2.6, null, 3.3);
+VALUES('2000-02-11', 996.7, 9.4, 0.9, -0.1, 4.9, 2.6, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-02-12', 995.6, 9.3, null, 0.2, 4.6, 2.5, null, 1.3);
+VALUES('2000-02-12', 995.6, 9.3, null, -0.2, 4.6, 2.5, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-02-13', 988.2, 8.7, null, 0.5, 7.5, 3.8, 3.3, 3.7);
+VALUES('2000-02-13', 988.2, 8.7, null, -0.5, 7.5, 3.8, 3.3, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-02-14', 989.9, 9.2, 0.4, 0.8, 5.8, 1.2, 4.5, 5.3);
+VALUES('2000-02-14', 989.9, 9.2, 0.4, -0.8, 5.8, 1.2, 4.5, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-02-15', 986.9, 9.9, 1.9, 4.7, 1.2, 0.2, null, 1.7);
+VALUES('2000-02-15', 986.9, 9.9, 1.9, -4.7, 1.2, -0.2, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-02-16', 975.2, 9.0, 0.3, 0.5, 5.8, 2.8, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-02-17', 975.3, 8.2, null, 1, 4.2, 1.1, 3.3, 2.7);
+VALUES('2000-02-17', 975.3, 8.2, null, -1, 4.2, 1.1, 3.3, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-02-18', 980.6, 7.4, null, 4.5, 5.2, 1.6, 6.4, 2.7);
+VALUES('2000-02-18', 980.6, 7.4, null, -4.5, 5.2, 1.6, 6.4, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-02-19', 976.9, 9.7, 3.2, 0.5, 1.1, 0.6, null, 1);
+VALUES('2000-02-19', 976.9, 9.7, 3.2, -0.5, 1.1, 0.6, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-02-20', 986.5, 9.0, 0.6, 0.4, 4.8, 1.6, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-02-21', 996.6, 7.5, null, 2, 3, 0.4, 3.9, 3.3);
+VALUES('2000-02-21', 996.6, 7.5, null, -2, 3, -0.4, 3.9, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-02-22', 996.4, 7.8, 0.1, 5.7, 2.4, 1.4, 7.7, 1.3);
+VALUES('2000-02-22', 996.4, 7.8, 0.1, -5.7, 2.4, -1.4, 7.7, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-02-23', 995.1, 9.7, 0.6, 1.4, 2.4, 0.1, null, 2);
+VALUES('2000-02-23', 995.1, 9.7, 0.6, -1.4, 2.4, -0.1, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-02-24', 996.1, 9.3, 3.3, 2.1, 5.3, 2.1, 3.9, 3.3);
+VALUES('2000-02-24', 996.1, 9.3, 3.3, -2.1, 5.3, 2.1, 3.9, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-02-25', 990.7, 8.8, 1.8, 2.7, 11.2, 5.1, 0.5, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-02-26', 1001.1, 7.6, null, 1.5, 6.9, 2.6, 2.8, 3);
+VALUES('2000-02-26', 1001.1, 7.6, null, -1.5, 6.9, 2.6, 2.8, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-02-27', 1002.8, 7.7, null, 1.3, 9.3, 3.1, 8.4, 2);
+VALUES('2000-02-27', 1002.8, 7.7, null, -1.3, 9.3, 3.1, 8.4, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-02-28', 997.2, 6.3, null, 0.2, 11.2, 5.3, 9.6, 5.7);
+VALUES('2000-02-28', 997.2, 6.3, null, -0.2, 11.2, 5.3, 9.6, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-02-29', 989.7, 6.7, null, 0.2, 9.8, 5.6, 6.2, 3.7);
+VALUES('2000-02-29', 989.7, 6.7, null, -0.2, 9.8, 5.6, 6.2, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-03-01', 97.5, 8.4, 0.4, 3.3, 11.3, 6.5, 0.9, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-03-02', 986.8, 7.7, null, 0.8, 7.7, 2.6, 6.5, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-03-03', 982.1, 7.4, 0.4, 3.1, 8.8, 4.5, null, 4);
+VALUES('2000-03-03', 982.1, 7.4, 0.4, -3.1, 8.8, 4.5, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-03-04', 982.8, 8.3, 0.8, 0.2, 7.7, 2.4, 2.5, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-03-05', 99.6, 7.7, 0.8, 2.8, 3.2, 0.2, 8.6, 6.3);
+VALUES('2000-03-05', 99.6, 7.7, 0.8, -2.8, 3.2, -0.2, 8.6, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-03-06', 999.3, 7.9, null, 4.7, 7.9, 2.3, 4.4, 3);
+VALUES('2000-03-06', 999.3, 7.9, null, -4.7, 7.9, 2.3, 4.4, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-03-07', 992.3, 6.9, null, 1.7, 12.1, 6.8, 7.3, 3.3);
+VALUES('2000-03-07', 992.3, 6.9, null, -1.7, 12.1, 6.8, 7.3, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-03-08', 987.9, 7.5, 0.1, 7.1, 12.3, 10.4, null, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -885,25 +885,25 @@ VALUES('2000-03-09', 98.1, 8.3, 9.6, 8.4, 15.3, 10.7, 2.1, 9.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-03-10', 992.1, 7.5, 2.7, 1.8, 9.6, 2.8, 7, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-03-11', 982.5, 9.5, 4.3, 0.4, 1.1, 3.9, 0.6, 5);
+VALUES('2000-03-11', 982.5, 9.5, 4.3, -0.4, 1.1, 3.9, 0.6, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-03-12', 994.9, 8.1, null, 0.9, 7.5, 2.4, 1.1, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-03-13', 996.8, 8.5, null, 0.6, 6, 3.5, 0.6, 1.3);
+VALUES('2000-03-13', 996.8, 8.5, null, -0.6, 6, 3.5, 0.6, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-03-14', 988.4, 9.4, 1, 1.8, 8.6, 6, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-03-15', 988.6, 9.0, 4.3, 0.8, 7.8, 0.4, 10.1, 9.3);
+VALUES('2000-03-15', 988.6, 9.0, 4.3, -0.8, 7.8, 0.4, 10.1, 9.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-03-16', 987.3, 8.5, 3.1, 0.7, 4.1, 0.5, 5.5, 4.7);
+VALUES('2000-03-16', 987.3, 8.5, 3.1, -0.7, 4.1, 0.5, 5.5, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-03-17', 986.9, 8.7, 1.1, 1.5, 4.3, 0.1, 3.7, 5);
+VALUES('2000-03-17', 986.9, 8.7, 1.1, -1.5, 4.3, -0.1, 3.7, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-03-18', 99.2, 6.9, null, 1.9, 3.8, 0.6, 6.9, 4.3);
+VALUES('2000-03-18', 99.2, 6.9, null, -1.9, 3.8, 0.6, 6.9, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-03-19', 99.4, 7.8, 0.7, 0.4, 4.5, 1.6, 2, 4.7);
+VALUES('2000-03-19', 99.4, 7.8, 0.7, -0.4, 4.5, 1.6, 2, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-03-20', 994.8, 7.0, null, 1.7, 6.6, 3.8, 3.3, 4.3);
+VALUES('2000-03-20', 994.8, 7.0, null, -1.7, 6.6, 3.8, 3.3, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-03-21', 991.7, 8.7, null, 3.2, 9.4, 4.8, 2.1, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -927,7 +927,7 @@ VALUES('2000-03-30', 975.8, 8.3, 1.6, 5, 10.5, 6.4, 1.8, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-03-31', 977.7, 8.8, 0.1, 3.2, 8, 5.1, 0.7, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-04-01', 976.7, 7.3, null, 1, 1.4, 8.9, 10.1, 2);
+VALUES('2000-04-01', 976.7, 7.3, null, -1, 1.4, 8.9, 10.1, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-04-02', 978.1, 7.3, null, 4.8, 14.6, 8.7, 7.7, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -939,11 +939,11 @@ VALUES('2000-04-05', 969.3, 8.0, 1.1, 7.3, 1.7, 11.1, 0.2, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-04-06', 988.9, 4.8, null, 1.9, 10.5, 4.5, 8.8, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-04-07', 994.5, 6.5, null, 0.3, 10.9, 5.8, 1.1, 4.7);
+VALUES('2000-04-07', 994.5, 6.5, null, -0.3, 10.9, 5.8, 1.1, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-04-08', 992.5, 5.9, null, 2.2, 9.5, 4.8, 10.2, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-04-09', 987.5, 6.0, null, 0.6, 11.3, 5.7, 11.7, 2.7);
+VALUES('2000-04-09', 987.5, 6.0, null, -0.6, 11.3, 5.7, 11.7, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-04-10', 980.7, 5.5, null, 4.6, 13.4, 8.7, 7.2, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -1339,7 +1339,7 @@ VALUES('2000-10-22', 1003.2, 6.7, null, 1.2, 14.8, 7.8, 9.4, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-10-23', 998.9, 7.0, null, 0.8, 15.2, 7.7, 9.4, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-10-24', 993.6, 9.9, null, 1.6, 8.4, 3.2, null, 1);
+VALUES('2000-10-24', 993.6, 9.9, null, -1.6, 8.4, 3.2, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-10-25', 987.2, 8.7, null, 3.8, 18.2, 11.6, 4.9, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -1375,7 +1375,7 @@ VALUES('2000-11-09', 982.8, 8.6, null, 4.9, 11.6, 7.7, 6.6, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-11-10', 990.8, 9.3, null, 1, 11.6, 4.2, 1.8, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-11-11', 996.2, 8.8, null, 0.7, 9.4, 4.2, 7.6, 2.3);
+VALUES('2000-11-11', 996.2, 8.8, null, -0.7, 9.4, 4.2, 7.6, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-11-12', 98.9, 9.2, null, 1.5, 7.9, 5.3, 2.1, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -1391,7 +1391,7 @@ VALUES('2000-11-17', 981.5, 9.2, 1.4, 7.2, 13.1, 9.5, 1.1, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-11-18', 986.6, 9.1, 0.5, 3.2, 8.6, 4.9, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-11-19', 981.5, 9.7, null, 3.1, 6.3, 3.8, 5.4, 2);
+VALUES('2000-11-19', 981.5, 9.7, null, -3.1, 6.3, 3.8, 5.4, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-11-20', 979.9, 9.7, 0.5, 5.6, 7.2, 6.4, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -1409,13 +1409,13 @@ VALUES('2000-11-26', 975.3, 9.5, 8.9, 5.3, 8.1, 6.4, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-11-27', 988.1, 8.9, null, 2.7, 7.9, 4.6, 2, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-11-28', 992.8, 9.9, 0.3, 1.5, 4.7, 3, 0.5, 1.3);
+VALUES('2000-11-28', 992.8, 9.9, 0.3, -1.5, 4.7, 3, 0.5, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-11-29', 991.1, 8.8, null, 3.2, 9.4, 5.3, 4.2, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-11-30', 992.7, 9.3, null, 1.2, 4, 2.9, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-12-01', 992.5, 9.6, null, 0.5, 4.7, 1.7, 5.4, 1.3);
+VALUES('2000-12-01', 992.5, 9.6, null, -0.5, 4.7, 1.7, 5.4, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-12-02', 992.8, 9.9, 0.4, 0.5, 2.6, 1.7, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -1447,43 +1447,43 @@ VALUES('2000-12-15', 973.5, 9.0, null, 2, 6.3, 4.6, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-12-16', 976.8, 7.2, null, 2, 5.7, 3.8, 3.5, 8.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-12-17', 984.3, 7.9, null, 0.1, 5.3, 2.2, 2.2, 3);
+VALUES('2000-12-17', 984.3, 7.9, null, -0.1, 5.3, 2.2, 2.2, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-12-18', 991.4, 8.6, null, 2.4, 2.8, 0.5, 4.9, 1.3);
+VALUES('2000-12-18', 991.4, 8.6, null, -2.4, 2.8, -0.5, 4.9, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-12-19', 993.3, 8.9, 0.2, 2.6, 2.3, 0.5, null, 2);
+VALUES('2000-12-19', 993.3, 8.9, 0.2, -2.6, 2.3, 0.5, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-12-20', 1000.1, 8.3, null, 4.9, 1.9, 3.3, 7, 3);
+VALUES('2000-12-20', 1000.1, 8.3, null, -4.9, 1.9, -3.3, 7, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-12-21', 1000.6, 8.2, null, 5.6, 2.7, 3.5, null, 3.7);
+VALUES('2000-12-21', 1000.6, 8.2, null, -5.6, -2.7, -3.5, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-12-22', 998.4, 7.4, null, 6.2, 1.7, 4.7, 6.6, 2.3);
+VALUES('2000-12-22', 998.4, 7.4, null, -6.2, -1.7, -4.7, 6.6, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-12-23', 988.3, 8.7, null, 8.2, 3.3, 6.5, 3.1, 2.7);
+VALUES('2000-12-23', 988.3, 8.7, null, -8.2, -3.3, -6.5, 3.1, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-12-24', 980.6, 9.2, null, 9.2, 4.2, 6.6, 1.6, 1.3);
+VALUES('2000-12-24', 980.6, 9.2, null, -9.2, -4.2, -6.6, 1.6, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-12-25', 969.1, 9.3, null, 8.3, 0.6, 1.9, null, 1.3);
+VALUES('2000-12-25', 969.1, 9.3, null, -8.3, -0.6, -1.9, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-12-26', 966.6, 10.0, 1.6, 0.9, 0.8, 0.3, null, 3.3);
+VALUES('2000-12-26', 966.6, 10.0, 1.6, -0.9, 0.8, 0.3, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-12-27', 96.7, 10.0, 8.2, null, 2.2, 1.4, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2000-12-28', 964.4, 9.9, 5.6, 0.2, 3.5, 1.7, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-12-29', 97.1, 9.5, 5.1, 2.1, 2.8, 0.1, 1.2, 2);
+VALUES('2000-12-29', 97.1, 9.5, 5.1, -2.1, 2.8, 0.1, 1.2, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-12-30', 970.2, 9.8, 3.1, 3.4, 0.1, 1.7, null, 3);
+VALUES('2000-12-30', 970.2, 9.8, 3.1, -3.4, 0.1, -1.7, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2000-12-31', 98.5, 8.9, null, 7.5, 2, 3.5, 5.5, 2.3);
+VALUES('2000-12-31', 98.5, 8.9, null, -7.5, 2, -3.5, 5.5, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-01-01', 986.4, 9.5, null, 11.6, 4.7, 6.3, 3.2, 2.7);
+VALUES('2001-01-01', 986.4, 9.5, null, -11.6, -4.7, -6.3, 3.2, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-01-02', 981.7, 9.0, null, 5.4, 1.6, 1.8, null, 2.7);
+VALUES('2001-01-02', 981.7, 9.0, null, -5.4, -1.6, -1.8, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-01-03', 982.5, 10.0, 4.2, 2.1, 0.1, 0.7, null, 1.3);
+VALUES('2001-01-03', 982.5, 10.0, 4.2, -2.1, -0.1, -0.7, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-01-04', 981.2, 9.9, 0.3, 2.3, 2.5, 0.8, null, 3.3);
+VALUES('2001-01-04', 981.2, 9.9, 0.3, -2.3, 2.5, 0.8, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-01-05', 97.9, 10.0, null, 0.1, 2.2, 1.5, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -1495,35 +1495,35 @@ VALUES('2001-01-08', 981.3, 9.8, 9.6, 1.7, 4.2, 2.6, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-01-09', 984.9, 8.7, null, 1.5, 4.3, 2.5, 3.2, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-01-10', 98.8, 9.6, 1.5, 2.7, 2.7, 0.6, 3.6, 1);
+VALUES('2001-01-10', 98.8, 9.6, 1.5, -2.7, 2.7, -0.6, 3.6, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-01-11', 990.4, 9.2, 1.1, 1.2, 3, 0.8, 1.6, 1.7);
+VALUES('2001-01-11', 990.4, 9.2, 1.1, -1.2, 3, 0.8, 1.6, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-01-12', 996.7, 8.3, null, 4.3, 1.5, 2.6, 7, 3.3);
+VALUES('2001-01-12', 996.7, 8.3, null, -4.3, 1.5, -2.6, 7, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-01-13', 100.4, 8.7, null, 7.6, 0.8, 4.3, 7.7, 3.3);
+VALUES('2001-01-13', 100.4, 8.7, null, -7.6, -0.8, -4.3, 7.7, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-01-14', 1005.4, 8.7, null, 9.8, 2, 6.8, 7.7, 2.7);
+VALUES('2001-01-14', 1005.4, 8.7, null, -9.8, -2, -6.8, 7.7, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-01-15', 1002.8, 9.6, null, 8.7, 3.6, 6.3, 5.5, 4.3);
+VALUES('2001-01-15', 1002.8, 9.6, null, -8.7, -3.6, -6.3, 5.5, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-01-16', 999.4, 9.6, null, 9.3, 4.9, 6, 4.5, 4);
+VALUES('2001-01-16', 999.4, 9.6, null, -9.3, -4.9, -6, 4.5, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-01-17', 996.4, 9.0, null, 5.6, 1.2, 2.1, null, 3.7);
+VALUES('2001-01-17', 996.4, 9.0, null, -5.6, -1.2, -2.1, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-01-18', 994.7, 8.0, null, 1.7, 1.4, 0.1, null, 4);
+VALUES('2001-01-18', 994.7, 8.0, null, -1.7, 1.4, -0.1, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-01-19', 995.7, 8.1, null, 3.1, 2.3, 0.6, 1.7, 4.3);
+VALUES('2001-01-19', 995.7, 8.1, null, -3.1, 2.3, 0.6, 1.7, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-01-20', 997.7, 8.6, null, 0.7, 0.8, 0.2, null, 3);
+VALUES('2001-01-20', 997.7, 8.6, null, -0.7, 0.8, -0.2, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-01-21', 998.6, 8.8, null, 1.4, 0.3, 1.1, null, 2.3);
+VALUES('2001-01-21', 998.6, 8.8, null, -1.4, -0.3, -1.1, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-01-22', 992.7, 9.0, 0.4, 2.8, 0.3, 1.7, null, 4.7);
+VALUES('2001-01-22', 992.7, 9.0, 0.4, -2.8, -0.3, -1.7, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-01-23', 987.5, 9.9, 1, 2.7, 1.1, 1.7, null, 4.7);
+VALUES('2001-01-23', 987.5, 9.9, 1, -2.7, -1.1, -1.7, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-01-24', 984.2, 9.7, 6.4, 1.8, 1, null, null, 5.3);
+VALUES('2001-01-24', 984.2, 9.7, 6.4, -1.8, 1, null, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-01-25', 983.5, 9.9, null, 0.4, 1.5, 1.1, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -1531,21 +1531,21 @@ VALUES('2001-01-26', 980.9, 9.5, null, 1.3, 5.8, 2.5, 0.6, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-01-27', 974.4, 9.9, null, 0.7, 3.7, 1.7, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-01-28', 976.2, 8.3, null, 1.1, 7.1, 2.4, 7.5, 1.7);
+VALUES('2001-01-28', 976.2, 8.3, null, -1.1, 7.1, 2.4, 7.5, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-01-29', 983.6, 8.1, null, 0.1, 5.8, 2.2, 1.8, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-01-30', 988.7, 7.6, null, 0.6, 2.3, 1.2, null, 5);
+VALUES('2001-01-30', 988.7, 7.6, null, -0.6, 2.3, 1.2, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-01-31', 987.7, 8.1, null, 0.3, 1.4, 0.4, 1.8, 5.7);
+VALUES('2001-01-31', 987.7, 8.1, null, -0.3, 1.4, 0.4, 1.8, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-02-01', 989.8, 7.4, null, 1.1, 1.5, 0.5, 4.3, 4.7);
+VALUES('2001-02-01', 989.8, 7.4, null, -1.1, 1.5, -0.5, 4.3, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-02-02', 987.4, 8.0, null, 4.2, 0.3, 3, 3.7, 5.3);
+VALUES('2001-02-02', 987.4, 8.0, null, -4.2, -0.3, -3, 3.7, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-02-03', 981.9, 9.5, 4.9, 8.1, 2.2, 3.8, null, 2.3);
+VALUES('2001-02-03', 981.9, 9.5, 4.9, -8.1, -2.2, -3.8, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-02-04', 977.9, 9.7, 1.1, 3.2, 2.3, 1.1, 0.5, 0.7);
+VALUES('2001-02-04', 977.9, 9.7, 1.1, -3.2, 2.3, 1.1, 0.5, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-02-05', 977.1, 9.9, null, 0.4, 6.8, 2.4, 1.1, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -1555,59 +1555,59 @@ VALUES('2001-02-07', 98.4, 9.3, null, 2.1, 9.3, 5.9, 1.2, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-02-08', 977.4, 8.6, null, 2.6, 12.5, 8.2, 2, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-02-09', 984.6, 9.9, null, 1.8, 8, 3.9, 2.7, 0.7);
+VALUES('2001-02-09', 984.6, 9.9, null, -1.8, 8, 3.9, 2.7, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-02-10', 1002.9, 8.5, null, 1.1, 6.3, 2.6, 3, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-02-11', 1009.6, 8.8, null, 3.5, 6.8, 1.1, 8.6, 1.3);
+VALUES('2001-02-11', 1009.6, 8.8, null, -3.5, 6.8, 1.1, 8.6, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-02-12', 1001.2, 8.6, null, 2.8, 7.5, 2.9, 5.9, 1.7);
+VALUES('2001-02-12', 1001.2, 8.6, null, -2.8, 7.5, 2.9, 5.9, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-02-13', 996.3, 8.6, 0.1, 0.6, 8, 3.5, 0.9, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-02-14', 1001.1, 7.8, null, 1.7, 8.6, 4.2, 8, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-02-15', 1001.9, 8.7, null, 3.5, 8.7, 2.5, 8.6, 1.7);
+VALUES('2001-02-15', 1001.9, 8.7, null, -3.5, 8.7, 2.5, 8.6, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-02-16', 998.1, 8.2, null, 3.3, 8.8, 2.3, 8.9, 1.7);
+VALUES('2001-02-16', 998.1, 8.2, null, -3.3, 8.8, 2.3, 8.9, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-02-17', 1000.1, 8.7, null, 2.5, 7.5, 2.1, 6.3, 4.7);
+VALUES('2001-02-17', 1000.1, 8.7, null, -2.5, 7.5, 2.1, 6.3, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-02-18', 997.8, 7.5, 0.1, 1, 3.6, 2.1, 2.6, 7.7);
+VALUES('2001-02-18', 997.8, 7.5, 0.1, -1, 3.6, 2.1, 2.6, 7.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-02-19', 997.6, 7.7, 0.3, 2.6, 4.7, 2.4, 1.9, 4.7);
+VALUES('2001-02-19', 997.6, 7.7, 0.3, -2.6, 4.7, 2.4, 1.9, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-02-20', 989.8, 8.3, 0.2, 2, 4.2, 2.8, 0.7, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-02-21', 983.4, 7.7, 0.5, 1.7, 5.7, 4.5, 0.1, 9.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-02-22', 972.7, 8.7, 6.6, 0.5, 6, 1.7, 5.4, 8);
+VALUES('2001-02-22', 972.7, 8.7, 6.6, -0.5, 6, 1.7, 5.4, 8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-02-23', 96.9, 9.2, 2.9, 3.1, 1.6, 1.9, 1.1, 3.3);
+VALUES('2001-02-23', 96.9, 9.2, 2.9, -3.1, 1.6, -1.9, 1.1, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-02-24', 978.3, 7.9, null, 7.1, 1.4, 4.8, 9.6, 3);
+VALUES('2001-02-24', 978.3, 7.9, null, -7.1, -1.4, -4.8, 9.6, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-02-25', 981.9, 7.3, 0.2, 11.2, null, 4.8, 7.6, 1);
+VALUES('2001-02-25', 981.9, 7.3, 0.2, -11.2, null, -4.8, 7.6, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-02-26', 977.2, 8.1, null, 9.7, 1.9, 3, 9, 2);
+VALUES('2001-02-26', 977.2, 8.1, null, -9.7, 1.9, -3, 9, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-02-27', 977.9, 8.0, null, 6.6, 1.3, 3.2, 9, 2);
+VALUES('2001-02-27', 977.9, 8.0, null, -6.6, 1.3, -3.2, 9, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-02-28', 974.6, 7.5, null, 4, 1.4, 0.3, 7.4, 8.7);
+VALUES('2001-02-28', 974.6, 7.5, null, -4, 1.4, 0.3, 7.4, 8.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-03-01', 97.0, 9.3, null, 2.2, 1.5, 0.6, null, 1.3);
+VALUES('2001-03-01', 97.0, 9.3, null, -2.2, 1.5, -0.6, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-03-02', 973.4, 9.3, 0.2, 2, 5.5, 0.9, 4.2, 2);
+VALUES('2001-03-02', 973.4, 9.3, 0.2, -2, 5.5, 0.9, 4.2, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-03-03', 965.3, 9.7, 0.2, 0.2, 4.3, 2.6, null, 2.3);
+VALUES('2001-03-03', 965.3, 9.7, 0.2, -0.2, 4.3, 2.6, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-03-04', 970.4, 10.0, 2.7, 1, 4.9, 3.5, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-03-05', 985.2, 8.5, 0.4, 2.1, 7.4, 3.2, 3.3, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-03-06', 99.7, 7.9, null, 0.2, 4.8, 1, 5.5, 3);
+VALUES('2001-03-06', 99.7, 7.9, null, -0.2, 4.8, 1, 5.5, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-03-07', 992.7, 7.7, null, 2.5, 7.7, 3.5, 7.7, 5.3);
+VALUES('2001-03-07', 992.7, 7.7, null, -2.5, 7.7, 3.5, 7.7, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-03-08', 98.2, 7.0, null, 2.4, 9.1, 5.6, 3.5, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -1623,7 +1623,7 @@ VALUES('2001-03-13', 975.4, 8.7, 3.6, 6.1, 12.6, 7.3, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-03-14', 977.9, 6.8, null, 1.2, 11.5, 4.7, 6.9, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-03-15', 981.8, 8.7, 0.9, 0.2, 8, 5, 2.4, 4.3);
+VALUES('2001-03-15', 981.8, 8.7, 0.9, -0.2, 8, 5, 2.4, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-03-16', 983.6, 9.4, 0.2, 1.9, 1.0, 5.8, 2.1, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -1633,11 +1633,11 @@ VALUES('2001-03-18', 974.9, 9.6, 1.4, 5, 10.7, 6.5, 3.1, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-03-19', 976.7, 7.6, 1.4, 4, 12.2, 6.5, 5.7, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-03-20', 984.8, 6.6, null, 0.6, 5.3, 0.8, 6.8, 5.3);
+VALUES('2001-03-20', 984.8, 6.6, null, -0.6, 5.3, 0.8, 6.8, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-03-21', 979.1, 8.6, 3, 1.4, 2, 0.8, null, 5);
+VALUES('2001-03-21', 979.1, 8.6, 3, -1.4, 2, -0.8, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-03-22', 972.2, 10.0, 10.6, 1.1, 2.6, 1.5, null, 2);
+VALUES('2001-03-22', 972.2, 10.0, 10.6, -1.1, 2.6, 1.5, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-03-23', 979.3, 9.3, 7.6, 2.3, 7.4, 5, 0.4, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -1647,11 +1647,11 @@ VALUES('2001-03-25', 967.3, 9.5, 3.1, 7.9, 14.1, 9.6, 0.2, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-03-26', 976.5, 8.7, 2.1, 0.7, 7.9, 2.6, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-03-27', 986.2, 7.4, null, 1.6, 0.7, 0.5, 0.8, 5.7);
+VALUES('2001-03-27', 986.2, 7.4, null, -1.6, 0.7, -0.5, 0.8, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-03-28', 987.2, 7.5, null, 1.9, 3.1, 0.3, 1.0, 6);
+VALUES('2001-03-28', 987.2, 7.5, null, -1.9, 3.1, -0.3, 1.0, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-03-29', 981.1, 8.1, null, 1.1, 5.7, 3.7, null, 7);
+VALUES('2001-03-29', 981.1, 8.1, null, -1.1, 5.7, 3.7, null, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-03-30', 984.2, 8.5, null, 4.7, 10.4, 7.4, 0.5, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -1683,9 +1683,9 @@ VALUES('2001-04-12', 987.6, 6.4, 0.2, 5.1, 1.2, 7.2, 6.5, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-04-13', 988.2, 6.5, 0.1, 1.3, 8.4, 2.7, 9.8, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-04-14', 989.2, 7.2, 0.1, 0.2, 5.8, 1.3, 5.8, 6);
+VALUES('2001-04-14', 989.2, 7.2, 0.1, -0.2, 5.8, 1.3, 5.8, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-04-15', 980.9, 8.5, 2.9, 4.4, 5.8, 2.6, 3.8, 4.3);
+VALUES('2001-04-15', 980.9, 8.5, 2.9, -4.4, 5.8, 2.6, 3.8, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-04-16', 980.7, 9.1, 3.7, 2.6, 10.5, 5.9, 4.8, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -2075,7 +2075,7 @@ VALUES('2001-10-25', 997.5, 9.5, 0.4, 6.3, 9, 7.7, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-10-26', 997.9, 8.7, null, 6.8, 8.2, 7.4, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-10-27', 996.5, 7.6, 1.8, 0.1, 10.2, 5.5, 6.5, 3.7);
+VALUES('2001-10-27', 996.5, 7.6, 1.8, -0.1, 10.2, 5.5, 6.5, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-10-28', 995.7, 9.5, 8.2, 4.8, 7.3, 6.6, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -2089,13 +2089,13 @@ VALUES('2001-11-01', 998.4, 7.8, 1.3, 5.9, 14.7, 7.4, 5.7, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-11-02', 1006.3, 7.3, null, 2.9, 9.4, 4.8, 7.7, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-11-03', 1002.8, 9.2, null, 0.9, 6.7, 5, null, 0.7);
+VALUES('2001-11-03', 1002.8, 9.2, null, -0.9, 6.7, 5, null, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-11-04', 992.9, 8.0, null, 4.5, 11.5, 6.9, 5.8, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-11-05', 991.1, 8.1, null, 2.3, 10.5, 5.8, 2.6, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-11-06', 987.1, 9.1, 1, 2.2, 6.1, 3.5, 0.2, 2);
+VALUES('2001-11-06', 987.1, 9.1, 1, -2.2, 6.1, 3.5, 0.2, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-11-07', 978.9, 8.8, 1.3, 4.6, 10.4, 7.6, 1.4, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -2103,29 +2103,29 @@ VALUES('2001-11-08', 965.5, 7.8, 0.4, 6.4, 12.7, 9.4, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-11-09', 979.3, 6.7, null, 0.4, 10.3, 2.6, 1.9, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-11-10', 999.8, 7.8, null, 3, 4.9, null, 5.4, 3);
+VALUES('2001-11-10', 999.8, 7.8, null, -3, 4.9, null, 5.4, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-11-11', 995.4, 9.1, null, 4.3, 2.5, 0.5, 2.7, 2.7);
+VALUES('2001-11-11', 995.4, 9.1, null, -4.3, 2.5, 0.5, 2.7, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-11-12', 983.5, 8.8, null, 1.3, 2.7, 2, null, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-11-13', 98.0, 8.3, 0.2, 0.3, 5.1, 2.8, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-11-14', 993.3, 6.9, null, 0.4, 4.7, 1.1, 2.7, 6.3);
+VALUES('2001-11-14', 993.3, 6.9, null, -0.4, 4.7, 1.1, 2.7, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-11-15', 1006.1, 8.0, null, 3.4, 4.8, 0.8, 7.9, 2.3);
+VALUES('2001-11-15', 1006.1, 8.0, null, -3.4, 4.8, -0.8, 7.9, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-11-16', 1003.4, 8.7, null, 5.1, 6.1, 1.9, 1.3, 2);
+VALUES('2001-11-16', 1003.4, 8.7, null, -5.1, 6.1, 1.9, 1.3, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-11-17', 1004.2, 8.9, null, 3.9, 6, 0.2, 6.1, 1);
+VALUES('2001-11-17', 1004.2, 8.9, null, -3.9, 6, -0.2, 6.1, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-11-18', 994.5, 9.7, null, 4.9, 1.2, 2.2, null, 1.7);
+VALUES('2001-11-18', 994.5, 9.7, null, -4.9, -1.2, -2.2, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-11-19', 989.5, 9.3, null, 1.8, 4.3, 1.9, null, 3);
+VALUES('2001-11-19', 989.5, 9.3, null, -1.8, 4.3, 1.9, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-11-20', 995.1, 7.5, null, 0.1, 4.6, 3.1, 0.2, 3);
+VALUES('2001-11-20', 995.1, 7.5, null, -0.1, 4.6, 3.1, 0.2, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-11-21', 997.7, 8.7, 0.2, 2.6, 5.4, 2.2, 1.5, 2.3);
+VALUES('2001-11-21', 997.7, 8.7, 0.2, -2.6, 5.4, 2.2, 1.5, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-11-22', 981.8, 8.5, 0.7, 0.4, 6.4, 3.7, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -2133,131 +2133,131 @@ VALUES('2001-11-23', 981.5, 7.1, null, 0.1, 4.6, 1.3, 3.4, 7.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2001-11-24', 986.7, 7.1, null, 0.2, 2.5, 1, 0.4, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-11-25', 986.2, 7.1, null, 0.6, 3.1, 1, 2.8, 5.3);
+VALUES('2001-11-25', 986.2, 7.1, null, -0.6, 3.1, 1, 2.8, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-11-26', 981.2, 8.1, 1.3, 7.1, 3, 1.1, 4.2, 2.3);
+VALUES('2001-11-26', 981.2, 8.1, 1.3, -7.1, 3, -1.1, 4.2, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-11-27', 984.2, 9.7, 8, 2.1, 0.2, 1.1, null, 2.3);
+VALUES('2001-11-27', 984.2, 9.7, 8, -2.1, -0.2, -1.1, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-11-28', 98.7, 9.9, null, 2.6, 0.2, 0.3, null, 1.3);
+VALUES('2001-11-28', 98.7, 9.9, null, -2.6, -0.2, -0.3, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-11-29', 989.7, 9.4, 6.2, 2.6, 4.8, 1.4, 2.5, 1);
+VALUES('2001-11-29', 989.7, 9.4, 6.2, -2.6, 4.8, 1.4, 2.5, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-11-30', 990.3, 8.5, null, 0.5, 3, 0.9, 5.3, 4);
+VALUES('2001-11-30', 990.3, 8.5, null, -0.5, 3, 0.9, 5.3, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-01', 996.6, 8.8, null, 1.6, 0.3, 1.1, null, 3.3);
+VALUES('2001-12-01', 996.6, 8.8, null, -1.6, 0.3, -1.1, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-02', 1000.2, 9.6, null, 2, 0.9, 1.4, null, 1.3);
+VALUES('2001-12-02', 1000.2, 9.6, null, -2, -0.9, -1.4, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-03', 99.9, 9.6, null, 2.9, 1.2, 1.9, null, 3);
+VALUES('2001-12-03', 99.9, 9.6, null, -2.9, -1.2, -1.9, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-04', 995.2, 9.9, 5.6, 4, 1.7, 3.2, null, 3.7);
+VALUES('2001-12-04', 995.2, 9.9, 5.6, -4, -1.7, -3.2, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-05', 994.3, 9.9, 3.6, 3.5, 0.8, 1.3, null, 0.7);
+VALUES('2001-12-05', 994.3, 9.9, 3.6, -3.5, -0.8, -1.3, null, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-06', 990.6, 9.9, 5.9, 1.6, 0.6, 0.8, null, 2.3);
+VALUES('2001-12-06', 990.6, 9.9, 5.9, -1.6, -0.6, -0.8, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-07', 1004.4, 9.1, null, 2.8, 2.8, 0.8, 0.5, 4);
+VALUES('2001-12-07', 1004.4, 9.1, null, -2.8, 2.8, -0.8, 0.5, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-08', 1010.6, 8.1, null, 8.9, 1.2, 6.2, 7, 0.7);
+VALUES('2001-12-08', 1010.6, 8.1, null, -8.9, -1.2, -6.2, 7, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-09', 1011.7, 8.3, null, 12.9, 3.6, 8.8, 7.1, 2.3);
+VALUES('2001-12-09', 1011.7, 8.3, null, -12.9, -3.6, -8.8, 7.1, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-10', 1008.3, 9.1, 1.5, 11.5, 4.4, 6.2, 0.5, 0.7);
+VALUES('2001-12-10', 1008.3, 9.1, 1.5, -11.5, -4.4, -6.2, 0.5, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-11', 1000.5, 9.5, 1.6, 4.7, 0.1, 1.1, 0.2, 0.3);
+VALUES('2001-12-11', 1000.5, 9.5, 1.6, -4.7, 0.1, -1.1, 0.2, 0.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-12', 99.2, 9.2, 1, 1.2, 1.3, 0.3, null, 2.7);
+VALUES('2001-12-12', 99.2, 9.2, 1, -1.2, 1.3, -0.3, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-13', 1000.6, 7.2, null, 15.4, 0.4, 13.5, 4, 4.3);
+VALUES('2001-12-13', 1000.6, 7.2, null, -15.4, -0.4, -13.5, 4, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-14', 1008.1, 8.4, null, 1.7, 8.9, 13.7, 6.2, 0.7);
+VALUES('2001-12-14', 1008.1, 8.4, null, -1.7, -8.9, -13.7, 6.2, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-15', 1002.5, 9.0, null, 18.6, 7.6, 9.6, null, 0.3);
+VALUES('2001-12-15', 1002.5, 9.0, null, -18.6, -7.6, -9.6, null, 0.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-16', 999.6, 8.3, 0.2, 8.3, 2.2, 4.3, 1.3, 4.7);
+VALUES('2001-12-16', 999.6, 8.3, 0.2, -8.3, -2.2, -4.3, 1.3, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-17', 999.4, 9.1, 0.2, 11.8, 4.3, 5.9, 0.2, 1.3);
+VALUES('2001-12-17', 999.4, 9.1, 0.2, -11.8, -4.3, -5.9, 0.2, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-18', 999.7, 8.7, null, 5.4, 1.1, null, null, 2.7);
+VALUES('2001-12-18', 999.7, 8.7, null, -5.4, 1.1, null, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-19', 992.3, 8.3, null, 1, 1.5, 0.5, null, 4.3);
+VALUES('2001-12-19', 992.3, 8.3, null, -1, 1.5, 0.5, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-20', 989.1, 7.3, 0.1, 7.7, 1.1, 3.7, 1.5, 5.3);
+VALUES('2001-12-20', 989.1, 7.3, 0.1, -7.7, 1.1, -3.7, 1.5, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-21', 982.4, 8.3, null, 15.6, 1.7, 5.7, 2.3, 2.7);
+VALUES('2001-12-21', 982.4, 8.3, null, -15.6, -1.7, -5.7, 2.3, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-22', 974.1, 8.4, null, 5.6, 1.6, 1.2, 1.2, 3.7);
+VALUES('2001-12-22', 974.1, 8.4, null, -5.6, 1.6, -1.2, 1.2, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-23', 98.2, 7.6, null, 9.7, 2, 6.5, 4.4, 5);
+VALUES('2001-12-23', 98.2, 7.6, null, -9.7, -2, -6.5, 4.4, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-24', 984.7, 8.0, 0.5, 15.5, 7.3, 10.5, 7.3, 1.7);
+VALUES('2001-12-24', 984.7, 8.0, 0.5, -15.5, -7.3, -10.5, 7.3, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-25', 970.9, 8.4, 0.7, 10.1, 3.5, 0.5, null, 5);
+VALUES('2001-12-25', 970.9, 8.4, 0.7, -10.1, 3.5, 0.5, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-26', 972.2, 9.3, 0.2, 6.8, 3.1, 4.6, null, 2);
+VALUES('2001-12-26', 972.2, 9.3, 0.2, -6.8, 3.1, -4.6, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-27', 981.9, 8.4, 0.3, 9.4, 0.6, 4.2, 2.8, 2.7);
+VALUES('2001-12-27', 981.9, 8.4, 0.3, -9.4, 0.6, -4.2, 2.8, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-28', 973.9, 9.3, 1.1, 8.2, 3.8, 0.2, 0.1, 2.7);
+VALUES('2001-12-28', 973.9, 9.3, 1.1, -8.2, 3.8, -0.2, 0.1, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-29', 967.7, 8.4, 7.3, 0.5, 4.7, 0.9, null, 3.3);
+VALUES('2001-12-29', 967.7, 8.4, 7.3, -0.5, 4.7, 0.9, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-30', 973.9, 8.4, 0.7, 3.3, 0.6, 1.5, 4.9, 5.7);
+VALUES('2001-12-30', 973.9, 8.4, 0.7, -3.3, 0.6, -1.5, 4.9, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2001-12-31', 989.3, 8.0, 0.1, 8.8, 2.4, 5.6, 5.6, 4.7);
+VALUES('2001-12-31', 989.3, 8.0, 0.1, -8.8, -2.4, -5.6, 5.6, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-01-01', 1001.3, 8.3, 0.2, 12.4, 1, 4.2, 2.4, 5);
+VALUES('2002-01-01', 1001.3, 8.3, 0.2, -12.4, -1, -4.2, 2.4, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-01-02', 993.9, 7.5, 0.1, 3.5, 2, 1.4, 3.8, 8);
+VALUES('2002-01-02', 993.9, 7.5, 0.1, -3.5, 2, -1.4, 3.8, 8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-01-03', 1006.2, 6.8, null, 13.9, 3.1, 10.5, 7, 5.7);
+VALUES('2002-01-03', 1006.2, 6.8, null, -13.9, -3.1, -10.5, 7, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-01-04', 1007.6, 8.5, null, 18.8, 11.5, 14.2, 6.9, 2);
+VALUES('2002-01-04', 1007.6, 8.5, null, -18.8, -11.5, -14.2, 6.9, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-01-05', 1005.3, 7.1, null, 1.8, 3.9, 8.7, null, 2.3);
+VALUES('2002-01-05', 1005.3, 7.1, null, -1.8, -3.9, -8.7, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-01-06', 1000.5, 7.8, null, 16.4, 2.2, 7.1, 6.9, 0.7);
+VALUES('2002-01-06', 1000.5, 7.8, null, -16.4, -2.2, -7.1, 6.9, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-01-07', 1000.3, 9.0, null, 8.9, 1.9, 0.3, 1.1, 2.7);
+VALUES('2002-01-07', 1000.3, 9.0, null, -8.9, 1.9, -0.3, 1.1, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-01-08', 1004.7, 8.6, null, 1.6, 1, 0.3, null, 1.7);
+VALUES('2002-01-08', 1004.7, 8.6, null, -1.6, 1, 0.3, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-01-09', 1008.2, 9.2, null, 2.7, 0.3, 2.2, null, 1);
+VALUES('2002-01-09', 1008.2, 9.2, null, -2.7, 0.3, -2.2, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-01-10', 1007.2, 9.9, null, 4.9, 2.6, 4.1, null, 2);
+VALUES('2002-01-10', 1007.2, 9.9, null, -4.9, -2.6, -4.1, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-01-11', 1005.2, 9.7, null, 4, 3.1, 3.7, null, 2.3);
+VALUES('2002-01-11', 1005.2, 9.7, null, -4, -3.1, -3.7, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-01-12', 1003.8, 9.8, 0.6, 5.3, 3.7, 4.7, null, 0.7);
+VALUES('2002-01-12', 1003.8, 9.8, 0.6, -5.3, -3.7, -4.7, null, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-01-13', 100.3, 9.8, 0.2, 5.2, 2.6, 3.2, null, 1);
+VALUES('2002-01-13', 100.3, 9.8, 0.2, -5.2, -2.6, -3.2, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-01-14', 1000.9, 9.8, null, 3.1, 1.9, 2.4, null, 1.7);
+VALUES('2002-01-14', 1000.9, 9.8, null, -3.1, -1.9, -2.4, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-01-15', 996.8, 9.3, null, 5.5, 2.6, 4.5, null, 1.7);
+VALUES('2002-01-15', 996.8, 9.3, null, -5.5, -2.6, -4.5, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-01-16', 994.3, 9.6, null, 5.7, 4.6, 5.2, null, 1.3);
+VALUES('2002-01-16', 994.3, 9.6, null, -5.7, -4.6, -5.2, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-01-17', 997.2, 9.2, null, 5.6, 4.5, 5.3, null, 1.3);
+VALUES('2002-01-17', 997.2, 9.2, null, -5.6, -4.5, -5.3, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-01-18', 99.5, 9.5, null, 5.6, 3.3, 4.1, null, 1);
+VALUES('2002-01-18', 99.5, 9.5, null, -5.6, -3.3, -4.1, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-01-19', 991.1, 9.4, 0.3, 4.4, 1.8, 2.6, null, 1.3);
+VALUES('2002-01-19', 991.1, 9.4, 0.3, -4.4, -1.8, -2.6, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-01-20', 989.9, 8.7, 1.8, 2, 4.7, 1.9, 2.6, 3.3);
+VALUES('2002-01-20', 989.9, 8.7, 1.8, -2, 4.7, 1.9, 2.6, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-01-21', 983.2, 9.1, null, 1.1, 5.7, 4.7, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-01-22', 984.6, 9.9, 0.2, 2.5, 5.6, 0.6, null, 1.3);
+VALUES('2002-01-22', 984.6, 9.9, 0.2, -2.5, 5.6, 0.6, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-01-23', 983.7, 9.7, null, 2.7, 4.5, 1.1, 3.5, 1);
+VALUES('2002-01-23', 983.7, 9.7, null, -2.7, 4.5, 1.1, 3.5, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-01-24', 978.4, 9.7, 0.5, 0.2, 2.9, 0.9, null, 1);
+VALUES('2002-01-24', 978.4, 9.7, 0.5, -0.2, 2.9, 0.9, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-01-25', 98.8, 8.1, 0.2, 1.5, 6.1, 1.9, 5.4, 3);
+VALUES('2002-01-25', 98.8, 8.1, 0.2, -1.5, 6.1, 1.9, 5.4, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-01-26', 988.6, 9.3, 2.1, 0.9, 4.5, 2.3, 1.7, 2.7);
+VALUES('2002-01-26', 988.6, 9.3, 2.1, -0.9, 4.5, 2.3, 1.7, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-01-27', 980.2, 7.7, 1.7, 0.9, 10.5, 7.3, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -2267,23 +2267,23 @@ VALUES('2002-01-29', 99.4, 4.7, null, 4.2, 15.7, 8.6, 6.5, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-01-30', 994.1, 8.0, null, 0.6, 12.8, 7.4, 6.9, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-01-31', 98.9, 9.0, null, 0.5, 7.9, 3.2, null, 1);
+VALUES('2002-01-31', 98.9, 9.0, null, -0.5, 7.9, 3.2, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-02-01', 996.6, 9.1, null, 1.4, 7.9, 3.4, 4.9, 1.7);
+VALUES('2002-02-01', 996.6, 9.1, null, -1.4, 7.9, 3.4, 4.9, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-02-02', 1002.9, 8.6, null, 1.4, 11.3, 4.9, 7.6, 2.3);
+VALUES('2002-02-02', 1002.9, 8.6, null, -1.4, 11.3, 4.9, 7.6, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-02-03', 997.4, 7.9, null, 3.1, 11.1, 5.5, 6.9, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-02-04', 995.4, 9.2, null, 0.8, 6.9, 2.8, 3.3, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-02-05', 987.9, 9.9, null, 2.6, 2, 0.2, null, 0.7);
+VALUES('2002-02-05', 987.9, 9.9, null, -2.6, 2, 0.2, null, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-02-06', 978.9, 9.9, null, 0.7, 1.3, 0.6, null, 1.7);
+VALUES('2002-02-06', 978.9, 9.9, null, -0.7, 1.3, 0.6, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-02-07', 989.8, 9.4, null, 0.2, 4.8, 3.4, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-02-08', 991.3, 9.1, 2.3, 0.8, 6.7, 2.5, null, 3.7);
+VALUES('2002-02-08', 991.3, 9.1, 2.3, -0.8, 6.7, 2.5, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-02-09', 984.9, 9.2, 0.6, 0.9, 11.2, 6.5, 0.3, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -2295,13 +2295,13 @@ VALUES('2002-02-12', 981.7, 7.6, 1.1, 4.9, 13.2, 10.6, 0.2, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-02-13', 98.5, 8.2, 0.7, 5.8, 11.5, 6.6, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-02-14', 995.2, 7.3, null, 0.4, 6.5, 1.3, 3.8, 4.3);
+VALUES('2002-02-14', 995.2, 7.3, null, -0.4, 6.5, 1.3, 3.8, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-02-15', 1002.5, 7.5, null, 3.4, 4.4, 0.6, 9, 3.3);
+VALUES('2002-02-15', 1002.5, 7.5, null, -3.4, 4.4, -0.6, 9, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-02-16', 1002.3, 7.0, null, 5.2, 7.2, null, 8.7, 3.7);
+VALUES('2002-02-16', 1002.3, 7.0, null, -5.2, 7.2, null, 8.7, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-02-17', 994.5, 7.3, 2.4, 1.9, 7.4, 3.2, 2.7, 4.3);
+VALUES('2002-02-17', 994.5, 7.3, 2.4, -1.9, 7.4, 3.2, 2.7, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-02-18', 987.4, 8.6, 0.1, 2, 7.1, 4.5, 4, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -2309,15 +2309,15 @@ VALUES('2002-02-19', 986.2, 6.9, null, 1.7, 8.9, 4.8, 6.6, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-02-20', 971.4, 8.7, 2.5, null, 7.5, 4.5, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-02-21', 975.4, 7.4, null, 0.2, 7, 1.6, 2.6, 6.7);
+VALUES('2002-02-21', 975.4, 7.4, null, -0.2, 7, 1.6, 2.6, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-02-22', 98.3, 7.9, 1.8, 6.6, 2.1, 1.3, 4.5, 4);
+VALUES('2002-02-22', 98.3, 7.9, 1.8, -6.6, 2.1, -1.3, 4.5, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-02-23', 970.9, 8.0, 0.6, 0.5, 10.1, 4.1, 2.3, 5);
+VALUES('2002-02-23', 970.9, 8.0, 0.6, -0.5, 10.1, 4.1, 2.3, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-02-24', 976.5, 7.4, 0.2, 0.3, 5.6, 1.5, 7.4, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-02-25', 978.6, 9.6, 3.8, 4, 4.8, 0.5, null, 1);
+VALUES('2002-02-25', 978.6, 9.6, 3.8, -4, 4.8, 0.5, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-02-26', 975.5, 8.3, 0.1, 0.6, 11.9, 7.8, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -2325,27 +2325,27 @@ VALUES('2002-02-27', 975.4, 7.5, 4.9, 5.7, 1.5, 7, 2.4, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-02-28', 977.4, 8.7, 0.1, 2.1, 9.4, 4.2, 1.7, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-03-01', 982.3, 7.9, null, 0.5, 10.9, 4.5, 4.3, 3);
+VALUES('2002-03-01', 982.3, 7.9, null, -0.5, 10.9, 4.5, 4.3, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-03-02', 982.1, 8.3, null, 1.5, 4.4, 2.7, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-03-03', 986.7, 6.9, null, 1.5, 5.3, 1.7, 6.8, 4.3);
+VALUES('2002-03-03', 986.7, 6.9, null, -1.5, 5.3, 1.7, 6.8, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-03-04', 991.3, 7.2, null, 2.7, 8.9, 3.6, 7.8, 1.3);
+VALUES('2002-03-04', 991.3, 7.2, null, -2.7, 8.9, 3.6, 7.8, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-03-05', 983.9, 6.9, null, 0.6, 11.3, 5.5, 9, 4.7);
+VALUES('2002-03-05', 983.9, 6.9, null, -0.6, 11.3, 5.5, 9, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-03-06', 978.2, 7.9, null, 1.6, 15.8, 7.3, 7, 2.7);
+VALUES('2002-03-06', 978.2, 7.9, null, -1.6, 15.8, 7.3, 7, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-03-07', 979.8, 6.5, 1.8, 6.2, 14.1, 9.5, 2.5, 8.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-03-08', 995.2, 6.1, null, 1.9, 9.8, 4.9, 6.4, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-03-09', 985.6, 5.4, null, 1.4, 14.1, 7.7, 9.3, 4);
+VALUES('2002-03-09', 985.6, 5.4, null, -1.4, 14.1, 7.7, 9.3, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-03-10', 988.9, 5.4, null, 1.9, 9.8, 5.6, 9.3, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-03-11', 994.7, 4.8, null, 2.5, 13.5, 6.8, 10.3, 3.7);
+VALUES('2002-03-11', 994.7, 4.8, null, -2.5, 13.5, 6.8, 10.3, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-03-12', 990.7, 4.3, null, 2.1, 15.3, 8.1, 9.5, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -2379,11 +2379,11 @@ VALUES('2002-03-26', 996.7, 7.2, null, 0.4, 5.1, 1.9, 1.8, 7.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-03-27', 999.8, 6.1, null, 0.4, 6.4, 2.5, 4.2, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-03-28', 1000.2, 6.4, null, 1.7, 10.7, 4.9, 1.1, 5.7);
+VALUES('2002-03-28', 1000.2, 6.4, null, -1.7, 10.7, 4.9, 1.1, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-03-29', 997.5, 5.1, null, 1.2, 15.4, 8.4, 11.2, 3.3);
+VALUES('2002-03-29', 997.5, 5.1, null, -1.2, 15.4, 8.4, 11.2, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-03-30', 993.5, 5.6, null, 0.3, 1.7, 8.1, 11.2, 1.7);
+VALUES('2002-03-30', 993.5, 5.6, null, -0.3, 1.7, 8.1, 11.2, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-03-31', 989.1, 5.6, null, 1, 18.1, 10.2, 9.3, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -2397,13 +2397,13 @@ VALUES('2002-04-04', 982.8, 3.9, null, 0.3, 12.7, 7.3, 11.2, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-04-05', 979.9, 4.5, null, 1.5, 7.6, 3, 7.6, 7.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-04-06', 985.6, 5.9, 0.4, 1.9, 2, 0.7, 4.4, 4.7);
+VALUES('2002-04-06', 985.6, 5.9, 0.4, -1.9, 2, -0.7, 4.4, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-04-07', 993.1, 6.6, null, 4, 7.3, 1.2, 9.2, 2.3);
+VALUES('2002-04-07', 993.1, 6.6, null, -4, 7.3, 1.2, 9.2, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-04-08', 991.6, 4.8, null, 3.4, 10.7, 5.6, 1.1, 5.7);
+VALUES('2002-04-08', 991.6, 4.8, null, -3.4, 10.7, 5.6, 1.1, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-04-09', 988.7, 5.5, null, 1.3, 10.9, 6.1, 7.9, 4.3);
+VALUES('2002-04-09', 988.7, 5.5, null, -1.3, 10.9, 6.1, 7.9, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-04-10', 98.7, 7.5, 2, 2.3, 7.8, 5.1, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -2793,7 +2793,7 @@ VALUES('2002-10-19', 986.9, 8.6, null, 1.1, 11.8, 4.1, 3.9, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-10-20', 991.1, 8.0, null, 0.2, 10.5, 3.4, 7.5, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-10-21', 981.7, 8.8, 1, 0.7, 9, 6.5, 1.8, 3.7);
+VALUES('2002-10-21', 981.7, 8.8, 1, -0.7, 9, 6.5, 1.8, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-10-22', 97.3, 9.6, 0.3, 3.3, 10.8, 6.5, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -2813,7 +2813,7 @@ VALUES('2002-10-29', 994.5, 7.4, 0.3, 0.7, 10.6, 5.8, 6.8, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-10-30', 985.9, 8.9, 1.5, 4.2, 8.1, 5.3, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-10-31', 991.7, 8.3, 1.1, 1, 9.5, 4.7, 4.6, 1.7);
+VALUES('2002-10-31', 991.7, 8.3, 1.1, -1, 9.5, 4.7, 4.6, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-11-01', 991.6, 8.3, 0.4, 4.1, 10.6, 7.4, 3.3, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -2823,21 +2823,21 @@ VALUES('2002-11-03', 984.7, 8.7, 5.9, null, 6.2, 2.2, 4.6, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-11-04', 983.4, 9.2, 0.2, 1, 4, 2.3, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-11-05', 993.9, 7.0, null, 0.1, 3.3, 0.8, 3.6, 5.3);
+VALUES('2002-11-05', 993.9, 7.0, null, -0.1, 3.3, 0.8, 3.6, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-11-06', 996.2, 7.2, null, 2.7, 1.7, 1.6, 2.8, 2.3);
+VALUES('2002-11-06', 996.2, 7.2, null, -2.7, 1.7, -1.6, 2.8, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-11-07', 983.5, 8.7, null, 3, 3.4, 1.5, null, 3);
+VALUES('2002-11-07', 983.5, 8.7, null, -3, 3.4, 1.5, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-11-08', 985.5, 9.2, null, 1.7, 4.2, 0.9, null, 1.3);
+VALUES('2002-11-08', 985.5, 9.2, null, -1.7, 4.2, 0.9, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-11-09', 97.0, 9.4, 5.3, 2.2, 4, 1.5, null, 4);
+VALUES('2002-11-09', 97.0, 9.4, 5.3, -2.2, 4, 1.5, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-11-10', 980.7, 7.8, null, 0.1, 6.4, 2.6, 5.3, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-11-11', 975.8, 9.6, 6.1, 2.5, 1.5, 0.6, null, 1);
+VALUES('2002-11-11', 975.8, 9.6, 6.1, -2.5, 1.5, 0.6, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-11-12', 985.8, 8.6, 0.2, 0.4, 11.1, 6.2, 5.2, 2);
+VALUES('2002-11-12', 985.8, 8.6, 0.2, -0.4, 11.1, 6.2, 5.2, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-11-13', 979.2, 9.3, null, 2.4, 8.6, 6.1, 0.8, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -2861,7 +2861,7 @@ VALUES('2002-11-22', 972.9, 8.9, 3.1, 6.7, 11.6, 7.8, 0.8, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-11-23', 98.2, 9.4, 0.3, 4.2, 7.2, 5.1, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-11-24', 986.2, 9.4, null, 0.6, 6.7, 4.3, 0.3, 3.7);
+VALUES('2002-11-24', 986.2, 9.4, null, -0.6, 6.7, 4.3, 0.3, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-11-25', 982.5, 8.1, null, 5.7, 1.1, 7.9, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -2883,193 +2883,193 @@ VALUES('2002-12-03', 982.4, 9.3, 4.2, 1.4, 5.3, 4.2, null, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-12-04', 985.8, 9.4, null, 1.9, 4.6, 2.7, 0.6, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-12-05', 987.9, 9.2, 0.1, 0.1, 2.9, 0.6, 1.2, 6);
+VALUES('2002-12-05', 987.9, 9.2, 0.1, -0.1, 2.9, 0.6, 1.2, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-12-06', 99.3, 8.8, 3.2, 0.9, 1.5, 0.1, null, 6.3);
+VALUES('2002-12-06', 99.3, 8.8, 3.2, -0.9, 1.5, 0.1, null, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-12-07', 996.4, 8.4, null, 5.7, 0.8, 4.4, null, 8.7);
+VALUES('2002-12-07', 996.4, 8.4, null, -5.7, -0.8, -4.4, null, 8.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-12-08', 100.1, 8.2, null, 8.7, 5.1, 7.7, 6.8, 7.3);
+VALUES('2002-12-08', 100.1, 8.2, null, -8.7, -5.1, -7.7, 6.8, 7.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-12-09', 1003.1, 8.1, null, 10.4, 6.4, 9.3, 6.9, 6.3);
+VALUES('2002-12-09', 1003.1, 8.1, null, -10.4, -6.4, -9.3, 6.9, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-12-10', 1002.4, 8.3, null, 12.3, 5, 9.5, 5.5, 4);
+VALUES('2002-12-10', 1002.4, 8.3, null, -12.3, -5, -9.5, 5.5, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-12-11', 100.2, 8.5, null, 12.4, 5.7, 9, 3.6, 4);
+VALUES('2002-12-11', 100.2, 8.5, null, -12.4, -5.7, -9, 3.6, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-12-12', 1000.1, 7.9, null, 11.4, 4.7, 6.4, null, 5);
+VALUES('2002-12-12', 1000.1, 7.9, null, -11.4, -4.7, -6.4, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-12-13', 998.4, 8.3, null, 5.4, 4.2, 4.5, null, 0.7);
+VALUES('2002-12-13', 998.4, 8.3, null, -5.4, -4.2, -4.5, null, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-12-14', 997.3, 8.5, null, 7.2, 3.9, 6, null, 4.7);
+VALUES('2002-12-14', 997.3, 8.5, null, -7.2, -3.9, -6, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-12-15', 994.9, 8.8, 6, 7.4, 2.2, 3.7, null, 4.7);
+VALUES('2002-12-15', 994.9, 8.8, 6, -7.4, -2.2, -3.7, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-12-16', 992.3, 9.7, 3.3, 2.6, 1.8, 2.1, null, 2.7);
+VALUES('2002-12-16', 992.3, 9.7, 3.3, -2.6, -1.8, -2.1, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-12-17', 989.8, 9.7, 1.9, 2.7, 1.3, 2.2, null, 2);
+VALUES('2002-12-17', 989.8, 9.7, 1.9, -2.7, -1.3, -2.2, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-12-18', 995.5, 8.9, 0.1, 2.3, 0.8, 1.2, null, 3.7);
+VALUES('2002-12-18', 995.5, 8.9, 0.1, -2.3, 0.8, -1.2, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-12-19', 1001.6, 8.5, null, 8.7, 0.1, 3.8, 5.3, 4.3);
+VALUES('2002-12-19', 1001.6, 8.5, null, -8.7, 0.1, -3.8, 5.3, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-12-20', 994.8, 9.3, 0.7, 1.4, 6.5, 9.1, 3, 0.7);
+VALUES('2002-12-20', 994.8, 9.3, 0.7, -1.4, -6.5, -9.1, 3, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-12-21', 988.8, 9.7, 1, 8.4, 2.8, 3.7, null, 0.7);
+VALUES('2002-12-21', 988.8, 9.7, 1, -8.4, -2.8, -3.7, null, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-12-22', 988.5, 9.7, 10.7, 7.3, 1.6, 3.3, null, 2.7);
+VALUES('2002-12-22', 988.5, 9.7, 10.7, -7.3, -1.6, -3.3, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-12-23', 988.4, 9.0, 1.5, 5.3, 0.4, 3, null, 4.3);
+VALUES('2002-12-23', 988.4, 9.0, 1.5, -5.3, 0.4, -3, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-12-24', 994.1, 8.4, null, 8.8, 5.2, 7.6, null, 7);
+VALUES('2002-12-24', 994.1, 8.4, null, -8.8, -5.2, -7.6, null, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-12-25', 995.8, 7.4, null, 9.5, 5.4, 6.5, null, 2.7);
+VALUES('2002-12-25', 995.8, 7.4, null, -9.5, -5.4, -6.5, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-12-26', 992.1, 8.9, null, 6.5, 5.6, 6.2, null, 4);
+VALUES('2002-12-26', 992.1, 8.9, null, -6.5, -5.6, -6.2, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-12-27', 983.2, 9.6, 0.1, 6.7, 4, 5, null, 4);
+VALUES('2002-12-27', 983.2, 9.6, 0.1, -6.7, -4, -5, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-12-28', 974.7, 9.8, 2, 4, 1.4, 0.1, null, 1);
+VALUES('2002-12-28', 974.7, 9.8, 2, -4, 1.4, 0.1, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-12-29', 978.3, 9.6, 5.2, 0.4, 6.2, 1.2, 3.1, 1);
+VALUES('2002-12-29', 978.3, 9.6, 5.2, -0.4, 6.2, 1.2, 3.1, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2002-12-30', 969.9, 9.0, 0.5, 0.4, 10.3, 4.1, 1.9, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2002-12-31', 981.7, 7.6, 0.2, 7.3, 2.7, 4.5, null, 8);
+VALUES('2002-12-31', 981.7, 7.6, 0.2, -7.3, 2.7, -4.5, null, 8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-01', 985.1, 7.4, 3.3, 12.6, 3.7, 6.7, 6.1, 2);
+VALUES('2003-01-01', 985.1, 7.4, 3.3, -12.6, -3.7, -6.7, 6.1, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-02', 969.3, 9.6, 9.5, 3.7, 0.3, 0.5, null, 2.3);
+VALUES('2003-01-02', 969.3, 9.6, 9.5, -3.7, 0.3, -0.5, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-03', 96.8, 7.5, 4.8, 0.3, 7.6, 5.1, 1.3, 5.3);
+VALUES('2003-01-03', 96.8, 7.5, 4.8, -0.3, 7.6, 5.1, 1.3, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-04', 972.5, 9.2, 0.2, 1.4, 4.9, 1.1, 1.7, 4);
+VALUES('2003-01-04', 972.5, 9.2, 0.2, -1.4, 4.9, 1.1, 1.7, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-05', 979.3, 6.7, null, 6.4, 1.3, 4.9, 3.1, 4.7);
+VALUES('2003-01-05', 979.3, 6.7, null, -6.4, -1.3, -4.9, 3.1, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-06', 98.3, 7.3, null, 7.5, 4.3, 6.4, 6.5, 2.7);
+VALUES('2003-01-06', 98.3, 7.3, null, -7.5, -4.3, -6.4, 6.5, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-07', 982.9, 7.6, 0.2, 8.8, 6.5, 8.2, null, 6);
+VALUES('2003-01-07', 982.9, 7.6, 0.2, -8.8, -6.5, -8.2, null, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-08', 987.4, 8.1, 0.1, 11.9, 7.1, 10.7, 1.7, 4.7);
+VALUES('2003-01-08', 987.4, 8.1, 0.1, -11.9, -7.1, -10.7, 1.7, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-09', 98.7, 7.9, null, 12.7, 8.8, 9.5, null, 4.7);
+VALUES('2003-01-09', 98.7, 7.9, null, -12.7, -8.8, -9.5, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-10', 988.4, 7.7, 0.1, 10.4, 5.7, 7, null, 3.7);
+VALUES('2003-01-10', 988.4, 7.7, 0.1, -10.4, -5.7, -7, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-11', 1000.8, 7.9, null, 8.5, 3.2, 6.8, 4.2, 2.7);
+VALUES('2003-01-11', 1000.8, 7.9, null, -8.5, -3.2, -6.8, 4.2, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-12', 1001.1, 8.3, null, 14.6, 6.3, 8.4, 5.8, 1.7);
+VALUES('2003-01-12', 1001.1, 8.3, null, -14.6, -6.3, -8.4, 5.8, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-13', 994.9, 8.5, 0.1, 6.3, 2.6, 3.8, 0.3, 4);
+VALUES('2003-01-13', 994.9, 8.5, 0.1, -6.3, -2.6, -3.8, 0.3, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-14', 996.8, 8.9, null, 2.7, 5.2, 2.9, null, 3.3);
+VALUES('2003-01-14', 996.8, 8.9, null, -2.7, 5.2, 2.9, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-15', 997.4, 8.5, 0.1, 0.1, 5, 1.9, null, 3);
+VALUES('2003-01-15', 997.4, 8.5, 0.1, -0.1, 5, 1.9, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-16', 996.3, 9.2, null, 2.6, 3.3, 1.2, 0.3, 2);
+VALUES('2003-01-16', 996.3, 9.2, null, -2.6, 3.3, 1.2, 0.3, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-17', 998.4, 8.4, null, 1.8, 3.8, 0.9, 6.6, 2.7);
+VALUES('2003-01-17', 998.4, 8.4, null, -1.8, 3.8, 0.9, 6.6, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-18', 992.6, 9.3, null, 3.4, 0.2, 2.5, null, 1.7);
+VALUES('2003-01-18', 992.6, 9.3, null, -3.4, 0.2, -2.5, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-19', 988.5, 9.8, null, 5.1, 2.5, 4.2, null, 2);
+VALUES('2003-01-19', 988.5, 9.8, null, -5.1, -2.5, -4.2, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-20', 986.2, 9.7, null, 5.2, 2.8, 3.5, null, 2.7);
+VALUES('2003-01-20', 986.2, 9.7, null, -5.2, -2.8, -3.5, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-21', 975.7, 9.6, 0.3, 4.1, 1.1, 2.3, null, 5.3);
+VALUES('2003-01-21', 975.7, 9.6, 0.3, -4.1, -1.1, -2.3, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-22', 974.7, 9.7, 6.5, 1.8, 1.3, 0.2, null, 1.3);
+VALUES('2003-01-22', 974.7, 9.7, 6.5, -1.8, 1.3, 0.2, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-23', 984.2, 9.8, 0.1, 0.4, 0.4, 0.3, null, 0.7);
+VALUES('2003-01-23', 984.2, 9.8, 0.1, -0.4, 0.4, -0.3, null, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-24', 998.9, 9.2, null, 0.4, 3.2, 1.7, null, 2);
+VALUES('2003-01-24', 998.9, 9.2, null, -0.4, 3.2, 1.7, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-01-25', 1003.5, 9.4, null, null, 2.1, 0.7, null, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-26', 998.5, 9.6, null, 0.4, 1, 0.4, null, 1);
+VALUES('2003-01-26', 998.5, 9.6, null, -0.4, 1, 0.4, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-01-27', 991.1, 9.4, 0.3, null, 1.9, 1.1, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-01-28', 978.6, 8.3, 1, 1.4, 7.9, 3.6, 1.3, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-29', 968.4, 7.9, null, 0.9, 4.8, 1.7, 1.7, 3.7);
+VALUES('2003-01-29', 968.4, 7.9, null, -0.9, 4.8, 1.7, 1.7, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-30', 968.6, 8.3, null, 1, 2.7, 0.2, 1.6, 2.3);
+VALUES('2003-01-30', 968.6, 8.3, null, -1, 2.7, 0.2, 1.6, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-01-31', 97.8, 8.5, null, 3.8, 1.5, 0.9, null, 1.3);
+VALUES('2003-01-31', 97.8, 8.5, null, -3.8, 1.5, -0.9, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-01', 99.1, 7.4, null, 6.4, 0.8, 4.8, 5.4, 3.3);
+VALUES('2003-02-01', 99.1, 7.4, null, -6.4, -0.8, -4.8, 5.4, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-02', 986.4, 8.4, 0.1, 11.3, 4.3, 6.6, 5.6, 1.3);
+VALUES('2003-02-02', 986.4, 8.4, 0.1, -11.3, -4.3, -6.6, 5.6, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-03', 97.3, 8.7, 4, 5.1, 2.7, 4.4, null, 5);
+VALUES('2003-02-03', 97.3, 8.7, 4, -5.1, -2.7, -4.4, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-04', 96.4, 9.0, 0.1, 5, 1.2, 2.4, null, 1.7);
+VALUES('2003-02-04', 96.4, 9.0, 0.1, -5, -1.2, -2.4, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-05', 969.5, 8.3, null, 6.6, 0.1, 2.6, 5.1, 5.7);
+VALUES('2003-02-05', 969.5, 8.3, null, -6.6, -0.1, -2.6, 5.1, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-06', 980.9, 7.1, null, 2.4, 0.2, 1.3, 0.5, 5.7);
+VALUES('2003-02-06', 980.9, 7.1, null, -2.4, 0.2, -1.3, 0.5, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-07', 991.8, 6.9, null, 4.4, 1.4, 3.7, 6, 4.7);
+VALUES('2003-02-07', 991.8, 6.9, null, -4.4, -1.4, -3.7, 6, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-08', 993.8, 7.3, null, 9.3, 0.1, 3.4, 4.3, 2.3);
+VALUES('2003-02-08', 993.8, 7.3, null, -9.3, 0.1, -3.4, 4.3, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-09', 995.1, 7.6, null, 5.3, 0.4, 2.1, 4.8, 4.3);
+VALUES('2003-02-09', 995.1, 7.6, null, -5.3, -0.4, -2.1, 4.8, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-10', 996.2, 8.3, null, 3.2, 2.2, 2.8, null, 3.3);
+VALUES('2003-02-10', 996.2, 8.3, null, -3.2, -2.2, -2.8, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-11', 999.5, 7.3, null, 3.7, 1.6, 3.2, null, 5.3);
+VALUES('2003-02-11', 999.5, 7.3, null, -3.7, -1.6, -3.2, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-12', 1001.6, 7.5, null, 8.5, 2.9, 6.4, 8.4, 5);
+VALUES('2003-02-12', 1001.6, 7.5, null, -8.5, -2.9, -6.4, 8.4, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-13', 100.0, 6.8, null, 12.1, 3, 7.6, 8.5, 4);
+VALUES('2003-02-13', 100.0, 6.8, null, -12.1, -3, -7.6, 8.5, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-14', 997.2, 5.6, null, 1.2, 0.1, 5.1, 8.5, 3.7);
+VALUES('2003-02-14', 997.2, 5.6, null, -1.2, -0.1, -5.1, 8.5, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-15', 997.6, 7.7, 0.1, 9.5, 1.7, 4.1, 0.6, 5);
+VALUES('2003-02-15', 997.6, 7.7, 0.1, -9.5, -1.7, -4.1, 0.6, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-16', 1003.5, 7.4, null, 4.8, 1.3, 3.5, 0.3, 6);
+VALUES('2003-02-16', 1003.5, 7.4, null, -4.8, -1.3, -3.5, 0.3, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-17', 100.5, 7.4, null, 9.4, 0.5, 5.4, 8.8, 3.3);
+VALUES('2003-02-17', 100.5, 7.4, null, -9.4, -0.5, -5.4, 8.8, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-18', 99.8, 7.8, null, 9.8, 1, 4.1, 8.9, 4.3);
+VALUES('2003-02-18', 99.8, 7.8, null, -9.8, -1, -4.1, 8.9, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-19', 991.7, 7.7, null, 3.5, 2, 2, 3.2, 4.7);
+VALUES('2003-02-19', 991.7, 7.7, null, -3.5, 2, -2, 3.2, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-20', 989.9, 8.1, null, 3.6, 2.8, 0.4, 4.1, 5);
+VALUES('2003-02-20', 989.9, 8.1, null, -3.6, 2.8, -0.4, 4.1, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-21', 997.6, 8.4, null, 3.2, 2.5, 0.1, 5.8, 5);
+VALUES('2003-02-21', 997.6, 8.4, null, -3.2, 2.5, -0.1, 5.8, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-22', 1003.6, 7.1, null, 0.9, 5.3, 0.9, 8.1, 3.3);
+VALUES('2003-02-22', 1003.6, 7.1, null, -0.9, 5.3, 0.9, 8.1, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-23', 1005.5, 6.5, null, 6.2, 5.4, 0.3, 9.8, 1);
+VALUES('2003-02-23', 1005.5, 6.5, null, -6.2, 5.4, 0.3, 9.8, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-24', 100.2, 6.7, null, 6.7, 8.1, 0.3, 9.4, 1);
+VALUES('2003-02-24', 100.2, 6.7, null, -6.7, 8.1, -0.3, 9.4, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-25', 999.2, 6.4, null, 5.5, 7.6, 0.6, 9.5, 3.3);
+VALUES('2003-02-25', 999.2, 6.4, null, -5.5, 7.6, 0.6, 9.5, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-26', 993.5, 6.1, null, 4.4, 5.5, 0.2, 9.9, 4.3);
+VALUES('2003-02-26', 993.5, 6.1, null, -4.4, 5.5, -0.2, 9.9, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-27', 991.1, 7.6, null, 5.8, 2.8, 2.3, 8.2, 2);
+VALUES('2003-02-27', 991.1, 7.6, null, -5.8, 2.8, -2.3, 8.2, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-02-28', 995.2, 7.6, null, 6, 5.4, 1.2, 2.6, 1.7);
+VALUES('2003-02-28', 995.2, 7.6, null, -6, 5.4, 1.2, 2.6, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-03-01', 992.5, 8.0, null, 2.1, 8.4, 2.9, 1, 1.7);
+VALUES('2003-03-01', 992.5, 8.0, null, -2.1, 8.4, 2.9, 1, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-03-02', 985.6, 7.9, 1.7, 0.4, 9.7, 3.7, 5.3, 2.7);
+VALUES('2003-03-02', 985.6, 7.9, 1.7, -0.4, 9.7, 3.7, 5.3, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-03-03', 987.5, 9.5, 1.2, null, 2.9, 0.9, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-03-04', 994.9, 8.4, null, 1.6, 2.2, 0.7, 0.7, 4.3);
+VALUES('2003-03-04', 994.9, 8.4, null, -1.6, 2.2, -0.7, 0.7, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-03-05', 99.4, 8.5, null, 3.5, 3.2, 0.2, 4.5, 2);
+VALUES('2003-03-05', 99.4, 8.5, null, -3.5, 3.2, -0.2, 4.5, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-03-06', 991.6, 7.4, null, 3, 3.2, 0.4, 8.3, 4.3);
+VALUES('2003-03-06', 991.6, 7.4, null, -3, 3.2, -0.4, 8.3, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-03-07', 993.8, 8.7, null, 3.5, 0.6, 1.1, null, 2.3);
+VALUES('2003-03-07', 993.8, 8.7, null, -3.5, 0.6, -1.1, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-03-08', 993.8, 8.7, null, 5.2, 6.3, 1.7, 4.7, 2);
+VALUES('2003-03-08', 993.8, 8.7, null, -5.2, 6.3, 1.7, 4.7, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-03-09', 992.4, 8.5, 0.9, 0.2, 9.2, 4.5, 0.9, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -3077,17 +3077,17 @@ VALUES('2003-03-10', 994.8, 7.6, null, 2, 14.6, 7.2, 8.9, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-03-11', 991.6, 8.1, 0.1, 1.5, 12.4, 7.6, 2.1, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-03-12', 986.2, 7.2, null, 1.1, 10.6, 7.1, 0.3, 6.3);
+VALUES('2003-03-12', 986.2, 7.2, null, -1.1, 10.6, 7.1, 0.3, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-03-13', 99.6, 6.3, null, null, 5.9, 1.4, 4.9, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-03-14', 1000.1, 7.8, 0.2, 0.4, 2.1, 1.1, null, 5.7);
+VALUES('2003-03-14', 1000.1, 7.8, 0.2, -0.4, 2.1, 1.1, null, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-03-15', 1007.4, 7.0, null, 0.5, 5.1, 3, 5.5, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-03-16', 1008.7, 7.6, null, 0.3, 6.1, 1.7, 7, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-03-17', 999.1, 7.1, null, 4.4, 11.2, 4, 6.2, 2.3);
+VALUES('2003-03-17', 999.1, 7.1, null, -4.4, 11.2, 4, 6.2, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-03-18', 999.2, 6.9, null, 1, 8, 4.6, 2.9, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -3095,15 +3095,15 @@ VALUES('2003-03-19', 992.7, 5.9, null, 4.7, 13.4, 8.2, 8, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-03-20', 993.1, 7.2, null, 2.5, 7.7, 3.3, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-03-21', 999.6, 5.3, null, 4.5, 3.2, 1.3, 10.4, 4.7);
+VALUES('2003-03-21', 999.6, 5.3, null, -4.5, 3.2, -1.3, 10.4, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-03-22', 1001.5, 4.6, null, 5.9, 5, 0.7, 10.9, 4.3);
+VALUES('2003-03-22', 1001.5, 4.6, null, -5.9, 5, -0.7, 10.9, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-03-23', 1000.5, 4.7, null, 6.2, 10.4, 2.6, 10.8, 2);
+VALUES('2003-03-23', 1000.5, 4.7, null, -6.2, 10.4, 2.6, 10.8, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-03-24', 996.4, 4.2, null, 3.6, 17.9, 8.2, 1.1, 1.3);
+VALUES('2003-03-24', 996.4, 4.2, null, -3.6, 17.9, 8.2, 1.1, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-03-25', 991.9, 5.1, null, 2, 18.7, 10.6, 8.9, 2.7);
+VALUES('2003-03-25', 991.9, 5.1, null, -2, 18.7, 10.6, 8.9, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-03-26', 991.8, 6.2, null, 2.8, 15.8, 8.7, 9.4, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -3117,7 +3117,7 @@ VALUES('2003-03-30', 983.4, 6.7, null, 3.2, 19.2, 12.2, 6.1, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-03-31', 989.1, 4.8, null, 6.3, 13.7, 8.3, 10.5, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-04-01', 990.1, 4.9, null, 1.9, 12.9, 6.6, 11.1, 2.3);
+VALUES('2003-04-01', 990.1, 4.9, null, -1.9, 12.9, 6.6, 11.1, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-04-02', 973.6, 7.3, 1.4, 3.4, 1.0, 6, 0.1, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -3125,21 +3125,21 @@ VALUES('2003-04-03', 976.8, 6.6, null, 1.8, 9.8, 6, 4, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-04-04', 992.2, 5.5, 0.1, 3.1, 1.0, 4.9, 6.9, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-04-05', 981.5, 7.2, 2.8, 0.9, 10.1, 3.8, 4, 7.7);
+VALUES('2003-04-05', 981.5, 7.2, 2.8, -0.9, 10.1, 3.8, 4, 7.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-04-06', 984.3, 6.7, 1.1, 3.7, 3.2, 1.1, 8.5, 7.3);
+VALUES('2003-04-06', 984.3, 6.7, 1.1, -3.7, 3.2, -1.1, 8.5, 7.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-04-07', 985.8, 6.7, null, 4.3, 1.4, 0.7, 2.1, 7.3);
+VALUES('2003-04-07', 985.8, 6.7, null, -4.3, 1.4, -0.7, 2.1, 7.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-04-08', 988.9, 6.0, null, 2.6, 2, 1.3, 5.3, 5.7);
+VALUES('2003-04-08', 988.9, 6.0, null, -2.6, 2, -1.3, 5.3, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-04-09', 983.7, 5.7, null, 6.3, 4.4, 0.5, 7.4, 3.3);
+VALUES('2003-04-09', 983.7, 5.7, null, -6.3, 4.4, -0.5, 7.4, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-04-10', 975.5, 6.8, 3.6, 3.1, 10.6, 5.2, 4, 4.7);
+VALUES('2003-04-10', 975.5, 6.8, 3.6, -3.1, 10.6, 5.2, 4, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-04-11', 983.1, 7.5, 0.3, 0.2, 7.8, 3.3, 2.3, 5.3);
+VALUES('2003-04-11', 983.1, 7.5, 0.3, -0.2, 7.8, 3.3, 2.3, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-04-12', 989.4, 7.2, null, 2.9, 1.1, 4.4, 5.4, 3.3);
+VALUES('2003-04-12', 989.4, 7.2, null, -2.9, 1.1, 4.4, 5.4, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-04-13', 994.2, 5.8, null, 1.2, 13.8, 8.9, 10.1, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -3515,9 +3515,9 @@ VALUES('2003-10-15', 1001.4, 7.3, null, 2.1, 10.8, 7.1, 1.5, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-10-16', 1000.5, 6.5, null, 4.9, 8.6, 6, 3, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-10-17', 100.1, 7.2, null, 0.9, 8.3, 3.8, 8.7, 4.3);
+VALUES('2003-10-17', 100.1, 7.2, null, -0.9, 8.3, 3.8, 8.7, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-10-18', 993.7, 7.4, null, 1, 9.8, 4.1, 9.2, 4.7);
+VALUES('2003-10-18', 993.7, 7.4, null, -1, 9.8, 4.1, 9.2, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-10-19', 983.4, 7.8, null, 2.9, 6.1, 5.2, 0.2, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -3529,17 +3529,17 @@ VALUES('2003-10-22', 984.7, 8.2, 0.3, 3.1, 8.1, 4.3, 0.7, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-10-23', 982.6, 7.3, null, 0.8, 4.2, 1.5, 2.9, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-10-24', 985.3, 6.0, null, 1, 3.9, 0.3, 5.8, 2.7);
+VALUES('2003-10-24', 985.3, 6.0, null, -1, 3.9, 0.3, 5.8, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-10-25', 989.8, 7.3, null, 6.1, 5.6, 0.8, 4.5, 4.3);
+VALUES('2003-10-25', 989.8, 7.3, null, -6.1, 5.6, 0.8, 4.5, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-10-26', 98.5, 7.8, null, 0.6, 6.7, 4.2, 1.4, 3.7);
+VALUES('2003-10-26', 98.5, 7.8, null, -0.6, 6.7, 4.2, 1.4, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-10-27', 989.4, 8.5, null, 1.2, 6.2, 2.6, 1.8, 2.7);
+VALUES('2003-10-27', 989.4, 8.5, null, -1.2, 6.2, 2.6, 1.8, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-10-28', 993.5, 7.7, null, 3.2, 7.4, 2.1, 7.4, 3.3);
+VALUES('2003-10-28', 993.5, 7.7, null, -3.2, 7.4, 2.1, 7.4, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-10-29', 981.1, 9.0, 0.1, 0.4, 3.6, 2.1, null, 4.3);
+VALUES('2003-10-29', 981.1, 9.0, 0.1, -0.4, 3.6, 2.1, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-10-30', 967.4, 9.8, 4.2, 3.3, 5, 4.4, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -3565,11 +3565,11 @@ VALUES('2003-11-09', 998.9, 9.8, null, 1.1, 4.5, 1.9, 0.2, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-11-10', 1000.7, 9.1, null, 0.2, 5.1, 2, 6.2, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-11-11', 1000.3, 8.9, null, 1.5, 5.1, 0.7, 7.6, 4.3);
+VALUES('2003-11-11', 1000.3, 8.9, null, -1.5, 5.1, 0.7, 7.6, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-11-12', 998.3, 8.7, null, 3.2, 3.7, 0.2, 7.6, 4);
+VALUES('2003-11-12', 998.3, 8.7, null, -3.2, 3.7, 0.2, 7.6, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-11-13', 998.2, 7.8, 0.2, 2.7, 4.9, 1.5, 4.3, 3);
+VALUES('2003-11-13', 998.2, 7.8, 0.2, -2.7, 4.9, 1.5, 4.3, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-11-14', 996.4, 8.9, null, 0.8, 3.1, 1.6, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -3611,83 +3611,83 @@ VALUES('2003-12-02', 993.1, 8.9, null, 6.6, 8.6, 6.9, null, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-12-03', 996.5, 8.9, null, 3.8, 8.7, 5.6, 1.9, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-12-04', 996.3, 9.1, 0.1, 1, 5.8, 3.2, 2.1, 2);
+VALUES('2003-12-04', 996.3, 9.1, 0.1, -1, 5.8, 3.2, 2.1, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-12-05', 994.9, 8.7, null, 1.4, 5.4, 3.9, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-12-06', 983.8, 7.9, 1.9, 0.5, 6.6, 2.2, 1.2, 7.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-12-07', 1000.4, 7.6, null, 2.7, 2.2, 1.3, 4.4, 3.3);
+VALUES('2003-12-07', 1000.4, 7.6, null, -2.7, 2.2, -1.3, 4.4, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-12-08', 999.3, 8.3, null, 7.7, 0.6, 2.9, 7.4, 1.7);
+VALUES('2003-12-08', 999.3, 8.3, null, -7.7, 0.6, -2.9, 7.4, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-12-09', 997.4, 7.9, null, 5.8, 1.4, 1.7, 7, 1.3);
+VALUES('2003-12-09', 997.4, 7.9, null, -5.8, 1.4, -1.7, 7, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-12-10', 996.8, 8.4, null, 4.9, 2, 0.9, 4.5, 3);
+VALUES('2003-12-10', 996.8, 8.4, null, -4.9, 2, -0.9, 4.5, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-12-11', 993.1, 8.9, 0.1, 2.8, 1.3, 0.3, 0.3, 2.7);
+VALUES('2003-12-11', 993.1, 8.9, 0.1, -2.8, 1.3, -0.3, 0.3, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-12-12', 992.9, 9.4, 0.1, 1.1, 3.5, 1.4, null, 2);
+VALUES('2003-12-12', 992.9, 9.4, 0.1, -1.1, 3.5, 1.4, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-12-13', 990.4, 9.8, 25.4, 3.7, 3.2, 1, null, 2);
+VALUES('2003-12-13', 990.4, 9.8, 25.4, -3.7, 3.2, 1, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-12-14', 973.2, 8.3, 0.8, 2, 8.6, 5.2, 0.2, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-12-15', 976.2, 7.5, 0.2, 0.8, 5.6, 0.4, 6.1, 7.3);
+VALUES('2003-12-15', 976.2, 7.5, 0.2, -0.8, 5.6, 0.4, 6.1, 7.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-12-16', 985.9, 8.6, 0.2, 2, 2.3, 0.2, 2, 8);
+VALUES('2003-12-16', 985.9, 8.6, 0.2, -2, 2.3, -0.2, 2, 8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-12-17', 996.8, 9.3, 0.2, 7.9, 0.4, 1.8, 0.8, 1.3);
+VALUES('2003-12-17', 996.8, 9.3, 0.2, -7.9, -0.4, -1.8, 0.8, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-12-18', 996.6, 9.8, null, 1.2, 3.9, 0.8, null, 1.3);
+VALUES('2003-12-18', 996.6, 9.8, null, -1.2, 3.9, 0.8, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-12-19', 994.2, 10.0, null, 2.5, 0.6, 1.2, null, 2);
+VALUES('2003-12-19', 994.2, 10.0, null, -2.5, 0.6, -1.2, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-12-20', 992.8, 10.0, null, 1.6, null, 0.9, null, 1.3);
+VALUES('2003-12-20', 992.8, 10.0, null, -1.6, null, -0.9, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-12-21', 977.2, 9.8, 1, 1.7, 2.3, 0.9, null, 2.7);
+VALUES('2003-12-21', 977.2, 9.8, 1, -1.7, 2.3, 0.9, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-12-22', 980.3, 8.1, null, 0.6, 5.2, 0.8, 1.3, 4);
+VALUES('2003-12-22', 980.3, 8.1, null, -0.6, 5.2, 0.8, 1.3, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-12-23', 996.6, 7.6, null, 5.9, 0.1, 4, 5.7, 5);
+VALUES('2003-12-23', 996.6, 7.6, null, -5.9, 0.1, -4, 5.7, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-12-24', 1004.6, 7.7, null, 10.1, 0.6, 7, 7.3, 1.7);
+VALUES('2003-12-24', 1004.6, 7.7, null, -10.1, -0.6, -7, 7.3, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-12-25', 1000.1, 8.1, null, 1.3, 4.3, 7.1, 7, 1);
+VALUES('2003-12-25', 1000.1, 8.1, null, -1.3, -4.3, -7.1, 7, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-12-26', 99.2, 7.9, null, 8.1, 2.6, 5.3, 1.5, 1.7);
+VALUES('2003-12-26', 99.2, 7.9, null, -8.1, -2.6, -5.3, 1.5, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-12-27', 984.6, 9.0, null, 6.6, 1.8, 3.7, 1.7, 1.7);
+VALUES('2003-12-27', 984.6, 9.0, null, -6.6, -1.8, -3.7, 1.7, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-12-28', 97.7, 9.1, 0.2, 5.4, 3.2, 0.7, null, 2.7);
+VALUES('2003-12-28', 97.7, 9.1, 0.2, -5.4, 3.2, 0.7, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2003-12-29', 983.7, 9.8, 2.4, 0.5, 3.4, 1, null, 1.7);
+VALUES('2003-12-29', 983.7, 9.8, 2.4, -0.5, 3.4, 1, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-12-30', 983.6, 9.9, 13.3, 1.1, 5.1, 2.7, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2003-12-31', 987.4, 9.7, 8.4, 0.5, 2.9, 1.3, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-01-01', 98.5, 8.9, null, 3.4, 0.6, 1.6, 1, 3);
+VALUES('2004-01-01', 98.5, 8.9, null, -3.4, 0.6, -1.6, 1, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-01-02', 985.4, 8.3, null, 5.5, 2.1, 3.4, 2, 4);
+VALUES('2004-01-02', 985.4, 8.3, null, -5.5, -2.1, -3.4, 2, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-01-03', 99.1, 7.3, null, 5.4, 2.9, 4.6, 1.4, 4.3);
+VALUES('2004-01-03', 99.1, 7.3, null, -5.4, -2.9, -4.6, 1.4, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-01-04', 987.4, 8.0, 1.1, 8.3, 4.9, 6.8, null, 2);
+VALUES('2004-01-04', 987.4, 8.0, 1.1, -8.3, -4.9, -6.8, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-01-05', 989.4, 8.3, 0.9, 11.9, 2.3, 9.2, 3, 2.3);
+VALUES('2004-01-05', 989.4, 8.3, 0.9, -11.9, -2.3, -9.2, 3, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-01-06', 997.8, 8.5, 1.8, 14.3, 7.9, 11.2, 6.7, 2.3);
+VALUES('2004-01-06', 997.8, 8.5, 1.8, -14.3, -7.9, -11.2, 6.7, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-01-07', 990.6, 9.1, 0.6, 1.1, 5.8, 6.3, null, 1.3);
+VALUES('2004-01-07', 990.6, 9.1, 0.6, -1.1, -5.8, -6.3, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-01-08', 988.9, 9.1, null, 5.9, 1.4, 4, null, 1.7);
+VALUES('2004-01-08', 988.9, 9.1, null, -5.9, -1.4, -4, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-01-09', 980.7, 9.6, 5.6, 6.8, 3.5, 6.4, null, 4);
+VALUES('2004-01-09', 980.7, 9.6, 5.6, -6.8, -3.5, -6.4, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-01-10', 982.4, 9.6, 3.3, 6.5, 3.2, 4.3, null, 1);
+VALUES('2004-01-10', 982.4, 9.6, 3.3, -6.5, -3.2, -4.3, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-01-11', 985.3, 9.6, 12.7, 5.3, 1.4, 0.3, 2.7, 2.3);
+VALUES('2004-01-11', 985.3, 9.6, 12.7, -5.3, 1.4, -0.3, 2.7, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2004-01-12', 975.9, 8.9, 3.9, 0.3, 5.6, 2.3, 4.3, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -3695,41 +3695,41 @@ VALUES('2004-01-13', 96.7, 9.4, 9.8, 1.1, 3.3, 2.3, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2004-01-14', 96.9, 7.8, 1, 1, 6.4, 2.9, 6.6, 8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-01-15', 971.8, 9.1, 0.1, 0.9, 3.9, 1.8, 0.1, 3);
+VALUES('2004-01-15', 971.8, 9.1, 0.1, -0.9, 3.9, 1.8, 0.1, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-01-16', 975.3, 8.5, 0.8, 0.6, 2.8, 1.2, 0.4, 1.7);
+VALUES('2004-01-16', 975.3, 8.5, 0.8, -0.6, 2.8, 1.2, 0.4, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2004-01-17', 971.9, 9.5, 1.9, 0.5, 3.1, 1.6, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-01-18', 985.3, 8.2, null, 1.3, 5.4, 1.3, 5.7, 3);
+VALUES('2004-01-18', 985.3, 8.2, null, -1.3, 5.4, 1.3, 5.7, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-01-19', 984.8, 8.6, 0.5, 3.6, 1, 0.4, 3.7, 3.3);
+VALUES('2004-01-19', 984.8, 8.6, 0.5, -3.6, 1, -0.4, 3.7, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-01-20', 97.3, 8.5, null, 1.6, 3.5, 0.3, 3.4, 5.7);
+VALUES('2004-01-20', 97.3, 8.5, null, -1.6, 3.5, -0.3, 3.4, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-01-21', 985.2, 7.7, 0.6, 3.7, 0.1, 2.5, 1.1, 4);
+VALUES('2004-01-21', 985.2, 7.7, 0.6, -3.7, 0.1, -2.5, 1.1, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-01-22', 991.5, 7.4, null, 9, 3.6, 7.3, 7.5, 5.7);
+VALUES('2004-01-22', 991.5, 7.4, null, -9, -3.6, -7.3, 7.5, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-01-23', 993.4, 8.1, null, 11.4, 4.1, 8.4, 7.6, 2.3);
+VALUES('2004-01-23', 993.4, 8.1, null, -11.4, -4.1, -8.4, 7.6, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-01-24', 988.7, 8.4, null, 13.4, 5.5, 9.6, 7.7, 4);
+VALUES('2004-01-24', 988.7, 8.4, null, -13.4, -5.5, -9.6, 7.7, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-01-25', 983.6, 8.0, 0.3, 15.1, 5.6, 9.5, 6, 1.3);
+VALUES('2004-01-25', 983.6, 8.0, 0.3, -15.1, -5.6, -9.5, 6, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-01-26', 980.8, 8.8, 0.1, 8.7, 3.8, 4.8, null, 3.3);
+VALUES('2004-01-26', 980.8, 8.8, 0.1, -8.7, -3.8, -4.8, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-01-27', 972.2, 9.2, 1.8, 4.9, 3.9, 4.7, null, 4);
+VALUES('2004-01-27', 972.2, 9.2, 1.8, -4.9, -3.9, -4.7, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-01-28', 971.5, 8.4, null, 4.8, 1.3, 3.4, 2.3, 2.3);
+VALUES('2004-01-28', 971.5, 8.4, null, -4.8, -1.3, -3.4, 2.3, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-01-29', 973.4, 8.6, null, 6.7, 0.6, 2.3, 2.9, 2);
+VALUES('2004-01-29', 973.4, 8.6, null, -6.7, -0.6, -2.3, 2.9, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-01-30', 986.3, 7.9, null, 6.1, 2.3, 2.3, 0.3, 4.3);
+VALUES('2004-01-30', 986.3, 7.9, null, -6.1, 2.3, -2.3, 0.3, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-01-31', 990.1, 7.7, null, 7.1, 0.4, 3.6, 3.9, 2.3);
+VALUES('2004-01-31', 990.1, 7.7, null, -7.1, -0.4, -3.6, 3.9, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-02-01', 988.9, 7.9, 0.1, 4.7, 10.6, 3.5, 5.5, 3);
+VALUES('2004-02-01', 988.9, 7.9, 0.1, -4.7, 10.6, 3.5, 5.5, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2004-02-02', 992.1, 9.5, 3.1, 1.4, 7.8, 4.3, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -3745,77 +3745,77 @@ VALUES('2004-02-07', 982.1, 5.2, 0.1, 5.1, 13.6, 8.5, 3.6, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2004-02-08', 979.9, 7.6, 1.5, 0.6, 7.7, 2.8, 4.6, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-02-09', 987.2, 9.7, 2.3, 2, 4, 1.1, 4.1, 8);
+VALUES('2004-02-09', 987.2, 9.7, 2.3, -2, 4, -1.1, 4.1, 8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-02-10', 996.9, 8.7, 0.5, 6.4, 1.5, 1.5, 3.5, 3.3);
+VALUES('2004-02-10', 996.9, 8.7, 0.5, -6.4, 1.5, -1.5, 3.5, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-02-11', 986.8, 7.5, null, 3.7, 3, 0.9, 1.2, 7);
+VALUES('2004-02-11', 986.8, 7.5, null, -3.7, 3, -0.9, 1.2, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-02-12', 999.8, 8.1, 0.4, 7.8, 2.9, 6.7, 6.2, 4.7);
+VALUES('2004-02-12', 999.8, 8.1, 0.4, -7.8, -2.9, -6.7, 6.2, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-02-13', 996.8, 9.4, 1.1, 8.6, 1.4, 2.9, 0.3, 1.3);
+VALUES('2004-02-13', 996.8, 9.4, 1.1, -8.6, -1.4, -2.9, 0.3, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-02-14', 990.7, 8.3, null, 1.7, 5.1, 3.3, 3, 5.3);
+VALUES('2004-02-14', 990.7, 8.3, null, -1.7, 5.1, 3.3, 3, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2004-02-15', 989.8, 7.5, null, 1, 4.3, 2, 2, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2004-02-16', 994.9, 7.7, null, null, 4.6, 1.6, 1.6, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-02-17', 994.5, 8.3, null, 1.2, 4.1, 1.9, 5.2, 1);
+VALUES('2004-02-17', 994.5, 8.3, null, -1.2, 4.1, 1.9, 5.2, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-02-18', 986.7, 8.1, null, 0.6, 5.6, 2.5, 2.2, 4);
+VALUES('2004-02-18', 986.7, 8.1, null, -0.6, 5.6, 2.5, 2.2, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-02-19', 993.3, 7.9, null, 1, 2.5, 0.1, 4.2, 4);
+VALUES('2004-02-19', 993.3, 7.9, null, -1, 2.5, -0.1, 4.2, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-02-20', 100.1, 7.0, null, 3.9, 2, 1.9, 9.3, 6.3);
+VALUES('2004-02-20', 100.1, 7.0, null, -3.9, 2, -1.9, 9.3, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-02-21', 995.7, 5.1, null, 4.7, 2.5, 0.3, 8.6, 7.7);
+VALUES('2004-02-21', 995.7, 5.1, null, -4.7, 2.5, -0.3, 8.6, 7.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-02-22', 979.1, 8.7, 0.4, 1.6, 0.8, 1.1, null, 5);
+VALUES('2004-02-22', 979.1, 8.7, 0.4, -1.6, 0.8, -1.1, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-02-23', 977.6, 10.0, 12.3, 1.6, 0.4, 0.9, null, 2.7);
+VALUES('2004-02-23', 977.6, 10.0, 12.3, -1.6, 0.4, -0.9, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-02-24', 984.5, 8.8, null, 6.2, 0.1, 3.3, 1.8, 2.7);
+VALUES('2004-02-24', 984.5, 8.8, null, -6.2, -0.1, -3.3, 1.8, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-02-25', 980.6, 8.5, null, 1.5, 5, 6.1, 8.5, 1.3);
+VALUES('2004-02-25', 980.6, 8.5, null, -1.5, 5, -6.1, 8.5, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-02-26', 974.3, 9.1, 1, 6.1, 2.2, 1.3, 0.1, 1.3);
+VALUES('2004-02-26', 974.3, 9.1, 1, -6.1, 2.2, -1.3, 0.1, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-02-27', 968.1, 8.7, 1.2, 1.6, 2.9, 0.1, 4.6, 4);
+VALUES('2004-02-27', 968.1, 8.7, 1.2, -1.6, 2.9, -0.1, 4.6, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-02-28', 975.2, 8.6, 0.4, 1.9, 3.2, 0.5, 4.1, 2.3);
+VALUES('2004-02-28', 975.2, 8.6, 0.4, -1.9, 3.2, -0.5, 4.1, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-02-29', 981.3, 8.9, 0.2, 3, 0.5, 2.3, null, 6.7);
+VALUES('2004-02-29', 981.3, 8.9, 0.2, -3, -0.5, -2.3, null, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-03-01', 993.6, 7.6, 0.2, 3.4, 0.2, 2.5, 0.6, 4.7);
+VALUES('2004-03-01', 993.6, 7.6, 0.2, -3.4, -0.2, -2.5, 0.6, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-03-02', 993.7, 9.0, 0.1, 7.6, 2.2, 0.6, null, 2.3);
+VALUES('2004-03-02', 993.7, 9.0, 0.1, -7.6, 2.2, -0.6, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2004-03-03', 993.2, 8.3, 0.4, 0.3, 3.5, 1.6, 0.4, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-03-04', 99.6, 7.0, null, 5.4, 1.3, 2, 6.1, 4.3);
+VALUES('2004-03-04', 99.6, 7.0, null, -5.4, 1.3, -2, 6.1, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-03-05', 996.5, 7.3, null, 4.7, 1.3, 3.7, 7.5, 3);
+VALUES('2004-03-05', 996.5, 7.3, null, -4.7, -1.3, -3.7, 7.5, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-03-06', 994.6, 7.5, null, 8.8, 0.5, 2.9, 9, 5.3);
+VALUES('2004-03-06', 994.6, 7.5, null, -8.8, 0.5, -2.9, 9, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-03-07', 995.7, 8.8, 0.2, 3.2, 0.9, 1.6, null, 2.7);
+VALUES('2004-03-07', 995.7, 8.8, 0.2, -3.2, 0.9, -1.6, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-03-08', 993.8, 9.0, 0.5, 2.1, 4.1, 0.1, 1.4, 2);
+VALUES('2004-03-08', 993.8, 9.0, 0.5, -2.1, 4.1, 0.1, 1.4, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-03-09', 991.4, 9.6, 4.8, 1.9, 0.1, 0.8, null, 5);
+VALUES('2004-03-09', 991.4, 9.6, 4.8, -1.9, 0.1, -0.8, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-03-10', 993.9, 9.6, 0.1, 1.4, 1.5, 0.4, null, 2);
+VALUES('2004-03-10', 993.9, 9.6, 0.1, -1.4, 1.5, 0.4, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-03-11', 994.8, 9.0, null, 3, 3, 0.9, 1.3, 3.3);
+VALUES('2004-03-11', 994.8, 9.0, null, -3, 3, 0.9, 1.3, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-03-12', 994.1, 8.1, null, 1, 6.2, 2.9, 2.6, 4);
+VALUES('2004-03-12', 994.1, 8.1, null, -1, 6.2, 2.9, 2.6, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2004-03-13', 996.1, 8.6, null, 2.2, 5.6, 4, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2004-03-14', 1000.2, 9.3, 0.1, 2.3, 6.6, 3.6, 0.9, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-03-15', 1003.8, 9.6, null, 0.4, 11.1, 5.3, 3.4, 1.3);
+VALUES('2004-03-15', 1003.8, 9.6, null, -0.4, 11.1, 5.3, 3.4, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2004-03-16', 1002.5, 7.4, null, 3.9, 17.4, 10.6, 8.8, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -3841,7 +3841,7 @@ VALUES('2004-03-26', 984.2, 7.7, 0.2, 0.7, 3, 1.5, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2004-03-27', 986.2, 9.4, 2.2, null, 2.3, 0.7, 0.1, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-03-28', 990.3, 7.5, null, 0.6, 4.6, 2.2, 2, 2);
+VALUES('2004-03-28', 990.3, 7.5, null, -0.6, 4.6, 2.2, 2, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2004-03-29', 994.2, 7.9, 0.1, null, 10.3, 4.8, 10.2, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -3863,9 +3863,9 @@ VALUES('2004-04-06', 976.6, 8.2, 0.4, 1.3, 12.5, 7.3, 1.4, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2004-04-07', 976.3, 6.8, null, 3.4, 10.3, 6.6, 3.9, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-04-08', 982.3, 7.3, 0.1, 0.1, 11.6, 5.1, 7.9, 3.7);
+VALUES('2004-04-08', 982.3, 7.3, 0.1, -0.1, 11.6, 5.1, 7.9, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-04-09', 983.6, 6.5, null, 2.5, 12.5, 6.8, 10.9, 2.3);
+VALUES('2004-04-09', 983.6, 6.5, null, -2.5, 12.5, 6.8, 10.9, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2004-04-10', 98.1, 5.7, 0.7, 1.1, 13.6, 9.5, 4, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -4305,7 +4305,7 @@ VALUES('2004-11-13', 98.7, 8.4, 0.5, 4.2, 9.9, 4.6, null, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2004-11-14', 995.2, 7.8, null, 1.4, 5.2, 2.6, 2.6, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-11-15', 993.7, 8.3, null, 1.2, 4, 0.9, 5.6, 3);
+VALUES('2004-11-15', 993.7, 8.3, null, -1.2, 4, 0.9, 5.6, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2004-11-16', 992.3, 8.6, 0.1, 0.1, 5.9, 4.8, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -4315,27 +4315,27 @@ VALUES('2004-11-18', 980.8, 7.6, null, 6.7, 10.8, 8.9, null, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2004-11-19', 973.1, 7.3, 0.3, null, 9.2, 2.6, 1.9, 8.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-11-20', 983.8, 7.9, 1.1, 4.4, 3.1, null, 1.6, 4.7);
+VALUES('2004-11-20', 983.8, 7.9, 1.1, -4.4, 3.1, null, 1.6, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-11-21', 992.4, 7.7, 0.7, 1.9, 2.6, 0.1, 6, 7);
+VALUES('2004-11-21', 992.4, 7.7, 0.7, -1.9, 2.6, 0.1, 6, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-11-22', 988.7, 9.8, 3.8, 3.9, 0.5, 0.6, null, 2.3);
+VALUES('2004-11-22', 988.7, 9.8, 3.8, -3.9, 0.5, -0.6, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2004-11-23', 985.8, 8.1, 2.8, 0.4, 10.1, 4.4, 0.9, 7.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-11-24', 999.8, 6.6, null, 1.6, 3.3, 0.1, 6.6, 7);
+VALUES('2004-11-24', 999.8, 6.6, null, -1.6, 3.3, -0.1, 6.6, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-11-25', 1000.6, 7.6, null, 5, 2.2, 1.3, 7.4, 1.7);
+VALUES('2004-11-25', 1000.6, 7.6, null, -5, 2.2, -1.3, 7.4, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-11-26', 994.2, 8.4, null, 6.4, 1.7, 1, 7.5, 1);
+VALUES('2004-11-26', 994.2, 8.4, null, -6.4, 1.7, -1, 7.5, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-11-27', 99.2, 9.3, 0.1, 2.1, 5.7, 2.6, null, 1.7);
+VALUES('2004-11-27', 99.2, 9.3, 0.1, -2.1, 5.7, 2.6, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2004-11-28', 98.9, 9.4, null, 0.1, 5.3, 3.7, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-11-29', 987.2, 9.8, null, 1.1, 4.2, 1.9, null, 1);
+VALUES('2004-11-29', 987.2, 9.8, null, -1.1, 4.2, 1.9, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-11-30', 989.7, 9.0, 0.2, 2.4, 4.8, 3.5, null, 4);
+VALUES('2004-11-30', 989.7, 9.0, 0.2, -2.4, 4.8, 3.5, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2004-12-01', 984.3, 9.2, null, 3.9, 5.5, 5.3, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -4343,45 +4343,45 @@ VALUES('2004-12-02', 983.1, 9.2, null, 3.8, 5.6, 4.2, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2004-12-03', 990.3, 9.7, 1.1, 0.5, 5.4, 3.6, 0.8, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-12-04', 1000.8, 8.4, null, 2, 5.5, 1.3, 5.7, 2.7);
+VALUES('2004-12-04', 1000.8, 8.4, null, -2, 5.5, 1.3, 5.7, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-12-05', 999.1, 9.6, null, 3.9, 2.7, 0.6, 0.5, 2);
+VALUES('2004-12-05', 999.1, 9.6, null, -3.9, 2.7, 0.6, 0.5, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2004-12-06', 997.9, 9.1, null, 0.2, 5.4, 1.9, 0.8, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-12-07', 1000.9, 9.5, null, 4.1, 3.6, 0.7, 3, 0.7);
+VALUES('2004-12-07', 1000.9, 9.5, null, -4.1, 3.6, -0.7, 3, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-12-08', 1001.9, 9.1, null, 2.8, 3.5, 0.8, null, 1);
+VALUES('2004-12-08', 1001.9, 9.1, null, -2.8, 3.5, 0.8, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-12-09', 1002.7, 9.1, null, 3.7, 1.4, 0.3, null, 1);
+VALUES('2004-12-09', 1002.7, 9.1, null, -3.7, 1.4, -0.3, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-12-10', 1000.8, 9.2, null, 1.9, 0.1, 1.6, null, 1.3);
+VALUES('2004-12-10', 1000.8, 9.2, null, -1.9, 0.1, -1.6, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-12-11', 1000.8, 9.2, null, 2.5, 1.7, 1.9, null, 1.7);
+VALUES('2004-12-11', 1000.8, 9.2, null, -2.5, -1.7, -1.9, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-12-12', 100.2, 9.1, null, 2.6, 1.6, 2, null, 1);
+VALUES('2004-12-12', 100.2, 9.1, null, -2.6, -1.6, -2, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-12-13', 1002.7, 9.6, null, 2.5, 1.7, 2.3, null, 1.7);
+VALUES('2004-12-13', 1002.7, 9.6, null, -2.5, -1.7, -2.3, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-12-14', 100.3, 9.2, null, 3.2, 2.2, 2.5, null, 2.3);
+VALUES('2004-12-14', 100.3, 9.2, null, -3.2, -2.2, -2.5, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-12-15', 1000.1, 9.6, null, 3.8, 2.1, 3.4, null, 3);
+VALUES('2004-12-15', 1000.1, 9.6, null, -3.8, -2.1, -3.4, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-12-16', 992.7, 9.7, null, 4.6, 3.6, 4.4, null, 4);
+VALUES('2004-12-16', 992.7, 9.7, null, -4.6, -3.6, -4.4, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-12-17', 978.1, 10.0, 0.8, 4.4, 1.5, 2.2, null, 3);
+VALUES('2004-12-17', 978.1, 10.0, 0.8, -4.4, -1.5, -2.2, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-12-18', 973.3, 8.7, null, 2.1, 4.5, 1.5, 2.9, 6.3);
+VALUES('2004-12-18', 973.3, 8.7, null, -2.1, 4.5, 1.5, 2.9, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-12-19', 975.3, 8.5, 0.1, 3.6, 1.3, 0.1, 1.8, 1.7);
+VALUES('2004-12-19', 975.3, 8.5, 0.1, -3.6, 1.3, -0.1, 1.8, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-12-20', 991.1, 8.1, null, 5.5, 0.7, 3, 6.8, 3);
+VALUES('2004-12-20', 991.1, 8.1, null, -5.5, 0.7, -3, 6.8, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-12-21', 996.2, 9.0, null, 8.9, 0.8, 3.9, 3.9, 2);
+VALUES('2004-12-21', 996.2, 9.0, null, -8.9, 0.8, -3.9, 3.9, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-12-22', 993.2, 9.4, 0.1, 8.4, 3.3, 4.8, null, 1.7);
+VALUES('2004-12-22', 993.2, 9.4, 0.1, -8.4, -3.3, -4.8, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-12-23', 980.2, 9.3, 0.4, 5.3, 3.9, 1.5, null, 1.7);
+VALUES('2004-12-23', 980.2, 9.3, 0.4, -5.3, 3.9, 1.5, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2004-12-24', 978.7, 8.0, null, 1.9, 8.3, 5.8, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -4395,9 +4395,9 @@ VALUES('2004-12-28', 981.3, 9.3, 0.4, 0.8, 2.6, 1.8, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2004-12-29', 990.6, 8.7, 0.2, 0.2, 3.8, 2.5, 0.2, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-12-30', 1001.5, 8.6, null, 0.7, 3.4, 1.1, null, 2.3);
+VALUES('2004-12-30', 1001.5, 8.6, null, -0.7, 3.4, 1.1, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2004-12-31', 99.6, 9.0, 0.1, 2.4, 2.7, 1.1, 0.4, 1);
+VALUES('2004-12-31', 99.6, 9.0, 0.1, -2.4, 2.7, 1.1, 0.4, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2005-01-01', 993.1, 9.4, null, 1.5, 6.2, 4, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -4407,159 +4407,159 @@ VALUES('2005-01-03', 994.1, 7.3, 0.6, 1.6, 5.7, 4.1, 2.6, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2005-01-04', 992.5, 7.9, 0.5, 3.2, 6.6, 5.4, null, 8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-01-05', 995.8, 8.2, 0.6, 0.5, 7.2, 3.8, 0.4, 3.7);
+VALUES('2005-01-05', 995.8, 8.2, 0.6, -0.5, 7.2, 3.8, 0.4, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2005-01-06', 995.9, 8.7, 0.3, 1.8, 7.8, 4.1, 0.6, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-01-07', 100.0, 9.3, null, 0.6, 6.3, 3.3, 0.3, 0.7);
+VALUES('2005-01-07', 100.0, 9.3, null, -0.6, 6.3, 3.3, 0.3, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-01-08', 993.5, 8.7, null, 2, 8.7, 2.9, 6.1, 1.3);
+VALUES('2005-01-08', 993.5, 8.7, null, -2, 8.7, 2.9, 6.1, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2005-01-09', 997.6, 7.6, null, 1.2, 10.2, 4.4, 3, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-01-10', 99.9, 9.0, null, 2.4, 7.7, 3, 5.6, 0.7);
+VALUES('2005-01-10', 99.9, 9.0, null, -2.4, 7.7, 3, 5.6, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-01-11', 999.5, 10.0, null, 2.9, 3.5, 1.4, null, 1.3);
+VALUES('2005-01-11', 999.5, 10.0, null, -2.9, 3.5, -1.4, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-01-12', 996.3, 10.0, 5.4, 3.1, 2.7, 1.3, 0.3, 1);
+VALUES('2005-01-12', 996.3, 10.0, 5.4, -3.1, 2.7, 1.3, 0.3, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-01-13', 994.5, 8.7, 0.2, 0.3, 6.6, 1.9, 0.9, 2);
+VALUES('2005-01-13', 994.5, 8.7, 0.2, -0.3, 6.6, 1.9, 0.9, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-01-14', 997.2, 9.3, 0.6, 2.1, 4.2, 1.6, 3.2, 3.7);
+VALUES('2005-01-14', 997.2, 9.3, 0.6, -2.1, 4.2, 1.6, 3.2, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-01-15', 1000.1, 8.0, null, 0.5, 4.8, 1.1, 4, 3.7);
+VALUES('2005-01-15', 1000.1, 8.0, null, -0.5, 4.8, 1.1, 4, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-01-16', 1002.1, 8.4, null, 5.6, 1.9, 2.2, 6.9, 1.3);
+VALUES('2005-01-16', 1002.1, 8.4, null, -5.6, 1.9, -2.2, 6.9, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-01-17', 99.7, 8.0, null, 5.3, 1.9, 2.8, 7.4, 3.3);
+VALUES('2005-01-17', 99.7, 8.0, null, -5.3, 1.9, -2.8, 7.4, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-01-18', 980.7, 8.9, 0.6, 7, 0.9, 4.2, 2.8, 5);
+VALUES('2005-01-18', 980.7, 8.9, 0.6, -7, -0.9, -4.2, 2.8, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-01-19', 981.2, 9.1, null, 4.8, 0.7, 2.6, 2, 1.7);
+VALUES('2005-01-19', 981.2, 9.1, null, -4.8, -0.7, -2.6, 2, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-01-20', 973.9, 8.8, 11.1, 4.7, 5.5, 2.4, null, 3.7);
+VALUES('2005-01-20', 973.9, 8.8, 11.1, -4.7, 5.5, 2.4, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-01-21', 968.5, 8.7, 1.8, 0.1, 5.5, 2, 3.7, 5);
+VALUES('2005-01-21', 968.5, 8.7, 1.8, -0.1, 5.5, 2, 3.7, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-01-22', 977.7, 7.5, 0.2, 0.3, 3.1, 1.3, 4.7, 6);
+VALUES('2005-01-22', 977.7, 7.5, 0.2, -0.3, 3.1, 1.3, 4.7, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-01-23', 983.3, 8.0, null, 3.3, 2.2, 1, 4.2, 3.7);
+VALUES('2005-01-23', 983.3, 8.0, null, -3.3, 2.2, -1, 4.2, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-01-24', 980.2, 8.4, 0.1, 3.3, 0.7, 1.3, null, 1.3);
+VALUES('2005-01-24', 980.2, 8.4, 0.1, -3.3, 0.7, -1.3, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-01-25', 984.6, 8.0, null, 5.8, 1.1, 3.5, 3.2, 4);
+VALUES('2005-01-25', 984.6, 8.0, null, -5.8, -1.1, -3.5, 3.2, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-01-26', 982.4, 7.6, null, 4.4, 2.4, 3.7, null, 9.3);
+VALUES('2005-01-26', 982.4, 7.6, null, -4.4, -2.4, -3.7, null, 9.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-01-27', 983.4, 7.2, null, 8.5, 4, 7.3, 1.8, 4.7);
+VALUES('2005-01-27', 983.4, 7.2, null, -8.5, -4, -7.3, 1.8, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-01-28', 98.5, 8.7, null, 8.8, 4.2, 5.6, 1.8, 1);
+VALUES('2005-01-28', 98.5, 8.7, null, -8.8, -4.2, -5.6, 1.8, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-01-29', 991.4, 7.3, null, 8.9, 2.1, 5.3, 3.2, 4.7);
+VALUES('2005-01-29', 991.4, 7.3, null, -8.9, -2.1, -5.3, 3.2, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-01-30', 996.8, 6.9, null, 6.6, 1.5, 4.1, 5.2, 2.3);
+VALUES('2005-01-30', 996.8, 6.9, null, -6.6, -1.5, -4.1, 5.2, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-01-31', 984.9, 8.7, 1.5, 4.7, 2.7, 0.9, null, 4.3);
+VALUES('2005-01-31', 984.9, 8.7, 1.5, -4.7, 2.7, 0.9, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-02-01', 984.5, 8.2, 0.1, 1.2, 2.9, 0.9, 1.4, 2.7);
+VALUES('2005-02-01', 984.5, 8.2, 0.1, -1.2, 2.9, 0.9, 1.4, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-02-02', 989.8, 8.0, 0.9, 0.2, 1.8, 0.5, null, 4.7);
+VALUES('2005-02-02', 989.8, 8.0, 0.9, -0.2, 1.8, 0.5, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-02-03', 995.3, 9.4, 1.2, 2.1, 1.5, 0.9, 0.4, 2);
+VALUES('2005-02-03', 995.3, 9.4, 1.2, -2.1, 1.5, -0.9, 0.4, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-02-04', 1003.2, 8.1, null, 3.3, 1.9, 1.6, 1.9, 3.7);
+VALUES('2005-02-04', 1003.2, 8.1, null, -3.3, 1.9, -1.6, 1.9, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-02-05', 1002.1, 8.6, null, 8.3, 3.1, 6.3, 4.8, 4.3);
+VALUES('2005-02-05', 1002.1, 8.6, null, -8.3, -3.1, -6.3, 4.8, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-02-06', 1003.6, 8.3, null, 10.1, 0.4, 6.3, 7.8, 3.7);
+VALUES('2005-02-06', 1003.6, 8.3, null, -10.1, -0.4, -6.3, 7.8, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-02-07', 1006.2, 6.7, null, 11.7, 1.2, 6.9, 8, 4.3);
+VALUES('2005-02-07', 1006.2, 6.7, null, -11.7, -1.2, -6.9, 8, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-02-08', 1007.2, 5.5, null, 9, 1.4, 6.2, 8.2, 4.7);
+VALUES('2005-02-08', 1007.2, 5.5, null, -9, -1.4, -6.2, 8.2, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-02-09', 1006.9, 5.6, null, 10.1, 1.1, 5.4, 7.5, 2.3);
+VALUES('2005-02-09', 1006.9, 5.6, null, -10.1, -1.1, -5.4, 7.5, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-02-10', 1001.6, 7.2, 0.3, 9.3, 1, 4.2, 6.6, 1.7);
+VALUES('2005-02-10', 1001.6, 7.2, 0.3, -9.3, -1, -4.2, 6.6, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-02-11', 992.1, 9.8, 6.2, 3.5, 2.1, 0.4, null, 0.3);
+VALUES('2005-02-11', 992.1, 9.8, 6.2, -3.5, 2.1, 0.4, null, 0.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-02-12', 976.9, 10.0, 1.6, 0.4, 1.3, 0.5, null, 4);
+VALUES('2005-02-12', 976.9, 10.0, 1.6, -0.4, 1.3, 0.5, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2005-02-13', 964.1, 8.3, 1.8, 0.8, 5.3, 2.1, 2.3, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-02-14', 968.9, 8.8, null, 2.3, 1.9, 1.1, 1.2, 5);
+VALUES('2005-02-14', 968.9, 8.8, null, -2.3, 1.9, -1.1, 1.2, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-02-15', 97.4, 8.4, 9.3, 5.9, 0.7, 2.3, null, 5.3);
+VALUES('2005-02-15', 97.4, 8.4, 9.3, -5.9, 0.7, -2.3, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-02-16', 98.0, 9.2, 1.3, 1.7, 0.7, 0.1, null, 4.3);
+VALUES('2005-02-16', 98.0, 9.2, 1.3, -1.7, 0.7, -0.1, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-02-17', 987.6, 8.6, 0.5, 1.2, 0.5, 0.4, null, 6);
+VALUES('2005-02-17', 987.6, 8.6, 0.5, -1.2, 0.5, -0.4, null, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-02-18', 988.4, 8.1, null, 3.1, 0.5, 2.2, null, 5);
+VALUES('2005-02-18', 988.4, 8.1, null, -3.1, -0.5, -2.2, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-02-19', 980.3, 8.2, null, 4.1, 0.3, 1.7, 0.6, 2);
+VALUES('2005-02-19', 980.3, 8.2, null, -4.1, 0.3, -1.7, 0.6, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-02-20', 979.1, 8.7, null, 3.1, 0.2, 1.2, null, 1.3);
+VALUES('2005-02-20', 979.1, 8.7, null, -3.1, 0.2, -1.2, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-02-21', 978.7, 8.9, 0.7, 2.1, 1.1, 0.7, null, 6);
+VALUES('2005-02-21', 978.7, 8.9, 0.7, -2.1, 1.1, -0.7, null, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-02-22', 974.8, 9.2, 5.2, 1.6, 1.9, 0.8, 0.1, 7);
+VALUES('2005-02-22', 974.8, 9.2, 5.2, -1.6, 1.9, 0.8, 0.1, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-02-23', 978.5, 9.4, 2.8, 1.3, 2.5, 0.2, 0.1, 1.7);
+VALUES('2005-02-23', 978.5, 9.4, 2.8, -1.3, 2.5, -0.2, 0.1, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-02-24', 98.2, 9.5, 1, 2.2, 0.3, 1.1, null, 6);
+VALUES('2005-02-24', 98.2, 9.5, 1, -2.2, -0.3, -1.1, null, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-02-25', 984.4, 8.6, null, 2.2, 1.8, 0.9, 1.3, 2);
+VALUES('2005-02-25', 984.4, 8.6, null, -2.2, 1.8, -0.9, 1.3, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-02-26', 980.4, 8.2, 0.1, 6.3, 1.5, 1.3, 0.2, 1.3);
+VALUES('2005-02-26', 980.4, 8.2, 0.1, -6.3, 1.5, -1.3, 0.2, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-02-27', 981.2, 6.0, null, 8.2, 0.2, 6.4, 8.2, 7.7);
+VALUES('2005-02-27', 981.2, 6.0, null, -8.2, -0.2, -6.4, 8.2, 7.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-02-28', 986.9, 7.5, 0.1, 1.2, 4.1, 9.3, 8.2, 4);
+VALUES('2005-02-28', 986.9, 7.5, 0.1, -1.2, -4.1, -9.3, 8.2, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-03-01', 984.1, 7.6, null, 14.5, 5.1, 8.8, 8.1, 2);
+VALUES('2005-03-01', 984.1, 7.6, null, -14.5, -5.1, -8.8, 8.1, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-03-02', 982.9, 7.1, null, 12.3, 4.1, 8.8, 9.8, 3.3);
+VALUES('2005-03-02', 982.9, 7.1, null, -12.3, -4.1, -8.8, 9.8, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-03-03', 983.7, 7.8, 2.3, 11.4, 2, 6.9, 5.1, 3.7);
+VALUES('2005-03-03', 983.7, 7.8, 2.3, -11.4, -2, -6.9, 5.1, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-03-04', 981.3, 9.6, 3, 7.2, 2.4, 4.4, null, 2.7);
+VALUES('2005-03-04', 981.3, 9.6, 3, -7.2, -2.4, -4.4, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-03-05', 976.1, 8.0, null, 9, 0.2, 3.4, 6.7, 2.3);
+VALUES('2005-03-05', 976.1, 8.0, null, -9, 0.2, -3.4, 6.7, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-03-06', 979.9, 7.4, null, 5.8, 1, 3, 4.2, 5);
+VALUES('2005-03-06', 979.9, 7.4, null, -5.8, -1, -3, 4.2, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-03-07', 984.3, 6.9, 0.3, 5.2, 1.5, 2.6, 0.9, 7);
+VALUES('2005-03-07', 984.3, 6.9, 0.3, -5.2, -1.5, -2.6, 0.9, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-03-08', 984.4, 8.5, 1.3, 2.7, 2.4, 1.1, 0.3, 4.7);
+VALUES('2005-03-08', 984.4, 8.5, 1.3, -2.7, 2.4, 1.1, 0.3, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-03-09', 989.3, 7.9, 0.2, 2, 2.4, 0.6, 0.5, 4);
+VALUES('2005-03-09', 989.3, 7.9, 0.2, -2, 2.4, -0.6, 0.5, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-03-10', 997.1, 6.4, null, 8.1, 1.3, 4.7, 8.6, 4.3);
+VALUES('2005-03-10', 997.1, 6.4, null, -8.1, -1.3, -4.7, 8.6, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-03-11', 980.2, 7.8, 0.9, 11.2, 2, 2, 1.1, 2.3);
+VALUES('2005-03-11', 980.2, 7.8, 0.9, -11.2, 2, -2, 1.1, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-03-12', 969.6, 8.4, 0.4, 0.3, 3.8, 1, 0.9, 4.3);
+VALUES('2005-03-12', 969.6, 8.4, 0.4, -0.3, 3.8, 1, 0.9, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-03-13', 980.7, 9.2, 0.2, 1.5, 3, 0.2, 1.7, 3);
+VALUES('2005-03-13', 980.7, 9.2, 0.2, -1.5, 3, 0.2, 1.7, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-03-14', 987.7, 8.4, null, 5.7, 5.6, 0.7, 8.3, 1.7);
+VALUES('2005-03-14', 987.7, 8.4, null, -5.7, 5.6, 0.7, 8.3, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-03-15', 994.7, 8.0, null, 2.4, 5.7, 2, 6.1, 1.7);
+VALUES('2005-03-15', 994.7, 8.0, null, -2.4, 5.7, 2, 6.1, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-03-16', 997.3, 8.1, null, 2, 10.7, 5.2, 7, 0.7);
+VALUES('2005-03-16', 997.3, 8.1, null, -2, 10.7, 5.2, 7, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2005-03-17', 993.4, 7.3, null, 0.3, 17.4, 9, 6.8, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2005-03-18', 990.9, 7.2, null, 7.5, 1.7, 1.3, 6.4, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-03-19', 993.3, 6.7, 0.3, 0.5, 13.6, 3, 1.9, 5.3);
+VALUES('2005-03-19', 993.3, 6.7, 0.3, -0.5, 13.6, 3, 1.9, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-03-20', 996.1, 6.8, null, 5, 3.2, 0.9, 10.6, 2.3);
+VALUES('2005-03-20', 996.1, 6.8, null, -5, 3.2, -0.9, 10.6, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-03-21', 99.3, 6.7, null, 4.1, 5.3, 0.5, 10.3, 3);
+VALUES('2005-03-21', 99.3, 6.7, null, -4.1, 5.3, 0.5, 10.3, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-03-22', 991.6, 7.1, null, 3.8, 9.2, 2.7, 9.8, 2.7);
+VALUES('2005-03-22', 991.6, 7.1, null, -3.8, 9.2, 2.7, 9.8, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2005-03-23', 992.8, 7.2, null, 0.3, 11.4, 7, 2.6, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -4577,13 +4577,13 @@ VALUES('2005-03-29', 986.8, 6.9, null, 1.8, 1.4, 7.5, 8.4, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2005-03-30', 989.1, 5.3, null, 2.8, 12.9, 7.3, 9.2, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-03-31', 995.5, 4.5, null, 0.8, 10.2, 5.3, 11.1, 5.3);
+VALUES('2005-03-31', 995.5, 4.5, null, -0.8, 10.2, 5.3, 11.1, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2005-04-01', 1000.5, 3.9, null, 1.5, 11.5, 6.8, 11.1, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-04-02', 1000.2, 4.4, null, 1.5, 15.1, 7.4, 11.2, 2.3);
+VALUES('2005-04-02', 1000.2, 4.4, null, -1.5, 15.1, 7.4, 11.2, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-04-03', 999.2, 4.6, null, 0.2, 16.6, 9.9, 11.4, 2.3);
+VALUES('2005-04-03', 999.2, 4.6, null, -0.2, 16.6, 9.9, 11.4, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2005-04-04', 998.1, 4.3, null, 1.3, 17.9, 10.1, 11.3, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -4621,7 +4621,7 @@ VALUES('2005-04-20', 976.6, 8.3, 15.5, 5.9, 12.5, 7, null, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2005-04-21', 987.2, 4.7, null, 0.2, 8.2, 3.8, 11.6, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-04-22', 986.4, 4.4, null, 2.2, 12.7, 7.3, 12.7, 2);
+VALUES('2005-04-22', 986.4, 4.4, null, -2.2, 12.7, 7.3, 12.7, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2005-04-23', 985.7, 5.4, null, 3.5, 1.5, 9.7, 1.1, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -4981,7 +4981,7 @@ VALUES('2005-10-17', 997.5, 6.5, null, 4.8, 9.9, 6.1, 2.9, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2005-10-18', 996.9, 6.9, null, 1.6, 7.7, 5.2, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-10-19', 995.1, 7.3, null, 1, 10.4, 4.5, 8.5, 3.7);
+VALUES('2005-10-19', 995.1, 7.3, null, -1, 10.4, 4.5, 8.5, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2005-10-20', 989.9, 6.9, null, 1.6, 1.3, 7.5, 6.7, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -5005,9 +5005,9 @@ VALUES('2005-10-29', 996.9, 6.1, null, 2.1, 13.8, 7.3, 6.7, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2005-10-30', 996.4, 7.0, null, 1.9, 10.9, 4.7, 8.4, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-10-31', 995.1, 7.2, null, 0.8, 9, 3.5, 7.8, 4.3);
+VALUES('2005-10-31', 995.1, 7.2, null, -0.8, 9, 3.5, 7.8, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-11-01', 992.9, 6.4, null, 0.3, 11.5, 5.6, 7.7, 3.7);
+VALUES('2005-11-01', 992.9, 6.4, null, -0.3, 11.5, 5.6, 7.7, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2005-11-02', 993.5, 7.9, 0.1, 3.3, 12.3, 7.9, 4.8, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -5039,261 +5039,261 @@ VALUES('2005-11-15', 982.4, 8.9, 0.1, 1.9, 3.9, 2.9, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2005-11-16', 970.5, 8.8, 0.4, 1.6, 6.6, 4.9, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-11-17', 978.6, 7.0, null, 0.1, 5.9, 1.6, 5, 4.3);
+VALUES('2005-11-17', 978.6, 7.0, null, -0.1, 5.9, 1.6, 5, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-11-18', 987.3, 7.6, null, 3.1, 4.3, 0.3, 3, 2.7);
+VALUES('2005-11-18', 987.3, 7.6, null, -3.1, 4.3, -0.3, 3, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-11-19', 994.5, 7.3, null, 4.8, 1.9, 0.9, 4.7, 3.7);
+VALUES('2005-11-19', 994.5, 7.3, null, -4.8, 1.9, -0.9, 4.7, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-11-20', 994.5, 8.5, 2, 4.1, 1.7, 0.8, 2.2, 1.7);
+VALUES('2005-11-20', 994.5, 8.5, 2, -4.1, 1.7, -0.8, 2.2, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-11-21', 993.8, 8.1, null, 0.7, 2.6, 0.9, 2.8, 4);
+VALUES('2005-11-21', 993.8, 8.1, null, -0.7, 2.6, 0.9, 2.8, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-11-22', 999.3, 7.6, null, 1.7, 0.8, 0.9, null, 4.3);
+VALUES('2005-11-22', 999.3, 7.6, null, -1.7, 0.8, -0.9, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-11-23', 1001.7, 8.0, null, 5.9, 0.6, 3.7, 3.7, 2.3);
+VALUES('2005-11-23', 1001.7, 8.0, null, -5.9, 0.6, -3.7, 3.7, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-11-24', 986.6, 8.3, 0.3, 6.2, 2, 4.2, 1.7, 2.7);
+VALUES('2005-11-24', 986.6, 8.3, 0.3, -6.2, -2, -4.2, 1.7, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-11-25', 969.6, 9.1, 1, 5.2, 2.8, 3.6, null, 3);
+VALUES('2005-11-25', 969.6, 9.1, 1, -5.2, -2.8, -3.6, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-11-26', 970.2, 9.7, 6.2, 3.4, 0.6, 0.3, null, 2.7);
+VALUES('2005-11-26', 970.2, 9.7, 6.2, -3.4, 0.6, -0.3, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-11-27', 967.6, 9.6, 11.8, 1.8, 3.2, 0.7, null, 1);
+VALUES('2005-11-27', 967.6, 9.6, 11.8, -1.8, 3.2, -0.7, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-11-28', 974.1, 9.6, null, 7.4, 0.8, 3.9, 4.3, 1.7);
+VALUES('2005-11-28', 974.1, 9.6, null, -7.4, -0.8, -3.9, 4.3, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-11-29', 980.5, 9.4, 0.8, 6.9, 0.6, 1.8, null, 1.7);
+VALUES('2005-11-29', 980.5, 9.4, 0.8, -6.9, -0.6, -1.8, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-11-30', 983.8, 9.3, null, 4.6, 0.9, 2.2, 3.3, 1.7);
+VALUES('2005-11-30', 983.8, 9.3, null, -4.6, 0.9, -2.2, 3.3, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-01', 986.2, 9.0, null, 13.2, 3.3, 5.9, 6.4, 2.7);
+VALUES('2005-12-01', 986.2, 9.0, null, -13.2, -3.3, -5.9, 6.4, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-02', 981.4, 9.3, null, 7.9, 2.5, 4.2, 3.9, 4.7);
+VALUES('2005-12-02', 981.4, 9.3, null, -7.9, -2.5, -4.2, 3.9, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-03', 976.5, 9.3, null, 3.3, 2.7, null, null, 3.7);
+VALUES('2005-12-03', 976.5, 9.3, null, -3.3, 2.7, null, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-04', 978.4, 9.2, null, 2.7, 2.7, 0.4, 5.5, 2);
+VALUES('2005-12-04', 978.4, 9.2, null, -2.7, 2.7, 0.4, 5.5, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-05', 975.1, 9.7, 1.2, 0.2, 3.4, 0.8, null, 1);
+VALUES('2005-12-05', 975.1, 9.7, 1.2, -0.2, 3.4, 0.8, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-06', 972.9, 9.3, 9.7, 0.6, 2.3, 1.2, 0.9, 4.7);
+VALUES('2005-12-06', 972.9, 9.3, 9.7, -0.6, 2.3, 1.2, 0.9, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2005-12-07', 981.8, 8.0, null, 1.5, 4.2, 2.7, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-08', 988.1, 8.2, null, 0.9, 5.7, 1.4, 3.3, 2.3);
+VALUES('2005-12-08', 988.1, 8.2, null, -0.9, 5.7, 1.4, 3.3, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-09', 100.2, 8.7, null, 3, 3, 0.2, 0.5, 2.3);
+VALUES('2005-12-09', 100.2, 8.7, null, -3, 3, -0.2, 0.5, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-10', 1010.4, 6.4, null, 3, 0.5, 1.7, 6.7, 4.3);
+VALUES('2005-12-10', 1010.4, 6.4, null, -3, 0.5, -1.7, 6.7, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-11', 1008.3, 8.3, null, 7.5, 0.3, 3.5, 8.7, 1.3);
+VALUES('2005-12-11', 1008.3, 8.3, null, -7.5, -0.3, -3.5, 8.7, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-12', 1001.6, 8.2, null, 6.6, 0.1, 3.3, 7.4, 1);
+VALUES('2005-12-12', 1001.6, 8.2, null, -6.6, 0.1, -3.3, 7.4, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-13', 999.6, 9.4, null, 4.7, 0.5, 1.5, null, 1.7);
+VALUES('2005-12-13', 999.6, 9.4, null, -4.7, 0.5, -1.5, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-14', 992.7, 9.3, null, 1.5, 0.6, 0.2, null, 1);
+VALUES('2005-12-14', 992.7, 9.3, null, -1.5, 0.6, -0.2, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-15', 980.8, 8.1, 0.8, 0.3, 4.1, 1.9, null, 4.7);
+VALUES('2005-12-15', 980.8, 8.1, 0.8, -0.3, 4.1, 1.9, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2005-12-16', 962.5, 7.7, 2, 0.8, 4.1, 2.1, null, 8.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-17', 970.2, 8.0, 1.8, 4.6, 1.7, 1.7, 0.6, 3.7);
+VALUES('2005-12-17', 970.2, 8.0, 1.8, -4.6, 1.7, -1.7, 0.6, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-18', 982.9, 7.8, null, 8, 0.5, 2.7, 1.8, 5);
+VALUES('2005-12-18', 982.9, 7.8, null, -8, -0.5, -2.7, 1.8, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-19', 99.1, 8.4, 2.1, 6.5, 0.9, 2.3, 0.8, 3);
+VALUES('2005-12-19', 99.1, 8.4, 2.1, -6.5, 0.9, -2.3, 0.8, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-20', 991.3, 8.8, 1.1, 2.7, 2.6, 1.3, null, 4.3);
+VALUES('2005-12-20', 991.3, 8.8, 1.1, -2.7, 2.6, 1.3, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-21', 999.2, 7.2, null, 0.7, 2.3, 0.1, 1.3, 2.7);
+VALUES('2005-12-21', 999.2, 7.2, null, -0.7, 2.3, 0.1, 1.3, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-22', 994.3, 8.6, 0.4, 1.3, 2.9, 1.3, null, 4);
+VALUES('2005-12-22', 994.3, 8.6, 0.4, -1.3, 2.9, 1.3, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-23', 994.4, 8.4, 0.5, 0.1, 3.6, 1.2, 0.4, 2);
+VALUES('2005-12-23', 994.4, 8.4, 0.5, -0.1, 3.6, 1.2, 0.4, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-24', 988.9, 9.0, null, 1.6, 4.8, 2.3, null, 3);
+VALUES('2005-12-24', 988.9, 9.0, null, -1.6, 4.8, 2.3, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-25', 986.2, 7.4, null, 1.9, 4.8, 1.1, 2.6, 3);
+VALUES('2005-12-25', 986.2, 7.4, null, -1.9, 4.8, 1.1, 2.6, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-26', 982.5, 9.3, null, 7.6, 1.4, 3.5, 0.3, 1.7);
+VALUES('2005-12-26', 982.5, 9.3, null, -7.6, -1.4, -3.5, 0.3, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-27', 979.5, 7.8, 0.4, 3.6, 1.3, 2.8, null, 6);
+VALUES('2005-12-27', 979.5, 7.8, 0.4, -3.6, -1.3, -2.8, null, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-28', 972.8, 9.2, 9, 3.5, 1.4, 2.4, null, 1.3);
+VALUES('2005-12-28', 972.8, 9.2, 9, -3.5, -1.4, -2.4, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-29', 985.8, 8.5, null, 10.3, 2.7, 6.5, 4.8, 1);
+VALUES('2005-12-29', 985.8, 8.5, null, -10.3, -2.7, -6.5, 4.8, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-30', 984.2, 9.0, 4.8, 8.6, 5.5, 5.9, null, 7);
+VALUES('2005-12-30', 984.2, 9.0, 4.8, -8.6, -5.5, -5.9, null, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2005-12-31', 980.3, 8.7, null, 10.7, 4, 5.9, null, 2.3);
+VALUES('2005-12-31', 980.3, 8.7, null, -10.7, -4, -5.9, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-01', 979.7, 9.5, 4.4, 4.2, 1, 0.3, null, 1.3);
+VALUES('2006-01-01', 979.7, 9.5, 4.4, -4.2, 1, -0.3, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-02', 983.2, 9.4, 9.5, 0.5, 1.6, 0.8, null, 1.7);
+VALUES('2006-01-02', 983.2, 9.4, 9.5, -0.5, 1.6, 0.8, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-03', 992.4, 9.9, 10.6, 0.7, 0.5, 0.5, null, 2.3);
+VALUES('2006-01-03', 992.4, 9.9, 10.6, -0.7, 0.5, -0.5, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-04', 996.9, 8.6, null, 1.7, 0.7, 0.2, null, 3);
+VALUES('2006-01-04', 996.9, 8.6, null, -1.7, 0.7, 0.2, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-05', 993.3, 9.0, 0.3, 1.2, 0.1, 0.7, null, 7.7);
+VALUES('2006-01-05', 993.3, 9.0, 0.3, -1.2, 0.1, -0.7, null, 7.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-06', 995.2, 8.6, null, 2.4, 1, 1.7, null, 6.3);
+VALUES('2006-01-06', 995.2, 8.6, null, -2.4, -1, -1.7, null, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-07', 1000.5, 8.7, null, 5.9, 1.4, 4.1, 1.7, 6);
+VALUES('2006-01-07', 1000.5, 8.7, null, -5.9, -1.4, -4.1, 1.7, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-08', 1004.9, 8.8, null, 10.9, 5.9, 9.7, 7.7, 4.3);
+VALUES('2006-01-08', 1004.9, 8.8, null, -10.9, -5.9, -9.7, 7.7, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-09', 1003.9, 8.2, null, 13.7, 5.8, 9.2, 7.8, 3.3);
+VALUES('2006-01-09', 1003.9, 8.2, null, -13.7, -5.8, -9.2, 7.8, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-10', 1002.5, 8.0, null, 11.9, 5, 8.5, 7.2, 1);
+VALUES('2006-01-10', 1002.5, 8.0, null, -11.9, -5, -8.5, 7.2, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-11', 100.1, 8.4, null, 14.1, 7.5, 10.3, 7.1, null);
+VALUES('2006-01-11', 100.1, 8.4, null, -14.1, -7.5, -10.3, 7.1, null);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-12', 1004.7, 9.0, null, 15.3, 5.9, 9, 5.5, 1);
+VALUES('2006-01-12', 1004.7, 9.0, null, -15.3, -5.9, -9, 5.5, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-13', 1007.1, 9.6, null, 6.2, 2.7, 4.7, null, 0.7);
+VALUES('2006-01-13', 1007.1, 9.6, null, -6.2, -2.7, -4.7, null, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-14', 1005.4, 9.6, null, 5.3, 2.9, 4.6, null, 1.7);
+VALUES('2006-01-14', 1005.4, 9.6, null, -5.3, -2.9, -4.6, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-15', 1003.2, 8.2, null, 6.5, 3, 5, null, 3);
+VALUES('2006-01-15', 1003.2, 8.2, null, -6.5, -3, -5, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-16', 997.2, 8.2, null, 9, 4.4, 5, null, 2.7);
+VALUES('2006-01-16', 997.2, 8.2, null, -9, -4.4, -5, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-17', 988.1, 9.0, 4.7, 5.2, 4.1, 4.8, null, 4);
+VALUES('2006-01-17', 988.1, 9.0, 4.7, -5.2, -4.1, -4.8, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-18', 974.8, 8.6, 0.2, 5.3, 1.2, 1.7, null, 2.7);
+VALUES('2006-01-18', 974.8, 8.6, 0.2, -5.3, 1.2, -1.7, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-19', 994.1, 7.4, null, 5.1, 0.3, 3.8, null, 3.7);
+VALUES('2006-01-19', 994.1, 7.4, null, -5.1, 0.3, -3.8, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-20', 992.6, 8.8, 1.4, 4.7, 1.8, 3, null, 2);
+VALUES('2006-01-20', 992.6, 8.8, 1.4, -4.7, -1.8, -3, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-21', 987.3, 8.6, 0.2, 3.2, 3.7, 0.3, 0.3, 3);
+VALUES('2006-01-21', 987.3, 8.6, 0.2, -3.2, 3.7, 0.3, 0.3, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-22', 1001.8, 7.6, null, 16.5, 1.7, 12.9, 5.8, 8);
+VALUES('2006-01-22', 1001.8, 7.6, null, -16.5, 1.7, -12.9, 5.8, 8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-23', 1012.3, 6.6, null, 20.6, 15.2, 18.1, 7.7, 3.7);
+VALUES('2006-01-23', 1012.3, 6.6, null, -20.6, -15.2, -18.1, 7.7, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-24', 1011.1, 6.8, null, 21.8, 12.2, 16.5, 7.5, 1.7);
+VALUES('2006-01-24', 1011.1, 6.8, null, -21.8, -12.2, -16.5, 7.5, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-25', 995.9, 7.2, null, 1.8, 8.5, 11.8, 5.4, 3.3);
+VALUES('2006-01-25', 995.9, 7.2, null, -1.8, -8.5, -11.8, 5.4, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-26', 994.2, 6.8, null, 11.9, 8.2, 9.5, 3.8, 2.7);
+VALUES('2006-01-26', 994.2, 6.8, null, -11.9, -8.2, -9.5, 3.8, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-27', 997.6, 5.9, null, 11.6, 5.3, 8.1, 8, 4);
+VALUES('2006-01-27', 997.6, 5.9, null, -11.6, -5.3, -8.1, 8, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-28', 999.8, 7.2, null, 14.8, 5, 10.3, 7.9, 2);
+VALUES('2006-01-28', 999.8, 7.2, null, -14.8, -5, -10.3, 7.9, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-29', 1001.4, 7.5, null, 15.6, 1.7, 8.8, 5.6, 0.3);
+VALUES('2006-01-29', 1001.4, 7.5, null, -15.6, -1.7, -8.8, 5.6, 0.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-30', 998.6, 9.0, null, 12.3, 4.6, 6.8, null, 0.7);
+VALUES('2006-01-30', 998.6, 9.0, null, -12.3, -4.6, -6.8, null, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-01-31', 994.3, 9.2, null, 10.9, 4.7, 6.3, null, 1);
+VALUES('2006-01-31', 994.3, 9.2, null, -10.9, -4.7, -6.3, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-01', 99.3, 9.3, null, 6.7, 4.1, 5.8, null, 0.7);
+VALUES('2006-02-01', 99.3, 9.3, null, -6.7, -4.1, -5.8, null, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-02', 989.2, 9.3, null, 9.5, 6.6, 9.1, 0.7, 1.3);
+VALUES('2006-02-02', 989.2, 9.3, null, -9.5, -6.6, -9.1, 0.7, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-03', 988.5, 8.9, null, 11.9, 5.6, 7.7, 0.6, 2.7);
+VALUES('2006-02-03', 988.5, 8.9, null, -11.9, -5.6, -7.7, 0.6, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-04', 992.8, 7.7, null, 5.6, 0.5, 3.5, 1.4, 4.3);
+VALUES('2006-02-04', 992.8, 7.7, null, -5.6, -0.5, -3.5, 1.4, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-05', 999.4, 7.4, null, 14.3, 4, 10.2, 5.4, 2.7);
+VALUES('2006-02-05', 999.4, 7.4, null, -14.3, -4, -10.2, 5.4, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-06', 997.9, 7.5, 1.3, 15.5, 7.3, 11.6, 8.8, 1);
+VALUES('2006-02-06', 997.9, 7.5, 1.3, -15.5, -7.3, -11.6, 8.8, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-07', 984.3, 9.0, 6.1, 17.2, 2.1, 5.1, null, 0.3);
+VALUES('2006-02-07', 984.3, 9.0, 6.1, -17.2, -2.1, -5.1, null, 0.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-08', 975.6, 8.2, 0.1, 2.7, 2.5, 1.5, null, 3.7);
+VALUES('2006-02-08', 975.6, 8.2, 0.1, -2.7, 2.5, 1.5, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-09', 973.9, 7.9, 0.1, 3.2, 2.9, 0.7, 4, 2.7);
+VALUES('2006-02-09', 973.9, 7.9, 0.1, -3.2, 2.9, -0.7, 4, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-10', 978.6, 8.7, 0.5, 4.2, 1.9, 1.1, 0.4, 2.3);
+VALUES('2006-02-10', 978.6, 8.7, 0.5, -4.2, 1.9, -1.1, 0.4, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-11', 992.4, 7.3, 0.1, 2.7, 1.2, 1.5, 1.9, 5);
+VALUES('2006-02-11', 992.4, 7.3, 0.1, -2.7, 1.2, -1.5, 1.9, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-12', 993.9, 7.3, null, 2.9, 0.2, 1.9, 2.6, 4);
+VALUES('2006-02-12', 993.9, 7.3, null, -2.9, 0.2, -1.9, 2.6, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-13', 993.2, 7.5, null, 3, 0.2, 1.5, null, 2.3);
+VALUES('2006-02-13', 993.2, 7.5, null, -3, 0.2, -1.5, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-14', 992.6, 7.8, null, 4.3, 0.6, 1, 0.1, 1);
+VALUES('2006-02-14', 992.6, 7.8, null, -4.3, 0.6, -1, 0.1, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-15', 983.7, 8.8, 4.7, 8, null, 2.9, 0.5, 2.7);
+VALUES('2006-02-15', 983.7, 8.8, 4.7, -8, null, -2.9, 0.5, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-16', 968.3, 9.5, 4, 2.7, 0.2, 1, null, 2);
+VALUES('2006-02-16', 968.3, 9.5, 4, -2.7, 0.2, -1, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-17', 969.6, 10.0, 2.8, 3, 1.6, 0.6, 0.9, 1.3);
+VALUES('2006-02-17', 969.6, 10.0, 2.8, -3, 1.6, -0.6, 0.9, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-18', 976.6, 8.3, 3.6, 5.3, 5, 0.6, 6.7, 1.7);
+VALUES('2006-02-18', 976.6, 8.3, 3.6, -5.3, 5, 0.6, 6.7, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-19', 978.3, 9.1, null, 0.6, 3.7, 1.4, 4, 2.7);
+VALUES('2006-02-19', 978.3, 9.1, null, -0.6, 3.7, 1.4, 4, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-20', 975.7, 8.2, 15.1, 1.6, 6.2, 2.6, 1.3, 3.7);
+VALUES('2006-02-20', 975.7, 8.2, 15.1, -1.6, 6.2, 2.6, 1.3, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-21', 983.6, 8.9, null, 0.2, 4.3, 1.6, 1.6, 1.3);
+VALUES('2006-02-21', 983.6, 8.9, null, -0.2, 4.3, 1.6, 1.6, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-22', 991.3, 7.8, null, 0.1, 1.7, 0.3, 0.5, 3.7);
+VALUES('2006-02-22', 991.3, 7.8, null, -0.1, 1.7, 0.3, 0.5, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-23', 992.2, 7.3, null, 2.6, null, 1.4, 6.2, 4.7);
+VALUES('2006-02-23', 992.2, 7.3, null, -2.6, null, -1.4, 6.2, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-24', 989.9, 6.4, null, 4.4, 2.2, 1.1, 9, 5.7);
+VALUES('2006-02-24', 989.9, 6.4, null, -4.4, 2.2, -1.1, 9, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-25', 984.8, 8.1, 1.1, 5.9, 1.4, 3.8, null, 6);
+VALUES('2006-02-25', 984.8, 8.1, 1.1, -5.9, -1.4, -3.8, null, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-26', 982.4, 7.1, null, 4.7, 1.7, 4.2, 0.2, 4.7);
+VALUES('2006-02-26', 982.4, 7.1, null, -4.7, -1.7, -4.2, 0.2, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-27', 985.5, 7.0, null, 7.8, 1.8, 5.5, 3.9, 2);
+VALUES('2006-02-27', 985.5, 7.0, null, -7.8, -1.8, -5.5, 3.9, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-02-28', 979.5, 7.7, null, 12.5, 2.6, 6.8, 7.6, 1.3);
+VALUES('2006-02-28', 979.5, 7.7, null, -12.5, -2.6, -6.8, 7.6, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-03-01', 974.3, 6.7, null, 8.2, 3.4, 2.7, 4.9, 4.3);
+VALUES('2006-03-01', 974.3, 6.7, null, -8.2, 3.4, -2.7, 4.9, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-03-02', 976.9, 6.9, null, 8.3, 0.2, 2.8, 9.4, 2.3);
+VALUES('2006-03-02', 976.9, 6.9, null, -8.3, 0.2, -2.8, 9.4, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-03-03', 972.3, 7.5, 2.1, 6.6, 1.7, 1, 7.9, 3);
+VALUES('2006-03-03', 972.3, 7.5, 2.1, -6.6, 1.7, -1, 7.9, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-03-04', 96.8, 8.6, 4.1, 2.5, 1.2, 1.1, null, 2.3);
+VALUES('2006-03-04', 96.8, 8.6, 4.1, -2.5, 1.2, -1.1, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-03-05', 974.5, 8.0, 0.1, 3.6, 0.5, 2.4, null, 1.7);
+VALUES('2006-03-05', 974.5, 8.0, 0.1, -3.6, 0.5, -2.4, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-03-06', 981.9, 6.9, null, 10.2, 2.5, 2.9, 8, 1.7);
+VALUES('2006-03-06', 981.9, 6.9, null, -10.2, 2.5, -2.9, 8, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-03-07', 985.8, 7.4, null, 7.7, 2.5, 2, 6.2, 2);
+VALUES('2006-03-07', 985.8, 7.4, null, -7.7, 2.5, -2, 6.2, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-03-08', 985.6, 7.8, 0.7, 6.4, 0.3, 3.7, 1.0, 2.3);
+VALUES('2006-03-08', 985.6, 7.8, 0.7, -6.4, -0.3, -3.7, 1.0, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-03-09', 972.6, 9.5, 7.9, 4.5, 0.1, 1.3, null, 3.7);
+VALUES('2006-03-09', 972.6, 9.5, 7.9, -4.5, 0.1, -1.3, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-03-10', 973.4, 7.5, 0.4, 0.2, 6.9, 3.2, null, 2.3);
+VALUES('2006-03-10', 973.4, 7.5, 0.4, -0.2, 6.9, 3.2, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-03-11', 974.3, 8.9, 4.3, 0.9, 4.8, 0.7, 1.8, 2.7);
+VALUES('2006-03-11', 974.3, 8.9, 4.3, -0.9, 4.8, 0.7, 1.8, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-03-12', 988.3, 7.8, 9.3, 5.5, 0.3, 3.3, null, 5.3);
+VALUES('2006-03-12', 988.3, 7.8, 9.3, -5.5, -0.3, -3.3, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-03-13', 99.7, 5.7, 1.9, 8, 1.1, 3.9, 4.7, 6.3);
+VALUES('2006-03-13', 99.7, 5.7, 1.9, -8, -1.1, -3.9, 4.7, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-03-14', 993.5, 7.1, 0.6, 5.1, 0.5, 2.1, 1.9, 4.7);
+VALUES('2006-03-14', 993.5, 7.1, 0.6, -5.1, 0.5, -2.1, 1.9, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-03-15', 991.3, 7.2, null, 3.3, 0.3, 1.2, null, 4.3);
+VALUES('2006-03-15', 991.3, 7.2, null, -3.3, 0.3, -1.2, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-03-16', 991.7, 7.7, 0.9, 1.7, 2.1, 0.5, null, 4);
+VALUES('2006-03-16', 991.7, 7.7, 0.9, -1.7, 2.1, 0.5, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-03-17', 991.2, 8.7, null, 1.3, 2.5, 0.2, 0.3, 3);
+VALUES('2006-03-17', 991.2, 8.7, null, -1.3, 2.5, 0.2, 0.3, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-03-18', 989.7, 8.0, null, 0.6, 2.5, 0.7, null, 2);
+VALUES('2006-03-18', 989.7, 8.0, null, -0.6, 2.5, 0.7, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-03-19', 983.7, 7.7, null, 1.5, 5.2, 1.5, 10.2, 1);
+VALUES('2006-03-19', 983.7, 7.7, null, -1.5, 5.2, 1.5, 10.2, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-03-20', 980.3, 8.0, null, 4, 4.9, 0.5, 10.9, 1.3);
+VALUES('2006-03-20', 980.3, 8.0, null, -4, 4.9, 0.5, 10.9, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-03-21', 978.8, 7.7, null, 3.2, 5.6, 1.2, 9.7, 2.3);
+VALUES('2006-03-21', 978.8, 7.7, null, -3.2, 5.6, 1.2, 9.7, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2006-03-22', 978.5, 8.6, null, 0.1, 5.1, 2.2, 0.3, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-03-23', 98.4, 5.5, null, 2.3, 4.2, 0.5, 10.4, 5.3);
+VALUES('2006-03-23', 98.4, 5.5, null, -2.3, 4.2, 0.5, 10.4, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-03-24', 983.1, 5.4, 0.1, 5.4, 6.8, 2, 9.2, 6);
+VALUES('2006-03-24', 983.1, 5.4, 0.1, -5.4, 6.8, 2, 9.2, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2006-03-25', 983.7, 8.9, 0.5, null, 5.2, 3.1, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -5321,9 +5321,9 @@ VALUES('2006-04-05', 978.2, 7.8, 1.3, 1.9, 6.4, 3.4, 0.1, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2006-04-06', 985.5, 5.7, null, 0.3, 7.2, 3.5, 4.1, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-04-07', 98.7, 5.5, null, 2.8, 11.3, 5.3, 11.7, 2);
+VALUES('2006-04-07', 98.7, 5.5, null, -2.8, 11.3, 5.3, 11.7, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-04-08', 984.9, 4.7, null, 1.7, 14.1, 8, 12.1, 2.7);
+VALUES('2006-04-08', 984.9, 4.7, null, -1.7, 14.1, 8, 12.1, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2006-04-09', 983.3, 5.5, null, 3.7, 15.7, 10.2, 5.5, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -5735,15 +5735,15 @@ VALUES('2006-10-29', 981.7, 8.5, 5.8, 9.2, 18.4, 11.3, 0.8, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2006-10-30', 993.7, 6.3, null, 1.6, 10.7, 3.4, 8.3, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-10-31', 985.6, 7.0, null, 1.6, 8.2, 4.1, 5.9, 3.3);
+VALUES('2006-10-31', 985.6, 7.0, null, -1.6, 8.2, 4.1, 5.9, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2006-11-01', 979.1, 6.0, 1.2, 2.7, 11.4, 4.8, 2.6, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-11-02', 990.8, 6.3, 0.1, 2.3, 3.2, 1.1, 5.9, 6);
+VALUES('2006-11-02', 990.8, 6.3, 0.1, -2.3, 3.2, -1.1, 5.9, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-11-03', 994.6, 7.5, 0.3, 5.2, 1.5, 2.4, 4.9, 3.7);
+VALUES('2006-11-03', 994.6, 7.5, 0.3, -5.2, 1.5, -2.4, 4.9, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-11-04', 995.1, 8.2, 0.6, 6.6, 4.9, 1.7, null, 4);
+VALUES('2006-11-04', 995.1, 8.2, 0.6, -6.6, 4.9, 1.7, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2006-11-05', 988.2, 8.2, 0.2, 4.5, 8.4, 7.3, null, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -5751,13 +5751,13 @@ VALUES('2006-11-06', 991.9, 7.5, null, 7.2, 9.9, 8.5, null, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2006-11-07', 994.4, 7.2, null, 2.5, 10.7, 5.7, 2.7, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-11-08', 993.6, 8.1, null, 1.2, 8.1, 3.7, 5.3, 1.3);
+VALUES('2006-11-08', 993.6, 8.1, null, -1.2, 8.1, 3.7, 5.3, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2006-11-09', 990.6, 7.6, 1.2, 0.9, 12.1, 6.5, 0.8, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2006-11-10', 1001.1, 7.1, null, 0.4, 8, 3.6, 1.7, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-11-11', 989.8, 8.2, 0.5, 2, 4, 2.5, null, 2.7);
+VALUES('2006-11-11', 989.8, 8.2, 0.5, -2, 4, 2.5, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2006-11-12', 978.3, 7.5, 0.2, 3.3, 9, 5.1, 2.4, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -5817,25 +5817,25 @@ VALUES('2006-12-09', 978.7, 8.4, 7.1, 6.8, 1.2, 8.3, 0.7, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2006-12-10', 996.7, 8.0, null, 0.6, 7.1, 3.2, 1.7, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-12-11', 999.4, 9.9, 1, 3.3, 1.6, 1.7, null, 0.7);
+VALUES('2006-12-11', 999.4, 9.9, 1, -3.3, 1.6, -1.7, null, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-12-12', 995.1, 10.0, 2.5, 2.1, 2.6, 1.3, null, 0.7);
+VALUES('2006-12-12', 995.1, 10.0, 2.5, -2.1, 2.6, 1.3, null, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-12-13', 999.2, 8.6, null, 0.2, 6.7, 4.7, 2.5, 1.7);
+VALUES('2006-12-13', 999.2, 8.6, null, -0.2, 6.7, 4.7, 2.5, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-12-14', 1001.5, 8.8, null, 1.7, 5.9, 1, 6.3, 1.3);
+VALUES('2006-12-14', 1001.5, 8.8, null, -1.7, 5.9, 1, 6.3, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-12-15', 1002.5, 10.0, null, 2.3, 1.3, 1.9, null, 2.3);
+VALUES('2006-12-15', 1002.5, 10.0, null, -2.3, -1.3, -1.9, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-12-16', 997.8, 10.0, 0.3, 2.9, 1.9, 2.2, null, 2.3);
+VALUES('2006-12-16', 997.8, 10.0, 0.3, -2.9, -1.9, -2.2, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-12-17', 995.6, 10.0, null, 2.3, 0.8, 1.1, null, 1);
+VALUES('2006-12-17', 995.6, 10.0, null, -2.3, -0.8, -1.1, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-12-18', 997.4, 8.8, null, 1.5, 2.8, 1.2, 1.3, 3.3);
+VALUES('2006-12-18', 997.4, 8.8, null, -1.5, 2.8, 1.2, 1.3, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-12-19', 1000.7, 6.8, null, 0.4, 2.3, 0.4, 2, 3.7);
+VALUES('2006-12-19', 1000.7, 6.8, null, -0.4, 2.3, 0.4, 2, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-12-20', 1001.9, 8.2, null, 4.1, 3.6, 1.2, 0.3, 2.7);
+VALUES('2006-12-20', 1001.9, 8.2, null, -4.1, 3.6, 1.2, 0.3, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2006-12-21', 1008.2, 8.0, null, 2.1, 5, 3.3, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -5847,25 +5847,25 @@ VALUES('2006-12-24', 1005.4, 8.7, null, null, 2.5, 0.6, 0.9, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2006-12-25', 1004.4, 7.7, null, null, 4.5, 2.9, 3, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-12-26', 1006.4, 7.6, null, 2.7, 3.4, 0.3, 2.5, 1.7);
+VALUES('2006-12-26', 1006.4, 7.6, null, -2.7, 3.4, -0.3, 2.5, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-12-27', 1002.9, 9.2, null, 7.4, 0.9, 5.6, 7, 1);
+VALUES('2006-12-27', 1002.9, 9.2, null, -7.4, -0.9, -5.6, 7, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-12-28', 996.6, 9.6, 2.2, 7.5, 5, 5.6, null, 1);
+VALUES('2006-12-28', 996.6, 9.6, 2.2, -7.5, -5, -5.6, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-12-29', 1000.6, 9.7, null, 5.3, 1.5, 0.9, 0.1, 1.7);
+VALUES('2006-12-29', 1000.6, 9.7, null, -5.3, 1.5, -0.9, 0.1, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-12-30', 1002.1, 9.6, 1.3, 2.5, 0.3, 0.9, null, 2.3);
+VALUES('2006-12-30', 1002.1, 9.6, 1.3, -2.5, 0.3, -0.9, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2006-12-31', 999.8, 9.8, 0.6, 2.1, 0.1, 1, null, 2.3);
+VALUES('2006-12-31', 999.8, 9.8, 0.6, -2.1, 0.1, -1, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-01-01', 986.7, 8.5, 4.1, 2.3, 6.3, 3.7, 0.1, 3.3);
+VALUES('2007-01-01', 986.7, 8.5, 4.1, -2.3, 6.3, 3.7, 0.1, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-01-02', 987.5, 8.1, null, 1.6, 6.3, 1.7, 1.5, 3.3);
+VALUES('2007-01-02', 987.5, 8.1, null, -1.6, 6.3, 1.7, 1.5, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-01-03', 994.5, 8.0, 0.9, 0.8, 4.9, 2.4, 0.8, 3.3);
+VALUES('2007-01-03', 994.5, 8.0, 0.9, -0.8, 4.9, 2.4, 0.8, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-01-04', 985.3, 8.2, 0.1, 0.4, 5.7, 3.7, null, 2.3);
+VALUES('2007-01-04', 985.3, 8.2, 0.1, -0.4, 5.7, 3.7, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-01-05', 987.8, 7.5, 0.1, 0.6, 8.1, 5.6, 0.3, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -5873,7 +5873,7 @@ VALUES('2007-01-06', 991.3, 8.4, 3, 3.6, 9.2, 5.3, 0.2, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-01-07', 988.3, 8.1, 0.1, 4.1, 11.2, 6.6, 2.9, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-01-08', 985.9, 8.6, 0.8, 1.7, 5.9, 3.2, 2.6, 2);
+VALUES('2007-01-08', 985.9, 8.6, 0.8, -1.7, 5.9, 3.2, 2.6, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-01-09', 988.4, 9.0, 0.1, 1.9, 9.6, 7, 0.1, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -5887,13 +5887,13 @@ VALUES('2007-01-13', 991.4, 6.6, null, 5.4, 1.2, 10.3, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-01-14', 995.5, 7.2, 0.6, 1.9, 11.8, 4.6, 2.3, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-01-15', 1000.5, 8.0, null, 3.9, 5.4, 0.3, 8, 2);
+VALUES('2007-01-15', 1000.5, 8.0, null, -3.9, 5.4, 0.3, 8, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-01-16', 994.9, 9.5, null, 4.1, 0.2, 1.8, 0.1, 1.3);
+VALUES('2007-01-16', 994.9, 9.5, null, -4.1, -0.2, -1.8, 0.1, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-01-17', 992.7, 9.9, null, 3.2, 0.1, 1.1, null, 0.7);
+VALUES('2007-01-17', 992.7, 9.9, null, -3.2, -0.1, -1.1, null, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-01-18', 975.5, 6.9, 7.6, 2, 14.2, 1.0, null, 6.7);
+VALUES('2007-01-18', 975.5, 6.9, 7.6, -2, 14.2, 1.0, null, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-01-19', 977.4, 5.3, null, 6, 15.8, 9.1, 0.5, 9.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -5901,19 +5901,19 @@ VALUES('2007-01-20', 985.9, 7.7, 0.1, 4.5, 9.6, 7.8, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-01-21', 984.2, 6.4, 0.5, 3.6, 9, 6.1, 1.3, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-01-22', 987.3, 7.8, 0.5, 0.5, 5.4, 2, null, 2.7);
+VALUES('2007-01-22', 987.3, 7.8, 0.5, -0.5, 5.4, 2, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-01-23', 980.5, 9.0, 5.7, 3.5, 2.6, 2.3, null, 9);
+VALUES('2007-01-23', 980.5, 9.0, 5.7, -3.5, 2.6, -2.3, null, 9);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-01-24', 96.7, 8.8, 4.7, 5, 1.5, 2.6, null, 4.7);
+VALUES('2007-01-24', 96.7, 8.8, 4.7, -5, -1.5, -2.6, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-01-25', 985.4, 8.0, null, 9.6, 2.7, 6.6, 4.3, 2.7);
+VALUES('2007-01-25', 985.4, 8.0, null, -9.6, -2.7, -6.6, 4.3, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-01-26', 990.6, 8.3, 1.6, 12.2, 4.9, 1.0, 7.9, 1.3);
+VALUES('2007-01-26', 990.6, 8.3, 1.6, -12.2, -4.9, -1.0, 7.9, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-01-27', 986.3, 7.1, 1.1, 11.4, 0.4, 2.9, 4.4, 5);
+VALUES('2007-01-27', 986.3, 7.1, 1.1, -11.4, 0.4, -2.9, 4.4, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-01-28', 987.9, 8.1, null, 6.6, 3.1, 1.2, 0.9, 6);
+VALUES('2007-01-28', 987.9, 8.1, null, -6.6, 3.1, 1.2, 0.9, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-01-29', 98.3, 7.1, null, 1.5, 5.7, 3.7, 3.1, 8.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -5923,23 +5923,23 @@ VALUES('2007-01-31', 988.4, 7.2, null, 0.8, 5.1, 2.1, 0.7, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-02-01', 990.6, 6.5, null, 0.8, 6.8, 4.6, 1.3, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-02-02', 997.3, 8.1, null, 1.1, 6.4, 3.5, 0.8, 1.3);
+VALUES('2007-02-02', 997.3, 8.1, null, -1.1, 6.4, 3.5, 0.8, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-02-03', 994.2, 6.4, 0.1, 3.1, 6.1, 3.8, 4.2, 8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-02-04', 996.6, 6.5, null, 0.7, 7, 4.3, 8.4, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-02-05', 982.8, 7.5, null, 4.2, 8.3, 2.8, 6.7, 3);
+VALUES('2007-02-05', 982.8, 7.5, null, -4.2, 8.3, 2.8, 6.7, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-02-06', 975.9, 8.0, 3.5, 0.2, 4.6, 1.6, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-02-07', 97.4, 8.8, null, 1, 2.4, 1.3, null, 1.7);
+VALUES('2007-02-07', 97.4, 8.8, null, -1, 2.4, 1.3, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-02-08', 970.7, 8.3, 3.2, 1.6, 7.3, 5, 1.3, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-02-09', 977.3, 7.3, 1.9, 2.1, 8.4, 4.6, 2.6, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-02-10', 979.6, 8.7, null, 3.2, 4.8, 2.6, null, 3);
+VALUES('2007-02-10', 979.6, 8.7, null, -3.2, 4.8, 2.6, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-02-11', 979.6, 8.6, null, 1.2, 5.2, 3.8, 0.6, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -5953,27 +5953,27 @@ VALUES('2007-02-15', 985.4, 8.3, 4.7, 2.8, 5.9, 3.8, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-02-16', 996.4, 7.5, null, 2.3, 5.2, 3.5, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-02-17', 997.1, 7.2, null, 1.7, 5.8, 2.2, 7.4, 4.7);
+VALUES('2007-02-17', 997.1, 7.2, null, -1.7, 5.8, 2.2, 7.4, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-02-18', 990.4, 7.1, null, 0.7, 6.5, 2.9, 7.7, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-02-19', 985.4, 7.5, null, 0.9, 4.1, 2.7, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-02-20', 984.6, 7.9, null, 1.2, 6.2, 2.9, 3.2, 1.3);
+VALUES('2007-02-20', 984.6, 7.9, null, -1.2, 6.2, 2.9, 3.2, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-02-21', 987.3, 8.3, null, 2.5, 6.2, 3.3, 2.8, 0.7);
+VALUES('2007-02-21', 987.3, 8.3, null, -2.5, 6.2, 3.3, 2.8, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-02-22', 984.2, 8.0, null, 3, 10.4, 4.5, 3.3, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-02-23', 987.2, 8.0, null, 2.8, 5, null, 5.9, 6);
+VALUES('2007-02-23', 987.2, 8.0, null, -2.8, 5, null, 5.9, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-02-24', 984.9, 7.4, null, 3.1, 3.6, 1.6, null, 6.3);
+VALUES('2007-02-24', 984.9, 7.4, null, -3.1, 3.6, 1.6, null, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-02-25', 980.9, 6.6, 7.4, 1, 2.3, 0.5, null, 4.7);
+VALUES('2007-02-25', 980.9, 6.6, 7.4, -1, 2.3, 0.5, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-02-26', 978.2, 9.4, 1.4, 1.3, 0.5, null, null, 1);
+VALUES('2007-02-26', 978.2, 9.4, 1.4, -1.3, 0.5, null, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-02-27', 981.7, 8.9, 5.4, 1, 6, 1.8, 1.2, 2.7);
+VALUES('2007-02-27', 981.7, 8.9, 5.4, -1, 6, 1.8, 1.2, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-02-28', 974.3, 9.2, 3.8, 1.3, 8.2, 5, 0.4, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -5981,11 +5981,11 @@ VALUES('2007-03-01', 971.5, 8.3, 2.5, 3.5, 8.3, 6.7, 0.4, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-03-02', 975.2, 6.3, null, 2.3, 10.7, 5.8, 3.1, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-03-03', 976.6, 8.6, 5.8, 0.8, 7.1, 3.9, 0.9, 3);
+VALUES('2007-03-03', 976.6, 8.6, 5.8, -0.8, 7.1, 3.9, 0.9, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-03-04', 991.9, 6.9, null, 2.8, 7.5, 4.1, 1.5, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-03-05', 993.3, 7.1, null, 1.7, 9.6, 5, 5.7, 3.7);
+VALUES('2007-03-05', 993.3, 7.1, null, -1.7, 9.6, 5, 5.7, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-03-06', 990.6, 7.0, null, 0.8, 11.9, 7.5, 6.9, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -5995,9 +5995,9 @@ VALUES('2007-03-08', 987.3, 8.3, 9.4, 5.7, 10.1, 6.9, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-03-09', 99.7, 6.7, null, 2.1, 8.8, 4.6, 0.3, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-03-10', 100.1, 7.5, null, 1.6, 1.0, 4.5, 3.3, 5);
+VALUES('2007-03-10', 100.1, 7.5, null, -1.6, 1.0, 4.5, 3.3, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-03-11', 1004.4, 6.7, null, 1.4, 11.9, 5, 10.5, 2);
+VALUES('2007-03-11', 1004.4, 6.7, null, -1.4, 11.9, 5, 10.5, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-03-12', 100.0, 6.8, null, 0.5, 16.7, 8.2, 10.4, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -6007,21 +6007,21 @@ VALUES('2007-03-14', 999.6, 5.5, null, 2.1, 15.9, 9.5, 9.9, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-03-15', 998.7, 6.3, null, null, 12.5, 6.1, 10.3, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-03-16', 993.8, 6.2, null, 0.9, 14.5, 6.4, 9.9, 1);
+VALUES('2007-03-16', 993.8, 6.2, null, -0.9, 14.5, 6.4, 9.9, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-03-17', 98.7, 7.0, null, 1.2, 9.2, 6.3, null, 6);
+VALUES('2007-03-17', 98.7, 7.0, null, -1.2, 9.2, 6.3, null, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-03-18', 974.5, 5.4, 1.1, 7.1, 13.8, 9.9, 1.9, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-03-19', 965.7, 6.6, 6.8, 3.5, 1.0, 4.3, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-03-20', 960.6, 9.1, 10.5, 0.2, 4.1, 0.6, null, 6);
+VALUES('2007-03-20', 960.6, 9.1, 10.5, -0.2, 4.1, 0.6, null, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-03-21', 970.8, 7.5, null, 0.3, 4.2, 2.4, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-03-22', 97.9, 6.9, null, 0.4, 6.5, 2.3, 2.8, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-03-23', 974.1, 8.3, 4.7, 2, 6.7, 3.2, null, 5.3);
+VALUES('2007-03-23', 974.1, 8.3, 4.7, -2, 6.7, 3.2, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-03-24', 979.9, 7.0, 2.8, 4.2, 7.1, 6.5, null, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -6047,13 +6047,13 @@ VALUES('2007-04-03', 981.3, 4.6, null, 1.2, 1.6, 9.9, 8.3, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-04-04', 986.1, 5.6, null, 3.6, 10.6, 4.9, 1.2, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-04-05', 986.8, 4.2, null, 2.4, 14.5, 7.4, 11.8, 3);
+VALUES('2007-04-05', 986.8, 4.2, null, -2.4, 14.5, 7.4, 11.8, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-04-06', 989.1, 5.5, null, 3.7, 16.2, 10.5, 7.7, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-04-07', 990.9, 5.5, null, 2.8, 13.8, 8.7, 4.1, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-04-08', 99.3, 5.9, null, 0.6, 11.4, 7, 11.8, 5);
+VALUES('2007-04-08', 99.3, 5.9, null, -0.6, 11.4, 7, 11.8, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-04-09', 98.7, 5.2, null, 1.4, 17.7, 10.9, 6.6, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -6101,7 +6101,7 @@ VALUES('2007-04-30', 986.9, 4.4, null, 2.2, 15.9, 9.9, 13.7, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-05-01', 98.8, 3.3, null, 2.9, 12.2, 7.3, 13.3, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-05-02', 989.1, 4.0, null, 2, 14.2, 8.5, 13.9, 2.3);
+VALUES('2007-05-02', 989.1, 4.0, null, -2, 14.2, 8.5, 13.9, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-05-03', 98.5, 4.0, null, 2.7, 18.5, 13.1, 12.5, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -6427,13 +6427,13 @@ VALUES('2007-10-10', 994.8, 7.1, null, 3.5, 16.4, 10.5, 6.1, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-10-11', 99.6, 7.7, null, 3.7, 14.5, 8.6, 7.3, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-10-12', 989.4, 8.9, 1, 0.1, 11.1, 7.4, null, 1);
+VALUES('2007-10-12', 989.4, 8.9, 1, -0.1, 11.1, 7.4, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-10-13', 996.3, 6.5, null, 4.2, 1.1, 6.7, 6.6, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-10-14', 998.4, 7.0, null, 0.3, 1.1, 4.5, 10.3, 1.7);
+VALUES('2007-10-14', 998.4, 7.0, null, -0.3, 1.1, 4.5, 10.3, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-10-15', 994.9, 6.6, null, 1.3, 13.3, 6.6, 10.2, 3);
+VALUES('2007-10-15', 994.9, 6.6, null, -1.3, 13.3, 6.6, 10.2, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-10-16', 994.7, 6.7, null, 1.6, 13.5, 8.5, 1.0, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -6443,7 +6443,7 @@ VALUES('2007-10-18', 990.4, 7.8, 2.1, 4.6, 12.6, 7.8, 0.1, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-10-19', 994.3, 8.1, 0.8, 0.7, 7.3, 2.9, 4.3, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-10-20', 997.8, 7.6, 0.2, 0.4, 8.3, 4.5, 1.3, 4.3);
+VALUES('2007-10-20', 997.8, 7.6, 0.2, -0.4, 8.3, 4.5, 1.3, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-10-21', 995.5, 7.3, null, 2.9, 6.7, 4.5, 0.7, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -6477,7 +6477,7 @@ VALUES('2007-11-04', 99.1, 7.5, 0.8, 5.5, 11.8, 7.1, 2.6, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-11-05', 997.2, 8.1, null, 0.1, 6.9, 2.7, 3.2, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-11-06', 98.9, 9.1, 1.8, 2.9, 4.3, 2.4, 0.8, 2.7);
+VALUES('2007-11-06', 98.9, 9.1, 1.8, -2.9, 4.3, 2.4, 0.8, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-11-07', 985.5, 8.3, 1.2, 0.6, 5, 4.2, 1, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -6485,25 +6485,25 @@ VALUES('2007-11-08', 983.7, 8.7, 1.5, 3.3, 8.8, 4.8, 1.6, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-11-09', 975.5, 7.5, 0.6, 1.9, 9.2, 5.1, null, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-11-10', 977.2, 9.2, 2.5, 0.3, 4.4, 1.4, null, 3);
+VALUES('2007-11-10', 977.2, 9.2, 2.5, -0.3, 4.4, 1.4, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-11-11', 972.9, 8.9, 11.3, 1.7, 3.2, 0.8, null, 5.3);
+VALUES('2007-11-11', 972.9, 8.9, 11.3, -1.7, 3.2, 0.8, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-11-12', 978.9, 8.6, 0.8, 4.1, 4, 1.2, 0.8, 4);
+VALUES('2007-11-12', 978.9, 8.6, 0.8, -4.1, 4, 1.2, 0.8, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-11-13', 979.5, 8.7, 0.9, 1.3, 3.8, 1, 2.1, 4.7);
+VALUES('2007-11-13', 979.5, 8.7, 0.9, -1.3, 3.8, 1, 2.1, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-11-14', 975.1, 9.2, null, 0.2, 2.5, 1.3, 0.1, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-11-15', 984.7, 7.7, 0.6, 0.6, 1.7, 0.1, 1.6, 9);
+VALUES('2007-11-15', 984.7, 7.7, 0.6, -0.6, 1.7, 0.1, 1.6, 9);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-11-16', 994.4, 8.2, null, 1.8, 0.4, 0.8, null, 4.7);
+VALUES('2007-11-16', 994.4, 8.2, null, -1.8, 0.4, -0.8, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-11-17', 994.2, 8.9, null, 7.8, 0.3, 2.5, 1.5, 1.7);
+VALUES('2007-11-17', 994.2, 8.9, null, -7.8, 0.3, -2.5, 1.5, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-11-18', 986.7, 7.8, null, 2.7, 1.8, 1.5, 4, 6.3);
+VALUES('2007-11-18', 986.7, 7.8, null, -2.7, 1.8, -1.5, 4, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-11-19', 990.4, 8.7, null, 2, 3, 0.7, 2, 3.7);
+VALUES('2007-11-19', 990.4, 8.7, null, -2, 3, 0.7, 2, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-11-20', 991.5, 8.3, null, 0.1, 3.7, 2.5, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -6517,15 +6517,15 @@ VALUES('2007-11-24', 991.5, 8.8, 2.7, 3.3, 8.8, 5.7, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-11-25', 985.9, 8.7, 1.1, 3.6, 7.2, 3.8, 0.4, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-11-26', 984.7, 7.1, 0.5, 1.1, 3.9, 1.2, 1.9, 8);
+VALUES('2007-11-26', 984.7, 7.1, 0.5, -1.1, 3.9, 1.2, 1.9, 8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-11-27', 99.2, 6.4, null, 2.2, 3, 0.6, 5.7, 7.7);
+VALUES('2007-11-27', 99.2, 6.4, null, -2.2, 3, 0.6, 5.7, 7.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-11-28', 995.6, 7.2, null, 5, 2, 1.8, 8, 2.7);
+VALUES('2007-11-28', 995.6, 7.2, null, -5, 2, -1.8, 8, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-11-29', 985.8, 7.7, 0.8, 4.4, 2.1, 1.7, 7.1, 4);
+VALUES('2007-11-29', 985.8, 7.7, 0.8, -4.4, 2.1, -1.7, 7.1, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-11-30', 981.2, 8.8, 1.3, 3.6, 4.1, 0.8, 1.7, 1.7);
+VALUES('2007-11-30', 981.2, 8.8, 1.3, -3.6, 4.1, 0.8, 1.7, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-12-01', 982.7, 9.1, 3, 1, 4.8, 3.4, 0.1, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -6533,9 +6533,9 @@ VALUES('2007-12-02', 980.9, 8.2, 1.1, 2.5, 10.2, 6.7, 1.7, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-12-03', 966.2, 8.1, 0.4, 2.8, 9.1, 5.8, 0.1, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-12-04', 982.8, 8.2, 0.6, 0.1, 6.8, 2.5, 2.3, 4);
+VALUES('2007-12-04', 982.8, 8.2, 0.6, -0.1, 6.8, 2.5, 2.3, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-12-05', 99.3, 8.9, null, 0.6, 5.4, 3.5, 1.7, 1.3);
+VALUES('2007-12-05', 99.3, 8.9, null, -0.6, 5.4, 3.5, 1.7, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-12-06', 988.9, 9.1, 1.6, 2.7, 7.1, 4.8, 1.3, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -6543,7 +6543,7 @@ VALUES('2007-12-07', 974.9, 9.1, 4.3, 3.7, 6.4, 5.3, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-12-08', 979.9, 7.7, null, 2.7, 7.5, 4.6, 3.1, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-12-09', 971.7, 9.0, 2, 1.4, 4.5, 2.3, 0.7, 3.7);
+VALUES('2007-12-09', 971.7, 9.0, 2, -1.4, 4.5, 2.3, 0.7, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-12-10', 974.3, 9.1, null, 2, 4.7, 3.2, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -6553,63 +6553,63 @@ VALUES('2007-12-12', 995.6, 8.1, 0.2, 3.7, 5.9, 4.7, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2007-12-13', 1003.5, 6.4, null, 1.4, 4.2, 2.3, 4.8, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-12-14', 1001.3, 7.7, 2.8, 2.1, 1.9, 1, null, 5.3);
+VALUES('2007-12-14', 1001.3, 7.7, 2.8, -2.1, 1.9, -1, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-12-15', 1003.4, 7.3, null, 2.2, 0.6, 0.2, null, 6);
+VALUES('2007-12-15', 1003.4, 7.3, null, -2.2, 0.6, -0.2, null, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-12-16', 1004.9, 7.3, null, 2.6, 0.2, 1.7, null, 6.3);
+VALUES('2007-12-16', 1004.9, 7.3, null, -2.6, -0.2, -1.7, null, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-12-17', 100.8, 7.8, null, 4.4, 0.8, 2.4, 2.7, 4);
+VALUES('2007-12-17', 100.8, 7.8, null, -4.4, -0.8, -2.4, 2.7, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-12-18', 1006.8, 8.2, null, 3.6, 0.2, 2.4, 4.7, 3.7);
+VALUES('2007-12-18', 1006.8, 8.2, null, -3.6, -0.2, -2.4, 4.7, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-12-19', 1008.3, 8.0, null, 4.1, 1.5, 2.3, null, 3);
+VALUES('2007-12-19', 1008.3, 8.0, null, -4.1, -1.5, -2.3, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-12-20', 1006.9, 8.4, null, 5.3, 1.5, 4, 1.3, 1.3);
+VALUES('2007-12-20', 1006.9, 8.4, null, -5.3, -1.5, -4, 1.3, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-12-21', 1004.7, 9.5, null, 5.8, 4.4, 4.9, null, 2);
+VALUES('2007-12-21', 1004.7, 9.5, null, -5.8, -4.4, -4.9, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-12-22', 1001.4, 8.9, null, 4.9, 3.7, 4.4, null, 4);
+VALUES('2007-12-22', 1001.4, 8.9, null, -4.9, -3.7, -4.4, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-12-23', 1000.6, 9.4, null, 5.4, 4.5, 5.2, null, 2.7);
+VALUES('2007-12-23', 1000.6, 9.4, null, -5.4, -4.5, -5.2, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-12-24', 1000.1, 8.9, null, 5.3, 3.6, 4.4, null, 1.7);
+VALUES('2007-12-24', 1000.1, 8.9, null, -5.3, -3.6, -4.4, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-12-25', 999.3, 8.6, null, 5.2, 1.6, 3.2, null, 1.7);
+VALUES('2007-12-25', 999.3, 8.6, null, -5.2, -1.6, -3.2, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-12-26', 1000.8, 9.6, null, 5.4, 3.1, 4.3, null, 2);
+VALUES('2007-12-26', 1000.8, 9.6, null, -5.4, -3.1, -4.3, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-12-27', 1006.9, 8.9, null, 4.3, 3.5, 4, null, 2);
+VALUES('2007-12-27', 1006.9, 8.9, null, -4.3, -3.5, -4, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-12-28', 1005.5, 9.5, null, 4.2, 2.8, 3.5, null, 3.7);
+VALUES('2007-12-28', 1005.5, 9.5, null, -4.2, -2.8, -3.5, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-12-29', 998.7, 9.5, null, 5.2, 3.5, 4.8, null, 5);
+VALUES('2007-12-29', 998.7, 9.5, null, -5.2, -3.5, -4.8, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-12-30', 995.9, 9.5, null, 5.4, 3.8, 4.3, null, 2.3);
+VALUES('2007-12-30', 995.9, 9.5, null, -5.4, -3.8, -4.3, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2007-12-31', 995.2, 9.7, null, 3.9, 1.3, 2, null, 1.7);
+VALUES('2007-12-31', 995.2, 9.7, null, -3.9, -1.3, -2, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-01-01', 994.6, 9.6, null, 4.9, 0.4, 3, 1.1, 1.7);
+VALUES('2008-01-01', 994.6, 9.6, null, -4.9, 0.4, -3, 1.1, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-01-02', 993.7, 8.5, null, 5.2, 0.9, 2.7, null, 7);
+VALUES('2008-01-02', 993.7, 8.5, null, -5.2, -0.9, -2.7, null, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-01-03', 99.2, 8.0, null, 5.2, 0.6, 3.4, 0.2, 7.7);
+VALUES('2008-01-03', 99.2, 8.0, null, -5.2, -0.6, -3.4, 0.2, 7.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-01-04', 994.9, 7.8, null, 5.1, 2.7, 4.5, null, 7.7);
+VALUES('2008-01-04', 994.9, 7.8, null, -5.1, -2.7, -4.5, null, 7.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-01-05', 991.9, 7.1, null, 6.4, 3.4, 4.3, null, 7.3);
+VALUES('2008-01-05', 991.9, 7.1, null, -6.4, -3.4, -4.3, null, 7.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-01-06', 984.4, 9.6, 4.5, 4, 0.5, 1.8, null, 3.7);
+VALUES('2008-01-06', 984.4, 9.6, 4.5, -4, -0.5, -1.8, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-01-07', 988.9, 9.7, 2, 7.8, 0.9, 2.2, 0.8, 1.7);
+VALUES('2008-01-07', 988.9, 9.7, 2, -7.8, 0.9, -2.2, 0.8, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-01-08', 994.8, 9.4, null, 2.6, 3.4, 0.4, 3.4, 1.7);
+VALUES('2008-01-08', 994.8, 9.4, null, -2.6, 3.4, -0.4, 3.4, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-01-09', 993.3, 9.4, 0.2, 5.5, 0.2, 1, null, 3.7);
+VALUES('2008-01-09', 993.3, 9.4, 0.2, -5.5, 0.2, -1, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-01-10', 994.1, 9.5, null, 0.8, 0.6, 0.4, null, 2.7);
+VALUES('2008-01-10', 994.1, 9.5, null, -0.8, 0.6, -0.4, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-01-11', 988.5, 9.7, null, 0.8, 1.7, 0.9, null, 3);
+VALUES('2008-01-11', 988.5, 9.7, null, -0.8, 1.7, 0.9, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-01-12', 982.4, 9.2, null, 1.4, 6.3, 3.2, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -6633,29 +6633,29 @@ VALUES('2008-01-21', 985.5, 7.6, null, 4.8, 1.1, 7.1, 1.2, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-01-22', 981.1, 7.1, 0.6, 2.5, 10.1, 4, 0.2, 9);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-01-23', 1001.6, 6.4, null, 1.5, 5.1, 1.4, 5.2, 4);
+VALUES('2008-01-23', 1001.6, 6.4, null, -1.5, 5.1, 1.4, 5.2, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-01-24', 1000.5, 7.7, null, 2.4, 5.2, 1.4, 3.7, 2);
+VALUES('2008-01-24', 1000.5, 7.7, null, -2.4, 5.2, 1.4, 3.7, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-01-25', 1005.6, 7.3, null, 0.7, 7.5, 1.7, 7.6, 3.3);
+VALUES('2008-01-25', 1005.6, 7.3, null, -0.7, 7.5, 1.7, 7.6, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-01-26', 998.9, 6.6, null, 3, 8.3, 4.1, 3.8, 5);
+VALUES('2008-01-26', 998.9, 6.6, null, -3, 8.3, 4.1, 3.8, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-01-27', 987.7, 7.9, 1.2, 4.3, 7.8, 5.9, 0.6, 9);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-01-28', 1001.9, 5.5, 0.4, 1.1, 8.4, 3.3, 7.7, 2.3);
+VALUES('2008-01-28', 1001.9, 5.5, 0.4, -1.1, 8.4, 3.3, 7.7, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-01-29', 999.4, 8.8, null, 1.6, 5.4, 3.2, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-01-30', 992.4, 8.6, 1.2, 3, 4.6, 1.9, 0.8, 3.3);
+VALUES('2008-01-30', 992.4, 8.6, 1.2, -3, 4.6, 1.9, 0.8, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-01-31', 991.8, 7.2, null, 0.7, 5.5, 1.4, 4.7, 2);
+VALUES('2008-01-31', 991.8, 7.2, null, -0.7, 5.5, 1.4, 4.7, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-02-01', 98.0, 8.8, null, 1.3, 3, 2.3, null, 5);
+VALUES('2008-02-01', 98.0, 8.8, null, -1.3, 3, 2.3, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-02-02', 984.3, 7.9, 0.1, 1.8, 5.1, 3.7, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-02-03', 994.4, 7.2, null, 3.7, 5.9, 2.4, 8.7, 5);
+VALUES('2008-02-03', 994.4, 7.2, null, -3.7, 5.9, 2.4, 8.7, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-02-04', 984.3, 8.7, 0.4, 2.8, 7.2, 4.6, 0.1, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -6667,31 +6667,31 @@ VALUES('2008-02-07', 1002.5, 6.0, null, 3.2, 7, 4.6, 7.5, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-02-08', 1008.5, 6.9, null, 0.5, 6.7, 2.9, 3.4, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-02-09', 1007.8, 7.1, null, 1.7, 7, 2.4, 5.5, 3.7);
+VALUES('2008-02-09', 1007.8, 7.1, null, -1.7, 7, 2.4, 5.5, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-02-10', 1006.4, 7.8, null, 3.1, 5.8, 1.2, 6.5, 3.3);
+VALUES('2008-02-10', 1006.4, 7.8, null, -3.1, 5.8, 1.2, 6.5, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-02-11', 1006.2, 8.0, null, 4.9, 4.9, 0.1, 7.3, 0.7);
+VALUES('2008-02-11', 1006.2, 8.0, null, -4.9, 4.9, 0.1, 7.3, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-02-12', 100.7, 9.3, null, 5.6, 1.3, 3.6, 1.5, 1);
+VALUES('2008-02-12', 100.7, 9.3, null, -5.6, 1.3, -3.6, 1.5, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-02-13', 1005.1, 9.6, null, 5.6, 0.7, 1.9, null, 1.3);
+VALUES('2008-02-13', 1005.1, 9.6, null, -5.6, -0.7, -1.9, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-02-14', 1002.8, 7.6, null, 1.9, 2.5, 1.4, null, 3.7);
+VALUES('2008-02-14', 1002.8, 7.6, null, -1.9, 2.5, 1.4, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-02-15', 1003.2, 5.1, null, 2.7, 1.9, 1.2, 5.7, 6);
+VALUES('2008-02-15', 1003.2, 5.1, null, -2.7, 1.9, -1.2, 5.7, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-02-16', 1011.2, 4.3, null, 6.4, 1.5, 4.9, 6.9, 7);
+VALUES('2008-02-16', 1011.2, 4.3, null, -6.4, -1.5, -4.9, 6.9, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-02-17', 100.9, 5.2, null, 10.9, 1.3, 4.9, 4.1, 2.3);
+VALUES('2008-02-17', 100.9, 5.2, null, -10.9, -1.3, -4.9, 4.1, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-02-18', 996.7, 5.0, null, 5.7, 5.9, 3.2, 0.3, 4.3);
+VALUES('2008-02-18', 996.7, 5.0, null, -5.7, 5.9, 3.2, 0.3, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-02-19', 995.3, 7.5, null, 0.9, 8.1, 4, 0.8, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-02-20', 993.6, 7.7, null, 2.9, 9.5, 2.4, 8.6, 2.3);
+VALUES('2008-02-20', 993.6, 7.7, null, -2.9, 9.5, 2.4, 8.6, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-02-21', 994.2, 8.7, 0.3, 1.7, 8.6, 3.4, 0.2, 1);
+VALUES('2008-02-21', 994.2, 8.7, 0.3, -1.7, 8.6, 3.4, 0.2, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-02-22', 992.8, 7.3, null, 2.4, 15.4, 9, 2.2, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -6701,13 +6701,13 @@ VALUES('2008-02-24', 994.1, 6.4, null, 2.5, 16.4, 9.6, 9.7, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-02-25', 991.5, 7.2, null, 0.6, 17.4, 7.8, 5.5, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-02-26', 986.6, 7.3, 0.5, 1.2, 15.3, 7.6, 9.2, 1.7);
+VALUES('2008-02-26', 986.6, 7.3, 0.5, -1.2, 15.3, 7.6, 9.2, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-02-27', 984.9, 6.4, 0.1, 4.2, 12.5, 6.9, 1.6, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-02-28', 992.8, 6.2, null, 1.2, 11.2, 4.8, 6.9, 2.3);
+VALUES('2008-02-28', 992.8, 6.2, null, -1.2, 11.2, 4.8, 6.9, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-02-29', 986.7, 9.1, 5.4, 1.4, 4.9, 3.2, null, 0.7);
+VALUES('2008-02-29', 986.7, 9.1, 5.4, -1.4, 4.9, 3.2, null, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-03-01', 966.8, 6.6, 5.1, 4.2, 12.6, 8, 1.9, 1.1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -6717,15 +6717,15 @@ VALUES('2008-03-03', 977.3, 8.4, 5.6, 3.5, 12.1, 7.7, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-03-04', 983.3, 6.3, null, 1, 6.6, 2.5, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-03-05', 992.2, 6.4, null, 0.8, 4.1, 0.6, 3.8, 5.3);
+VALUES('2008-03-05', 992.2, 6.4, null, -0.8, 4.1, 0.6, 3.8, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-03-06', 995.1, 6.1, null, 5.3, 5.9, 0.4, 10.7, 2.3);
+VALUES('2008-03-06', 995.1, 6.1, null, -5.3, 5.9, -0.4, 10.7, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-03-07', 986.8, 5.5, null, 5.6, 9.1, 2.6, 10.6, 2.7);
+VALUES('2008-03-07', 986.8, 5.5, null, -5.6, 9.1, 2.6, 10.6, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-03-08', 980.1, 6.1, null, 1.5, 13.5, 6.4, 6.8, 3);
+VALUES('2008-03-08', 980.1, 6.1, null, -1.5, 13.5, 6.4, 6.8, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-03-09', 979.9, 7.4, null, 1.9, 11.6, 5.5, 9.8, 2.3);
+VALUES('2008-03-09', 979.9, 7.4, null, -1.9, 11.6, 5.5, 9.8, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-03-10', 972.8, 7.3, null, 2.6, 11.7, 7.6, 5.7, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -6735,31 +6735,31 @@ VALUES('2008-03-12', 97.0, 7.7, 4.3, 2.5, 13.6, 7.6, 1.7, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-03-13', 980.9, 7.1, 2, 1.1, 9.7, 4.1, 6.6, 7.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-03-14', 981.6, 9.1, 1.9, 0.3, 6, 4.4, 0.5, 4);
+VALUES('2008-03-14', 981.6, 9.1, 1.9, -0.3, 6, 4.4, 0.5, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-03-15', 984.6, 6.7, null, 0.5, 10.8, 6.1, 11.1, 2.7);
+VALUES('2008-03-15', 984.6, 6.7, null, -0.5, 10.8, 6.1, 11.1, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-03-16', 974.3, 8.4, 2.1, 2.2, 1.0, 6.7, 0.8, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-03-17', 973.7, 7.2, 0.2, 4.6, 9.8, 5.5, 0.9, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-03-18', 977.2, 6.9, 0.2, 0.6, 5.5, 1.6, 5.2, 8);
+VALUES('2008-03-18', 977.2, 6.9, 0.2, -0.6, 5.5, 1.6, 5.2, 8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-03-19', 979.8, 7.3, null, 3.7, 6.9, 1, 7.2, 4);
+VALUES('2008-03-19', 979.8, 7.3, null, -3.7, 6.9, 1, 7.2, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-03-20', 979.6, 7.8, 0.4, 4, 4.2, 0.2, 5.5, 4.3);
+VALUES('2008-03-20', 979.6, 7.8, 0.4, -4, 4.2, -0.2, 5.5, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-03-21', 958.4, 7.3, 1.7, 0.8, 6.3, 3.4, null, 5.7);
+VALUES('2008-03-21', 958.4, 7.3, 1.7, -0.8, 6.3, 3.4, null, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-03-22', 960.4, 6.2, null, 1.4, 8.8, 4, 3.2, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-03-23', 965.7, 7.9, 1.2, 3.5, 8.2, 2.6, 4.9, 3);
+VALUES('2008-03-23', 965.7, 7.9, 1.2, -3.5, 8.2, 2.6, 4.9, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-03-24', 963.1, 7.1, null, 0.7, 5.2, 2.3, 1.5, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-03-25', 967.8, 6.6, null, 3.8, 4.7, 0.1, 4.6, 4);
+VALUES('2008-03-25', 967.8, 6.6, null, -3.8, 4.7, -0.1, 4.6, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-03-26', 972.8, 7.0, null, 2.8, 5.4, 1.4, 2.5, 5.3);
+VALUES('2008-03-26', 972.8, 7.0, null, -2.8, 5.4, 1.4, 2.5, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-03-27', 975.9, 7.6, 0.3, 0.5, 7.8, 4.3, 1.3, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -6767,7 +6767,7 @@ VALUES('2008-03-28', 984.9, 7.2, null, 2.4, 12.6, 6.8, 3.6, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-03-29', 989.8, 5.8, null, 5.3, 14.3, 7.9, 3.4, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-03-30', 99.0, 5.8, null, 0.7, 15.6, 8.1, 11.6, 4);
+VALUES('2008-03-30', 99.0, 5.8, null, -0.7, 15.6, 8.1, 11.6, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-03-31', 987.7, 4.8, null, 4.1, 16.8, 11.2, 11.8, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -6781,11 +6781,11 @@ VALUES('2008-04-04', 992.6, 6.6, null, 2.3, 12.1, 8.1, 2.9, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-04-05', 981.6, 5.8, null, 1.2, 13.7, 8.1, 5.9, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-04-06', 971.7, 6.4, 0.4, 0.2, 12.4, 7.7, 4.8, 2.7);
+VALUES('2008-04-06', 971.7, 6.4, 0.4, -0.2, 12.4, 7.7, 4.8, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-04-07', 972.1, 7.8, 3.2, 2.1, 8.2, 4.2, 1.2, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-04-08', 977.6, 6.6, null, 2.6, 10.8, 4.8, 10.1, 3.3);
+VALUES('2008-04-08', 977.6, 6.6, null, -2.6, 10.8, 4.8, 10.1, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-04-09', 971.1, 6.1, null, 2.2, 17.6, 1.3, 9.4, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -6803,7 +6803,7 @@ VALUES('2008-04-15', 982.2, 7.3, 1.6, 4.6, 15.8, 9.4, 3.2, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-04-16', 983.8, 7.8, 0.4, 6.1, 8.3, 6.7, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-04-17', 979.4, 8.3, 0.6, 1, 9.3, 5.7, 5.2, 2);
+VALUES('2008-04-17', 979.4, 8.3, 0.6, -1, 9.3, 5.7, 5.2, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-04-18', 972.8, 7.1, null, 1.5, 14.7, 9.7, 7.8, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -7183,11 +7183,11 @@ VALUES('2008-10-22', 989.1, 8.0, 1.5, 5.3, 17.3, 1.2, 6.9, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-10-23', 999.9, 7.8, 1.4, 4.1, 12.7, 6, 1.4, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-10-24', 998.3, 8.6, null, 0.2, 8.9, 5.6, 1, 2.7);
+VALUES('2008-10-24', 998.3, 8.6, null, -0.2, 8.9, 5.6, 1, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-10-25', 1002.6, 8.5, null, 3.4, 8, 5.7, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-10-26', 996.8, 8.6, null, 0.7, 8.4, 4.8, 0.6, 2);
+VALUES('2008-10-26', 996.8, 8.6, null, -0.7, 8.4, 4.8, 0.6, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-10-27', 983.8, 8.8, null, 2.9, 9.6, 7.3, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -7231,29 +7231,29 @@ VALUES('2008-11-15', 997.5, 8.6, null, 0.6, 1.0, 4.3, 7.9, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-11-16', 993.6, 8.7, null, 2, 8.9, 7, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-11-17', 996.9, 7.8, null, 0.6, 8.1, 2.2, 1.3, 3);
+VALUES('2008-11-17', 996.9, 7.8, null, -0.6, 8.1, 2.2, 1.3, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-11-18', 988.5, 7.7, null, 5.1, 3.7, 0.6, 6.6, 2.3);
+VALUES('2008-11-18', 988.5, 7.7, null, -5.1, 3.7, 0.6, 6.6, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-11-19', 984.8, 7.3, null, 0.7, 7.8, 5.4, 1.6, 4.3);
+VALUES('2008-11-19', 984.8, 7.3, null, -0.7, 7.8, 5.4, 1.6, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-11-20', 977.1, 7.1, 7.6, 6, 9.6, 8.6, null, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-11-21', 965.9, 8.7, 3.8, 1.8, 9.2, 3.2, null, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-11-22', 965.2, 8.3, 0.8, 3.2, 3, 1.6, 2.9, 5);
+VALUES('2008-11-22', 965.2, 8.3, 0.8, -3.2, 3, -1.6, 2.9, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-11-23', 970.8, 7.3, null, 2.7, 2, 0.9, 1.2, 6.7);
+VALUES('2008-11-23', 970.8, 7.3, null, -2.7, 2, -0.9, 1.2, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-11-24', 967.3, 7.5, null, 4.6, 1.1, 0.4, 1.4, 1.7);
+VALUES('2008-11-24', 967.3, 7.5, null, -4.6, 1.1, -0.4, 1.4, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-11-25', 97.9, 8.7, null, 1.4, 0.9, 0.1, 0.2, 2.7);
+VALUES('2008-11-25', 97.9, 8.7, null, -1.4, 0.9, -0.1, 0.2, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-11-26', 992.8, 7.2, 0.1, 1.9, 3.2, 1.1, 0.8, 3.7);
+VALUES('2008-11-26', 992.8, 7.2, 0.1, -1.9, 3.2, 1.1, 0.8, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-11-27', 993.2, 8.6, null, 0.4, 4.7, 2.2, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-11-28', 984.3, 7.6, 0.7, 3.5, 3.3, 0.2, 6.8, 6.3);
+VALUES('2008-11-28', 984.3, 7.6, 0.7, -3.5, 3.3, 0.2, 6.8, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-11-29', 972.2, 9.3, 0.5, null, 2.7, 1.8, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -7263,21 +7263,21 @@ VALUES('2008-12-01', 971.6, 8.0, null, 2.9, 9.7, 7.1, 2.4, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-12-02', 980.5, 7.8, 0.6, 1.3, 7.1, 3.6, 1.8, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-12-03', 977.4, 8.9, null, 0.6, 4.2, 2.9, 1.6, 1.7);
+VALUES('2008-12-03', 977.4, 8.9, null, -0.6, 4.2, 2.9, 1.6, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-12-04', 974.8, 9.0, null, 0.6, 3.9, 3.1, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-12-05', 969.4, 8.7, 0.8, 1, 5.7, 4.1, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-12-06', 977.9, 8.6, null, 0.5, 8, 3.3, 4.1, 1.3);
+VALUES('2008-12-06', 977.9, 8.6, null, -0.5, 8, 3.3, 4.1, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-12-07', 988.7, 7.8, 0.2, 0.9, 6.5, 4.1, 1.6, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-12-08', 993.9, 7.7, null, 0.1, 5.2, 2.3, 1.2, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-12-09', 988.8, 9.5, null, 3.6, 2.5, 1.2, 2.4, 1.3);
+VALUES('2008-12-09', 988.8, 9.5, null, -3.6, 2.5, -1.2, 2.4, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-12-10', 984.1, 8.3, null, 2.6, 3.1, 1.5, 0.7, 4);
+VALUES('2008-12-10', 984.1, 8.3, null, -2.6, 3.1, 1.5, 0.7, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-12-11', 982.2, 7.2, 2.9, 1.9, 6.1, 4.9, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -7305,59 +7305,59 @@ VALUES('2008-12-22', 993.8, 7.7, 0.5, 2.2, 1.0, 6.9, 0.6, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2008-12-23', 997.6, 6.7, null, 2.2, 6.9, 3.9, 0.4, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-12-24', 995.3, 8.8, 0.2, 1.1, 3, 2.3, null, 2.3);
+VALUES('2008-12-24', 995.3, 8.8, 0.2, -1.1, 3, 2.3, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-12-25', 1001.2, 6.7, null, 1.5, 3.8, 0.5, 2.7, 7);
+VALUES('2008-12-25', 1001.2, 6.7, null, -1.5, 3.8, -0.5, 2.7, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-12-26', 1007.7, 7.1, null, 1.9, 0.5, 1, null, 5.3);
+VALUES('2008-12-26', 1007.7, 7.1, null, -1.9, -0.5, -1, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-12-27', 1005.4, 6.9, null, 4.5, null, 2.4, 1.2, 5.3);
+VALUES('2008-12-27', 1005.4, 6.9, null, -4.5, null, -2.4, 1.2, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-12-28', 1005.1, 8.1, null, 6.9, 2.9, 5.7, 6.5, 5);
+VALUES('2008-12-28', 1005.1, 8.1, null, -6.9, -2.9, -5.7, 6.5, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-12-29', 1007.5, 8.5, null, 8.1, 3.4, 5.6, 5.3, 5.3);
+VALUES('2008-12-29', 1007.5, 8.5, null, -8.1, -3.4, -5.6, 5.3, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-12-30', 1008.8, 8.3, null, 9.4, 2.5, 6, 5.7, 4);
+VALUES('2008-12-30', 1008.8, 8.3, null, -9.4, -2.5, -6, 5.7, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2008-12-31', 100.1, 8.5, null, 6.9, 4.5, 5.7, 0.1, 4.7);
+VALUES('2008-12-31', 100.1, 8.5, null, -6.9, -4.5, -5.7, 0.1, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-01-01', 995.3, 8.7, null, 6.5, 3.7, 4.7, null, 3.3);
+VALUES('2009-01-01', 995.3, 8.7, null, -6.5, -3.7, -4.7, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-01-02', 994.8, 8.4, null, 4.6, 1.7, 3.5, null, 2);
+VALUES('2009-01-02', 994.8, 8.4, null, -4.6, -1.7, -3.5, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-01-03', 995.5, 7.8, null, 10.1, 2.3, 6.9, 7.7, 1);
+VALUES('2009-01-03', 995.5, 7.8, null, -10.1, -2.3, -6.9, 7.7, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-01-04', 985.9, 8.6, 1.2, 11.2, 1.6, 3.7, null, 1.7);
+VALUES('2009-01-04', 985.9, 8.6, 1.2, -11.2, -1.6, -3.7, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-01-05', 985.7, 9.4, 1.9, 3.6, 1.3, 2.8, null, 4.7);
+VALUES('2009-01-05', 985.7, 9.4, 1.9, -3.6, -1.3, -2.8, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-01-06', 992.4, 8.1, null, 7.6, 3.6, 6.7, null, 6.3);
+VALUES('2009-01-06', 992.4, 8.1, null, -7.6, -3.6, -6.7, null, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-01-07', 989.2, 8.2, null, 7.6, 4.5, 5.6, null, 3.3);
+VALUES('2009-01-07', 989.2, 8.2, null, -7.6, -4.5, -5.6, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-01-08', 100.1, 7.8, null, 9.4, 1.6, 6.7, 7.5, 2.3);
+VALUES('2009-01-08', 100.1, 7.8, null, -9.4, -1.6, -6.7, 7.5, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-01-09', 1001.8, 8.4, null, 14.2, 6.8, 10.5, 7, 2.3);
+VALUES('2009-01-09', 1001.8, 8.4, null, -14.2, -6.8, -10.5, 7, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-01-10', 1002.7, 8.2, null, 13.3, 5.1, 9.2, null, 0.7);
+VALUES('2009-01-10', 1002.7, 8.2, null, -13.3, -5.1, -9.2, null, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-01-11', 1006.6, 9.0, null, 15.4, 7.9, 1.0, null, 2.3);
+VALUES('2009-01-11', 1006.6, 9.0, null, -15.4, -7.9, -1.0, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-01-12', 1003.6, 8.7, null, 8.7, 5.3, 6.2, null, 4.3);
+VALUES('2009-01-12', 1003.6, 8.7, null, -8.7, -5.3, -6.2, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-01-13', 995.3, 8.8, null, 7.3, 6, 6.5, null, 2.7);
+VALUES('2009-01-13', 995.3, 8.8, null, -7.3, -6, -6.5, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-01-14', 986.9, 8.7, 2.4, 6.9, 3.3, 5.4, null, 1);
+VALUES('2009-01-14', 986.9, 8.7, 2.4, -6.9, -3.3, -5.4, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-01-15', 991.1, 8.5, null, 1.1, 3.5, 5.4, 1.6, 1.7);
+VALUES('2009-01-15', 991.1, 8.5, null, -1.1, -3.5, -5.4, 1.6, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-01-16', 996.1, 8.3, null, 5.9, 2.8, 2.8, 6.2, 1);
+VALUES('2009-01-16', 996.1, 8.3, null, -5.9, 2.8, -2.8, 6.2, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-01-17', 994.1, 8.5, 0.2, 11.7, 1.4, 6, 1.8, 0.7);
+VALUES('2009-01-17', 994.1, 8.5, 0.2, -11.7, -1.4, -6, 1.8, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-01-18', 983.1, 9.5, null, 4.6, 2.9, 3.5, null, 2.7);
+VALUES('2009-01-18', 983.1, 9.5, null, -4.6, -2.9, -3.5, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-01-19', 977.2, 9.1, null, 5.4, 1.7, 0.8, 3.8, 2.7);
+VALUES('2009-01-19', 977.2, 9.1, null, -5.4, 1.7, -0.8, 3.8, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2009-01-20', 972.1, 9.3, 0.8, 1, 4, 2.1, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -7369,23 +7369,23 @@ VALUES('2009-01-23', 960.7, 9.2, 5.2, 0.2, 2.6, 1.6, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2009-01-24', 961.2, 8.3, null, 1, 6, 2.4, 1.7, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-01-25', 972.5, 9.1, null, 1.9, 3.5, 0.4, 1.3, 1.7);
+VALUES('2009-01-25', 972.5, 9.1, null, -1.9, 3.5, 0.4, 1.3, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-01-26', 975.1, 9.0, null, 1.6, 1.4, 0.5, null, 6);
+VALUES('2009-01-26', 975.1, 9.0, null, -1.6, 1.4, 0.5, null, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2009-01-27', 980.9, 8.5, null, 0.8, 2.4, 1.7, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2009-01-28', 983.8, 7.1, null, 1.1, 3, 1.9, null, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-01-29', 989.8, 7.1, null, 0.2, 1.3, 0.3, null, 6);
+VALUES('2009-01-29', 989.8, 7.1, null, -0.2, 1.3, 0.3, null, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-01-30', 992.9, 6.5, null, 0.6, 0.8, 0.1, null, 4.7);
+VALUES('2009-01-30', 992.9, 6.5, null, -0.6, 0.8, -0.1, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-01-31', 987.7, 7.9, null, 2.2, 1, 1.3, null, 3);
+VALUES('2009-01-31', 987.7, 7.9, null, -2.2, 1, -1.3, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-02-01', 985.1, 8.9, 2, 6.3, 0.1, 1.8, null, 5);
+VALUES('2009-02-01', 985.1, 8.9, 2, -6.3, -0.1, -1.8, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-02-02', 984.8, 7.9, 0.4, 0.6, 3.4, 2.7, null, 7.3);
+VALUES('2009-02-02', 984.8, 7.9, 0.4, -0.6, 3.4, 2.7, null, 7.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2009-02-03', 975.8, 9.0, 0.2, 2, 3.6, 2.4, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -7399,35 +7399,35 @@ VALUES('2009-02-07', 961.3, 8.0, 4.5, 3.8, 12.5, 7.2, 2.8, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2009-02-08', 967.3, 8.7, 1.5, 1.5, 6.4, 2, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-02-09', 980.5, 7.1, null, 1.9, 4, 0.1, 5.8, 2.3);
+VALUES('2009-02-09', 980.5, 7.1, null, -1.9, 4, -0.1, 5.8, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-02-10', 970.6, 8.8, 16.2, 4, 0.8, 0.2, 0.4, 4);
+VALUES('2009-02-10', 970.6, 8.8, 16.2, -4, 0.8, -0.2, 0.4, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-02-11', 97.4, 8.0, 0.1, 0.2, 2.3, 1, null, 5.7);
+VALUES('2009-02-11', 97.4, 8.0, 0.1, -0.2, 2.3, 1, null, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-02-12', 980.9, 6.9, null, 4.6, 1.2, 2, 7.8, 4);
+VALUES('2009-02-12', 980.9, 6.9, null, -4.6, 1.2, -2, 7.8, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-02-13', 982.6, 6.6, null, 5, 0.3, 1.8, null, 6.7);
+VALUES('2009-02-13', 982.6, 6.6, null, -5, -0.3, -1.8, null, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-02-14', 986.5, 7.0, null, 4.2, 0.4, 1.9, 1.4, 6.3);
+VALUES('2009-02-14', 986.5, 7.0, null, -4.2, 0.4, -1.9, 1.4, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-02-15', 993.5, 6.7, null, 3.2, 0.4, 2.4, 0.7, 5.7);
+VALUES('2009-02-15', 993.5, 6.7, null, -3.2, -0.4, -2.4, 0.7, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-02-16', 987.8, 9.5, 4, 4.4, 1, 2, null, 3);
+VALUES('2009-02-16', 987.8, 9.5, 4, -4.4, -1, -2, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-02-17', 983.1, 8.3, 1, 5.8, 0.5, 3.6, 0.9, 4.3);
+VALUES('2009-02-17', 983.1, 8.3, 1, -5.8, -0.5, -3.6, 0.9, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-02-18', 991.1, 7.5, null, 10.1, 0.4, 3.7, 1.3, 6.7);
+VALUES('2009-02-18', 991.1, 7.5, null, -10.1, -0.4, -3.7, 1.3, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-02-19', 993.5, 6.9, null, 5.4, 1.9, 3.8, 4.1, 4.3);
+VALUES('2009-02-19', 993.5, 6.9, null, -5.4, -1.9, -3.8, 4.1, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-02-20', 993.1, 9.1, 0.9, 4.5, 0.5, 1.5, null, 2);
+VALUES('2009-02-20', 993.1, 9.1, 0.9, -4.5, -0.5, -1.5, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-02-21', 99.7, 7.8, null, 4.7, 0.3, 2.6, 0.1, 4);
+VALUES('2009-02-21', 99.7, 7.8, null, -4.7, -0.3, -2.6, 0.1, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-02-22', 990.3, 8.5, 4, 5.4, 2.2, 3.7, null, 3);
+VALUES('2009-02-22', 990.3, 8.5, 4, -5.4, -2.2, -3.7, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-02-23', 980.7, 8.7, 1.8, 3.2, 4, 1, null, 3.3);
+VALUES('2009-02-23', 980.7, 8.7, 1.8, -3.2, 4, 1, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2009-02-24', 990.3, 8.4, null, 0.1, 2, 1.2, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -7471,25 +7471,25 @@ VALUES('2009-03-15', 991.7, 8.7, 3.5, 3.3, 6.6, 5.3, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2009-03-16', 999.4, 6.8, null, 3.6, 9.6, 5.6, 5.9, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-03-17', 996.6, 8.0, 6, 0.7, 9.2, 5.2, 0.2, 2.7);
+VALUES('2009-03-17', 996.6, 8.0, 6, -0.7, 9.2, 5.2, 0.2, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2009-03-18', 993.2, 5.6, null, 1.6, 7.8, 4, 8.4, 8.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2009-03-19', 990.6, 7.0, null, 0.4, 6.4, 1.9, 3.2, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-03-20', 997.6, 6.7, null, 1.4, 3.2, 0.7, 1.4, 3.3);
+VALUES('2009-03-20', 997.6, 6.7, null, -1.4, 3.2, 0.7, 1.4, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-03-21', 996.2, 5.8, null, 1.6, 5.8, 1.4, 9, 3.3);
+VALUES('2009-03-21', 996.2, 5.8, null, -1.6, 5.8, 1.4, 9, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-03-22', 986.8, 6.7, null, 3.7, 7.3, 4.1, 2.1, 4.7);
+VALUES('2009-03-22', 986.8, 6.7, null, -3.7, 7.3, 4.1, 2.1, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2009-03-23', 974.8, 6.9, 2.1, 4.7, 10.1, 6.7, 2.2, 1.0);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2009-03-24', 969.8, 7.4, 2.2, 0.7, 7.4, 2.5, 6.2, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-03-25', 976.4, 5.9, 1, 3.5, 5.3, 1, 8.5, 4.7);
+VALUES('2009-03-25', 976.4, 5.9, 1, -3.5, 5.3, 1, 8.5, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-03-26', 978.2, 8.6, 2.1, 0.2, 7.1, 2.8, 0.9, 2.7);
+VALUES('2009-03-26', 978.2, 8.6, 2.1, -0.2, 7.1, 2.8, 0.9, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2009-03-27', 97.6, 7.5, 0.3, 1.5, 1.3, 8, 1.5, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -7903,11 +7903,11 @@ VALUES('2009-10-17', 986.3, 8.4, 0.3, 2.7, 5.8, 4, 0.3, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2009-10-18', 989.4, 8.4, null, 2.5, 7, 3.8, 0.3, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-10-19', 990.5, 7.6, 0.7, 0.7, 7.7, 3.8, 3.8, 3);
+VALUES('2009-10-19', 990.5, 7.6, 0.7, -0.7, 7.7, 3.8, 3.8, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2009-10-20', 985.7, 9.0, 0.1, 3.5, 5.7, 4.8, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-10-21', 983.7, 8.5, null, 0.3, 9.1, 3.9, 0.5, 3.7);
+VALUES('2009-10-21', 983.7, 8.5, null, -0.3, 9.1, 3.9, 0.5, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2009-10-22', 976.8, 8.0, 1.6, 2.9, 16.7, 11.5, 4.1, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -7927,9 +7927,9 @@ VALUES('2009-10-29', 99.2, 8.9, 1.6, 6.3, 10.4, 7.6, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2009-10-30', 1000.4, 7.6, null, 0.8, 7.6, 3.5, 3.9, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-10-31', 999.5, 8.2, null, 1.2, 7, 1.3, 8.8, 2.7);
+VALUES('2009-10-31', 999.5, 8.2, null, -1.2, 7, 1.3, 8.8, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-11-01', 993.8, 9.8, 0.2, 4.4, 0.8, 0.5, null, 2);
+VALUES('2009-11-01', 993.8, 9.8, 0.2, -4.4, 0.8, -0.5, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2009-11-02', 980.3, 7.6, 4.9, 0.5, 5.6, 3.6, 0.2, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -7967,7 +7967,7 @@ VALUES('2009-11-18', 99.3, 8.4, null, 5.7, 1.3, 8.4, 7.5, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2009-11-19', 996.2, 8.0, null, 4.1, 13.2, 7, 7.5, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-11-20', 997.7, 8.9, null, 0.6, 11.1, 4.9, 7.1, 1);
+VALUES('2009-11-20', 997.7, 8.9, null, -0.6, 11.1, 4.9, 7.1, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2009-11-21', 998.6, 10.0, 0.2, 0.2, 5.3, 4.2, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -7993,13 +7993,13 @@ VALUES('2009-12-01', 974.6, 9.2, 4.2, 5.7, 10.8, 7, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2009-12-02', 986.4, 8.4, null, 1.7, 6.6, 3.4, 2, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-12-03', 983.5, 10.0, null, 1.7, 1.9, 0.1, null, 1.7);
+VALUES('2009-12-03', 983.5, 10.0, null, -1.7, 1.9, -0.1, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-12-04', 980.9, 9.3, null, 0.6, 3.8, 3.1, null, 2.3);
+VALUES('2009-12-04', 980.9, 9.3, null, -0.6, 3.8, 3.1, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2009-12-05', 987.2, 8.8, null, 1.5, 4.8, 2.6, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-12-06', 987.1, 9.6, 2.7, 0.7, 2.8, 1.8, null, 1.3);
+VALUES('2009-12-06', 987.1, 9.6, 2.7, -0.7, 2.8, 1.8, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2009-12-07', 987.6, 9.7, 1.2, 1.9, 4, 3.5, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -8013,25 +8013,25 @@ VALUES('2009-12-11', 987.9, 8.4, 0.1, 3.1, 5.2, 3.9, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2009-12-12', 99.1, 7.2, null, 0.3, 3.2, 1.2, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-12-13', 991.1, 6.6, null, 3.3, 0.3, 2.4, null, 4.3);
+VALUES('2009-12-13', 991.1, 6.6, null, -3.3, 0.3, -2.4, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-12-14', 991.1, 7.6, null, 3, 1.3, 2.4, 0.2, 1.3);
+VALUES('2009-12-14', 991.1, 7.6, null, -3, -1.3, -2.4, 0.2, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-12-15', 986.1, 7.1, null, 3.9, 1.1, 1.7, 4.1, 4.7);
+VALUES('2009-12-15', 986.1, 7.1, null, -3.9, 1.1, -1.7, 4.1, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-12-16', 979.4, 8.6, 2.1, 6.9, 2.3, 5.8, null, 2.7);
+VALUES('2009-12-16', 979.4, 8.6, 2.1, -6.9, -2.3, -5.8, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-12-17', 976.8, 7.9, null, 8.8, 5.4, 7, null, 2.3);
+VALUES('2009-12-17', 976.8, 7.9, null, -8.8, -5.4, -7, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-12-18', 97.6, 8.6, null, 9.4, 7, 9.1, null, 4);
+VALUES('2009-12-18', 97.6, 8.6, null, -9.4, -7, -9.1, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-12-19', 974.3, 8.7, 1.7, 11.8, 7.1, 8.7, null, 3.3);
+VALUES('2009-12-19', 974.3, 8.7, 1.7, -11.8, -7.1, -8.7, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-12-20', 977.5, 7.0, null, 16.1, 7.2, 12.5, 3.5, 4);
+VALUES('2009-12-20', 977.5, 7.0, null, -16.1, -7.2, -12.5, 3.5, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-12-21', 98.0, 7.7, null, 15.7, 5.4, 8.2, 5.8, 1.7);
+VALUES('2009-12-21', 98.0, 7.7, null, -15.7, -5.4, -8.2, 5.8, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-12-22', 970.5, 8.3, 1.8, 7.4, 3.1, 1.7, 0.7, 4.7);
+VALUES('2009-12-22', 970.5, 8.3, 1.8, -7.4, 3.1, 1.7, 0.7, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2009-12-23', 968.7, 8.9, 3.3, 0.8, 6.7, 3.9, 0.4, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -8039,113 +8039,113 @@ VALUES('2009-12-24', 969.5, 9.0, 1.2, 0.7, 8.3, 6, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2009-12-25', 96.6, 7.7, 0.7, 6.2, 12.1, 8.7, 0.2, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-12-26', 981.5, 6.3, null, 1, 6.3, 2.5, 6.1, 3.7);
+VALUES('2009-12-26', 981.5, 6.3, null, -1, 6.3, 2.5, 6.1, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-12-27', 978.1, 9.3, null, 3.5, 0.8, 1, 0.2, 1.3);
+VALUES('2009-12-27', 978.1, 9.3, null, -3.5, 0.8, -1, 0.2, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-12-28', 975.9, 7.7, null, 2, 5.4, 1.1, 1.5, 3.3);
+VALUES('2009-12-28', 975.9, 7.7, null, -2, 5.4, 1.1, 1.5, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-12-29', 979.1, 7.8, 7, 4.3, 2.1, null, 5.8, 2.7);
+VALUES('2009-12-29', 979.1, 7.8, 7, -4.3, 2.1, null, 5.8, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2009-12-30', 969.5, 10.0, 5.2, 0.4, 1.8, 1.5, null, 1);
+VALUES('2009-12-30', 969.5, 10.0, 5.2, -0.4, 1.8, 1.5, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2009-12-31', 966.8, 10.0, 3.7, 0.7, 4.4, 2.5, 0.8, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2010-01-01', 963.9, 10.0, 0.4, 1.9, 3.9, 2.5, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-02', 978.8, 8.2, 0.1, 1.2, 2.3, 0.6, null, 6);
+VALUES('2010-01-02', 978.8, 8.2, 0.1, -1.2, 2.3, -0.6, null, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-03', 988.4, 7.3, null, 4.1, 1.1, 3, 0.8, 3.7);
+VALUES('2010-01-03', 988.4, 7.3, null, -4.1, -1.1, -3, 0.8, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-04', 98.7, 8.3, null, 5, 2.7, 3.5, null, 3);
+VALUES('2010-01-04', 98.7, 8.3, null, -5, -2.7, -3.5, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-05', 98.0, 8.6, 4.1, 4, 2.6, 3.1, null, 3.3);
+VALUES('2010-01-05', 98.0, 8.6, 4.1, -4, -2.6, -3.1, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-06', 972.1, 9.5, 2.4, 3, 0.4, 1.2, null, 2);
+VALUES('2010-01-06', 972.1, 9.5, 2.4, -3, 0.4, -1.2, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-07', 981.9, 8.1, 0.6, 6.8, 0.3, 4, 0.6, 1.7);
+VALUES('2010-01-07', 981.9, 8.1, 0.6, -6.8, 0.3, -4, 0.6, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-08', 982.3, 9.2, 15.6, 8, 1.3, 2.4, null, 8.7);
+VALUES('2010-01-08', 982.3, 9.2, 15.6, -8, -1.3, -2.4, null, 8.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-09', 97.5, 9.1, 7.3, 1.4, 1.4, 0.7, null, 1.3);
+VALUES('2010-01-09', 97.5, 9.1, 7.3, -1.4, 1.4, 0.7, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-10', 978.3, 9.5, 0.5, 0.4, 2.1, 0.3, null, 3);
+VALUES('2010-01-10', 978.3, 9.5, 0.5, -0.4, 2.1, 0.3, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-11', 985.6, 8.8, null, 5.7, 0.1, 3.3, 1.2, 1.7);
+VALUES('2010-01-11', 985.6, 8.8, null, -5.7, -0.1, -3.3, 1.2, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-12', 987.6, 8.7, null, 7.2, 2.1, 3.4, null, 2);
+VALUES('2010-01-12', 987.6, 8.7, null, -7.2, -2.1, -3.4, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-13', 98.4, 8.9, null, 3.3, 1.3, 2, null, 4.3);
+VALUES('2010-01-13', 98.4, 8.9, null, -3.3, -1.3, -2, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-14', 985.7, 8.8, null, 2.1, 0.5, 1.1, null, 2.7);
+VALUES('2010-01-14', 985.7, 8.8, null, -2.1, -0.5, -1.1, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-15', 99.5, 8.7, null, 2.1, 0.5, 1.5, null, 4.3);
+VALUES('2010-01-15', 99.5, 8.7, null, -2.1, -0.5, -1.5, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-16', 997.4, 8.4, null, 3.9, 0.6, 2.5, 3.6, 4.7);
+VALUES('2010-01-16', 997.4, 8.4, null, -3.9, -0.6, -2.5, 3.6, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-17', 99.1, 9.3, 6.6, 3.9, 0.8, 1.6, null, 5.3);
+VALUES('2010-01-17', 99.1, 9.3, 6.6, -3.9, -0.8, -1.6, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-18', 99.4, 9.9, 4.2, 1.8, 0.6, 0.9, null, 0.3);
+VALUES('2010-01-18', 99.4, 9.9, 4.2, -1.8, 0.6, -0.9, null, 0.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-19', 992.1, 10.0, 0.1, 1.8, 0.8, 0.6, null, 1.3);
+VALUES('2010-01-19', 992.1, 10.0, 0.1, -1.8, 0.8, -0.6, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-20', 988.2, 8.5, null, 5.9, null, 4, 3.4, 3);
+VALUES('2010-01-20', 988.2, 8.5, null, -5.9, null, -4, 3.4, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-21', 993.7, 7.9, null, 9, 5.8, 7.7, null, 3.7);
+VALUES('2010-01-21', 993.7, 7.9, null, -9, -5.8, -7.7, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-22', 998.1, 7.4, null, 9.5, 4.8, 7.4, 4.5, 3.7);
+VALUES('2010-01-22', 998.1, 7.4, null, -9.5, -4.8, -7.4, 4.5, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-23', 99.9, 8.2, null, 14.5, 8.7, 11.4, 4.3, 3.3);
+VALUES('2010-01-23', 99.9, 8.2, null, -14.5, -8.7, -11.4, 4.3, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-24', 1000.8, 8.3, null, 14.3, 6.7, 11.4, null, 4.3);
+VALUES('2010-01-24', 1000.8, 8.3, null, -14.3, -6.7, -11.4, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-25', 1002.9, 8.1, 1.1, 13.9, 5.2, 7.3, null, 5.3);
+VALUES('2010-01-25', 1002.9, 8.1, 1.1, -13.9, -5.2, -7.3, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-26', 1004.5, 7.6, 0.1, 13.1, 0.8, 8.5, 5, 2.7);
+VALUES('2010-01-26', 1004.5, 7.6, 0.1, -13.1, 0.8, -8.5, 5, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-27', 995.3, 7.7, 2.2, 17.8, 12.1, 14.5, 7, 1.3);
+VALUES('2010-01-27', 995.3, 7.7, 2.2, -17.8, -12.1, -14.5, 7, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-28', 970.3, 8.1, 2.4, 14.1, 1, 2.4, 1.1, 4.3);
+VALUES('2010-01-28', 970.3, 8.1, 2.4, -14.1, 1, -2.4, 1.1, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-29', 963.5, 8.4, null, 4.9, 0.9, 1.1, 0.5, 3.3);
+VALUES('2010-01-29', 963.5, 8.4, null, -4.9, 0.9, -1.1, 0.5, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-30', 962.7, 7.4, null, 4.9, 1.8, 2.2, 0.9, 2.7);
+VALUES('2010-01-30', 962.7, 7.4, null, -4.9, 1.8, -2.2, 0.9, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-01-31', 974.3, 7.9, null, 9.2, 1.9, 4.9, 2.1, 2.7);
+VALUES('2010-01-31', 974.3, 7.9, null, -9.2, -1.9, -4.9, 2.1, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-02-01', 980.6, 8.2, null, 11.2, 0.5, 5.1, 3, 1.3);
+VALUES('2010-02-01', 980.6, 8.2, null, -11.2, -0.5, -5.1, 3, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-02-02', 985.1, 7.8, 1.1, 8.2, 0.1, 5.1, 2.4, 1.3);
+VALUES('2010-02-02', 985.1, 7.8, 1.1, -8.2, 0.1, -5.1, 2.4, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-02-03', 980.8, 9.0, 0.4, 9.3, 0.7, 3.1, 0.4, 2);
+VALUES('2010-02-03', 980.8, 9.0, 0.4, -9.3, 0.7, -3.1, 0.4, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-02-04', 991.9, 8.9, null, 14.8, 1.4, 5, null, 2.7);
+VALUES('2010-02-04', 991.9, 8.9, null, -14.8, -1.4, -5, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-02-05', 985.9, 7.6, null, 2.7, 2, 1, null, 6.7);
+VALUES('2010-02-05', 985.9, 7.6, null, -2.7, 2, 1, null, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-02-06', 983.8, 7.0, null, 4.3, 5.2, 0.6, null, 3.3);
+VALUES('2010-02-06', 983.8, 7.0, null, -4.3, 5.2, -0.6, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-02-07', 988.1, 7.0, null, 6.3, 3.3, 5.1, 3.5, 3.7);
+VALUES('2010-02-07', 988.1, 7.0, null, -6.3, -3.3, -5.1, 3.5, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-02-08', 982.9, 7.3, null, 7.2, 2.4, 6, 2.9, 1.7);
+VALUES('2010-02-08', 982.9, 7.3, null, -7.2, -2.4, -6, 2.9, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-02-09', 977.9, 8.1, null, 7.2, 3.6, 4.9, null, 4.7);
+VALUES('2010-02-09', 977.9, 8.1, null, -7.2, -3.6, -4.9, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-02-10', 975.6, 8.4, null, 4, 0.1, 1.2, null, 2.3);
+VALUES('2010-02-10', 975.6, 8.4, null, -4, -0.1, -1.2, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-02-11', 973.2, 7.9, null, 4.7, 0.1, 3.6, null, 5.3);
+VALUES('2010-02-11', 973.2, 7.9, null, -4.7, -0.1, -3.6, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-02-12', 979.4, 7.9, 0.2, 4.5, 1.3, 2.8, null, 4);
+VALUES('2010-02-12', 979.4, 7.9, 0.2, -4.5, -1.3, -2.8, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-02-13', 981.3, 8.0, null, 3.1, 0.1, 1.4, null, 5.3);
+VALUES('2010-02-13', 981.3, 8.0, null, -3.1, -0.1, -1.4, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-02-14', 982.8, 7.5, null, 3.2, 0.4, 2.1, null, 3);
+VALUES('2010-02-14', 982.8, 7.5, null, -3.2, -0.4, -2.1, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-02-15', 979.9, 7.9, null, 3.3, 0.2, 2.4, null, 2.3);
+VALUES('2010-02-15', 979.9, 7.9, null, -3.3, 0.2, -2.4, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-02-16', 978.6, 8.6, null, 3.2, 1.1, 2, null, 2.7);
+VALUES('2010-02-16', 978.6, 8.6, null, -3.2, -1.1, -2, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-02-17', 972.5, 8.4, null, 3.2, 2.6, 1.1, null, 5.3);
+VALUES('2010-02-17', 972.5, 8.4, null, -3.2, 2.6, 1.1, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2010-02-18', 972.7, 10.0, 0.1, 0.5, 2.1, 0.9, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -8153,15 +8153,15 @@ VALUES('2010-02-19', 967.1, 9.8, 6.2, 0.4, 3.9, 2.7, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2010-02-20', 968.8, 8.6, 0.8, 0.8, 4, 1.7, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-02-21', 975.6, 8.1, null, 4.9, 3.7, 0.4, 6.6, 2.3);
+VALUES('2010-02-21', 975.6, 8.1, null, -4.9, 3.7, 0.4, 6.6, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-02-22', 972.8, 8.1, null, 3.8, 4, 1.6, 4.8, 3.3);
+VALUES('2010-02-22', 972.8, 8.1, null, -3.8, 4, 1.6, 4.8, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-02-23', 971.3, 8.6, null, 0.8, 6.7, 3.1, 4.3, 0.7);
+VALUES('2010-02-23', 971.3, 8.6, null, -0.8, 6.7, 3.1, 4.3, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-02-24', 974.7, 9.1, null, 2.1, 6.7, 2.2, 2.4, 0.7);
+VALUES('2010-02-24', 974.7, 9.1, null, -2.1, 6.7, 2.2, 2.4, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-02-25', 976.2, 8.6, null, 1.7, 10.1, 4.6, 7.3, 2);
+VALUES('2010-02-25', 976.2, 8.6, null, -1.7, 10.1, 4.6, 7.3, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2010-02-26', 969.7, 9.6, 4.4, 3.1, 7.1, 4.4, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -8171,39 +8171,39 @@ VALUES('2010-02-28', 970.7, 7.3, 7.8, 1.8, 11.1, 6.3, 4.6, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2010-03-01', 979.2, 5.7, null, 3, 10.8, 5.8, 9.7, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-03-02', 988.9, 7.0, null, 1.7, 8.4, 3.7, 6.9, 3);
+VALUES('2010-03-02', 988.9, 7.0, null, -1.7, 8.4, 3.7, 6.9, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-03-03', 99.1, 6.2, null, 2.1, 7.1, 1, 8.5, 3);
+VALUES('2010-03-03', 99.1, 6.2, null, -2.1, 7.1, 1, 8.5, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-03-04', 98.4, 7.0, null, 4.5, 3.9, 0.4, null, 3.3);
+VALUES('2010-03-04', 98.4, 7.0, null, -4.5, 3.9, 0.4, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-03-05', 988.3, 6.6, null, 4.3, 0.7, 3.3, 4.9, 5.7);
+VALUES('2010-03-05', 988.3, 6.6, null, -4.3, 0.7, -3.3, 4.9, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-03-06', 988.4, 6.5, null, 8.9, 0.7, 4.4, 3.5, 3.3);
+VALUES('2010-03-06', 988.4, 6.5, null, -8.9, -0.7, -4.4, 3.5, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-03-07', 998.2, 6.2, null, 6.4, 0.3, 4.1, 5.9, 2);
+VALUES('2010-03-07', 998.2, 6.2, null, -6.4, 0.3, -4.1, 5.9, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-03-08', 994.1, 5.8, null, 7.6, 0.4, 3.1, 8.2, 4.7);
+VALUES('2010-03-08', 994.1, 5.8, null, -7.6, 0.4, -3.1, 8.2, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-03-09', 994.9, 4.8, null, 6.4, 1, 3.1, 10.1, 6.3);
+VALUES('2010-03-09', 994.9, 4.8, null, -6.4, 1, -3.1, 10.1, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-03-10', 993.2, 4.6, 1.3, 6, 3.4, 0.9, 3.9, 6.3);
+VALUES('2010-03-10', 993.2, 4.6, 1.3, -6, 3.4, -0.9, 3.9, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-03-11', 983.6, 9.2, 3, 3.7, 0.2, 1.6, null, 3.7);
+VALUES('2010-03-11', 983.6, 9.2, 3, -3.7, -0.2, -1.6, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-03-12', 98.4, 7.8, null, 2.3, 2.5, 0.7, 1.4, 3.3);
+VALUES('2010-03-12', 98.4, 7.8, null, -2.3, 2.5, 0.7, 1.4, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2010-03-13', 986.4, 7.4, null, 1, 5.2, 3.1, 0.2, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2010-03-14', 984.8, 6.7, 1.4, 2, 6.4, 4.6, 0.6, 8.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-03-15', 987.8, 6.6, 1.8, 0.9, 4.3, 0.8, 6.7, 5);
+VALUES('2010-03-15', 987.8, 6.6, 1.8, -0.9, 4.3, 0.8, 6.7, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-03-16', 990.6, 7.5, null, 0.2, 4.7, 1.6, 1.7, 3.7);
+VALUES('2010-03-16', 990.6, 7.5, null, -0.2, 4.7, 1.6, 1.7, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-03-17', 997.2, 6.9, null, 0.8, 8.1, 4.6, 0.1, 3.3);
+VALUES('2010-03-17', 997.2, 6.9, null, -0.8, 8.1, 4.6, 0.1, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-03-18', 996.5, 6.4, null, 0.6, 14.3, 6.3, 10.4, 2.7);
+VALUES('2010-03-18', 996.5, 6.4, null, -0.6, 14.3, 6.3, 10.4, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2010-03-19', 993.2, 6.4, null, 0.8, 14.8, 8.7, 4.8, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -8231,11 +8231,11 @@ VALUES('2010-03-30', 971.8, 6.1, null, 5.9, 21.3, 13.7, 8, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2010-03-31', 974.9, 8.1, 3, 3.6, 13.9, 5.5, 0.2, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-04-01', 98.3, 7.7, 5.4, 1.2, 14.8, 7.2, 10.4, 2.7);
+VALUES('2010-04-01', 98.3, 7.7, 5.4, -1.2, 14.8, 7.2, 10.4, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2010-04-02', 988.1, 7.3, null, 3, 9.8, 5.7, 4.6, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-04-03', 987.9, 6.2, null, 1, 14.5, 8.3, 11.7, 2.3);
+VALUES('2010-04-03', 987.9, 6.2, null, -1, 14.5, 8.3, 11.7, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2010-04-04', 98.5, 5.9, 1.9, 4.9, 17.4, 1.1, 11.2, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -8623,7 +8623,7 @@ VALUES('2010-10-12', 98.7, 7.7, null, 1.4, 16.9, 7.4, 9.8, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2010-10-13', 987.2, 7.9, null, 3.1, 11.1, 6.2, 7.8, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-10-14', 983.6, 8.1, null, 0.4, 12.6, 6, 7.7, 1.3);
+VALUES('2010-10-14', 983.6, 8.1, null, -0.4, 12.6, 6, 7.7, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2010-10-15', 982.4, 8.6, null, 3.7, 10.4, 7.9, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -8639,7 +8639,7 @@ VALUES('2010-10-20', 977.9, 8.3, null, 2.3, 10.6, 6.3, 1.6, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2010-10-21', 992.8, 7.1, null, 1, 8.6, 2.9, 3.6, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-10-22', 993.1, 7.6, null, 3.2, 8.8, 3.6, 8.3, 2.3);
+VALUES('2010-10-22', 993.1, 7.6, null, -3.2, 8.8, 3.6, 8.3, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2010-10-23', 986.8, 8.4, null, null, 9.8, 5.2, 1.7, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -8649,11 +8649,11 @@ VALUES('2010-10-25', 98.8, 8.9, 1.2, 4.2, 7.1, 5.4, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2010-10-26', 995.9, 7.0, null, 2.5, 8.4, 4.1, 1.6, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-10-27', 998.6, 7.8, null, 1.8, 8.7, 1.6, 9.4, 0.7);
+VALUES('2010-10-27', 998.6, 7.8, null, -1.8, 8.7, 1.6, 9.4, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-10-28', 995.2, 8.4, null, 2.7, 7.5, 2.1, 5.4, 1);
+VALUES('2010-10-28', 995.2, 8.4, null, -2.7, 7.5, 2.1, 5.4, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-10-29', 990.9, 7.7, null, 1.3, 11.3, 4.7, 8.7, 2.7);
+VALUES('2010-10-29', 990.9, 7.7, null, -1.3, 11.3, 4.7, 8.7, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2010-10-30', 984.3, 7.4, null, 2.2, 10.3, 6.3, 8, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -8707,59 +8707,59 @@ VALUES('2010-11-23', 969.6, 7.5, null, 2.8, 7.7, 4.2, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2010-11-24', 973.1, 7.8, 0.1, 0.3, 4.8, 2.3, 0.1, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-11-25', 976.5, 9.1, null, 0.9, 3.9, 0.8, 0.4, 2.3);
+VALUES('2010-11-25', 976.5, 9.1, null, -0.9, 3.9, 0.8, 0.4, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-11-26', 972.3, 9.1, 2.5, 2, 3.2, 0.6, null, 3);
+VALUES('2010-11-26', 972.3, 9.1, 2.5, -2, 3.2, 0.6, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-11-27', 976.8, 8.5, null, 4.6, 1.1, 1.6, 3.7, 4.3);
+VALUES('2010-11-27', 976.8, 8.5, null, -4.6, 1.1, -1.6, 3.7, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-11-28', 978.3, 9.2, 3.3, 5.9, 1.4, 0.1, null, 4.3);
+VALUES('2010-11-28', 978.3, 9.2, 3.3, -5.9, 1.4, -0.1, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-11-29', 970.5, 8.4, 1.3, 2.5, 1.3, 0.9, null, 3.7);
+VALUES('2010-11-29', 970.5, 8.4, 1.3, -2.5, 1.3, -0.9, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-11-30', 985.1, 8.4, null, 7.7, 2, 5.9, 0.9, 4.3);
+VALUES('2010-11-30', 985.1, 8.4, null, -7.7, -2, -5.9, 0.9, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-12-01', 974.4, 8.7, 7.7, 8.7, 6.2, 7.3, null, 10.7);
+VALUES('2010-12-01', 974.4, 8.7, 7.7, -8.7, -6.2, -7.3, null, 10.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-12-02', 979.5, 9.0, null, 10.7, 1.7, 6.6, 4.7, 1.3);
+VALUES('2010-12-02', 979.5, 9.0, null, -10.7, -1.7, -6.6, 4.7, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-12-03', 980.2, 8.9, 5.3, 7.9, 1.8, 3.7, null, 2.7);
+VALUES('2010-12-03', 980.2, 8.9, 5.3, -7.9, -1.8, -3.7, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-12-04', 99.2, 8.8, null, 18.3, 3.7, 1.1, 7, 1.7);
+VALUES('2010-12-04', 99.2, 8.8, null, -18.3, -3.7, -1.1, 7, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-12-05', 985.5, 9.2, 0.2, 12.4, 5, 7.3, null, 2);
+VALUES('2010-12-05', 985.5, 9.2, 0.2, -12.4, -5, -7.3, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-12-06', 975.1, 9.2, 1, 5, 1, 0.1, null, 2.7);
+VALUES('2010-12-06', 975.1, 9.2, 1, -5, 1, -0.1, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2010-12-07', 974.5, 9.7, 1.7, 0.5, 1.9, 1.3, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2010-12-08', 975.1, 10.0, 0.2, 0.9, 3.3, 2.3, null, 0.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-12-09', 98.2, 7.6, null, 1.6, 2.9, null, 0.2, 9);
+VALUES('2010-12-09', 98.2, 7.6, null, -1.6, 2.9, null, 0.2, 9);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-12-10', 991.1, 7.2, 0.3, 3.5, 0.2, 2.4, 2.4, 5.7);
+VALUES('2010-12-10', 991.1, 7.2, 0.3, -3.5, 0.2, -2.4, 2.4, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-12-11', 981.6, 9.2, 3.4, 6.4, 4, 0.9, null, 4.3);
+VALUES('2010-12-11', 981.6, 9.2, 3.4, -6.4, 4, 0.9, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2010-12-12', 975.4, 8.2, 3.4, 0.7, 3.8, 2.1, 0.4, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-12-13', 984.9, 7.6, null, 7.1, 1.7, 4.7, 1.4, 4.3);
+VALUES('2010-12-13', 984.9, 7.6, null, -7.1, 1.7, -4.7, 1.4, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-12-14', 986.5, 8.1, null, 8.1, 2.9, 3.7, null, 4.7);
+VALUES('2010-12-14', 986.5, 8.1, null, -8.1, -2.9, -3.7, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-12-15', 987.3, 8.3, null, 8.5, 2.1, 5.4, 0.1, 2.7);
+VALUES('2010-12-15', 987.3, 8.3, null, -8.5, -2.1, -5.4, 0.1, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-12-16', 984.1, 8.6, null, 11.1, 7.2, 9.4, 3.5, 2);
+VALUES('2010-12-16', 984.1, 8.6, null, -11.1, -7.2, -9.4, 3.5, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-12-17', 970.7, 8.7, 1.5, 11.5, 7, 8.2, 0.3, 4);
+VALUES('2010-12-17', 970.7, 8.7, 1.5, -11.5, -7, -8.2, 0.3, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-12-18', 97.4, 8.9, 0.2, 10.5, 6.1, 8.6, 0.3, 1);
+VALUES('2010-12-18', 97.4, 8.9, 0.2, -10.5, -6.1, -8.6, 0.3, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-12-19', 976.1, 8.7, null, 14.3, 5.7, 8, 1.7, 2.7);
+VALUES('2010-12-19', 976.1, 8.7, null, -14.3, -5.7, -8, 1.7, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-12-20', 975.8, 8.6, null, 5.7, 0.1, 1.4, null, 1.3);
+VALUES('2010-12-20', 975.8, 8.6, null, -5.7, -0.1, -1.4, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-12-21', 980.7, 9.4, null, 5.1, 1.3, 0.4, 1.8, 1.3);
+VALUES('2010-12-21', 980.7, 9.4, null, -5.1, 1.3, -0.4, 1.8, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2010-12-22', 977.8, 9.6, null, 0.3, 3.2, 1.6, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -8767,33 +8767,33 @@ VALUES('2010-12-23', 972.5, 9.3, null, 1.1, 7.4, 5.3, 0.2, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2010-12-24', 966.9, 9.1, 0.1, 3, 9.5, 5.8, 0.3, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-12-25', 979.5, 7.8, 0.4, 2.6, 3.1, 1.3, null, 6.7);
+VALUES('2010-12-25', 979.5, 7.8, 0.4, -2.6, 3.1, -1.3, null, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-12-26', 992.8, 7.1, null, 8, 2.6, 6.7, 0.3, 4.3);
+VALUES('2010-12-26', 992.8, 7.1, null, -8, -2.6, -6.7, 0.3, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-12-27', 993.6, 8.1, 0.1, 8, 3.4, 4.9, 1.1, 1);
+VALUES('2010-12-27', 993.6, 8.1, 0.1, -8, -3.4, -4.9, 1.1, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-12-28', 991.7, 8.2, 0.6, 7.7, 1.6, 5.5, 0.5, 3);
+VALUES('2010-12-28', 991.7, 8.2, 0.6, -7.7, -1.6, -5.5, 0.5, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-12-29', 996.4, 8.2, null, 8.3, 5.5, 7.2, null, 1.7);
+VALUES('2010-12-29', 996.4, 8.2, null, -8.3, -5.5, -7.2, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-12-30', 99.6, 8.6, null, 12.9, 7.9, 11.2, 4.6, 1);
+VALUES('2010-12-30', 99.6, 8.6, null, -12.9, -7.9, -11.2, 4.6, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2010-12-31', 99.3, 9.5, null, 13.3, 4.5, 5.8, null, 0.3);
+VALUES('2010-12-31', 99.3, 9.5, null, -13.3, -4.5, -5.8, null, 0.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-01-01', 986.4, 8.4, null, 4.8, 1.3, 0.1, 0.3, 3.3);
+VALUES('2011-01-01', 986.4, 8.4, null, -4.8, 1.3, -0.1, 0.3, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-01-02', 987.2, 8.2, null, 5.2, 2.1, 1.3, 2, 1.7);
+VALUES('2011-01-02', 987.2, 8.2, null, -5.2, 2.1, -1.3, 2, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-01-03', 991.1, 8.4, null, 3.8, 1.4, 2.5, 3.5, 2.3);
+VALUES('2011-01-03', 991.1, 8.4, null, -3.8, 1.4, -2.5, 3.5, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-01-04', 991.8, 9.3, null, 10.7, 3.2, 5.8, 0.8, 2);
+VALUES('2011-01-04', 991.8, 9.3, null, -10.7, -3.2, -5.8, 0.8, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-01-05', 990.5, 8.2, null, 5, 4.2, 4.9, null, 5.7);
+VALUES('2011-01-05', 990.5, 8.2, null, -5, -4.2, -4.9, null, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-01-06', 985.1, 8.7, 0.1, 5.1, 1, 2.3, null, 4.3);
+VALUES('2011-01-06', 985.1, 8.7, 0.1, -5.1, -1, -2.3, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-01-07', 987.4, 9.1, null, 1.5, 2.9, 1.2, 1.6, 1);
+VALUES('2011-01-07', 987.4, 9.1, null, -1.5, 2.9, 1.2, 1.6, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-01-08', 987.4, 9.8, 3.5, 1.2, 3.6, 2, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -8813,115 +8813,115 @@ VALUES('2011-01-15', 992.3, 8.1, 0.1, 3.2, 10.1, 5.5, 0.1, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-01-16', 997.9, 9.1, null, 1.6, 8.5, 3.6, 3, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-01-17', 996.8, 10.0, null, 2.3, 1.9, 0.8, null, 1);
+VALUES('2011-01-17', 996.8, 10.0, null, -2.3, 1.9, -0.8, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-01-18', 995.4, 10.0, 1.8, 1.5, 2.2, 0.2, 1.6, 0.7);
+VALUES('2011-01-18', 995.4, 10.0, 1.8, -1.5, 2.2, 0.2, 1.6, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-01-19', 992.4, 9.5, null, 0.1, 3.2, 1.8, null, 2);
+VALUES('2011-01-19', 992.4, 9.5, null, -0.1, 3.2, 1.8, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-01-20', 993.7, 7.7, null, 0.4, 3.5, 0.7, 5.5, 3.7);
+VALUES('2011-01-20', 993.7, 7.7, null, -0.4, 3.5, 0.7, 5.5, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-01-21', 998.8, 6.7, null, 2.2, 0.8, 0.5, 1.5, 5);
+VALUES('2011-01-21', 998.8, 6.7, null, -2.2, 0.8, -0.5, 1.5, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-01-22', 998.1, 6.5, null, 3.2, 0.6, 2, null, 5);
+VALUES('2011-01-22', 998.1, 6.5, null, -3.2, -0.6, -2, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-01-23', 990.8, 8.2, 0.2, 5.5, 0.5, 1.6, 0.2, 2.7);
+VALUES('2011-01-23', 990.8, 8.2, 0.2, -5.5, 0.5, -1.6, 0.2, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-01-24', 990.6, 7.0, 0.1, 7.5, 0.5, 2.8, 4.2, 1.7);
+VALUES('2011-01-24', 990.6, 7.0, 0.1, -7.5, -0.5, -2.8, 4.2, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-01-25', 981.5, 9.6, 2.6, 4.2, null, 1.5, null, 1.3);
+VALUES('2011-01-25', 981.5, 9.6, 2.6, -4.2, null, -1.5, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-01-26', 978.4, 9.5, 1.2, 1.1, 1.9, 0.4, 1.6, 1.7);
+VALUES('2011-01-26', 978.4, 9.5, 1.2, -1.1, 1.9, 0.4, 1.6, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-01-27', 988.4, 9.4, 0.3, 3.2, 0.2, 2, null, null);
+VALUES('2011-01-27', 988.4, 9.4, 0.3, -3.2, 0.2, -2, null, null);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-01-28', 996.3, 9.5, null, 8.9, 2.8, 5.6, 6.2, 1.7);
+VALUES('2011-01-28', 996.3, 9.5, null, -8.9, -2.8, -5.6, 6.2, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-01-29', 994.4, 9.5, null, 9.2, 4.1, 7.6, 5.9, 3);
+VALUES('2011-01-29', 994.4, 9.5, null, -9.2, -4.1, -7.6, 5.9, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-01-30', 992.2, 9.0, null, 11.9, 3.6, 6.7, null, 2);
+VALUES('2011-01-30', 992.2, 9.0, null, -11.9, -3.6, -6.7, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-01-31', 996.1, 9.1, null, 9.8, 6.8, 7.8, null, 1);
+VALUES('2011-01-31', 996.1, 9.1, null, -9.8, -6.8, -7.8, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-02-01', 996.9, 8.8, null, 7.5, 4.9, 5.5, null, 2);
+VALUES('2011-02-01', 996.9, 8.8, null, -7.5, -4.9, -5.5, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-02-02', 998.4, 8.3, null, 7.6, 1.7, 3.6, 0.4, 3);
+VALUES('2011-02-02', 998.4, 8.3, null, -7.6, -1.7, -3.6, 0.4, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-02-03', 996.9, 9.0, 1.4, 3.7, 0.4, 1.8, 2.9, 1.3);
+VALUES('2011-02-03', 996.9, 9.0, 1.4, -3.7, -0.4, -1.8, 2.9, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-02-04', 995.5, 8.3, null, 1.7, 3.9, 2.2, 0.3, 3.3);
+VALUES('2011-02-04', 995.5, 8.3, null, -1.7, 3.9, 2.2, 0.3, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-02-05', 992.3, 7.7, null, 2.4, 10.2, 4.7, 1.4, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-02-06', 993.7, 7.7, null, 1.9, 11.8, 6.8, 1.8, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-02-07', 992.2, 7.8, null, 1.9, 10.8, 4.3, 9.2, 1.3);
+VALUES('2011-02-07', 992.2, 7.8, null, -1.9, 10.8, 4.3, 9.2, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-02-08', 990.4, 7.7, null, 3.2, 9, 3.3, 4.1, 2);
+VALUES('2011-02-08', 990.4, 7.7, null, -3.2, 9, 3.3, 4.1, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-02-09', 994.3, 7.4, null, 2.9, 8, 1.6, 9.1, 2);
+VALUES('2011-02-09', 994.3, 7.4, null, -2.9, 8, 1.6, 9.1, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-02-10', 992.6, 8.0, 0.3, 4.6, 5.3, 0.8, 7.5, 1.3);
+VALUES('2011-02-10', 992.6, 8.0, 0.3, -4.6, 5.3, 0.8, 7.5, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-02-11', 981.2, 9.2, 0.4, 1, 8.6, 4.6, 0.4, 3.3);
+VALUES('2011-02-11', 981.2, 9.2, 0.4, -1, 8.6, 4.6, 0.4, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-02-12', 989.3, 5.6, null, 2.1, 7, 0.2, 7.9, 4);
+VALUES('2011-02-12', 989.3, 5.6, null, -2.1, 7, 0.2, 7.9, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-02-13', 987.9, 6.7, null, 3.5, 1.7, 0.6, 0.7, 3.3);
+VALUES('2011-02-13', 987.9, 6.7, null, -3.5, 1.7, -0.6, 0.7, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-02-14', 985.4, 7.5, null, 0.9, 0.8, 0.5, null, 4);
+VALUES('2011-02-14', 985.4, 7.5, null, -0.9, 0.8, -0.5, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-02-15', 980.6, 5.6, null, 2.6, 0.2, 0.8, null, 5);
+VALUES('2011-02-15', 980.6, 5.6, null, -2.6, 0.2, -0.8, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-02-16', 978.2, 9.1, null, 2.3, 0.3, 0.6, null, 4.3);
+VALUES('2011-02-16', 978.2, 9.1, null, -2.3, 0.3, -0.6, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-02-17', 977.6, 8.2, null, null, 2.6, 1.4, null, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-02-18', 983.1, 9.1, 0.2, 0.6, 3.5, 2.4, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-02-19', 986.3, 8.6, 0.7, 1, 2.9, 0.3, null, 4.7);
+VALUES('2011-02-19', 986.3, 8.6, 0.7, -1, 2.9, 0.3, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-02-20', 988.8, 7.6, null, 7.4, 1, 5.2, null, 5);
+VALUES('2011-02-20', 988.8, 7.6, null, -7.4, -1, -5.2, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-02-21', 989.7, 6.6, null, 9.6, 3.3, 7.6, 7.1, 4);
+VALUES('2011-02-21', 989.7, 6.6, null, -9.6, -3.3, -7.6, 7.1, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-02-22', 988.4, 6.3, null, 10.1, 2.6, 7.3, 8.3, 4.3);
+VALUES('2011-02-22', 988.4, 6.3, null, -10.1, -2.6, -7.3, 8.3, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-02-23', 996.2, 6.6, null, 10.6, 2.7, 8, 4.9, 3.7);
+VALUES('2011-02-23', 996.2, 6.6, null, -10.6, -2.7, -8, 4.9, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-02-24', 999.5, 6.5, null, 12.7, 0.8, 6.2, 9.4, 3);
+VALUES('2011-02-24', 999.5, 6.5, null, -12.7, -0.8, -6.2, 9.4, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-02-25', 1000.5, 6.6, null, 10.5, 0.7, 4.5, 9.3, 5.3);
+VALUES('2011-02-25', 1000.5, 6.6, null, -10.5, 0.7, -4.5, 9.3, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-02-26', 993.7, 6.8, null, 7.9, 3, 2.2, 6.2, 2.3);
+VALUES('2011-02-26', 993.7, 6.8, null, -7.9, 3, -2.2, 6.2, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-02-27', 988.3, 7.4, null, 4.5, 6.2, 0.4, 7.2, 2.7);
+VALUES('2011-02-27', 988.3, 7.4, null, -4.5, 6.2, -0.4, 7.2, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-02-28', 995.2, 7.3, null, 6.3, 1.0, 0.1, 9.4, 3.3);
+VALUES('2011-02-28', 995.2, 7.3, null, -6.3, 1.0, -0.1, 9.4, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-03-01', 1002.1, 5.5, null, 4.1, 5.7, 1.3, 9.3, 6);
+VALUES('2011-03-01', 1002.1, 5.5, null, -4.1, 5.7, 1.3, 9.3, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-03-02', 1002.9, 5.3, 0.1, 5.1, 5.7, 0.3, 9.8, 7);
+VALUES('2011-03-02', 1002.9, 5.3, 0.1, -5.1, 5.7, -0.3, 9.8, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-03-03', 1002.5, 8.3, null, 2.9, 1.8, 0.8, null, 3);
+VALUES('2011-03-03', 1002.5, 8.3, null, -2.9, 1.8, -0.8, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-03-04', 100.1, 7.2, null, 5.2, 8.1, 1.8, 5.8, 1.3);
+VALUES('2011-03-04', 100.1, 7.2, null, -5.2, 8.1, 1.8, 5.8, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-03-05', 991.7, 6.8, null, 5.8, 8.2, 2.1, 9.6, 1);
+VALUES('2011-03-05', 991.7, 6.8, null, -5.8, 8.2, 2.1, 9.6, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-03-06', 99.4, 4.7, null, 1.4, 5.5, 1.2, 7.4, 5);
+VALUES('2011-03-06', 99.4, 4.7, null, -1.4, 5.5, 1.2, 7.4, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-03-07', 1006.2, 4.6, null, 5, 4.2, 1.4, 10.8, 4.3);
+VALUES('2011-03-07', 1006.2, 4.6, null, -5, 4.2, -1.4, 10.8, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-03-08', 1002.1, 4.8, null, 7.9, 5.4, 0.8, 10.7, 3.7);
+VALUES('2011-03-08', 1002.1, 4.8, null, -7.9, 5.4, -0.8, 10.7, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-03-09', 992.4, 4.7, 2, 6.4, 7.7, 1.7, 9.5, 3.7);
+VALUES('2011-03-09', 992.4, 4.7, 2, -6.4, 7.7, 1.7, 9.5, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-03-10', 988.9, 8.9, 0.4, 0.3, 5.2, 1.9, 0.5, 2);
+VALUES('2011-03-10', 988.9, 8.9, 0.4, -0.3, 5.2, 1.9, 0.5, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-03-11', 988.7, 6.9, null, null, 1.4, 6.6, 2.8, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-03-12', 985.4, 6.3, null, 2.9, 14.5, 7.8, 8.9, 5);
+VALUES('2011-03-12', 985.4, 6.3, null, -2.9, 14.5, 7.8, 8.9, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-03-13', 981.5, 5.4, null, 3.1, 17.2, 11.1, 5.4, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -8937,11 +8937,11 @@ VALUES('2011-03-18', 98.5, 9.5, 18.9, 0.9, 9.1, 2.7, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-03-19', 995.9, 7.3, null, 0.8, 6.6, 4.2, 0.5, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-03-20', 100.2, 6.9, null, 0.3, 7.6, 2.8, 3.8, 4);
+VALUES('2011-03-20', 100.2, 6.9, null, -0.3, 7.6, 2.8, 3.8, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-03-21', 1004.9, 6.7, null, 2.1, 10.7, 4.6, 9.9, 1.3);
+VALUES('2011-03-21', 1004.9, 6.7, null, -2.1, 10.7, 4.6, 9.9, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-03-22', 1004.8, 5.9, null, 1.1, 15.3, 7.4, 1.0, 2.7);
+VALUES('2011-03-22', 1004.8, 5.9, null, -1.1, 15.3, 7.4, 1.0, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-03-23', 1004.3, 6.3, null, 1.5, 15.7, 8.7, 10.5, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -9031,7 +9031,7 @@ VALUES('2011-05-04', 989.4, 6.2, null, 0.5, 11.4, 6.6, 6.7, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-05-05', 996.3, 5.8, null, 1.9, 13.1, 7.2, 9.7, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-05-06', 997.6, 5.7, null, 1.2, 16.7, 10.5, 13.9, 1.3);
+VALUES('2011-05-06', 997.6, 5.7, null, -1.2, 16.7, 10.5, 13.9, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-05-07', 994.2, 4.8, null, 3.3, 21.9, 14.2, 14.2, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -9355,13 +9355,13 @@ VALUES('2011-10-13', 995.7, 7.6, 0.1, 5, 12.5, 7.3, 2.4, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-10-14', 100.3, 6.2, null, 1.4, 9.9, 5.6, 3.3, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-10-15', 1003.2, 6.5, null, 0.4, 11.8, 5.6, 9.1, 2.3);
+VALUES('2011-10-15', 1003.2, 6.5, null, -0.4, 11.8, 5.6, 9.1, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-10-16', 1002.2, 6.0, null, 0.6, 9.8, 4.6, 10.1, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-10-17', 996.6, 5.5, null, 2, 11.6, 5.2, 10.2, 2.7);
+VALUES('2011-10-17', 996.6, 5.5, null, -2, 11.6, 5.2, 10.2, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-10-18', 989.1, 6.4, null, 0.8, 12.4, 6.8, 6.4, 1.7);
+VALUES('2011-10-18', 989.1, 6.4, null, -0.8, 12.4, 6.8, 6.4, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-10-19', 986.2, 6.1, 2.4, 5.5, 13.3, 8.9, 4.1, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -9369,7 +9369,7 @@ VALUES('2011-10-20', 99.4, 7.4, null, 5, 1.0, 6.8, 0.2, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-10-21', 999.1, 7.0, null, 0.8, 10.3, 4.9, 8.6, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-10-22', 997.6, 7.2, null, 2, 10.2, 3.9, 9.3, 2);
+VALUES('2011-10-22', 997.6, 7.2, null, -2, 10.2, 3.9, 9.3, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-10-23', 995.3, 8.3, 0.3, null, 6.9, 4.9, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -9409,91 +9409,91 @@ VALUES('2011-11-09', 99.4, 7.8, null, 2.4, 14.3, 7.1, 7.3, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-11-10', 995.2, 7.2, null, 1.7, 8.1, 4, 3, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-11-11', 1002.3, 6.5, null, 1.3, 5, 0.9, 3.5, 6);
+VALUES('2011-11-11', 1002.3, 6.5, null, -1.3, 5, 0.9, 3.5, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-11-12', 1006.8, 6.8, null, 2.7, 7.7, 0.7, 7.8, 3.7);
+VALUES('2011-11-12', 1006.8, 6.8, null, -2.7, 7.7, 0.7, 7.8, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-11-13', 1005.5, 7.1, null, 3.5, 8.4, 0.8, 7.7, 1.3);
+VALUES('2011-11-13', 1005.5, 7.1, null, -3.5, 8.4, 0.8, 7.7, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-11-14', 998.7, 7.5, null, 4.7, 6.7, 0.7, 6.1, 1);
+VALUES('2011-11-14', 998.7, 7.5, null, -4.7, 6.7, 0.7, 6.1, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-11-15', 994.4, 7.8, null, 3.1, 6.4, 0.3, 6.9, 5);
+VALUES('2011-11-15', 994.4, 7.8, null, -3.1, 6.4, -0.3, 6.9, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-11-16', 996.3, 8.0, null, 3, 2.8, 0.2, 3.5, 6);
+VALUES('2011-11-16', 996.3, 8.0, null, -3, 2.8, -0.2, 3.5, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-11-17', 996.8, 9.2, null, 3.6, 0.5, 1.2, null, 1.7);
+VALUES('2011-11-17', 996.8, 9.2, null, -3.6, -0.5, -1.2, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-11-18', 995.9, 8.9, null, 0.7, 3.8, 2.2, null, 2);
+VALUES('2011-11-18', 995.9, 8.9, null, -0.7, 3.8, 2.2, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-11-19', 995.6, 8.5, null, 2.2, 4.8, 3.3, null, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-11-20', 996.6, 7.9, null, 0.8, 3.2, 1.3, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-11-21', 994.9, 8.5, null, 2, 0.8, 1.4, null, 3.3);
+VALUES('2011-11-21', 994.9, 8.5, null, -2, 0.8, -1.4, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-11-22', 995.7, 9.1, null, 2.5, 1.7, 2, null, 1.7);
+VALUES('2011-11-22', 995.7, 9.1, null, -2.5, -1.7, -2, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-11-23', 1001.3, 8.8, null, 2.1, 0.9, 1.7, null, 2);
+VALUES('2011-11-23', 1001.3, 8.8, null, -2.1, -0.9, -1.7, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-11-24', 1005.9, 9.0, null, 2.2, 1, 1.8, null, 2.3);
+VALUES('2011-11-24', 1005.9, 9.0, null, -2.2, -1, -1.8, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-11-25', 1001.6, 9.2, null, 2.8, 1.2, 1.7, null, 3);
+VALUES('2011-11-25', 1001.6, 9.2, null, -2.8, -1.2, -1.7, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-11-26', 1000.1, 8.9, null, 1.6, 4.6, 1.1, null, 1.7);
+VALUES('2011-11-26', 1000.1, 8.9, null, -1.6, 4.6, 1.1, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-11-27', 99.3, 9.3, null, 3.5, 1.4, 0.5, null, 2);
+VALUES('2011-11-27', 99.3, 9.3, null, -3.5, 1.4, -0.5, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-11-28', 999.1, 7.5, null, 4, 9.2, 1.6, 6.4, 2.3);
+VALUES('2011-11-28', 999.1, 7.5, null, -4, 9.2, 1.6, 6.4, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-11-29', 997.2, 8.8, null, 3.8, 1.9, 0.4, 0.9, 3);
+VALUES('2011-11-29', 997.2, 8.8, null, -3.8, 1.9, 0.4, 0.9, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-11-30', 999.5, 9.0, null, 0.8, 0.8, 0.4, null, 2);
+VALUES('2011-11-30', 999.5, 9.0, null, -0.8, 0.8, 0.4, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-12-01', 996.3, 9.4, null, 0.1, 1.8, 0.6, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-12-02', 989.3, 9.1, null, 0.7, 0.6, 0.5, null, 3.7);
+VALUES('2011-12-02', 989.3, 9.1, null, -0.7, 0.6, -0.5, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-12-03', 985.8, 9.4, 0.1, 0.9, 1, 0.2, null, 2);
+VALUES('2011-12-03', 985.8, 9.4, 0.1, -0.9, 1, 0.2, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-12-04', 976.3, 8.5, 1.5, 0.9, 10.5, 7.2, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-12-05', 972.9, 7.1, 0.1, 1.5, 1.1, 4, 1.5, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-12-06', 980.3, 7.8, 1.1, 2, 4.6, 1.9, 0.2, 2);
+VALUES('2011-12-06', 980.3, 7.8, 1.1, -2, 4.6, 1.9, 0.2, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-12-07', 978.1, 8.0, 3.1, 1.9, 4.2, 2, 1, 3);
+VALUES('2011-12-07', 978.1, 8.0, 3.1, -1.9, 4.2, 2, 1, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-12-08', 98.8, 6.2, null, 0.8, 6.9, 3.3, 2.4, 8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-12-09', 983.7, 7.5, 0.4, 1, 5.1, 3.8, null, 1.3);
+VALUES('2011-12-09', 983.7, 7.5, 0.4, -1, 5.1, 3.8, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-12-10', 985.4, 6.9, null, 2.6, 6.1, 3.6, 1.4, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-12-11', 990.7, 7.7, null, 3.9, 3.4, 0.7, 5.5, 2);
+VALUES('2011-12-11', 990.7, 7.7, null, -3.9, 3.4, 0.7, 5.5, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-12-12', 984.6, 8.6, 1.6, 1, 3.7, 3.3, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-12-13', 984.3, 9.2, null, 1.2, 4.6, 2.5, 0.4, 1.3);
+VALUES('2011-12-13', 984.3, 9.2, null, -1.2, 4.6, 2.5, 0.4, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-12-14', 983.1, 9.0, 0.1, 1.9, 4.7, 3.7, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-12-15', 982.7, 8.6, null, 0.3, 6.2, 3.8, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-12-16', 963.7, 8.3, 4.6, 1.7, 6.6, 3.8, 1.3, 5.7);
+VALUES('2011-12-16', 963.7, 8.3, 4.6, -1.7, 6.6, 3.8, 1.3, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-12-17', 965.9, 7.5, 2.3, 0.7, 7.3, 1.6, 0.2, 5);
+VALUES('2011-12-17', 965.9, 7.5, 2.3, -0.7, 7.3, 1.6, 0.2, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-12-18', 980.5, 7.7, null, 1.6, 3.5, 0.5, 4.2, 4);
+VALUES('2011-12-18', 980.5, 7.7, null, -1.6, 3.5, 0.5, 4.2, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-12-19', 988.5, 7.7, null, 3.7, 2.3, 1.4, 4.2, 1.3);
+VALUES('2011-12-19', 988.5, 7.7, null, -3.7, 2.3, -1.4, 4.2, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-12-20', 98.4, 7.3, 0.1, 6.4, 1.6, 3, 6.6, 1.7);
+VALUES('2011-12-20', 98.4, 7.3, 0.1, -6.4, 1.6, -3, 6.6, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-12-21', 983.4, 8.5, 0.7, 6.4, 2.7, 0.8, 0.6, 1);
+VALUES('2011-12-21', 983.4, 8.5, 0.7, -6.4, 2.7, -0.8, 0.6, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-12-22', 992.5, 8.7, null, 3.4, 3, 0.8, 0.9, 1.3);
+VALUES('2011-12-22', 992.5, 8.7, null, -3.4, 3, -0.8, 0.9, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-12-23', 992.4, 9.3, 0.5, 3.1, 0.8, 0.3, null, 1.3);
+VALUES('2011-12-23', 992.4, 9.3, 0.5, -3.1, 0.8, 0.3, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-12-24', 988.7, 8.8, 1.3, 0.5, 4, 2.7, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -9507,11 +9507,11 @@ VALUES('2011-12-28', 999.6, 9.1, null, 2.4, 5.2, 3.4, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2011-12-29', 990.8, 8.2, 0.1, 0.6, 4.8, 1.9, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-12-30', 978.8, 7.3, 0.3, 1.1, 4.9, 2.8, 0.1, 4.3);
+VALUES('2011-12-30', 978.8, 7.3, 0.3, -1.1, 4.9, 2.8, 0.1, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2011-12-31', 985.9, 6.8, null, 1.5, 5.7, 1.3, 5.4, 3.3);
+VALUES('2011-12-31', 985.9, 6.8, null, -1.5, 5.7, 1.3, 5.4, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-01-01', 988.7, 9.1, 1.1, 2.9, 1.1, 0.7, null, 1.7);
+VALUES('2012-01-01', 988.7, 9.1, 1.1, -2.9, 1.1, 0.7, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-01-02', 985.7, 8.7, 1.3, 0.8, 3.5, 2.3, 0.1, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -9523,7 +9523,7 @@ VALUES('2012-01-05', 965.2, 7.3, 4.6, 0.9, 6.5, 4.4, null, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-01-06', 975.9, 6.5, 0.1, 2.2, 4.7, 2.8, 0.1, 7.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-01-07', 984.2, 7.6, 1, 1.3, 4.8, 2.1, null, 3.7);
+VALUES('2012-01-07', 984.2, 7.6, 1, -1.3, 4.8, 2.1, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-01-08', 984.7, 7.5, null, 1.6, 5.5, 3.9, 0.1, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -9539,85 +9539,85 @@ VALUES('2012-01-13', 984.9, 6.8, 0.2, 0.4, 7.5, 2.1, 0.7, 8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-01-14', 986.5, 6.1, null, 0.2, 3.1, 0.9, 4.5, 8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-01-15', 990.8, 6.8, 0.3, 3.7, 0.7, 1.3, 1, 3.7);
+VALUES('2012-01-15', 990.8, 6.8, 0.3, -3.7, 0.7, -1.3, 1, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-01-16', 994.2, 6.4, null, 5.2, 1.2, 1.9, 3, 3.3);
+VALUES('2012-01-16', 994.2, 6.4, null, -5.2, 1.2, -1.9, 3, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-01-17', 993.7, 7.6, null, 2.1, 2.8, 1.7, null, 5.3);
+VALUES('2012-01-17', 993.7, 7.6, null, -2.1, 2.8, 1.7, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-01-18', 998.5, 6.5, null, 2.5, 4.6, 0.2, 3.4, 4.3);
+VALUES('2012-01-18', 998.5, 6.5, null, -2.5, 4.6, 0.2, 3.4, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-01-19', 985.8, 8.8, 4.9, 3.2, 4.1, 2.6, null, 3.3);
+VALUES('2012-01-19', 985.8, 8.8, 4.9, -3.2, 4.1, 2.6, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-01-20', 980.7, 7.8, 1.1, 2.2, 5.4, 0.9, 2.2, 5);
+VALUES('2012-01-20', 980.7, 7.8, 1.1, -2.2, 5.4, 0.9, 2.2, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-01-21', 980.4, 8.0, 7.3, 2.5, 3.2, 0.3, 1.6, 3.3);
+VALUES('2012-01-21', 980.4, 8.0, 7.3, -2.5, 3.2, 0.3, 1.6, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-01-22', 975.3, 7.8, 2.9, 0.2, 5.9, 3.1, 1.3, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-01-23', 982.3, 6.8, null, 1.9, 6.9, 3.8, 3.6, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-01-24', 986.9, 7.9, null, 0.4, 4.7, 1.5, 2, 2);
+VALUES('2012-01-24', 986.9, 7.9, null, -0.4, 4.7, 1.5, 2, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-01-25', 993.1, 7.0, null, 4.3, 2.6, 1.6, 4.1, 3);
+VALUES('2012-01-25', 993.1, 7.0, null, -4.3, 2.6, -1.6, 4.1, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-01-26', 994.1, 6.4, null, 3.8, 0.8, 1.7, 3.4, 4.7);
+VALUES('2012-01-26', 994.1, 6.4, null, -3.8, 0.8, -1.7, 3.4, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-01-27', 997.9, 6.6, null, 5.8, 1.2, 4, 6.6, 2.3);
+VALUES('2012-01-27', 997.9, 6.6, null, -5.8, -1.2, -4, 6.6, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-01-28', 999.8, 7.3, null, 7.5, 1.5, 3.1, 6.6, 4);
+VALUES('2012-01-28', 999.8, 7.3, null, -7.5, 1.5, -3.1, 6.6, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-01-29', 1001.2, 6.8, null, 6.9, 0.4, 5.3, 5, 5.7);
+VALUES('2012-01-29', 1001.2, 6.8, null, -6.9, -0.4, -5.3, 5, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-01-30', 1001.6, 5.9, null, 9.7, 1.5, 7.1, 7.9, 6.7);
+VALUES('2012-01-30', 1001.6, 5.9, null, -9.7, -1.5, -7.1, 7.9, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-01-31', 999.7, 5.9, null, 11.8, 2.7, 8.6, 7.9, 7);
+VALUES('2012-01-31', 999.7, 5.9, null, -11.8, -2.7, -8.6, 7.9, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-02-01', 998.5, 5.1, null, 13.1, 6.7, 10.5, 7.9, 8);
+VALUES('2012-02-01', 998.5, 5.1, null, -13.1, -6.7, -10.5, 7.9, 8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-02-02', 1000.2, 4.7, null, 15.6, 8.3, 12.6, 8.6, 6.7);
+VALUES('2012-02-02', 1000.2, 4.7, null, -15.6, -8.3, -12.6, 8.6, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-02-03', 100.2, 4.3, null, 16.3, 8.2, 12.4, 7.7, 3.3);
+VALUES('2012-02-03', 100.2, 4.3, null, -16.3, -8.2, -12.4, 7.7, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-02-04', 1002.7, 3.6, null, 15.2, 9.1, 11.7, null, 6);
+VALUES('2012-02-04', 1002.7, 3.6, null, -15.2, -9.1, -11.7, null, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-02-05', 1002.2, 4.1, null, 1.2, 8.2, 10.8, 3.7, 6.3);
+VALUES('2012-02-05', 1002.2, 4.1, null, -1.2, -8.2, -10.8, 3.7, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-02-06', 1000.7, 5.2, 1.4, 15.5, 8.2, 11.6, 4, 4.3);
+VALUES('2012-02-06', 1000.7, 5.2, 1.4, -15.5, -8.2, -11.6, 4, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-02-07', 999.9, 5.9, null, 11.9, 6.9, 8.7, 0.7, 5);
+VALUES('2012-02-07', 999.9, 5.9, null, -11.9, -6.9, -8.7, 0.7, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-02-08', 1004.2, 6.0, null, 11.9, 4.7, 9.8, 6.3, 4.7);
+VALUES('2012-02-08', 1004.2, 6.0, null, -11.9, -4.7, -9.8, 6.3, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-02-09', 998.5, 6.2, null, 13.7, 5, 8.4, 0.9, 3);
+VALUES('2012-02-09', 998.5, 6.2, null, -13.7, -5, -8.4, 0.9, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-02-10', 1004.4, 5.7, null, 13.7, 6.2, 10.5, 8.7, 4.3);
+VALUES('2012-02-10', 1004.4, 5.7, null, -13.7, -6.2, -10.5, 8.7, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-02-11', 1000.6, 5.0, null, 14.4, 5.2, 9.8, 8.9, 4.7);
+VALUES('2012-02-11', 1000.6, 5.0, null, -14.4, -5.2, -9.8, 8.9, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-02-12', 997.8, 5.1, null, 15.4, 3.4, 9.9, 8.8, 2.3);
+VALUES('2012-02-12', 997.8, 5.1, null, -15.4, -3.4, -9.9, 8.8, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-02-13', 989.8, 7.1, 0.4, 17.1, 4.6, 8.8, 0.9, 1.7);
+VALUES('2012-02-13', 989.8, 7.1, 0.4, -17.1, -4.6, -8.8, 0.9, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-02-14', 984.2, 7.2, 0.2, 7.2, 0.5, 5, 1.5, 1.7);
+VALUES('2012-02-14', 984.2, 7.2, 0.2, -7.2, -0.5, -5, 1.5, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-02-15', 96.7, 7.1, 3.3, 7.5, 2.5, 0.7, 0.9, 9.3);
+VALUES('2012-02-15', 96.7, 7.1, 3.3, -7.5, 2.5, 0.7, 0.9, 9.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-02-16', 987.4, 7.0, 0.4, 2.9, 1.4, 1.4, 1.9, 4.7);
+VALUES('2012-02-16', 987.4, 7.0, 0.4, -2.9, 1.4, -1.4, 1.9, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-02-17', 987.1, 8.4, 1, 4.1, 4.2, 1.3, null, 2.7);
+VALUES('2012-02-17', 987.1, 8.4, 1, -4.1, 4.2, 1.3, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-02-18', 988.8, 7.5, null, 1.4, 6.6, 3.5, 0.9, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-02-19', 987.5, 8.6, 2, null, 3.1, 1.1, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-02-20', 1001.9, 6.9, null, 2.9, 4.2, 0.3, 3.9, 2);
+VALUES('2012-02-20', 1001.9, 6.9, null, -2.9, 4.2, -0.3, 3.9, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-02-21', 1001.8, 6.2, null, 7.2, 3.7, 0.5, 8.5, 2);
+VALUES('2012-02-21', 1001.8, 6.2, null, -7.2, 3.7, -0.5, 8.5, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-02-22', 1000.4, 7.7, null, 1, 6.7, 2.5, 1.2, 1.7);
+VALUES('2012-02-22', 1000.4, 7.7, null, -1, 6.7, 2.5, 1.2, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-02-23', 991.2, 8.2, 0.2, 3, 6, 3.1, null, 2.3);
+VALUES('2012-02-23', 991.2, 8.2, 0.2, -3, 6, 3.1, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-02-24', 989.7, 7.4, null, 3.5, 11.6, 8.7, 1.9, 7.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -9625,9 +9625,9 @@ VALUES('2012-02-25', 987.7, 5.3, null, 5.2, 1.0, 6.9, 8, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-02-26', 987.2, 6.1, 1, 0.8, 6.9, 2.8, 2.8, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-02-27', 993.2, 5.0, null, 4.5, 4.9, 0.9, 9.4, 4);
+VALUES('2012-02-27', 993.2, 5.0, null, -4.5, 4.9, 0.9, 9.4, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-02-28', 987.5, 8.6, 2.8, 0.4, 6.7, 4.6, null, 3.7);
+VALUES('2012-02-28', 987.5, 8.6, 2.8, -0.4, 6.7, 4.6, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-02-29', 990.4, 7.9, null, 5, 11.9, 9.5, 2.3, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -9635,21 +9635,21 @@ VALUES('2012-03-01', 993.9, 8.0, null, 6.4, 1.3, 10.1, 2.1, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-03-02', 994.7, 6.9, null, 6, 11.5, 7.8, 5, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-03-03', 997.1, 5.4, null, 1.9, 9.4, 3.1, 10.2, 3.3);
+VALUES('2012-03-03', 997.1, 5.4, null, -1.9, 9.4, 3.1, 10.2, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-03-04', 993.9, 5.4, null, 3.8, 6.9, 1.3, 7.6, 4.3);
+VALUES('2012-03-04', 993.9, 5.4, null, -3.8, 6.9, 1.3, 7.6, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-03-05', 991.8, 4.8, null, 1.9, 7.7, 1.3, 10.3, 5.3);
+VALUES('2012-03-05', 991.8, 4.8, null, -1.9, 7.7, 1.3, 10.3, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-03-06', 997.2, 5.1, null, 5.2, 3.4, 1.3, 10.3, 4);
+VALUES('2012-03-06', 997.2, 5.1, null, -5.2, 3.4, -1.3, 10.3, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-03-07', 996.3, 5.1, null, 7.5, 4.1, 1.3, 9.4, 3);
+VALUES('2012-03-07', 996.3, 5.1, null, -7.5, 4.1, -1.3, 9.4, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-03-08', 993.4, 8.0, 1.8, 2.4, 0.1, 1.1, null, 1.7);
+VALUES('2012-03-08', 993.4, 8.0, 1.8, -2.4, -0.1, -1.1, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-03-09', 1005.7, 6.7, null, 1.8, 8, 2.3, 4.6, 2.3);
+VALUES('2012-03-09', 1005.7, 6.7, null, -1.8, 8, 2.3, 4.6, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-03-10', 1002.5, 5.9, null, 4.8, 11.4, 4.8, 7.5, 2.3);
+VALUES('2012-03-10', 1002.5, 5.9, null, -4.8, 11.4, 4.8, 7.5, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-03-11', 993.5, 6.7, null, 3.6, 9.1, 6.2, 0.4, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -9661,7 +9661,7 @@ VALUES('2012-03-14', 998.3, 6.9, null, 5.8, 7.5, 6.3, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-03-15', 100.0, 6.3, null, 4.8, 12.1, 6.5, 5, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-03-16', 995.6, 5.6, null, 2, 16.7, 9.1, 1.0, 2);
+VALUES('2012-03-16', 995.6, 5.6, null, -2, 16.7, 9.1, 1.0, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-03-17', 990.2, 5.2, null, 0.5, 19.6, 1.1, 10.8, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -9669,9 +9669,9 @@ VALUES('2012-03-18', 986.3, 5.4, null, 1.7, 19.5, 11.9, 10.3, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-03-19', 996.5, 5.6, null, 5.1, 12.8, 7.8, 6.1, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-03-20', 1004.5, 4.5, null, 1.8, 14.9, 7.5, 11.6, 2.7);
+VALUES('2012-03-20', 1004.5, 4.5, null, -1.8, 14.9, 7.5, 11.6, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-03-21', 1004.4, 5.1, null, 1.2, 18.6, 10.4, 11.1, 1.3);
+VALUES('2012-03-21', 1004.4, 5.1, null, -1.2, 18.6, 10.4, 11.1, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-03-22', 1001.6, 6.8, null, 4, 17.2, 10.7, 8, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -9693,9 +9693,9 @@ VALUES('2012-03-30', 979.4, 5.9, null, 5.8, 1.1, 8.2, 2.2, 7.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-03-31', 974.1, 5.7, 0.6, 2.7, 10.7, 6.3, null, 8.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-04-01', 983.7, 4.9, null, 0.9, 7.7, 2.8, 5, 3.3);
+VALUES('2012-04-01', 983.7, 4.9, null, -0.9, 7.7, 2.8, 5, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-04-02', 980.1, 4.9, null, 2, 1.3, 8.1, 0.2, 4);
+VALUES('2012-04-02', 980.1, 4.9, null, -2, 1.3, 8.1, 0.2, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-04-03', 977.7, 4.9, null, 2.3, 17.9, 11.6, 11.5, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -9709,7 +9709,7 @@ VALUES('2012-04-07', 973.3, 6.8, 0.1, 2.4, 11.4, 5.4, 2.7, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-04-08', 980.2, 4.8, 0.3, 0.2, 5.5, 2, 4.5, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-04-09', 982.1, 3.9, null, 3.6, 10.4, 3.5, 12.6, 2);
+VALUES('2012-04-09', 982.1, 3.9, null, -3.6, 10.4, 3.5, 12.6, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-04-10', 977.9, 3.3, null, 0.7, 1.5, 9.5, 9.1, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -9717,7 +9717,7 @@ VALUES('2012-04-11', 970.1, 4.5, null, 6.1, 18.1, 12.5, 4.7, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-04-12', 972.6, 8.6, 4.2, 4.2, 1.3, 5.7, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-04-13', 975.2, 6.9, null, 0.6, 16.4, 9.4, 6.7, 3.7);
+VALUES('2012-04-13', 975.2, 6.9, null, -0.6, 16.4, 9.4, 6.7, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-04-14', 971.4, 6.0, null, 7.8, 14.4, 11.3, 1.8, 7.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -9727,7 +9727,7 @@ VALUES('2012-04-16', 979.6, 8.3, 4.5, 4.7, 9.3, 5.9, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-04-17', 982.4, 5.6, null, 4, 1.1, 5.6, 5.4, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-04-18', 971.9, 5.6, null, 0.6, 13.9, 6.9, 12.6, 2);
+VALUES('2012-04-18', 971.9, 5.6, null, -0.6, 13.9, 6.9, 12.6, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-04-19', 966.6, 6.2, 1.3, 3.7, 16.3, 10.5, 2.2, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -9787,7 +9787,7 @@ VALUES('2012-05-16', 984.3, 5.4, null, 7.8, 13.5, 10.4, 0.5, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-05-17', 991.2, 4.6, null, 5.9, 11.9, 8.8, 4.3, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-05-18', 988.5, 4.0, null, 0.4, 17.8, 12.4, 12.4, 3);
+VALUES('2012-05-18', 988.5, 4.0, null, -0.4, 17.8, 12.4, 12.4, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-05-19', 987.3, 4.1, null, 5.2, 23.1, 16.6, 14.5, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -10113,11 +10113,11 @@ VALUES('2012-10-26', 979.6, 6.6, 0.2, 4.7, 9.4, 6.1, 0.2, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-10-27', 964.7, 8.8, 8, 0.3, 4.8, 2.3, null, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-10-28', 980.6, 7.0, 0.6, 0.6, 4.5, 2, 2.2, 5.3);
+VALUES('2012-10-28', 980.6, 7.0, 0.6, -0.6, 4.5, 2, 2.2, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-10-29', 983.5, 6.8, null, 0.6, 3.2, 1.8, null, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-10-30', 979.6, 7.7, 0.3, 3, 5.5, 2.5, 1.4, 2.3);
+VALUES('2012-10-30', 979.6, 7.7, 0.3, -3, 5.5, 2.5, 1.4, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-10-31', 980.2, 7.5, null, 2.6, 7.9, 5, 8, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -10149,7 +10149,7 @@ VALUES('2012-11-13', 1002.6, 8.1, null, 5, 10.2, 6.8, 0.5, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-11-14', 1002.2, 7.5, null, 0.3, 7.1, 2.3, 7.5, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-11-15', 996.2, 8.4, null, 0.7, 7.2, 3.7, 2.2, 3.7);
+VALUES('2012-11-15', 996.2, 8.4, null, -0.7, 7.2, 3.7, 2.2, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-11-16', 993.7, 7.8, null, 2.5, 7.6, 6.5, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -10181,33 +10181,33 @@ VALUES('2012-11-29', 963.2, 7.8, null, 4.3, 1.1, 6.8, 0.7, 7.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-11-30', 976.7, 6.6, null, 1.6, 4.4, 2.8, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-12-01', 984.7, 7.0, null, 2.1, 5.3, 0.3, 7, 2.3);
+VALUES('2012-12-01', 984.7, 7.0, null, -2.1, 5.3, 0.3, 7, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-12-02', 98.2, 7.9, 0.1, 3, 1, 0.2, null, 3);
+VALUES('2012-12-02', 98.2, 7.9, 0.1, -3, 1, 0.2, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-12-03', 982.2, 6.6, null, 1.9, 3.2, 0.2, 1.2, 3);
+VALUES('2012-12-03', 982.2, 6.6, null, -1.9, 3.2, 0.2, 1.2, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-12-04', 97.2, 8.8, 2.6, 3.4, 0.2, 0.3, null, 2.7);
+VALUES('2012-12-04', 97.2, 8.8, 2.6, -3.4, 0.2, -0.3, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-12-05', 973.1, 9.0, null, 4.8, 0.8, 1.7, 2.1, 1.7);
+VALUES('2012-12-05', 973.1, 9.0, null, -4.8, 0.8, -1.7, 2.1, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-12-06', 980.4, 8.7, 0.6, 4.6, 0.2, 2.8, 0.9, 2.7);
+VALUES('2012-12-06', 980.4, 8.7, 0.6, -4.6, -0.2, -2.8, 0.9, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-12-07', 983.7, 7.2, null, 10.5, 3.3, 6.2, 7.2, 3.7);
+VALUES('2012-12-07', 983.7, 7.2, null, -10.5, -3.3, -6.2, 7.2, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-12-08', 988.8, 6.7, null, 9.5, 1.8, 6.2, 7.1, 1.7);
+VALUES('2012-12-08', 988.8, 6.7, null, -9.5, -1.8, -6.2, 7.1, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-12-09', 987.7, 7.3, 3, 10.7, 2.7, 5.8, 7.3, 3);
+VALUES('2012-12-09', 987.7, 7.3, 3, -10.7, -2.7, -5.8, 7.3, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-12-10', 977.2, 9.0, 7.8, 4.7, 0.7, 0.8, null, 2);
+VALUES('2012-12-10', 977.2, 9.0, 7.8, -4.7, 0.7, -0.8, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-12-11', 985.1, 8.3, 0.8, 7.8, null, 4.3, 0.1, 3);
+VALUES('2012-12-11', 985.1, 8.3, 0.8, -7.8, null, -4.3, 0.1, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-12-12', 99.1, 7.1, 0.1, 9.5, 3, 5.8, 3.8, 2.7);
+VALUES('2012-12-12', 99.1, 7.1, 0.1, -9.5, -3, -5.8, 3.8, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-12-13', 989.8, 7.6, null, 8.2, 4.2, 6.5, 4.5, 2.3);
+VALUES('2012-12-13', 989.8, 7.6, null, -8.2, -4.2, -6.5, 4.5, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-12-14', 985.6, 7.2, null, 9.6, 0.4, 1.7, 0.9, 3.7);
+VALUES('2012-12-14', 985.6, 7.2, null, -9.6, 0.4, -1.7, 0.9, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-12-15', 980.1, 8.8, 3.9, 0.3, 2.4, 1.4, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -10219,35 +10219,35 @@ VALUES('2012-12-18', 984.9, 9.4, 0.4, 0.8, 2.3, 1.7, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2012-12-19', 992.6, 8.9, 0.4, 1.1, 4.1, 2.9, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-12-20', 990.3, 8.1, null, 3.3, 3.1, 1.3, 6.1, 6);
+VALUES('2012-12-20', 990.3, 8.1, null, -3.3, 3.1, -1.3, 6.1, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-12-21', 986.4, 8.1, null, 5.3, 2.4, 3.5, null, 5.7);
+VALUES('2012-12-21', 986.4, 8.1, null, -5.3, -2.4, -3.5, null, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-12-22', 991.3, 8.0, 1.1, 4, 2.7, 3, null, 3.7);
+VALUES('2012-12-22', 991.3, 8.0, 1.1, -4, -2.7, -3, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-12-23', 986.1, 9.0, 14.9, 2.8, 0.5, 0.9, null, 4.3);
+VALUES('2012-12-23', 986.1, 9.0, 14.9, -2.8, -0.5, -0.9, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-12-24', 985.2, 9.3, null, 0.5, 0.3, 0.2, null, 1.7);
+VALUES('2012-12-24', 985.2, 9.3, null, -0.5, 0.3, -0.2, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-12-25', 982.3, 9.4, 0.1, 0.4, 1.8, 0.8, null, 1.7);
+VALUES('2012-12-25', 982.3, 9.4, 0.1, -0.4, 1.8, 0.8, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-12-26', 985.1, 9.4, null, 0.9, 1.1, 0.3, null, 1.3);
+VALUES('2012-12-26', 985.1, 9.4, null, -0.9, 1.1, -0.3, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-12-27', 981.8, 8.4, 5.6, 2.7, 6, 2.9, 0.1, 2.3);
+VALUES('2012-12-27', 981.8, 8.4, 5.6, -2.7, 6, 2.9, 0.1, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-12-28', 995.1, 7.5, 2.9, 2.7, 4.6, 0.2, 3.9, 3.7);
+VALUES('2012-12-28', 995.1, 7.5, 2.9, -2.7, 4.6, 0.2, 3.9, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-12-29', 99.8, 7.2, null, 6.6, 0.7, 2.6, 6.7, 3);
+VALUES('2012-12-29', 99.8, 7.2, null, -6.6, 0.7, -2.6, 6.7, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-12-30', 994.1, 8.0, null, 4, 0.8, 1.2, 2.6, 2);
+VALUES('2012-12-30', 994.1, 8.0, null, -4, 0.8, -1.2, 2.6, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2012-12-31', 99.3, 8.1, null, 5.3, 3.4, 0.7, 6.1, 1.7);
+VALUES('2012-12-31', 99.3, 8.1, null, -5.3, 3.4, -0.7, 6.1, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-01-01', 985.3, 8.4, null, 1.9, 1.1, 0.7, 1.5, 2.7);
+VALUES('2013-01-01', 985.3, 8.4, null, -1.9, 1.1, -0.7, 1.5, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-01-02', 994.3, 9.1, 0.3, 2.4, 0.3, 1.7, null, 2);
+VALUES('2013-01-02', 994.3, 9.1, 0.3, -2.4, -0.3, -1.7, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-01-03', 998.9, 8.6, null, 5.6, 3.8, 1.6, 0.1, 3.3);
+VALUES('2013-01-03', 998.9, 8.6, null, -5.6, 3.8, 1.6, 0.1, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-01-04', 994.7, 7.9, 0.3, 3.2, 8.4, 6.1, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -10255,51 +10255,51 @@ VALUES('2013-01-05', 992.5, 7.4, 0.4, 3.8, 8.8, 5.5, 0.4, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-01-06', 990.7, 8.3, 2.2, 1, 5.2, 3.8, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-01-07', 99.7, 7.4, null, 3, 5.8, 1, 3.2, 4);
+VALUES('2013-01-07', 99.7, 7.4, null, -3, 5.8, -1, 3.2, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-01-08', 994.8, 8.3, 4.4, 3.7, 2.3, 2.8, null, 1.3);
+VALUES('2013-01-08', 994.8, 8.3, 4.4, -3.7, -2.3, -2.8, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-01-09', 990.2, 9.0, 3.2, 2.7, 1.3, 0.1, 1.6, 2.7);
+VALUES('2013-01-09', 990.2, 9.0, 3.2, -2.7, 1.3, -0.1, 1.6, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-01-10', 979.3, 8.0, 0.3, 0.7, 4.4, 2.1, 1.6, 3.3);
+VALUES('2013-01-10', 979.3, 8.0, 0.3, -0.7, 4.4, 2.1, 1.6, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-01-11', 981.4, 7.1, null, 2.7, 2.2, 1.2, 2.4, 5);
+VALUES('2013-01-11', 981.4, 7.1, null, -2.7, 2.2, -1.2, 2.4, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-01-12', 987.4, 7.0, null, 6.7, 0.3, 4.9, 6, 3);
+VALUES('2013-01-12', 987.4, 7.0, null, -6.7, -0.3, -4.9, 6, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-01-13', 988.8, 7.7, 0.5, 9.1, 2.7, 4.6, 2.3, 3);
+VALUES('2013-01-13', 988.8, 7.7, 0.5, -9.1, -2.7, -4.6, 2.3, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-01-14', 984.3, 8.4, 4.4, 4.1, 1.9, 2.8, null, 4);
+VALUES('2013-01-14', 984.3, 8.4, 4.4, -4.1, -1.9, -2.8, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-01-15', 979.7, 8.7, 0.6, 7.4, 0.9, 0.8, null, 2.7);
+VALUES('2013-01-15', 979.7, 8.7, 0.6, -7.4, 0.9, -0.8, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-01-16', 975.2, 8.5, 0.1, 1.1, 1, 0.7, null, 3.3);
+VALUES('2013-01-16', 975.2, 8.5, 0.1, -1.1, 1, -0.7, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-01-17', 977.7, 7.7, 0.5, 3.4, 0.2, 2.3, null, 5.3);
+VALUES('2013-01-17', 977.7, 7.7, 0.5, -3.4, 0.2, -2.3, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-01-18', 977.3, 7.2, 0.2, 4.6, 3, 4.3, null, 5.3);
+VALUES('2013-01-18', 977.3, 7.2, 0.2, -4.6, -3, -4.3, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-01-19', 971.7, 7.2, null, 5.3, 4.3, 5.1, 0.9, 5.3);
+VALUES('2013-01-19', 971.7, 7.2, null, -5.3, -4.3, -5.1, 0.9, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-01-20', 969.6, 8.6, 0.1, 5.4, 2.2, 3.2, null, 6.7);
+VALUES('2013-01-20', 969.6, 8.6, 0.1, -5.4, -2.2, -3.2, null, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-01-21', 968.4, 8.9, 0.6, 2.6, 0.8, 1.8, null, 4.7);
+VALUES('2013-01-21', 968.4, 8.9, 0.6, -2.6, -0.8, -1.8, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-01-22', 975.2, 7.7, null, 4.2, 2.2, 3.3, null, 3);
+VALUES('2013-01-22', 975.2, 7.7, null, -4.2, -2.2, -3.3, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-01-23', 979.8, 7.6, null, 6.3, 3.7, 4.6, null, 1.7);
+VALUES('2013-01-23', 979.8, 7.6, null, -6.3, -3.7, -4.6, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-01-24', 980.7, 7.9, null, 4.1, 0.6, 2.1, 1.3, 3.7);
+VALUES('2013-01-24', 980.7, 7.9, null, -4.1, -0.6, -2.1, 1.3, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-01-25', 987.2, 6.6, null, 5.4, 2, 4.8, 0.8, 4.7);
+VALUES('2013-01-25', 987.2, 6.6, null, -5.4, -2, -4.8, 0.8, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-01-26', 986.6, 7.2, null, 9.5, 4.6, 7.4, 2.6, 3);
+VALUES('2013-01-26', 986.6, 7.2, null, -9.5, -4.6, -7.4, 2.6, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-01-27', 983.8, 7.8, 3.7, 1.2, 5.7, 6.7, null, 2);
+VALUES('2013-01-27', 983.8, 7.8, 3.7, -1.2, -5.7, -6.7, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-01-28', 986.9, 8.2, 1.2, 6.1, 1.4, 3.1, null, 1);
+VALUES('2013-01-28', 986.9, 8.2, 1.2, -6.1, -1.4, -3.1, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-01-29', 98.6, 8.6, 1.8, 3.7, 3.4, 0.6, null, 2.7);
+VALUES('2013-01-29', 98.6, 8.6, 1.8, -3.7, 3.4, 0.6, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-01-30', 981.6, 9.0, 1, 1.4, 7.1, 4.1, 0.2, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -10309,47 +10309,47 @@ VALUES('2013-02-01', 976.4, 7.1, 2.5, 1.8, 9.2, 4.7, 2.8, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-02-02', 965.8, 7.6, 0.7, 2.1, 5.6, 3.4, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-02-03', 98.2, 5.6, 0.1, 0.5, 3.2, 1.1, 5.2, 6.3);
+VALUES('2013-02-03', 98.2, 5.6, 0.1, -0.5, 3.2, 1.1, 5.2, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-02-04', 980.1, 8.3, 0.8, 0.1, 4, 2.4, 0.5, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-02-05', 975.1, 8.7, 4.1, 0.7, 5.2, 2.6, 1.2, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-02-06', 971.1, 8.9, null, 1.6, 2.9, 0.1, 0.3, 2.3);
+VALUES('2013-02-06', 971.1, 8.9, null, -1.6, 2.9, -0.1, 0.3, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-02-07', 976.2, 6.4, null, 1.8, 3.7, 0.5, 5.2, 5);
+VALUES('2013-02-07', 976.2, 6.4, null, -1.8, 3.7, 0.5, 5.2, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-02-08', 981.5, 6.7, null, 4.1, 2.5, 1.6, 5.5, 2);
+VALUES('2013-02-08', 981.5, 6.7, null, -4.1, 2.5, -1.6, 5.5, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-02-09', 985.4, 6.3, null, 4.7, 0.9, 1.5, null, 3.3);
+VALUES('2013-02-09', 985.4, 6.3, null, -4.7, 0.9, -1.5, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-02-10', 984.1, 6.6, null, 2.5, 0.1, 2.1, null, 4.7);
+VALUES('2013-02-10', 984.1, 6.6, null, -2.5, -0.1, -2.1, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-02-11', 980.3, 7.2, 0.6, 3.5, 1.4, 2.2, null, 5.7);
+VALUES('2013-02-11', 980.3, 7.2, 0.6, -3.5, -1.4, -2.2, null, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-02-12', 98.0, 8.7, 8.5, 3.5, 0.7, 2, null, 5.7);
+VALUES('2013-02-12', 98.0, 8.7, 8.5, -3.5, -0.7, -2, null, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-02-13', 989.6, 8.8, 2, 1.9, 0.2, 0.5, null, 3.7);
+VALUES('2013-02-13', 989.6, 8.8, 2, -1.9, 0.2, -0.5, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-02-14', 991.7, 7.7, 0.2, 0.8, 1.2, 0.2, null, 5);
+VALUES('2013-02-14', 991.7, 7.7, 0.2, -0.8, 1.2, 0.2, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-02-15', 989.1, 8.7, 0.3, 0.4, 2.2, 0.3, null, 2);
+VALUES('2013-02-15', 989.1, 8.7, 0.3, -0.4, 2.2, 0.3, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-02-16', 992.5, 7.4, null, 2.9, 5, 1.3, 1.4, 1.7);
+VALUES('2013-02-16', 992.5, 7.4, null, -2.9, 5, 1.3, 1.4, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-02-17', 993.2, 7.6, null, 1.7, 2.9, 0.7, null, 2.3);
+VALUES('2013-02-17', 993.2, 7.6, null, -1.7, 2.9, 0.7, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-02-18', 990.9, 7.7, null, 0.9, 1.3, null, null, 2);
+VALUES('2013-02-18', 990.9, 7.7, null, -0.9, 1.3, null, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-02-19', 982.2, 8.6, 1.1, 1.2, 1, 0.1, null, 3.7);
+VALUES('2013-02-19', 982.2, 8.6, 1.1, -1.2, 1, 0.1, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-02-20', 986.4, 6.7, 0.1, 2.6, 2.1, 1.2, 1, 4);
+VALUES('2013-02-20', 986.4, 6.7, 0.1, -2.6, 2.1, -1.2, 1, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-02-21', 98.9, 7.2, null, 7.5, 1.2, 4.1, 4.7, 4.7);
+VALUES('2013-02-21', 98.9, 7.2, null, -7.5, -1.2, -4.1, 4.7, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-02-22', 981.2, 7.3, 1.5, 6, 1.4, 2.7, null, 8);
+VALUES('2013-02-22', 981.2, 7.3, 1.5, -6, -1.4, -2.7, null, 8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-02-23', 978.3, 8.9, 10.2, 2.3, 0.5, 0.5, null, 6.3);
+VALUES('2013-02-23', 978.3, 8.9, 10.2, -2.3, 0.5, -0.5, null, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-02-24', 98.1, 9.2, 9.1, 0.4, 4.5, 2.5, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -10359,17 +10359,17 @@ VALUES('2013-02-26', 994.2, 8.0, null, 1.5, 5.3, 3.3, 6.4, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-02-27', 996.7, 6.9, null, 2.1, 6.1, 3.9, null, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-02-28', 99.5, 7.6, null, 0.3, 7.1, 3, 5.9, 3);
+VALUES('2013-02-28', 99.5, 7.6, null, -0.3, 7.1, 3, 5.9, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-03-01', 99.0, 6.9, null, 1.9, 3.9, 2.4, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-03-02', 99.2, 6.2, null, 1.1, 7, 1.7, 8, 2.7);
+VALUES('2013-03-02', 99.2, 6.2, null, -1.1, 7, 1.7, 8, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-03-03', 990.2, 6.6, null, 4.4, 6.3, 1.6, 4.8, 4.7);
+VALUES('2013-03-03', 990.2, 6.6, null, -4.4, 6.3, 1.6, 4.8, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-03-04', 994.9, 5.7, null, 1.3, 7.2, 2.2, 10.4, 2.7);
+VALUES('2013-03-04', 994.9, 5.7, null, -1.3, 7.2, 2.2, 10.4, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-03-05', 989.6, 5.3, null, 1.4, 9.9, 4.8, 10.4, 5.7);
+VALUES('2013-03-05', 989.6, 5.3, null, -1.4, 9.9, 4.8, 10.4, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-03-06', 978.9, 6.3, null, 1.9, 15.1, 8, 7.9, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -10383,49 +10383,49 @@ VALUES('2013-03-10', 970.6, 9.0, null, 3.1, 6.9, 5.3, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-03-11', 971.7, 7.3, null, 0.5, 7.8, 3, 1.3, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-03-12', 971.3, 7.3, null, 2, 2.8, 0.2, null, 5.7);
+VALUES('2013-03-12', 971.3, 7.3, null, -2, 2.8, 0.2, null, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-03-13', 971.1, 7.8, 0.6, 0.9, 3.8, 0.1, null, 4);
+VALUES('2013-03-13', 971.1, 7.8, 0.6, -0.9, 3.8, 0.1, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-03-14', 974.5, 5.4, null, 3.1, 0.8, 2.5, null, 8.3);
+VALUES('2013-03-14', 974.5, 5.4, null, -3.1, -0.8, -2.5, null, 8.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-03-15', 980.8, 5.0, null, 3.6, 0.8, 1.8, 3.6, 7);
+VALUES('2013-03-15', 980.8, 5.0, null, -3.6, 0.8, -1.8, 3.6, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-03-16', 989.9, 5.8, null, 5.8, 2, 3.5, 7.6, 3.7);
+VALUES('2013-03-16', 989.9, 5.8, null, -5.8, 2, -3.5, 7.6, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-03-17', 984.9, 4.9, null, 7.3, 3.6, 1, 8.2, 8.7);
+VALUES('2013-03-17', 984.9, 4.9, null, -7.3, 3.6, -1, 8.2, 8.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-03-18', 970.4, 8.1, 21.8, 1.6, 2.2, 0.3, 1, 5.3);
+VALUES('2013-03-18', 970.4, 8.1, 21.8, -1.6, 2.2, -0.3, 1, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-03-19', 968.6, 7.7, 0.3, 0.1, 5.6, 2.4, 0.8, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-03-20', 977.4, 6.9, 1.5, 2.5, 9.8, 4.3, 11.5, 2.7);
+VALUES('2013-03-20', 977.4, 6.9, 1.5, -2.5, 9.8, 4.3, 11.5, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-03-21', 983.5, 7.1, null, 0.9, 7.6, 2.2, 1.6, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-03-22', 987.4, 5.8, null, 1.2, 1.9, null, 0.4, 6);
+VALUES('2013-03-22', 987.4, 5.8, null, -1.2, 1.9, null, 0.4, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-03-23', 990.6, 4.6, null, 5, 0.4, 3.7, 1.1, 8.3);
+VALUES('2013-03-23', 990.6, 4.6, null, -5, -0.4, -3.7, 1.1, 8.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-03-24', 990.7, 3.6, null, 8.2, 0.4, 3.3, 3.7, 9.3);
+VALUES('2013-03-24', 990.7, 3.6, null, -8.2, 0.4, -3.3, 3.7, 9.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-03-25', 984.8, 5.6, 0.5, 5.7, 1.8, 3.1, null, 8.7);
+VALUES('2013-03-25', 984.8, 5.6, 0.5, -5.7, -1.8, -3.1, null, 8.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-03-26', 979.5, 5.6, 0.2, 3.7, 0.7, 2.8, null, 8.3);
+VALUES('2013-03-26', 979.5, 5.6, 0.2, -3.7, -0.7, -2.8, null, 8.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-03-27', 982.2, 6.8, null, 4.7, 1.1, 1.3, 1, 5);
+VALUES('2013-03-27', 982.2, 6.8, null, -4.7, 1.1, -1.3, 1, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-03-28', 983.8, 6.9, 3, 2.4, 2.7, 0.6, 0.5, 5.7);
+VALUES('2013-03-28', 983.8, 6.9, 3, -2.4, 2.7, 0.6, 0.5, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-03-29', 977.8, 9.1, 4.8, 0.2, 3.3, 1.4, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-03-30', 976.2, 7.2, 4, 0.7, 5.9, 3.6, 0.3, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-03-31', 974.2, 8.5, 3.5, 0.9, 4.1, null, null, 6.7);
+VALUES('2013-03-31', 974.2, 8.5, 3.5, -0.9, 4.1, null, null, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-04-01', 980.5, 7.1, null, 6.3, 4.7, 0.4, 5.9, 2);
+VALUES('2013-04-01', 980.5, 7.1, null, -6.3, 4.7, -0.4, 5.9, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-04-02', 981.5, 6.7, null, 2.9, 3.6, 1.3, null, 6.7);
+VALUES('2013-04-02', 981.5, 6.7, null, -2.9, 3.6, 1.3, null, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-04-03', 98.1, 7.0, null, 0.3, 2.6, 1.3, null, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -10437,7 +10437,7 @@ VALUES('2013-04-06', 985.7, 7.5, null, 1.6, 5.2, 3.1, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-04-07', 988.7, 6.7, null, 1.8, 5, 3.2, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-04-08', 981.3, 6.2, null, 3, 9.1, 3.7, 10.3, 4);
+VALUES('2013-04-08', 981.3, 6.2, null, -3, 9.1, 3.7, 10.3, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-04-09', 977.8, 7.3, 0.7, 2.8, 11.3, 6.6, 3.3, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -10793,7 +10793,7 @@ VALUES('2013-10-01', 984.6, 5.7, null, 3.7, 13.8, 8.4, 10.9, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-10-02', 994.6, 5.6, null, 4, 12.1, 7.1, 5.6, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-10-03', 1000.8, 6.3, null, 0.7, 10.7, 5, 10.7, 4);
+VALUES('2013-10-03', 1000.8, 6.3, null, -0.7, 10.7, 5, 10.7, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-10-04', 999.8, 5.2, null, 0.2, 11.8, 5.9, 10.7, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -10861,7 +10861,7 @@ VALUES('2013-11-04', 972.9, 8.2, 2.1, 1.7, 11.4, 7.5, 2.7, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-11-05', 970.4, 7.8, 1.8, 4.2, 9.6, 6.2, 0.2, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-11-06', 974.6, 7.8, 2.3, 0.6, 11.2, 6.2, 1.7, 4.3);
+VALUES('2013-11-06', 974.6, 7.8, 2.3, -0.6, 11.2, 6.2, 1.7, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-11-07', 98.3, 8.3, null, 6.1, 17.5, 11.2, 0.9, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -10877,13 +10877,13 @@ VALUES('2013-11-12', 997.4, 8.2, null, 0.8, 6.3, 3.1, 7.9, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-11-13', 997.8, 8.0, null, 1.4, 7.9, 4.9, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-11-14', 992.6, 8.7, null, 1.2, 5.9, 3.8, 3.6, 3.3);
+VALUES('2013-11-14', 992.6, 8.7, null, -1.2, 5.9, 3.8, 3.6, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-11-15', 996.8, 8.1, null, 4.3, 8.7, 6.6, 0.1, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-11-16', 999.1, 8.8, null, 2.4, 8.8, 5, 6.3, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-11-17', 994.6, 8.6, null, 1.2, 8.2, 4, 7.3, 4.7);
+VALUES('2013-11-17', 994.6, 8.6, null, -1.2, 8.2, 4, 7.3, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-11-18', 986.9, 8.5, 0.2, 4, 8.6, 6.5, 0.1, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -10891,7 +10891,7 @@ VALUES('2013-11-19', 979.8, 8.5, 5.1, 5.1, 8.2, 6.9, 0.8, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-11-20', 973.6, 8.3, null, 3.9, 7.9, 5.9, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-11-21', 97.3, 9.2, 6.5, 0.7, 6.5, 5.1, null, 5);
+VALUES('2013-11-21', 97.3, 9.2, 6.5, -0.7, 6.5, 5.1, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-11-22', 977.1, 9.0, null, 5.8, 9.1, 6.9, 0.6, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -10899,13 +10899,13 @@ VALUES('2013-11-23', 981.1, 7.7, null, 6.1, 8.5, 7.6, 0.6, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-11-24', 980.6, 7.1, null, 4.5, 9.4, 6.6, null, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-11-25', 989.3, 6.1, null, 0.3, 4.6, 1.2, 0.6, 7.7);
+VALUES('2013-11-25', 989.3, 6.1, null, -0.3, 4.6, 1.2, 0.6, 7.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-11-26', 996.2, 6.9, null, 1.2, 2.1, 0.4, 0.2, 4.7);
+VALUES('2013-11-26', 996.2, 6.9, null, -1.2, 2.1, 0.4, 0.2, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-11-27', 1001.1, 6.9, null, 3.8, 2.7, 2, 7.9, 3.7);
+VALUES('2013-11-27', 1001.1, 6.9, null, -3.8, 2.7, -2, 7.9, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-11-28', 996.4, 8.7, 0.2, 7.6, 2.1, 0.6, null, 2.3);
+VALUES('2013-11-28', 996.4, 8.7, 0.2, -7.6, 2.1, -0.6, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-11-29', 990.7, 7.3, null, 0.5, 5.9, 2.8, 3.2, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -10915,17 +10915,17 @@ VALUES('2013-12-01', 996.4, 7.3, null, 0.1, 4.8, 3.2, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-12-02', 1003.7, 6.8, null, 0.4, 7, 2.3, 7.3, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-12-03', 1002.5, 6.9, null, 3.4, 4, null, 6.3, 2.3);
+VALUES('2013-12-03', 1002.5, 6.9, null, -3.4, 4, null, 6.3, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-12-04', 994.5, 8.3, null, 3.5, 1.4, 0.6, null, 3.7);
+VALUES('2013-12-04', 994.5, 8.3, null, -3.5, 1.4, -0.6, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-12-05', 98.9, 7.0, 1.5, 0.2, 6.5, 3.3, 5.2, 5.7);
+VALUES('2013-12-05', 98.9, 7.0, 1.5, -0.2, 6.5, 3.3, 5.2, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-12-06', 980.2, 6.1, 1.2, 0.8, 5.4, 1.4, 5, 9.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-12-07', 99.0, 7.0, null, 1.5, 1.7, 0.7, 1, 6.3);
+VALUES('2013-12-07', 99.0, 7.0, null, -1.5, 1.7, 0.7, 1, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-12-08', 995.1, 9.2, 0.8, 0.5, 1.5, 0.5, null, 2.7);
+VALUES('2013-12-08', 995.1, 9.2, 0.8, -0.5, 1.5, 0.5, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-12-09', 993.6, 7.9, 0.2, 0.5, 7.1, 6.1, null, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -10933,27 +10933,27 @@ VALUES('2013-12-10', 1006.5, 7.6, null, 2.6, 7.1, 3.1, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-12-11', 1006.6, 7.8, null, 1.2, 3.2, 1.5, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-12-12', 1002.7, 9.5, 0.1, 0.2, 1.3, 0.4, null, 2);
+VALUES('2013-12-12', 1002.7, 9.5, 0.1, -0.2, 1.3, 0.4, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-12-13', 997.3, 9.7, null, 1.2, 0.2, 0.8, null, 1.7);
+VALUES('2013-12-13', 997.3, 9.7, null, -1.2, 0.2, -0.8, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-12-14', 998.6, 9.3, null, 1.8, 1.3, 0.5, null, 2.3);
+VALUES('2013-12-14', 998.6, 9.3, null, -1.8, 1.3, 0.5, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-12-15', 1002.2, 8.3, null, 1, 6.5, 2.8, 1.2, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-12-16', 1005.3, 9.5, null, 0.6, 2.6, 0.2, 0.2, 3.3);
+VALUES('2013-12-16', 1005.3, 9.5, null, -0.6, 2.6, -0.2, 0.2, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-12-17', 1003.5, 8.9, null, 1.2, 0.1, 0.8, null, 3);
+VALUES('2013-12-17', 1003.5, 8.9, null, -1.2, 0.1, -0.8, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-12-18', 998.4, 8.8, null, 2.2, 1.2, 1.8, null, 3);
+VALUES('2013-12-18', 998.4, 8.8, null, -2.2, -1.2, -1.8, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-12-19', 990.3, 8.4, null, 3, 1.7, 2.1, null, 3);
+VALUES('2013-12-19', 990.3, 8.4, null, -3, -1.7, -2.1, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-12-20', 997.5, 9.0, null, 1.7, 0.3, 0.7, null, 2.3);
+VALUES('2013-12-20', 997.5, 9.0, null, -1.7, -0.3, -0.7, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-12-21', 1004.4, 9.5, null, 3.8, 0.1, 1.3, null, 1.3);
+VALUES('2013-12-21', 1004.4, 9.5, null, -3.8, -0.1, -1.3, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-12-22', 997.7, 9.7, null, 0.1, 1.8, 1.3, null, 3.7);
+VALUES('2013-12-22', 997.7, 9.7, null, -0.1, 1.8, 1.3, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-12-23', 993.9, 9.7, null, 1, 3, 1.9, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -10969,7 +10969,7 @@ VALUES('2013-12-28', 98.1, 8.5, null, 1.7, 8.1, 6.6, 0.3, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-12-29', 989.4, 7.7, null, 3.5, 8.8, 5.2, 0.8, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2013-12-30', 998.6, 7.7, null, 1.2, 6.9, 1.9, 6.3, 2.3);
+VALUES('2013-12-30', 998.6, 7.7, null, -1.2, 6.9, 1.9, 6.3, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2013-12-31', 993.7, 8.9, 1.5, null, 3.9, 2.8, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -10977,7 +10977,7 @@ VALUES('2014-01-01', 989.2, 9.2, 0.4, 2.4, 3.5, 2.7, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-01-02', 983.1, 8.8, 1, 2.1, 4, 3.2, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-01-03', 987.2, 9.0, null, 2, 6.1, 2.3, 5.4, 1.3);
+VALUES('2014-01-03', 987.2, 9.0, null, -2, 6.1, 2.3, 5.4, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-01-04', 984.8, 9.6, 0.4, 0.1, 6.5, 4.8, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -10993,21 +10993,21 @@ VALUES('2014-01-09', 987.1, 9.8, 0.6, 2.3, 4.1, 3.5, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-01-10', 987.1, 7.1, null, 2, 8.9, 4.2, 6.2, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-01-11', 988.7, 8.2, 0.1, 0.8, 6.3, 3.3, 5.7, 1.3);
+VALUES('2014-01-11', 988.7, 8.2, 0.1, -0.8, 6.3, 3.3, 5.7, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-01-12', 992.1, 5.8, null, 1.8, 6.6, 1.9, 4.1, 6);
+VALUES('2014-01-12', 992.1, 5.8, null, -1.8, 6.6, 1.9, 4.1, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-01-13', 987.2, 7.9, null, 6.1, 4.1, 1, 7.4, 2.3);
+VALUES('2014-01-13', 987.2, 7.9, null, -6.1, 4.1, -1, 7.4, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-01-14', 978.5, 7.9, 0.7, 1.4, 5.9, 3.9, null, 4);
+VALUES('2014-01-14', 978.5, 7.9, 0.7, -1.4, 5.9, 3.9, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-01-15', 982.4, 7.9, null, 1.6, 5, 3.1, 0.2, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-01-16', 981.5, 8.7, null, 4, 4.4, 2.2, null, 2.3);
+VALUES('2014-01-16', 981.5, 8.7, null, -4, 4.4, 2.2, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-01-17', 978.9, 8.9, 0.2, 1.9, 4.6, 3.5, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-01-18', 979.5, 9.5, null, 0.3, 5.8, 4.1, null, 4.3);
+VALUES('2014-01-18', 979.5, 9.5, null, -0.3, 5.8, 4.1, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-01-19', 974.6, 7.9, 0.1, 5, 11.5, 8.8, 5, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -11015,65 +11015,65 @@ VALUES('2014-01-20', 972.4, 9.2, 8.9, 4.8, 9.4, 6.3, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-01-21', 978.3, 9.2, 6, 0.6, 5, 2.2, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-01-22', 984.1, 8.8, 0.1, 2.2, 1.5, 1.3, null, 4);
+VALUES('2014-01-22', 984.1, 8.8, 0.1, -2.2, 1.5, -1.3, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-01-23', 988.8, 7.4, 0.5, 3.7, 1.6, 3, null, 4.3);
+VALUES('2014-01-23', 988.8, 7.4, 0.5, -3.7, -1.6, -3, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-01-24', 98.6, 8.7, null, 4.2, 2, 3.3, null, 5);
+VALUES('2014-01-24', 98.6, 8.7, null, -4.2, -2, -3.3, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-01-25', 987.8, 6.3, null, 9.6, 2, 7.7, 8.1, 5.3);
+VALUES('2014-01-25', 987.8, 6.3, null, -9.6, -2, -7.7, 8.1, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-01-26', 982.7, 6.7, null, 12.4, 6.5, 8.8, 6.5, 2.7);
+VALUES('2014-01-26', 982.7, 6.7, null, -12.4, -6.5, -8.8, 6.5, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-01-27', 97.5, 8.2, 0.3, 8.3, 3.6, 4.6, null, 3);
+VALUES('2014-01-27', 97.5, 8.2, 0.3, -8.3, -3.6, -4.6, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-01-28', 974.8, 8.3, null, 5.6, 0.8, 3.8, 2.3, 5);
+VALUES('2014-01-28', 974.8, 8.3, null, -5.6, 0.8, -3.8, 2.3, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-01-29', 979.2, 8.1, 0.1, 5.9, 3.1, 4.2, null, 5.7);
+VALUES('2014-01-29', 979.2, 8.1, 0.1, -5.9, -3.1, -4.2, null, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-01-30', 987.1, 7.7, null, 4.3, 1, 0.4, null, 7.3);
+VALUES('2014-01-30', 987.1, 7.7, null, -4.3, 1, -0.4, null, 7.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-01-31', 988.7, 7.4, null, null, 1.7, 0.3, null, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-02-01', 98.7, 7.1, 0.9, 2.8, 0.7, 1.2, 1.9, 8.7);
+VALUES('2014-02-01', 98.7, 7.1, 0.9, -2.8, 0.7, -1.2, 1.9, 8.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-02-02', 989.3, 8.8, 0.8, 1.5, 0.1, 0.2, null, 5);
+VALUES('2014-02-02', 989.3, 8.8, 0.8, -1.5, 0.1, -0.2, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-02-03', 992.3, 8.0, null, 2.9, 3.5, 1, 3.1, 3.3);
+VALUES('2014-02-03', 992.3, 8.0, null, -2.9, 3.5, -1, 3.1, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-02-04', 989.9, 7.7, null, 5, 1.6, 1.9, 7, 4);
+VALUES('2014-02-04', 989.9, 7.7, null, -5, 1.6, -1.9, 7, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-02-05', 981.6, 7.4, null, 2.5, 2.4, 0.8, 0.2, 6.7);
+VALUES('2014-02-05', 981.6, 7.4, null, -2.5, 2.4, 0.8, 0.2, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-02-06', 983.8, 9.1, null, 0.9, 2.4, 0.1, 0.1, 2);
+VALUES('2014-02-06', 983.8, 9.1, null, -0.9, 2.4, 0.1, 0.1, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-02-07', 977.8, 9.0, null, 1.9, 3.7, 2.4, null, 4);
+VALUES('2014-02-07', 977.8, 9.0, null, -1.9, 3.7, 2.4, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-02-08', 975.8, 8.6, 0.1, 0.3, 8.7, 4.6, 2.1, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-02-09', 973.6, 9.5, 4.7, 1.4, 5.1, 2.2, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-02-10', 974.6, 7.4, 2.7, 1.9, 7.3, 4.7, 1.8, 5.3);
+VALUES('2014-02-10', 974.6, 7.4, 2.7, -1.9, 7.3, 4.7, 1.8, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-02-11', 977.5, 7.8, 1.8, 3.8, 8.6, 5.3, 0.3, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-02-12', 980.1, 7.3, null, 0.4, 7.2, 2.7, null, 2);
+VALUES('2014-02-12', 980.1, 7.3, null, -0.4, 7.2, 2.7, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-02-13', 975.9, 7.8, null, 4.8, 5.6, 2.5, 6.4, 3);
+VALUES('2014-02-13', 975.9, 7.8, null, -4.8, 5.6, 2.5, 6.4, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-02-14', 981.8, 5.9, null, 1.2, 8.9, 4.2, 3.7, 4);
+VALUES('2014-02-14', 981.8, 5.9, null, -1.2, 8.9, 4.2, 3.7, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-02-15', 980.4, 6.8, null, 1.5, 9, 5.2, 3, 6.3);
+VALUES('2014-02-15', 980.4, 6.8, null, -1.5, 9, 5.2, 3, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-02-16', 984.5, 8.5, null, 1.7, 5.5, 3.3, 0.1, 1.3);
+VALUES('2014-02-16', 984.5, 8.5, null, -1.7, 5.5, 3.3, 0.1, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-02-17', 988.4, 7.4, null, 0.8, 9.4, 5.6, 4.1, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-02-18', 990.4, 8.7, null, 2.3, 7.6, 3.9, 0.9, 3.3);
+VALUES('2014-02-18', 990.4, 8.7, null, -2.3, 7.6, 3.9, 0.9, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-02-19', 985.1, 9.0, 0.2, 4.1, 6.5, 4.9, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-02-20', 986.6, 7.7, null, 1.1, 1.1, 5.4, 5.6, 3);
+VALUES('2014-02-20', 986.6, 7.7, null, -1.1, 1.1, 5.4, 5.6, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-02-21', 982.7, 8.4, 0.6, 1.4, 10.1, 5.6, 0.9, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -11081,9 +11081,9 @@ VALUES('2014-02-22', 987.2, 7.5, null, 3.9, 8.5, 6, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-02-23', 994.5, 5.7, null, 0.7, 11.5, 6, 8.3, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-02-24', 992.8, 6.8, null, 1.4, 11.1, 5.1, 8.4, 2);
+VALUES('2014-02-24', 992.8, 6.8, null, -1.4, 11.1, 5.1, 8.4, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-02-25', 989.2, 7.6, null, 0.9, 10.2, 5.7, 3.2, 5.3);
+VALUES('2014-02-25', 989.2, 7.6, null, -0.9, 10.2, 5.7, 3.2, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-02-26', 989.5, 7.6, null, 2.9, 9, 5, 1.5, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -11099,23 +11099,23 @@ VALUES('2014-03-03', 970.5, 7.7, 0.2, 0.9, 8.9, 5.7, null, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-03-04', 974.4, 8.0, 0.4, 4.2, 10.3, 5.8, 0.5, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-03-05', 985.2, 6.9, null, 1.2, 1.3, 6.5, 5.1, 2);
+VALUES('2014-03-05', 985.2, 6.9, null, -1.2, 1.3, 6.5, 5.1, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-03-06', 996.9, 6.1, null, 5, 9.8, 7.2, null, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-03-07', 997.4, 6.1, null, 3.8, 8.7, 5, 1.8, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-03-08', 1002.6, 6.3, null, 1, 14.1, 5.7, 8.3, 2.3);
+VALUES('2014-03-08', 1002.6, 6.3, null, -1, 14.1, 5.7, 8.3, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-03-09', 1003.1, 5.5, null, 1, 13.5, 8.2, 9.1, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-03-10', 998.5, 4.9, null, 0.8, 13.5, 5.9, 9.4, 2.7);
+VALUES('2014-03-10', 998.5, 4.9, null, -0.8, 13.5, 5.9, 9.4, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-03-11', 998.2, 4.2, null, 1.7, 17.7, 8.2, 9.9, 2);
+VALUES('2014-03-11', 998.2, 4.2, null, -1.7, 17.7, 8.2, 9.9, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-03-12', 1001.8, 4.2, null, 2.4, 15.1, 9, 1.0, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-03-13', 998.9, 4.7, null, 0.9, 16.2, 8.7, 10.2, 1.7);
+VALUES('2014-03-13', 998.9, 4.7, null, -0.9, 16.2, 8.7, 10.2, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-03-14', 993.4, 5.1, null, 0.8, 18.4, 9.6, 9.6, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -11141,7 +11141,7 @@ VALUES('2014-03-24', 977.5, 7.6, null, 3.7, 8, 4.7, 1.3, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-03-25', 980.2, 5.8, null, 1.1, 10.4, 6, 3.6, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-03-26', 985.8, 5.6, null, 0.8, 12.6, 7.7, 7.6, 4.7);
+VALUES('2014-03-26', 985.8, 5.6, null, -0.8, 12.6, 7.7, 7.6, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-03-27', 985.7, 5.2, null, 3.3, 15.1, 10.1, 9.6, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -11187,7 +11187,7 @@ VALUES('2014-04-16', 995.5, 5.6, null, 3.2, 11.4, 6.9, 3.5, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-04-17', 991.4, 5.3, null, 2.1, 13.8, 8.4, 1.1, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-04-18', 98.1, 5.4, null, 0.2, 17.6, 9.6, 10.5, 2.7);
+VALUES('2014-04-18', 98.1, 5.4, null, -0.2, 17.6, 9.6, 10.5, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-04-19', 980.8, 6.0, null, 6.4, 2.0, 13.4, 4.4, 7.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -11575,7 +11575,7 @@ VALUES('2014-10-27', 1001.2, 9.0, null, 0.3, 6.8, 3.6, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-10-28', 996.3, 8.7, null, null, 9.3, 2.9, 3.5, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-10-29', 99.2, 8.0, null, 0.7, 9.1, 5.1, 3.4, 4);
+VALUES('2014-10-29', 99.2, 8.0, null, -0.7, 9.1, 5.1, 3.4, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-10-30', 996.3, 8.1, null, 4.3, 9.8, 7.6, 3.3, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -11631,21 +11631,21 @@ VALUES('2014-11-24', 996.9, 8.3, 3.5, 1.3, 5.4, 3.8, 1, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-11-25', 997.9, 9.0, null, 3.1, 4.7, 3.7, null, 0.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-11-26', 993.7, 8.9, null, 0.2, 3.9, 3, null, 4.3);
+VALUES('2014-11-26', 993.7, 8.9, null, -0.2, 3.9, 3, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-11-27', 988.9, 7.7, null, 1.1, 3.5, 1.5, null, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-11-28', 989.6, 8.8, null, 0.7, 2.1, 1.5, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-11-29', 990.8, 8.9, null, 1, 1.7, 0.5, null, 7);
+VALUES('2014-11-29', 990.8, 8.9, null, -1, 1.7, -0.5, null, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-11-30', 988.6, 8.5, null, 1.6, 0.5, 1.2, null, 7.3);
+VALUES('2014-11-30', 988.6, 8.5, null, -1.6, -0.5, -1.2, null, 7.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-12-01', 984.8, 8.7, 20.9, 2.2, 0.4, 1, null, 9.3);
+VALUES('2014-12-01', 984.8, 8.7, 20.9, -2.2, -0.4, -1, null, 9.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-12-02', 985.2, 8.9, null, 1.8, 0.2, 1.1, null, 7.3);
+VALUES('2014-12-02', 985.2, 8.9, null, -1.8, -0.2, -1.1, null, 7.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-12-03', 990.6, 9.2, 1.1, 0.9, 1.4, 1, null, 5);
+VALUES('2014-12-03', 990.6, 9.2, 1.1, -0.9, 1.4, 1, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-12-04', 990.9, 8.6, null, 1, 7.5, 3.7, 4.2, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -11657,11 +11657,11 @@ VALUES('2014-12-07', 989.1, 8.6, null, 3.6, 6.2, 5.3, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-12-08', 988.9, 8.1, null, 1.2, 5.7, 2.9, 0.5, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-12-09', 996.1, 7.5, null, 1.2, 4.6, 0.8, 5.1, 5.3);
+VALUES('2014-12-09', 996.1, 7.5, null, -1.2, 4.6, 0.8, 5.1, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-12-10', 993.4, 8.3, null, 2.6, 0.5, 0.7, 4.6, 2.3);
+VALUES('2014-12-10', 993.4, 8.3, null, -2.6, 0.5, -0.7, 4.6, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-12-11', 986.1, 8.6, 0.3, 1.1, 4.1, 2.5, 0.3, 2);
+VALUES('2014-12-11', 986.1, 8.6, 0.3, -1.1, 4.1, 2.5, 0.3, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-12-12', 983.6, 7.5, null, 1.5, 8.6, 4.7, 4.3, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -11691,35 +11691,35 @@ VALUES('2014-12-24', 988.8, 7.1, null, null, 9.6, 4.8, 7.3, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2014-12-25', 99.0, 6.9, 0.6, 1.5, 8, 4.2, 2.3, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-12-26', 99.3, 6.7, 0.2, 2, 3.9, null, 2, 5.3);
+VALUES('2014-12-26', 99.3, 6.7, 0.2, -2, 3.9, null, 2, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-12-27', 98.2, 6.3, null, 5.8, 1.7, 2.9, 5.1, 4.7);
+VALUES('2014-12-27', 98.2, 6.3, null, -5.8, -1.7, -2.9, 5.1, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-12-28', 98.6, 6.8, null, 7.6, 2.5, 6, null, 6);
+VALUES('2014-12-28', 98.6, 6.8, null, -7.6, -2.5, -6, null, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-12-29', 995.3, 7.5, 0.3, 8.7, 2.5, 4.9, 0.7, 3.3);
+VALUES('2014-12-29', 995.3, 7.5, 0.3, -8.7, -2.5, -4.9, 0.7, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-12-30', 1001.5, 7.3, null, 9.2, 2.7, 6.9, 5.7, 3.3);
+VALUES('2014-12-30', 1001.5, 7.3, null, -9.2, -2.7, -6.9, 5.7, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2014-12-31', 1004.8, 7.0, 0.6, 8.4, 4.8, 5.5, null, 2);
+VALUES('2014-12-31', 1004.8, 7.0, 0.6, -8.4, -4.8, -5.5, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-01-01', 1003.8, 8.7, 0.3, 5.2, 0.7, 2.3, null, 1.7);
+VALUES('2015-01-01', 1003.8, 8.7, 0.3, -5.2, -0.7, -2.3, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-01-02', 996.9, 9.3, 0.4, 3.1, 3.9, 1.4, null, 1.7);
+VALUES('2015-01-02', 996.9, 9.3, 0.4, -3.1, 3.9, 1.4, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-01-03', 992.4, 7.4, 0.8, 0.9, 4.4, 1.9, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-01-04', 990.5, 7.4, 0.3, null, 4.5, 1.9, 3.2, 8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-01-05', 994.7, 7.5, 0.4, 1.7, 2.7, 1.8, null, 7);
+VALUES('2015-01-05', 994.7, 7.5, 0.4, -1.7, 2.7, 1.8, null, 7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-01-06', 99.8, 7.1, null, 4.1, 2.8, 2.1, 7.4, 3);
+VALUES('2015-01-06', 99.8, 7.1, null, -4.1, 2.8, -2.1, 7.4, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-01-07', 100.1, 7.7, 0.4, 6, 2.5, 4.4, 0.4, 3.7);
+VALUES('2015-01-07', 100.1, 7.7, 0.4, -6, -2.5, -4.4, 0.4, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-01-08', 999.5, 8.9, 1.1, 5, 1.8, 2.8, null, 3.3);
+VALUES('2015-01-08', 999.5, 8.9, 1.1, -5, -1.8, -2.8, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-01-09', 988.4, 7.4, 1.9, 1.9, 8.2, 5.8, null, 4.3);
+VALUES('2015-01-09', 988.4, 7.4, 1.9, -1.9, 8.2, 5.8, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-01-10', 977.9, 7.2, 2, 4.6, 15.7, 11.8, 1.3, 7.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -11727,11 +11727,11 @@ VALUES('2015-01-11', 983.3, 5.6, 0.2, 1.5, 13.7, 3.8, null, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-01-12', 990.9, 6.7, null, 2, 6.7, 4.6, 0.5, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-01-13', 989.1, 6.8, null, 0.8, 8, 3, 6.4, 1.3);
+VALUES('2015-01-13', 989.1, 6.8, null, -0.8, 8, 3, 6.4, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-01-14', 985.8, 8.1, 0.3, 0.2, 4.6, 2.9, 1.3, 2.3);
+VALUES('2015-01-14', 985.8, 8.1, 0.3, -0.2, 4.6, 2.9, 1.3, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-01-15', 987.5, 7.1, null, 2.8, 5.6, 2.7, 5.9, 2.7);
+VALUES('2015-01-15', 987.5, 7.1, null, -2.8, 5.6, 2.7, 5.9, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-01-16', 982.9, 8.2, null, 1.9, 6, 4.4, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -11749,39 +11749,39 @@ VALUES('2015-01-22', 984.5, 9.0, 0.7, 3.2, 6.4, 4.4, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-01-23', 987.9, 8.0, 0.2, 3, 6.6, 4.2, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-01-24', 986.8, 7.5, 2.6, 0.5, 3.1, 0.3, null, 6.3);
+VALUES('2015-01-24', 986.8, 7.5, 2.6, -0.5, 3.1, 0.3, null, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-01-25', 99.2, 8.0, 0.4, 1, 2.7, 1.1, null, 3.3);
+VALUES('2015-01-25', 99.2, 8.0, 0.4, -1, 2.7, 1.1, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-01-26', 993.7, 7.1, 1.8, 2.5, 2.1, 0.8, 1.3, 2);
+VALUES('2015-01-26', 993.7, 7.1, 1.8, -2.5, 2.1, -0.8, 1.3, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-01-27', 985.4, 8.9, 2, 4.4, 3.4, 0.1, 0.3, 2.3);
+VALUES('2015-01-27', 985.4, 8.9, 2, -4.4, 3.4, 0.1, 0.3, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-01-28', 983.7, 7.5, 3.1, 1.2, 4.4, 1.3, 0.7, 3);
+VALUES('2015-01-28', 983.7, 7.5, 3.1, -1.2, 4.4, 1.3, 0.7, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-01-29', 96.7, 9.0, 0.2, 1.1, 1.4, 0.3, 1.4, 3.7);
+VALUES('2015-01-29', 96.7, 9.0, 0.2, -1.1, 1.4, -0.3, 1.4, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-01-30', 948.9, 8.5, 4.5, 0.8, 2.1, 0.8, null, 4);
+VALUES('2015-01-30', 948.9, 8.5, 4.5, -0.8, 2.1, 0.8, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-01-31', 956.1, 7.7, null, 6.2, 2.4, 1.1, 2.9, 1.7);
+VALUES('2015-01-31', 956.1, 7.7, null, -6.2, 2.4, -1.1, 2.9, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-02-01', 96.4, 9.2, null, 6.9, 0.5, 2.8, null, 1.3);
+VALUES('2015-02-01', 96.4, 9.2, null, -6.9, -0.5, -2.8, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-02-02', 969.2, 9.5, 0.5, 4.3, 1, 1.6, 1.1, 1);
+VALUES('2015-02-02', 969.2, 9.5, 0.5, -4.3, 1, -1.6, 1.1, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-02-03', 975.1, 7.6, null, 4.5, 2.7, 1.5, 7.2, 2.7);
+VALUES('2015-02-03', 975.1, 7.6, null, -4.5, 2.7, -1.5, 7.2, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-02-04', 981.2, 7.5, null, 3, 1.5, 0.9, 3.1, 2.7);
+VALUES('2015-02-04', 981.2, 7.5, null, -3, 1.5, -0.9, 3.1, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-02-05', 989.9, 7.1, null, 7.3, 0.3, 2.2, 6.3, 5);
+VALUES('2015-02-05', 989.9, 7.1, null, -7.3, 0.3, -2.2, 6.3, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-02-06', 991.9, 6.5, null, 3.1, 0.3, 2, 5.3, 8.3);
+VALUES('2015-02-06', 991.9, 6.5, null, -3.1, -0.3, -2, 5.3, 8.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-02-07', 993.2, 6.3, 0.6, 5.5, 2.7, 1.9, 8, 3.3);
+VALUES('2015-02-07', 993.2, 6.3, 0.6, -5.5, 2.7, -1.9, 8, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-02-08', 984.7, 6.9, 1.4, 3.5, 1.1, 1.1, 4.5, 8);
+VALUES('2015-02-08', 984.7, 6.9, 1.4, -3.5, 1.1, -1.1, 4.5, 8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-02-09', 987.9, 7.5, 1.8, 4.1, 4.4, 1.8, null, 3.7);
+VALUES('2015-02-09', 987.9, 7.5, 1.8, -4.1, 4.4, 1.8, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-02-10', 995.3, 7.7, null, 3.2, 5.4, 3.8, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -11789,25 +11789,25 @@ VALUES('2015-02-11', 997.6, 8.2, null, 1.8, 4.2, 2.6, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-02-12', 997.2, 8.3, null, null, 5.6, 1.5, 3, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-02-13', 993.5, 7.3, null, 3.3, 4.7, 0.5, 8.6, 4);
+VALUES('2015-02-13', 993.5, 7.3, null, -3.3, 4.7, 0.5, 8.6, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-02-14', 98.7, 6.8, null, 1.7, 5.5, 3.2, 1.2, 5);
+VALUES('2015-02-14', 98.7, 6.8, null, -1.7, 5.5, 3.2, 1.2, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-02-15', 988.4, 5.8, null, 2, 9.5, 5.1, 1.5, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-02-16', 995.3, 7.9, null, 1.4, 5, 0.1, 8.8, 8.3);
+VALUES('2015-02-16', 995.3, 7.9, null, -1.4, 5, 0.1, 8.8, 8.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-02-17', 1004.4, 7.0, null, 3.2, 4.5, 0.3, 8.6, 4.7);
+VALUES('2015-02-17', 1004.4, 7.0, null, -3.2, 4.5, 0.3, 8.6, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-02-18', 1009.4, 7.8, null, 1.2, 1.3, 0.5, null, 1);
+VALUES('2015-02-18', 1009.4, 7.8, null, -1.2, 1.3, 0.5, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-02-19', 1000.9, 7.8, null, 0.4, 2.8, 0.6, 1.4, 1.7);
+VALUES('2015-02-19', 1000.9, 7.8, null, -0.4, 2.8, 0.6, 1.4, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-02-20', 990.8, 8.3, null, 3.1, 5, 0.8, 3.1, 2);
+VALUES('2015-02-20', 990.8, 8.3, null, -3.1, 5, 0.8, 3.1, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-02-21', 974.6, 6.2, null, 0.3, 9.8, 4.8, 6.5, 4.3);
+VALUES('2015-02-21', 974.6, 6.2, null, -0.3, 9.8, 4.8, 6.5, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-02-22', 978.4, 7.5, 0.6, 0.3, 8.2, 4.6, 4.1, 2.3);
+VALUES('2015-02-22', 978.4, 7.5, 0.6, -0.3, 8.2, 4.6, 4.1, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-02-23', 974.9, 9.3, 1.7, 2.4, 6.4, 4.5, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -11821,25 +11821,25 @@ VALUES('2015-02-27', 984.6, 8.0, null, 3.1, 7.9, 5.4, 0.2, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-02-28', 989.2, 7.6, null, 2.2, 8.5, 4.8, 0.1, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-03-01', 982.6, 8.6, 0.3, 0.4, 5.6, 3.4, 1.4, 2.3);
+VALUES('2015-03-01', 982.6, 8.6, 0.3, -0.4, 5.6, 3.4, 1.4, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-03-02', 977.1, 7.4, 5.3, 1.3, 9.7, 4.9, 1.2, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-03-03', 990.5, 5.0, 0.2, 0.7, 9.5, 4.3, 7.7, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-03-04', 99.3, 5.6, null, 0.6, 8.5, 3.8, 3.5, 4);
+VALUES('2015-03-04', 99.3, 5.6, null, -0.6, 8.5, 3.8, 3.5, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-03-05', 100.0, 6.7, null, 1.9, 7.3, 2.1, 5.5, 3);
+VALUES('2015-03-05', 100.0, 6.7, null, -1.9, 7.3, 2.1, 5.5, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-03-06', 1004.3, 6.0, null, 1, 8.1, 2.6, 6.5, 2.3);
+VALUES('2015-03-06', 1004.3, 6.0, null, -1, 8.1, 2.6, 6.5, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-03-07', 1004.5, 6.5, null, 0.8, 9.1, 4.9, 1, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-03-08', 1001.2, 5.4, null, 1.6, 11.4, 5.2, 9, 2.3);
+VALUES('2015-03-08', 1001.2, 5.4, null, -1.6, 11.4, 5.2, 9, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-03-09', 998.5, 5.0, null, 0.8, 10.9, 6.1, 4.8, 4);
+VALUES('2015-03-09', 998.5, 5.0, null, -0.8, 10.9, 6.1, 4.8, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-03-10', 995.3, 6.0, 0.1, 0.8, 12.6, 5.5, 9.1, 1.3);
+VALUES('2015-03-10', 995.3, 6.0, 0.1, -0.8, 12.6, 5.5, 9.1, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-03-11', 993.6, 6.8, 5.4, 2, 6.7, 4.5, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -11857,15 +11857,15 @@ VALUES('2015-03-17', 1001.7, 6.1, null, 3.2, 14.1, 7.9, 9.7, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-03-18', 997.4, 5.2, null, 0.8, 12.4, 6.9, 6.4, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-03-19', 996.1, 5.1, null, 0.1, 11.4, 5.7, 10.3, 2.3);
+VALUES('2015-03-19', 996.1, 5.1, null, -0.1, 11.4, 5.7, 10.3, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-03-20', 994.2, 5.7, null, 1.8, 10.6, 5.2, 10.7, 2);
+VALUES('2015-03-20', 994.2, 5.7, null, -1.8, 10.6, 5.2, 10.7, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-03-21', 985.1, 5.4, null, 1.4, 13.7, 8, 8.8, 2.3);
+VALUES('2015-03-21', 985.1, 5.4, null, -1.4, 13.7, 8, 8.8, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-03-22', 992.1, 6.1, null, 1.8, 9.9, 4.3, 2.8, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-03-23', 988.8, 5.1, null, 2.6, 10.1, 4.8, 9.2, 2);
+VALUES('2015-03-23', 988.8, 5.1, null, -2.6, 10.1, 4.8, 9.2, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-03-24', 98.2, 5.7, null, 2.1, 15.2, 9.4, 10.1, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -11877,7 +11877,7 @@ VALUES('2015-03-27', 984.9, 7.1, 0.7, 6.5, 12.1, 7.9, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-03-28', 988.9, 6.5, 0.1, 3.4, 9, 5.5, 1.3, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-03-29', 97.8, 8.2, 2.5, 0.9, 12.1, 7.5, null, 2.7);
+VALUES('2015-03-29', 97.8, 8.2, 2.5, -0.9, 12.1, 7.5, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-03-30', 972.1, 6.3, 1.2, 3.8, 11.1, 6.9, 3.6, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -11885,15 +11885,15 @@ VALUES('2015-03-31', 970.9, 7.0, 11.1, 0.5, 1.4, 7, 1.3, 8.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-04-01', 980.5, 6.6, 3.2, 2.5, 8.5, 3.9, 4.9, 7.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-04-02', 978.9, 7.7, 0.7, 0.2, 7, 3.3, 1.6, 6);
+VALUES('2015-04-02', 978.9, 7.7, 0.7, -0.2, 7, 3.3, 1.6, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-04-03', 987.8, 5.9, null, 1.3, 8.7, 3.4, 4.6, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-04-04', 984.5, 6.3, null, 2.8, 9.5, 3.5, 7.7, 1.7);
+VALUES('2015-04-04', 984.5, 6.3, null, -2.8, 9.5, 3.5, 7.7, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-04-05', 990.2, 5.7, null, 1.3, 8.3, 4, 5.3, 3);
+VALUES('2015-04-05', 990.2, 5.7, null, -1.3, 8.3, 4, 5.3, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-04-06', 993.9, 6.6, 0.2, 0.5, 8.4, 2.9, 6.9, 6);
+VALUES('2015-04-06', 993.9, 6.6, 0.2, -0.5, 8.4, 2.9, 6.9, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-04-07', 1000.4, 5.2, 0.1, 0.5, 11.1, 6.9, 9.5, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -11919,7 +11919,7 @@ VALUES('2015-04-17', 982.9, 6.6, 0.6, 9.6, 16.2, 1.1, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-04-18', 991.4, 5.2, null, 3.9, 10.4, 6.6, 6.4, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-04-19', 991.8, 5.1, null, 1, 14.3, 9.1, 1.0, 2.3);
+VALUES('2015-04-19', 991.8, 5.1, null, -1, 14.3, 9.1, 1.0, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-04-20', 990.6, 4.8, null, 3.5, 17.5, 12.6, 9, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -12273,7 +12273,7 @@ VALUES('2015-10-11', 985.8, 4.9, null, 5.7, 9.1, 6.9, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-10-12', 989.3, 6.7, null, 1.8, 7.1, 3.4, 1.1, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-10-13', 989.1, 8.7, 11.2, 3, 5.5, 4.6, null, 3.7);
+VALUES('2015-10-13', 989.1, 8.7, 11.2, -3, 5.5, 4.6, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-10-14', 986.7, 9.7, 16.8, 5.5, 8.9, 8.1, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -12315,13 +12315,13 @@ VALUES('2015-11-01', 1007.9, 6.6, null, 3.6, 12.7, 6.9, 9.2, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-11-02', 1002.6, 6.2, null, 0.7, 11.6, 6, 8.9, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-11-03', 995.8, 6.9, null, 1.7, 11.9, 5.4, 8.6, 3);
+VALUES('2015-11-03', 995.8, 6.9, null, -1.7, 11.9, 5.4, 8.6, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-11-04', 993.2, 8.3, null, 0.8, 9.3, 3.2, 6.8, 1.3);
+VALUES('2015-11-04', 993.2, 8.3, null, -0.8, 9.3, 3.2, 6.8, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-11-05', 99.3, 8.6, null, 2.5, 10.9, 4.3, 5.2, 2.3);
+VALUES('2015-11-05', 99.3, 8.6, null, -2.5, 10.9, 4.3, 5.2, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-11-06', 995.8, 8.6, null, 0.6, 12.2, 6.8, 6.9, 1);
+VALUES('2015-11-06', 995.8, 8.6, null, -0.6, 12.2, 6.8, 6.9, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-11-07', 996.3, 9.4, 1.1, 4.2, 11.1, 8.9, 0.1, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -12353,21 +12353,21 @@ VALUES('2015-11-20', 974.9, 8.8, 10.4, 6, 12.1, 7.3, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-11-21', 967.7, 8.3, null, 1.4, 6, 3.5, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-11-22', 974.8, 8.2, 0.6, 0.4, 4.7, 1.8, 0.5, 2.3);
+VALUES('2015-11-22', 974.8, 8.2, 0.6, -0.4, 4.7, 1.8, 0.5, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-11-23', 991.2, 8.2, null, 3, 3.5, 0.7, 2.7, 5.3);
+VALUES('2015-11-23', 991.2, 8.2, null, -3, 3.5, -0.7, 2.7, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-11-24', 99.4, 7.7, null, 3.4, 4.1, 0.5, 5.4, 2);
+VALUES('2015-11-24', 99.4, 7.7, null, -3.4, 4.1, -0.5, 5.4, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-11-25', 981.8, 8.2, null, 4.4, 2.2, 0.4, 0.8, 3);
+VALUES('2015-11-25', 981.8, 8.2, null, -4.4, 2.2, -0.4, 0.8, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-11-26', 983.5, 8.2, null, 0.1, 3.3, 2.4, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-11-27', 987.8, 7.7, null, 1.5, 4.7, 2.4, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-11-28', 983.1, 7.8, null, 2.4, 5.4, 2.8, 5.8, 4);
+VALUES('2015-11-28', 983.1, 7.8, null, -2.4, 5.4, 2.8, 5.8, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-11-29', 987.5, 8.1, 0.2, 1.1, 6.6, 3.1, 2.1, 3.3);
+VALUES('2015-11-29', 987.5, 8.1, 0.2, -1.1, 6.6, 3.1, 2.1, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-11-30', 985.9, 7.9, 3.6, 3.1, 10.6, 7.1, 0.2, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -12377,7 +12377,7 @@ VALUES('2015-12-02', 997.9, 9.1, 0.2, 4.3, 10.9, 7.8, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-12-03', 1001.8, 8.4, null, 2.1, 9.8, 4.8, 0.4, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-12-04', 1001.9, 9.3, 0.1, 0.2, 5.4, 3.7, null, 2);
+VALUES('2015-12-04', 1001.9, 9.3, 0.1, -0.2, 5.4, 3.7, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-12-05', 1003.5, 9.2, 0.1, 2.6, 7.9, 4.6, 1.1, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -12389,15 +12389,15 @@ VALUES('2015-12-08', 1005.8, 9.7, null, 2.1, 4.4, 3.9, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-12-09', 1003.7, 9.4, 3.9, 1.9, 4, 3.3, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-12-10', 1006.7, 8.4, null, 1.4, 8.3, 2.5, 4.9, 3);
+VALUES('2015-12-10', 1006.7, 8.4, null, -1.4, 8.3, 2.5, 4.9, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-12-11', 999.2, 9.7, 0.3, 3.1, 0.4, 1.4, null, 2);
+VALUES('2015-12-11', 999.2, 9.7, 0.3, -3.1, -0.4, -1.4, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-12-12', 993.8, 9.4, 0.7, 1.1, 6.1, 2.9, null, 2);
+VALUES('2015-12-12', 993.8, 9.4, 0.7, -1.1, 6.1, 2.9, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-12-13', 989.9, 8.3, null, 0.3, 9.7, 4.6, 3.5, 4.3);
+VALUES('2015-12-13', 989.9, 8.3, null, -0.3, 9.7, 4.6, 3.5, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-12-14', 996.7, 8.6, null, 3.2, 3.7, 1.5, 3.3, 1.7);
+VALUES('2015-12-14', 996.7, 8.6, null, -3.2, 3.7, 1.5, 3.3, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-12-15', 997.6, 9.7, null, 1.8, 3, 2.4, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -12417,81 +12417,81 @@ VALUES('2015-12-22', 999.1, 9.0, null, 2.2, 10.5, 7, 0.4, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-12-23', 999.4, 9.8, null, 0.9, 7.5, 3.3, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-12-24', 1000.1, 9.9, null, 1.2, 5.5, 1.1, 2, 1.3);
+VALUES('2015-12-24', 1000.1, 9.9, null, -1.2, 5.5, 1.1, 2, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-12-25', 1002.4, 9.9, null, 1.3, 3.4, 2.9, null, 1.7);
+VALUES('2015-12-25', 1002.4, 9.9, null, -1.3, 3.4, 2.9, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2015-12-26', 1000.8, 9.9, null, 1.1, 3.9, 2.2, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-12-27', 1001.8, 9.9, null, 0.3, 1.5, null, null, 1.3);
+VALUES('2015-12-27', 1001.8, 9.9, null, -0.3, 1.5, null, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-12-28', 1001.7, 9.4, null, 1.3, 5.6, 2.4, 1.5, 1.7);
+VALUES('2015-12-28', 1001.7, 9.4, null, -1.3, 5.6, 2.4, 1.5, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-12-29', 1002.6, 8.7, null, 0.9, 5.2, 2, 3.7, 3);
+VALUES('2015-12-29', 1002.6, 8.7, null, -0.9, 5.2, 2, 3.7, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-12-30', 1006.5, 7.7, null, 4.4, 2.5, 2, 5.2, 4.7);
+VALUES('2015-12-30', 1006.5, 7.7, null, -4.4, 2.5, -2, 5.2, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2015-12-31', 1001.1, 6.3, null, 5.5, 1, 3.3, 6.6, 4.3);
+VALUES('2015-12-31', 1001.1, 6.3, null, -5.5, -1, -3.3, 6.6, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-01-01', 996.4, 8.5, 1.7, 4.4, 1.5, 2.2, null, 1.7);
+VALUES('2016-01-01', 996.4, 8.5, 1.7, -4.4, -1.5, -2.2, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-01-02', 992.7, 9.0, 0.7, 6.3, 1.5, 4.4, null, 4.7);
+VALUES('2016-01-02', 992.7, 9.0, 0.7, -6.3, -1.5, -4.4, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-01-03', 986.7, 8.0, null, 8.3, 6.1, 7.4, null, 5);
+VALUES('2016-01-03', 986.7, 8.0, null, -8.3, -6.1, -7.4, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-01-04', 971.6, 7.9, 3.6, 8.4, 5.5, 8, null, 6.3);
+VALUES('2016-01-04', 971.6, 7.9, 3.6, -8.4, -5.5, -8, null, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-01-05', 972.7, 8.5, 0.1, 8.6, 5.3, 6.2, null, 1.3);
+VALUES('2016-01-05', 972.7, 8.5, 0.1, -8.6, -5.3, -6.2, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-01-06', 974.9, 9.6, null, 6.1, 2.6, 3.2, null, 1.3);
+VALUES('2016-01-06', 974.9, 9.6, null, -6.1, -2.6, -3.2, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-01-07', 973.6, 8.8, null, 3.2, 1, 0.4, null, 2);
+VALUES('2016-01-07', 973.6, 8.8, null, -3.2, 1, -0.4, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-01-08', 977.9, 9.6, 0.1, 4.2, 1.6, 1.9, 2, 2.7);
+VALUES('2016-01-08', 977.9, 9.6, 0.1, -4.2, 1.6, -1.9, 2, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-01-09', 978.3, 9.8, 1.5, 6.9, 1.1, 0.3, null, 2.3);
+VALUES('2016-01-09', 978.3, 9.8, 1.5, -6.9, 1.1, 0.3, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-01-10', 973.3, 9.8, 0.7, 0.5, 2.1, 1.1, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-01-11', 965.9, 9.9, 0.4, 0.3, 2.1, 1.1, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-01-12', 968.2, 8.4, 0.8, 1.4, 7.4, 3.2, 1.1, 4.7);
+VALUES('2016-01-12', 968.2, 8.4, 0.8, -1.4, 7.4, 3.2, 1.1, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-01-13', 97.8, 8.3, 0.5, 0.1, 5.6, 3.1, 1.6, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-01-14', 983.4, 8.0, null, 2.6, 5.5, 1.5, 5, 2.3);
+VALUES('2016-01-14', 983.4, 8.0, null, -2.6, 5.5, 1.5, 5, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-01-15', 978.4, 8.0, null, 1.6, 5, 1.1, 2.4, 3.3);
+VALUES('2016-01-15', 978.4, 8.0, null, -1.6, 5, 1.1, 2.4, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-01-16', 987.3, 7.0, null, 1.1, 2.3, 0.1, 1.6, 4);
+VALUES('2016-01-16', 987.3, 7.0, null, -1.1, 2.3, -0.1, 1.6, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-01-17', 988.8, 6.8, null, 5.1, 0.3, 3.2, 6.1, 5.3);
+VALUES('2016-01-17', 988.8, 6.8, null, -5.1, -0.3, -3.2, 6.1, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-01-18', 991.4, 6.4, null, 4.7, 0.8, 3.3, 1.2, 3);
+VALUES('2016-01-18', 991.4, 6.4, null, -4.7, -0.8, -3.3, 1.2, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-01-19', 987.8, 7.6, null, 7.5, 3.4, 4.7, null, 1.3);
+VALUES('2016-01-19', 987.8, 7.6, null, -7.5, -3.4, -4.7, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-01-20', 986.2, 8.3, 0.8, 7.1, 3.2, 4.6, null, 2.3);
+VALUES('2016-01-20', 986.2, 8.3, 0.8, -7.1, -3.2, -4.6, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-01-21', 996.5, 7.5, null, 7.6, 1.5, 5.3, 3.2, 3.3);
+VALUES('2016-01-21', 996.5, 7.5, null, -7.6, -1.5, -5.3, 3.2, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-01-22', 100.4, 7.2, null, 11.2, 1.3, 6.8, 8, 2);
+VALUES('2016-01-22', 100.4, 7.2, null, -11.2, -1.3, -6.8, 8, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-01-23', 1001.5, 8.5, 2.5, 9, 4.5, 5.6, null, 2);
+VALUES('2016-01-23', 1001.5, 8.5, 2.5, -9, -4.5, -5.6, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-01-24', 1002.7, 9.1, 2.9, 6.7, 3.2, null, 0.1, 1.7);
+VALUES('2016-01-24', 1002.7, 9.1, 2.9, -6.7, 3.2, null, 0.1, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-01-25', 997.4, 9.8, 2.7, 4.1, 1.2, 0.7, null, 1);
+VALUES('2016-01-25', 997.4, 9.8, 2.7, -4.1, 1.2, 0.7, null, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-01-26', 996.8, 9.8, null, 0.9, 6.3, 3, 2.3, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-01-27', 99.3, 8.9, 0.9, 1.2, 6.3, 4.1, 1.8, 2);
+VALUES('2016-01-27', 99.3, 8.9, 0.9, -1.2, 6.3, 4.1, 1.8, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-01-28', 993.3, 8.7, 1.4, 2.9, 10.6, 5.8, 0.3, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-01-29', 99.8, 7.9, 0.1, 1.2, 10.2, 4, 5.7, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-01-30', 989.2, 9.2, null, 1.4, 8.3, 4, 6.5, 2.7);
+VALUES('2016-01-30', 989.2, 9.2, null, -1.4, 8.3, 4, 6.5, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-01-31', 983.5, 6.8, 1.6, 1.3, 6.7, 3.9, 2.1, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -12503,7 +12503,7 @@ VALUES('2016-02-03', 986.1, 7.1, 0.1, 2.6, 8.1, 5.2, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-02-04', 990.3, 7.1, 0.3, 0.8, 6.5, 2.6, 2.9, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-02-05', 996.2, 6.9, null, 0.2, 5.6, 2.1, 4.6, 3.3);
+VALUES('2016-02-05', 996.2, 6.9, null, -0.2, 5.6, 2.1, 4.6, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-02-06', 992.6, 7.8, null, 0.4, 10.3, 4.6, 6.1, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -12517,11 +12517,11 @@ VALUES('2016-02-10', 965.3, 7.7, 1.5, 2, 10.3, 3.9, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-02-11', 975.5, 7.3, null, 0.8, 8.3, 3.5, 2.6, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-02-12', 974.9, 7.9, 0.4, 2.9, 6.1, 2.4, 1.4, 2.3);
+VALUES('2016-02-12', 974.9, 7.9, 0.4, -2.9, 6.1, 2.4, 1.4, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-02-13', 965.8, 8.0, 0.1, 1.4, 7.4, 3.3, 2.8, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-02-14', 964.5, 8.9, 8.9, 0.6, 9.2, 6.3, 3, 5);
+VALUES('2016-02-14', 964.5, 8.9, 8.9, -0.6, 9.2, 6.3, 3, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-02-15', 979.7, 8.4, null, 2.3, 8.2, 6, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -12543,11 +12543,11 @@ VALUES('2016-02-23', 978.8, 7.9, 4.7, 3.2, 1.2, 5.6, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-02-24', 986.6, 7.7, null, null, 5.9, 1.6, 1.5, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-02-25', 981.4, 7.8, null, 2.7, 5.2, 1.4, null, 4);
+VALUES('2016-02-25', 981.4, 7.8, null, -2.7, 5.2, 1.4, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-02-26', 984.4, 6.6, null, 3.4, 5.8, 0.9, 6.9, 2);
+VALUES('2016-02-26', 984.4, 6.6, null, -3.4, 5.8, 0.9, 6.9, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-02-27', 982.7, 7.0, null, 3.5, 5.1, 2.3, 0.8, 6.7);
+VALUES('2016-02-27', 982.7, 7.0, null, -3.5, 5.1, 2.3, 0.8, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-02-28', 984.8, 7.8, null, 3, 9.8, 6.5, 0.7, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -12555,7 +12555,7 @@ VALUES('2016-02-29', 982.7, 8.9, 11.6, 4.1, 6.6, 4.6, null, 8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-03-01', 983.7, 9.1, 1.6, 0.3, 5.1, 1.2, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-03-02', 976.9, 8.6, 0.9, 1.6, 6.6, 3.7, 0.1, 3.7);
+VALUES('2016-03-02', 976.9, 8.6, 0.9, -1.6, 6.6, 3.7, 0.1, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-03-03', 972.8, 8.8, 5.6, 2.4, 5.6, 3.1, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -12579,25 +12579,25 @@ VALUES('2016-03-12', 996.2, 7.2, null, 2.2, 9.3, 5.1, 0.5, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-03-13', 999.3, 7.4, null, 3.6, 6.1, 4.4, null, 8.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-03-14', 998.5, 5.9, 2.6, 0.1, 1.0, 4.5, 10.3, 4);
+VALUES('2016-03-14', 998.5, 5.9, 2.6, -0.1, 1.0, 4.5, 10.3, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-03-15', 990.8, 7.8, null, 1.2, 5.6, 2.6, 0.4, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-03-16', 1000.1, 7.7, null, 1.8, 6.6, 3.3, 1, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-03-17', 996.9, 6.6, null, 2.1, 11.9, 4.5, 10.5, 2);
+VALUES('2016-03-17', 996.9, 6.6, null, -2.1, 11.9, 4.5, 10.5, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-03-18', 986.4, 5.9, null, 1.4, 14.2, 7.6, 10.6, 4.7);
+VALUES('2016-03-18', 986.4, 5.9, null, -1.4, 14.2, 7.6, 10.6, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-03-19', 988.7, 7.6, null, 2.6, 9, 3.8, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-03-20', 986.3, 7.0, null, 3.2, 7.9, 4.4, 2.1, 2.7);
+VALUES('2016-03-20', 986.3, 7.0, null, -3.2, 7.9, 4.4, 2.1, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-03-21', 984.5, 6.0, null, 4.1, 10.1, 7.7, 0.8, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-03-22', 980.8, 6.2, null, 4.4, 10.4, 6.2, 4.5, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-03-23', 977.4, 7.2, 0.3, 2.2, 9.2, 4.6, 3.7, 1);
+VALUES('2016-03-23', 977.4, 7.2, 0.3, -2.2, 9.2, 4.6, 3.7, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-03-24', 982.3, 6.8, null, 2.4, 8.2, 5.5, 0.9, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -12605,7 +12605,7 @@ VALUES('2016-03-25', 984.9, 7.7, 0.9, 0.9, 10.1, 6.1, 1.9, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-03-26', 98.9, 7.9, null, 4.5, 10.9, 6.7, 1, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-03-27', 985.9, 6.4, null, 0.2, 14.2, 7.5, 11.1, 2.7);
+VALUES('2016-03-27', 985.9, 6.4, null, -0.2, 14.2, 7.5, 11.1, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-03-28', 981.6, 6.5, 0.1, 3, 14.9, 9.4, 6.4, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -12617,7 +12617,7 @@ VALUES('2016-03-31', 981.8, 6.4, null, 5.4, 21.4, 1.5, 7.6, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-04-01', 987.9, 7.2, null, 3.3, 15.9, 6, 1.6, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-04-02', 994.1, 5.8, null, 1.9, 14.9, 8.2, 11.6, 3.7);
+VALUES('2016-04-02', 994.1, 5.8, null, -1.9, 14.9, 8.2, 11.6, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-04-03', 986.8, 4.4, null, 4.8, 19.5, 13.7, 9.3, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -12663,15 +12663,15 @@ VALUES('2016-04-23', 97.7, 6.1, 1.5, 5.1, 15.8, 11.3, 1.3, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-04-24', 979.4, 5.7, null, 3.8, 11.1, 5.8, 3.3, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-04-25', 979.6, 5.8, null, 0.3, 9.5, 4.3, 7.8, 4.7);
+VALUES('2016-04-25', 979.6, 5.8, null, -0.3, 9.5, 4.3, 7.8, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-04-26', 975.8, 6.8, 2.4, 1.9, 14.1, 6.9, 5.4, 4.7);
+VALUES('2016-04-26', 975.8, 6.8, 2.4, -1.9, 14.1, 6.9, 5.4, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-04-27', 98.1, 7.8, 0.3, 3.5, 7.4, 4.4, 0.2, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-04-28', 98.8, 6.6, null, 2.3, 10.6, 5.8, 8.3, 3.3);
+VALUES('2016-04-28', 98.8, 6.6, null, -2.3, 10.6, 5.8, 8.3, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-04-29', 991.1, 5.6, null, 2, 14.8, 8.6, 12.9, 2.3);
+VALUES('2016-04-29', 991.1, 5.6, null, -2, 14.8, 8.6, 12.9, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-04-30', 989.2, 5.3, null, 1.6, 18.1, 11.8, 13.4, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -12993,7 +12993,7 @@ VALUES('2016-10-05', 991.5, 7.0, 2, 5.4, 10.1, 7.3, 0.3, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-10-06', 98.5, 7.6, null, 6.3, 10.4, 7.7, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-10-07', 988.6, 7.8, null, 0.3, 10.1, 5.4, 7.2, 2.7);
+VALUES('2016-10-07', 988.6, 7.8, null, -0.3, 10.1, 5.4, 7.2, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-10-08', 989.6, 8.6, 0.6, 1.4, 10.8, 6.4, 0.1, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -13047,9 +13047,9 @@ VALUES('2016-11-01', 990.7, 7.7, null, 5.8, 13.9, 9.3, 5.8, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-11-02', 983.8, 8.1, 0.3, 2.2, 9.6, 5, 0.3, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-11-03', 991.3, 6.9, null, 0.3, 7.5, 2.3, 6.1, 5);
+VALUES('2016-11-03', 991.3, 6.9, null, -0.3, 7.5, 2.3, 6.1, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-11-04', 989.7, 7.3, null, 3.5, 7.5, 3.3, 1, 3.7);
+VALUES('2016-11-04', 989.7, 7.3, null, -3.5, 7.5, 3.3, 1, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-11-05', 977.6, 7.4, 2.5, 0.8, 8.1, 6.3, 3.5, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -13057,23 +13057,23 @@ VALUES('2016-11-06', 970.9, 8.8, 3.5, 4.7, 9, 6.3, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-11-07', 97.8, 7.5, null, 0.9, 7.5, 3.1, 0.7, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-11-08', 981.2, 8.4, null, 3.4, 6.1, 0.9, 4.2, 1.3);
+VALUES('2016-11-08', 981.2, 8.4, null, -3.4, 6.1, 0.9, 4.2, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-11-09', 979.3, 7.7, null, 5, 5.7, 0.1, 6.2, 2.7);
+VALUES('2016-11-09', 979.3, 7.7, null, -5, 5.7, -0.1, 6.2, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-11-10', 979.4, 9.4, 2.4, 4, 3.9, 1.7, 0.1, 3.3);
+VALUES('2016-11-10', 979.4, 9.4, 2.4, -4, 3.9, 1.7, 0.1, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-11-11', 985.6, 8.7, null, 0.5, 6.5, 3.9, 0.3, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-11-12', 992.4, 7.1, null, 1.2, 4.1, 1.7, null, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-11-13', 998.1, 6.5, null, 2, 4.1, 0.3, 6.3, 4.7);
+VALUES('2016-11-13', 998.1, 6.5, null, -2, 4.1, 0.3, 6.3, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-11-14', 1004.1, 7.0, null, 1.5, 4.5, 1.6, 2.1, 3.7);
+VALUES('2016-11-14', 1004.1, 7.0, null, -1.5, 4.5, 1.6, 2.1, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-11-15', 1000.3, 9.1, 3.7, 4.9, 0.7, 1.6, 0.2, 3);
+VALUES('2016-11-15', 1000.3, 9.1, 3.7, -4.9, 0.7, -1.6, 0.2, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-11-16', 991.4, 9.8, 8.6, 0.7, 2.4, 1.7, null, 2);
+VALUES('2016-11-16', 991.4, 9.8, 8.6, -0.7, 2.4, 1.7, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-11-17', 986.5, 9.7, 1, 2, 4.8, 3.6, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -13097,189 +13097,189 @@ VALUES('2016-11-26', 987.7, 8.9, null, 5.3, 9.1, 7.2, 1.9, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-11-27', 983.9, 7.7, null, 2.9, 7.9, 4.2, 0.1, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-11-28', 993.9, 6.7, null, 0.7, 3.4, 0.2, 3.4, 6);
+VALUES('2016-11-28', 993.9, 6.7, null, -0.7, 3.4, 0.2, 3.4, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-11-29', 1002.3, 6.9, null, 5, 3.2, 1, 7.3, 3.3);
+VALUES('2016-11-29', 1002.3, 6.9, null, -5, 3.2, -1, 7.3, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-11-30', 997.9, 8.3, null, 6.5, 0.5, 2.1, 0.4, 1.3);
+VALUES('2016-11-30', 997.9, 8.3, null, -6.5, -0.5, -2.1, 0.4, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-01', 987.2, 7.9, 1.3, 0.8, 4.9, 3.9, null, 5.3);
+VALUES('2016-12-01', 987.2, 7.9, 1.3, -0.8, 4.9, 3.9, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-02', 984.9, 7.7, 1.7, 0.5, 6.2, 2, 3.7, 6.3);
+VALUES('2016-12-02', 984.9, 7.7, 1.7, -0.5, 6.2, 2, 3.7, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-03', 995.3, 7.4, null, 3.1, 4.2, 1.1, 6.1, 1);
+VALUES('2016-12-03', 995.3, 7.4, null, -3.1, 4.2, -1.1, 6.1, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-04', 1000.6, 8.6, null, 6.9, 0.9, 3.8, 5.4, 1.3);
+VALUES('2016-12-04', 1000.6, 8.6, null, -6.9, 0.9, -3.8, 5.4, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-05', 999.6, 8.9, null, 8.1, 0.1, 2.9, null, 2.7);
+VALUES('2016-12-05', 999.6, 8.9, null, -8.1, 0.1, -2.9, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-06', 1000.6, 7.7, null, 3.9, 1.5, 1.1, 3.7, 2);
+VALUES('2016-12-06', 1000.6, 7.7, null, -3.9, 1.5, -1.1, 3.7, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-07', 1006.9, 8.4, null, 4, 2.5, 1, 4.9, 2.3);
+VALUES('2016-12-07', 1006.9, 8.4, null, -4, 2.5, -1, 4.9, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-08', 1003.2, 9.7, null, 2.2, 1.2, 1.6, null, 2.3);
+VALUES('2016-12-08', 1003.2, 9.7, null, -2.2, -1.2, -1.6, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-09', 998.2, 9.6, null, 2.8, 1.5, 0.2, null, 1.7);
+VALUES('2016-12-09', 998.2, 9.6, null, -2.8, 1.5, -0.2, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-10', 993.6, 9.0, null, 0.1, 9, 5.1, 3.2, 1.3);
+VALUES('2016-12-10', 993.6, 9.0, null, -0.1, 9, 5.1, 3.2, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-11', 985.7, 8.5, null, 3.1, 8.9, 3.8, 0.2, 4.3);
+VALUES('2016-12-11', 985.7, 8.5, null, -3.1, 8.9, 3.8, 0.2, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-12', 99.1, 7.0, 1.3, 1.1, 8.6, 2.7, 2.4, 5.3);
+VALUES('2016-12-12', 99.1, 7.0, 1.3, -1.1, 8.6, 2.7, 2.4, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-13', 999.5, 7.8, null, 8, 1, 3.3, 1.4, 1.3);
+VALUES('2016-12-13', 999.5, 7.8, null, -8, -1, -3.3, 1.4, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-14', 994.9, 8.6, 0.6, 3.2, 1.7, 0.1, null, 3);
+VALUES('2016-12-14', 994.9, 8.6, 0.6, -3.2, 1.7, -0.1, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-15', 1000.8, 8.6, null, 1.7, 2.1, 0.9, null, 2);
+VALUES('2016-12-15', 1000.8, 8.6, null, -1.7, 2.1, 0.9, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-16', 1006.2, 8.6, null, 2.9, 1.4, 0.7, null, 2.7);
+VALUES('2016-12-16', 1006.2, 8.6, null, -2.9, 1.4, -0.7, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-17', 100.7, 9.0, null, 6.9, 1, 2.9, null, 2.3);
+VALUES('2016-12-17', 100.7, 9.0, null, -6.9, -1, -2.9, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-18', 1002.9, 9.4, 5.9, 2.4, 0.6, 0.3, null, 1.3);
+VALUES('2016-12-18', 1002.9, 9.4, 5.9, -2.4, 0.6, -0.3, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-19', 1004.2, 9.7, null, 2.1, 0.2, 1.4, null, 2.3);
+VALUES('2016-12-19', 1004.2, 9.7, null, -2.1, -0.2, -1.4, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-20', 1002.2, 9.4, null, 3.7, 2, 3.4, null, 4);
+VALUES('2016-12-20', 1002.2, 9.4, null, -3.7, -2, -3.4, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-21', 100.4, 9.6, 0.1, 4, 3.4, 3.7, null, 3.7);
+VALUES('2016-12-21', 100.4, 9.6, 0.1, -4, -3.4, -3.7, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-22', 1005.1, 9.6, null, 4, 3.1, 3.6, null, 3);
+VALUES('2016-12-22', 1005.1, 9.6, null, -4, -3.1, -3.6, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-23', 1005.4, 9.6, null, 4.5, 1.7, 2.6, null, 1.7);
+VALUES('2016-12-23', 1005.4, 9.6, null, -4.5, -1.7, -2.6, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-24', 998.1, 9.9, 0.7, 1.8, 0.5, 0.3, null, 2);
+VALUES('2016-12-24', 998.1, 9.9, 0.7, -1.8, 0.5, -0.3, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-25', 992.8, 8.8, 0.2, 1.5, 5.8, 4.5, null, 4);
+VALUES('2016-12-25', 992.8, 8.8, 0.2, -1.5, 5.8, 4.5, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-12-26', 995.2, 7.7, null, 5.1, 10.3, 7.5, 0.3, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2016-12-27', 998.6, 6.3, 0.6, 2.8, 7.1, 4.7, 0.2, 8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-28', 1004.7, 5.8, null, 0.5, 5.2, 1.8, 6.5, 5.3);
+VALUES('2016-12-28', 1004.7, 5.8, null, -0.5, 5.2, 1.8, 6.5, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-29', 1010.8, 7.2, null, 4.4, 3.7, 1.2, 7.2, 2.7);
+VALUES('2016-12-29', 1010.8, 7.2, null, -4.4, 3.7, -1.2, 7.2, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-30', 1008.3, 8.3, null, 7.1, 1.3, 3.7, 6.9, 1);
+VALUES('2016-12-30', 1008.3, 8.3, null, -7.1, 1.3, -3.7, 6.9, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2016-12-31', 1002.3, 9.3, null, 10.2, 4.1, 7.2, null, 1.3);
+VALUES('2016-12-31', 1002.3, 9.3, null, -10.2, -4.1, -7.2, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-01', 992.8, 9.2, null, 11.2, 6, 7.1, null, 1.3);
+VALUES('2017-01-01', 992.8, 9.2, null, -11.2, -6, -7.1, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-02', 98.8, 9.4, 0.2, 7.1, 4.7, 5.5, null, 2);
+VALUES('2017-01-02', 98.8, 9.4, 0.2, -7.1, -4.7, -5.5, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-03', 99.0, 8.4, 0.9, 6.6, 1.7, 1, 0.5, 4.7);
+VALUES('2017-01-03', 99.0, 8.4, 0.9, -6.6, 1.7, -1, 0.5, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-04', 975.2, 8.5, null, 0.8, 3.3, 1.2, 0.6, 5.7);
+VALUES('2017-01-04', 975.2, 8.5, null, -0.8, 3.3, 1.2, 0.6, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-05', 989.7, 6.4, null, 6.2, 1.9, 4.1, 1.6, 6.3);
+VALUES('2017-01-05', 989.7, 6.4, null, -6.2, 1.9, -4.1, 1.6, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-06', 100.4, 6.3, null, 9.1, 5.5, 7.8, 2.8, 6.7);
+VALUES('2017-01-06', 100.4, 6.3, null, -9.1, -5.5, -7.8, 2.8, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-07', 1002.3, 6.5, 1.2, 17.2, 7.2, 10.9, 5.7, 2.3);
+VALUES('2017-01-07', 1002.3, 6.5, 1.2, -17.2, -7.2, -10.9, 5.7, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-08', 997.6, 6.9, null, 11.3, 7.5, 9.1, 2.1, 2.7);
+VALUES('2017-01-08', 997.6, 6.9, null, -11.3, -7.5, -9.1, 2.1, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-09', 99.6, 7.3, null, 10.1, 3.6, 8, 0.2, 3.3);
+VALUES('2017-01-09', 99.6, 7.3, null, -10.1, -3.6, -8, 0.2, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-10', 990.8, 7.4, null, 12.3, 6.5, 9.9, 1.3, 4.3);
+VALUES('2017-01-10', 990.8, 7.4, null, -12.3, -6.5, -9.9, 1.3, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-11', 985.7, 6.8, 3.5, 14.8, 4.4, 6.9, 7.3, 3.7);
+VALUES('2017-01-11', 985.7, 6.8, 3.5, -14.8, -4.4, -6.9, 7.3, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-12', 980.3, 8.0, 1.9, 6.1, 4.5, 0.5, 2.8, 4);
+VALUES('2017-01-12', 980.3, 8.0, 1.9, -6.1, 4.5, 0.5, 2.8, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-13', 968.6, 7.3, null, 0.4, 4.9, 2.3, 0.2, 4.7);
+VALUES('2017-01-13', 968.6, 7.3, null, -0.4, 4.9, 2.3, 0.2, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-14', 975.5, 8.5, 1.3, 6.2, 2.4, 1.3, 0.1, 2);
+VALUES('2017-01-14', 975.5, 8.5, 1.3, -6.2, 2.4, -1.3, 0.1, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-15', 987.1, 8.2, null, 7.5, 2, 4.4, 3.1, 1.3);
+VALUES('2017-01-15', 987.1, 8.2, null, -7.5, 2, -4.4, 3.1, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-16', 992.4, 8.3, null, 1.5, 2.5, 6.2, 5, 1.3);
+VALUES('2017-01-16', 992.4, 8.3, null, -1.5, -2.5, -6.2, 5, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-17', 1000.7, 6.9, null, 9.2, 0.4, 2.3, 2.3, 6.3);
+VALUES('2017-01-17', 1000.7, 6.9, null, -9.2, -0.4, -2.3, 2.3, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-18', 1006.2, 7.5, null, 8.1, 1.7, 5.7, 6.7, 4.7);
+VALUES('2017-01-18', 1006.2, 7.5, null, -8.1, -1.7, -5.7, 6.7, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-19', 1007.3, 8.1, null, 13.3, 5.9, 1.0, 5.5, 2.3);
+VALUES('2017-01-19', 1007.3, 8.1, null, -13.3, -5.9, -1.0, 5.5, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-20', 1006.1, 7.7, null, 16.7, 3.8, 8.8, 5.6, 1);
+VALUES('2017-01-20', 1006.1, 7.7, null, -16.7, -3.8, -8.8, 5.6, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-21', 1003.4, 8.0, null, 11.2, 1.6, 6.1, 7.7, 1.7);
+VALUES('2017-01-21', 1003.4, 8.0, null, -11.2, -1.6, -6.1, 7.7, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-22', 1001.8, 7.5, null, 11.3, 0.9, 4.7, 5.8, 3.7);
+VALUES('2017-01-22', 1001.8, 7.5, null, -11.3, -0.9, -4.7, 5.8, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-23', 996.7, 8.3, null, 7.9, 3, 4.2, null, 2.7);
+VALUES('2017-01-23', 996.7, 8.3, null, -7.9, -3, -4.2, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-24', 996.6, 7.6, null, 5.1, 3.9, 4.2, null, 3);
+VALUES('2017-01-24', 996.6, 7.6, null, -5.1, -3.9, -4.2, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-25', 1000.1, 7.8, null, 4.1, 0.1, 1.3, null, 3.7);
+VALUES('2017-01-25', 1000.1, 7.8, null, -4.1, -0.1, -1.3, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-26', 1002.4, 7.5, null, 4.6, 0.9, 2.3, null, 4.3);
+VALUES('2017-01-26', 1002.4, 7.5, null, -4.6, 0.9, -2.3, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-27', 998.6, 7.9, null, 10.1, 1.6, 6.3, 7.5, 3.3);
+VALUES('2017-01-27', 998.6, 7.9, null, -10.1, -1.6, -6.3, 7.5, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-28', 996.4, 9.1, null, 7.8, 6.1, 6.4, null, 3.7);
+VALUES('2017-01-28', 996.4, 9.1, null, -7.8, -6.1, -6.4, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-29', 997.7, 9.3, null, 7.1, 6, 6.7, null, 2);
+VALUES('2017-01-29', 997.7, 9.3, null, -7.1, -6, -6.7, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-30', 994.6, 9.0, 0.6, 7.8, 6.9, 7.3, null, 3.3);
+VALUES('2017-01-30', 994.6, 9.0, 0.6, -7.8, -6.9, -7.3, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-01-31', 990.5, 9.4, 16.2, 7.3, 4.2, 4.8, null, 2);
+VALUES('2017-01-31', 990.5, 9.4, 16.2, -7.3, -4.2, -4.8, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-02-01', 991.7, 9.4, 3.5, 4.4, 0.2, 1.5, null, 1.7);
+VALUES('2017-02-01', 991.7, 9.4, 3.5, -4.4, -0.2, -1.5, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-02-02', 987.9, 9.5, null, 1.5, 0.5, 0.3, null, 1.3);
+VALUES('2017-02-02', 987.9, 9.5, null, -1.5, 0.5, -0.3, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-02-03', 981.1, 9.9, 0.4, 0.4, 2.3, 1.2, null, 2);
+VALUES('2017-02-03', 981.1, 9.9, 0.4, -0.4, 2.3, 1.2, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-02-04', 977.6, 9.8, null, 0.6, 2.3, 1.3, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-02-05', 977.3, 9.0, 0.5, 0.4, 5.7, 0.9, 3.2, 3);
+VALUES('2017-02-05', 977.3, 9.0, 0.5, -0.4, 5.7, 0.9, 3.2, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-02-06', 984.5, 8.7, 1, 0.9, 3.2, 1.5, null, 4);
+VALUES('2017-02-06', 984.5, 8.7, 1, -0.9, 3.2, 1.5, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-02-07', 989.6, 7.3, null, 1.5, 2.3, 0.3, 1.4, 4.7);
+VALUES('2017-02-07', 989.6, 7.3, null, -1.5, 2.3, -0.3, 1.4, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-02-08', 995.5, 7.3, null, 4.8, 1.2, 3.8, null, 4.7);
+VALUES('2017-02-08', 995.5, 7.3, null, -4.8, -1.2, -3.8, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-02-09', 999.5, 7.5, null, 4.9, 2.7, 3.9, null, 8);
+VALUES('2017-02-09', 999.5, 7.5, null, -4.9, -2.7, -3.9, null, 8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-02-10', 997.5, 8.1, null, 4.3, 1.8, 0.2, 0.1, 6.3);
+VALUES('2017-02-10', 997.5, 8.1, null, -4.3, 1.8, 0.2, 0.1, 6.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-02-11', 997.1, 7.2, null, 2.4, 1.7, 0.9, null, 5.3);
+VALUES('2017-02-11', 997.1, 7.2, null, -2.4, 1.7, 0.9, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-02-12', 1002.1, 6.9, null, 0.2, 2.8, 1.2, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-02-13', 1005.4, 7.8, null, 5, 0.9, 3.3, 8.1, 5);
+VALUES('2017-02-13', 1005.4, 7.8, null, -5, 0.9, -3.3, 8.1, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-02-14', 1005.7, 7.7, null, 9, 3.5, 2.4, 8.9, 2.3);
+VALUES('2017-02-14', 1005.7, 7.7, null, -9, 3.5, -2.4, 8.9, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-02-15', 1005.4, 6.8, null, 4.9, 7.5, 0.6, 9.4, 1.3);
+VALUES('2017-02-15', 1005.4, 6.8, null, -4.9, 7.5, 0.6, 9.4, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-02-16', 1002.1, 8.3, null, 3.9, 5.9, 1.1, 7.2, 1.7);
+VALUES('2017-02-16', 1002.1, 8.3, null, -3.9, 5.9, 1.1, 7.2, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-02-17', 994.8, 9.8, 2.2, 2.4, 1.6, 0.9, null, 2);
+VALUES('2017-02-17', 994.8, 9.8, 2.2, -2.4, 1.6, -0.9, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-02-18', 996.2, 8.7, null, 0.9, 6, 2.6, 1.9, 2);
+VALUES('2017-02-18', 996.2, 8.7, null, -0.9, 6, 2.6, 1.9, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-02-19', 99.5, 9.4, null, 1.3, 3.3, 0.5, 0.5, 1.3);
+VALUES('2017-02-19', 99.5, 9.4, null, -1.3, 3.3, 0.5, 0.5, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-02-20', 990.5, 8.9, 2.5, 1.9, 5.8, 2.6, 1, 1.7);
+VALUES('2017-02-20', 990.5, 8.9, 2.5, -1.9, 5.8, 2.6, 1, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-02-21', 982.7, 8.7, 1.3, 3, 9.8, 5.5, 1, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-02-22', 980.2, 9.1, 1.4, 1.2, 12.2, 6.3, null, 3);
+VALUES('2017-02-22', 980.2, 9.1, 1.4, -1.2, 12.2, 6.3, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-02-23', 974.1, 7.7, null, 5.9, 12.4, 9.1, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-02-24', 978.5, 5.2, null, 3.1, 1.1, 5.9, 2.6, 8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-02-25', 993.7, 6.0, null, 3, 7.3, 2.5, 9, 2.7);
+VALUES('2017-02-25', 993.7, 6.0, null, -3, 7.3, 2.5, 9, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-02-26', 98.9, 6.6, null, 0.2, 7, 3.7, 1.4, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-02-27', 981.4, 7.2, null, 2.5, 11.5, 5.8, 6.6, 3.7);
+VALUES('2017-02-27', 981.4, 7.2, null, -2.5, 11.5, 5.8, 6.6, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-02-28', 970.8, 6.9, null, 3.3, 10.6, 7.5, 2.7, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -13287,7 +13287,7 @@ VALUES('2017-03-01', 97.7, 6.5, 1.1, 2.2, 10.8, 4.9, 2.3, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-03-02', 982.5, 6.2, 0.2, null, 13.9, 6.4, 4.1, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-03-03', 987.5, 6.4, null, 1.5, 12.6, 6.4, 9.7, 3.3);
+VALUES('2017-03-03', 987.5, 6.4, null, -1.5, 12.6, 6.4, 9.7, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-03-04', 974.3, 5.4, null, 4.4, 18.6, 12.8, 8, 7.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -13309,13 +13309,13 @@ VALUES('2017-03-12', 991.4, 6.2, null, 0.7, 9.2, 5.3, 4.7, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-03-13', 99.6, 6.2, null, 0.4, 11.7, 5.5, 10.1, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-03-14', 999.5, 6.5, null, 0.8, 13.3, 7.1, 4.3, 3);
+VALUES('2017-03-14', 999.5, 6.5, null, -0.8, 13.3, 7.1, 4.3, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-03-15', 998.3, 6.6, null, 3.5, 13.7, 8.7, 1.2, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-03-16', 99.4, 5.5, null, 2.2, 15.1, 8.7, 7.6, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-03-17', 984.8, 6.5, 4.1, 0.7, 1.7, 9.7, 7.7, 2.7);
+VALUES('2017-03-17', 984.8, 6.5, 4.1, -0.7, 1.7, 9.7, 7.7, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-03-18', 976.1, 8.2, 3.5, 4.2, 12.1, 7.8, 0.2, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -13335,7 +13335,7 @@ VALUES('2017-03-25', 996.5, 5.7, null, 0.5, 13.4, 8, 7.1, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-03-26', 99.6, 5.3, null, 2.4, 11.7, 6.6, 11.8, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-03-27', 997.5, 5.0, null, 2.2, 15.8, 9.2, 11.9, 2.3);
+VALUES('2017-03-27', 997.5, 5.0, null, -2.2, 15.8, 9.2, 11.9, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-03-28', 994.2, 4.9, null, 0.8, 20.2, 12.3, 1.2, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -13377,7 +13377,7 @@ VALUES('2017-04-15', 984.7, 6.7, 0.4, 4.3, 15.4, 10.8, 0.5, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-04-16', 986.8, 6.0, 0.1, 4.7, 12.6, 7.9, 6.7, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-04-17', 986.1, 8.7, 14.1, 0.8, 10.7, 4.4, 1.7, 1.7);
+VALUES('2017-04-17', 986.1, 8.7, 14.1, -0.8, 10.7, 4.4, 1.7, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-04-18', 987.9, 7.4, null, 1.8, 9.7, 4.7, 6.5, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -13385,7 +13385,7 @@ VALUES('2017-04-19', 992.8, 7.7, 2.9, 0.9, 3.1, 2.2, null, 9.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-04-20', 1000.7, 5.7, null, 1.7, 5, 2.6, 0.7, 6.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-04-21', 997.5, 5.4, null, 2, 11.6, 6.5, 7.5, 3.3);
+VALUES('2017-04-21', 997.5, 5.4, null, -2, 11.6, 6.5, 7.5, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-04-22', 988.6, 6.4, null, 5.3, 12.6, 8, 1.4, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -13423,7 +13423,7 @@ VALUES('2017-05-08', 982.6, 6.1, 1.4, 7.1, 18.7, 13.1, 10.8, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-05-09', 987.3, 5.9, 0.1, 5, 11.9, 6.4, 3.1, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-05-10', 983.8, 5.8, null, 1.3, 13.5, 8.7, 13.4, 3);
+VALUES('2017-05-10', 983.8, 5.8, null, -1.3, 13.5, 8.7, 13.4, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-05-11', 978.2, 5.6, null, 2.5, 20.8, 14.8, 13.4, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -13773,7 +13773,7 @@ VALUES('2017-10-30', 988.7, 7.0, 0.4, 3, 8.4, 5.1, 6.3, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-10-31', 995.7, 8.7, 0.1, 0.7, 7.1, 4.4, 0.1, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-11-01', 993.5, 8.5, null, 0.8, 9, 5.6, 0.9, 3);
+VALUES('2017-11-01', 993.5, 8.5, null, -0.8, 9, 5.6, 0.9, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-11-02', 985.3, 7.9, null, 3.3, 13.1, 1.0, 3.5, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -13799,11 +13799,11 @@ VALUES('2017-11-12', 974.5, 8.7, 8.8, 0.8, 7, 4.7, 3.8, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-11-13', 981.9, 7.7, null, 2.4, 6.2, 3.6, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-11-14', 995.6, 7.9, null, 0.9, 6.3, 1.6, 3.3, 3);
+VALUES('2017-11-14', 995.6, 7.9, null, -0.9, 6.3, 1.6, 3.3, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-11-15', 998.8, 8.4, null, 4.3, 7.1, 1, 8.4, 1.7);
+VALUES('2017-11-15', 998.8, 8.4, null, -4.3, 7.1, 1, 8.4, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-11-16', 995.9, 9.6, null, 2, 4, 2.5, null, 3.3);
+VALUES('2017-11-16', 995.9, 9.6, null, -2, 4, 2.5, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-11-17', 993.8, 8.6, 1.7, 2.6, 5.6, 4.2, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -13817,63 +13817,63 @@ VALUES('2017-11-21', 983.9, 9.6, 1.6, 1.3, 6.5, 4.7, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-11-22', 983.9, 8.6, null, 3.6, 11.5, 6.5, 5.6, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-11-23', 987.1, 9.7, null, 1.4, 5.5, 3.1, 1.3, 2);
+VALUES('2017-11-23', 987.1, 9.7, null, -1.4, 5.5, 3.1, 1.3, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-11-24', 989.1, 9.6, null, 3.5, 5.2, 4.4, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-11-25', 981.8, 9.4, null, 4, 7.8, 5.7, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-11-26', 990.9, 7.3, null, 0.7, 5.6, 2.2, 2, 4);
+VALUES('2017-11-26', 990.9, 7.3, null, -0.7, 5.6, 2.2, 2, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-11-27', 992.3, 7.6, null, 3.6, 6.2, 0.9, 2.6, 1.7);
+VALUES('2017-11-27', 992.3, 7.6, null, -3.6, 6.2, 0.9, 2.6, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-11-28', 98.2, 7.8, null, 0.6, 4.4, 2.1, null, 2.3);
+VALUES('2017-11-28', 98.2, 7.8, null, -0.6, 4.4, 2.1, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-11-29', 978.6, 9.0, 4.8, 0.1, 2.6, 1.1, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-11-30', 973.3, 9.4, 8.6, 0.1, 2, 1.1, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-12-01', 985.5, 9.1, null, 5.5, 1.9, 3.3, 7.1, 1.7);
+VALUES('2017-12-01', 985.5, 9.1, null, -5.5, 1.9, -3.3, 7.1, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-12-02', 994.1, 8.8, null, 8.6, 0.4, 3, 7.3, 2);
+VALUES('2017-12-02', 994.1, 8.8, null, -8.6, 0.4, -3, 7.3, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-12-03', 992.6, 7.5, null, 3.4, 1.2, 0.2, null, 6);
+VALUES('2017-12-03', 992.6, 7.5, null, -3.4, 1.2, -0.2, null, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-12-04', 992.1, 8.5, null, 1.4, 2.8, 1.1, null, 4);
+VALUES('2017-12-04', 992.1, 8.5, null, -1.4, 2.8, 1.1, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-12-05', 998.4, 8.4, null, 2.4, 4.9, 3, null, 4);
+VALUES('2017-12-05', 998.4, 8.4, null, -2.4, 4.9, 3, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-12-06', 998.4, 7.1, null, 4.1, 4.9, 4.3, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-12-07', 992.6, 8.4, null, 0.8, 4.4, 1.4, 6.2, 2.7);
+VALUES('2017-12-07', 992.6, 8.4, null, -0.8, 4.4, 1.4, 6.2, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-12-08', 98.1, 9.8, 1.1, 2.1, 0.2, 0.4, null, 2);
+VALUES('2017-12-08', 98.1, 9.8, 1.1, -2.1, 0.2, -0.4, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-12-09', 980.9, 7.5, null, 2.2, 1.8, 0.1, null, 3.7);
+VALUES('2017-12-09', 980.9, 7.5, null, -2.2, 1.8, 0.1, null, 3.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-12-10', 972.6, 7.2, null, 4.8, 1.8, 0.2, 5.4, 4);
+VALUES('2017-12-10', 972.6, 7.2, null, -4.8, 1.8, -0.2, 5.4, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-12-11', 964.5, 7.7, null, null, 1.1, 8.4, null, 6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-12-12', 97.9, 7.0, null, 3.7, 12.3, 5.9, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-12-13', 985.2, 7.6, null, 1.6, 4.5, 0.9, 7.5, 3.3);
+VALUES('2017-12-13', 985.2, 7.6, null, -1.6, 4.5, 0.9, 7.5, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-12-14', 971.9, 7.5, 0.8, 1.6, 6.9, 1.8, 1.6, 5.3);
+VALUES('2017-12-14', 971.9, 7.5, 0.8, -1.6, 6.9, 1.8, 1.6, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-12-15', 970.3, 8.7, 0.3, 0.1, 4.2, 2.4, 0.1, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-12-16', 97.8, 8.4, null, 2.2, 3.6, 0.9, 0.1, 1.7);
+VALUES('2017-12-16', 97.8, 8.4, null, -2.2, 3.6, 0.9, 0.1, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-12-17', 989.1, 8.8, null, 3.8, 3.1, 0.5, 0.8, 1.3);
+VALUES('2017-12-17', 989.1, 8.8, null, -3.8, 3.1, -0.5, 0.8, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-12-18', 995.7, 8.3, 0.3, 3.3, 1.4, 1.5, 2.5, 3);
+VALUES('2017-12-18', 995.7, 8.3, 0.3, -3.3, 1.4, -1.5, 2.5, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-12-19', 1001.1, 8.4, null, 6.9, 0.5, 2.8, 1.7, 3);
+VALUES('2017-12-19', 1001.1, 8.4, null, -6.9, -0.5, -2.8, 1.7, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-12-20', 1002.7, 8.4, null, 2, 1.3, null, null, 2.3);
+VALUES('2017-12-20', 1002.7, 8.4, null, -2, 1.3, null, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-12-21', 999.9, 9.3, 5.1, 1.2, 3.1, 1.6, null, 1.3);
+VALUES('2017-12-21', 999.9, 9.3, 5.1, -1.2, 3.1, 1.6, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-12-22', 999.6, 7.7, null, 1, 6.5, 5.2, 0.1, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -13883,23 +13883,23 @@ VALUES('2017-12-24', 993.2, 7.3, null, 6.3, 9.3, 8, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-12-25', 991.3, 8.8, null, 0.8, 7.8, 3.3, 6.3, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-12-26', 981.7, 9.6, null, 4.3, 2.5, 0.8, null, 1.3);
+VALUES('2017-12-26', 981.7, 9.6, null, -4.3, 2.5, 0.8, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-12-27', 96.6, 8.4, 1.3, 0.6, 8.8, 6.1, 0.1, 4);
+VALUES('2017-12-27', 96.6, 8.4, 1.3, -0.6, 8.8, 6.1, 0.1, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-12-28', 964.8, 8.2, 0.9, 2.9, 8.2, 3.6, null, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-12-29', 980.3, 7.3, null, 1.9, 3.2, 0.3, 3.2, 5.3);
+VALUES('2017-12-29', 980.3, 7.3, null, -1.9, 3.2, 0.3, 3.2, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2017-12-30', 98.1, 8.8, 2.6, 3.8, 1, 0.6, 1.3, 2.3);
+VALUES('2017-12-30', 98.1, 8.8, 2.6, -3.8, 1, -0.6, 1.3, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2017-12-31', 981.7, 9.5, 2.8, 0.1, 6.9, 4.7, 0.4, 1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2018-01-01', 979.6, 9.8, null, null, 5.9, 0.9, null, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-01-02', 980.8, 9.6, 0.2, 3.3, 5, 1.5, 0.4, 2);
+VALUES('2018-01-02', 980.8, 9.6, 0.2, -3.3, 5, 1.5, 0.4, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-01-03', 971.8, 9.0, 2.9, 2, 3.5, 1.1, 0.1, 3.5);
+VALUES('2018-01-03', 971.8, 9.0, 2.9, -2, 3.5, 1.1, 0.1, 3.5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2018-01-04', 972.9, 8.1, 3.7, 0.6, 6.6, 4.4, 2.5, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -13921,113 +13921,113 @@ VALUES('2018-01-12', 995.1, 8.2, null, 2.6, 4.9, 3.3, null, 4.1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2018-01-13', 99.8, 7.7, 0.3, null, 2.6, 0.4, null, 5.8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-01-14', 997.9, 8.7, null, 2.3, 0.2, 1.8, null, 4.9);
+VALUES('2018-01-14', 997.9, 8.7, null, -2.3, 0.2, -1.8, null, 4.9);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-01-15', 992.7, 8.1, null, 3, 1.4, 1.9, 0.2, 4.9);
+VALUES('2018-01-15', 992.7, 8.1, null, -3, -1.4, -1.9, 0.2, 4.9);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-01-16', 972.1, 9.5, 8.5, 2.9, null, 1.8, null, 4.3);
+VALUES('2018-01-16', 972.1, 9.5, 8.5, -2.9, null, -1.8, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-01-17', 969.8, 7.9, 2.1, 2.8, 3.8, 1.5, 2, 4.6);
+VALUES('2018-01-17', 969.8, 7.9, 2.1, -2.8, 3.8, 1.5, 2, 4.6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-01-18', 974.1, 8.6, 1.6, 3.6, 5.2, 2.4, 0.5, 5);
+VALUES('2018-01-18', 974.1, 8.6, 1.6, -3.6, 5.2, 2.4, 0.5, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-01-19', 978.6, 8.8, 0.2, 1.1, 5.5, 0.5, 2.3, 3.4);
+VALUES('2018-01-19', 978.6, 8.8, 0.2, -1.1, 5.5, 0.5, 2.3, 3.4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-01-20', 979.6, 9.6, 1.1, 3.5, 0.8, 0.7, 0.3, 2.1);
+VALUES('2018-01-20', 979.6, 9.6, 1.1, -3.5, 0.8, -0.7, 0.3, 2.1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-01-21', 980.1, 8.1, 0.7, 0.7, 2.3, 0.7, 0.6, 3.6);
+VALUES('2018-01-21', 980.1, 8.1, 0.7, -0.7, 2.3, 0.7, 0.6, 3.6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-01-22', 985.2, 8.5, 0.3, 7, 0.4, 2.9, 2.1, 2.5);
+VALUES('2018-01-22', 985.2, 8.5, 0.3, -7, 0.4, -2.9, 2.1, 2.5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-01-23', 994.3, 9.2, null, 1.7, 1.3, 0.3, null, 0.8);
+VALUES('2018-01-23', 994.3, 9.2, null, -1.7, 1.3, -0.3, null, 0.8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-01-24', 99.7, 9.4, null, 0.4, 2.3, 1.2, null, 1.9);
+VALUES('2018-01-24', 99.7, 9.4, null, -0.4, 2.3, 1.2, null, 1.9);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-01-25', 992.9, 8.1, null, 1.1, 2.8, 0.6, 4.3, 3.3);
+VALUES('2018-01-25', 992.9, 8.1, null, -1.1, 2.8, 0.6, 4.3, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-01-26', 991.6, 8.3, null, 1, 2.3, 1.8, null, 1.8);
+VALUES('2018-01-26', 991.6, 8.3, null, -1, 2.3, 1.8, null, 1.8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2018-01-27', 1001.2, 9.4, 0.1, 1.1, 2.9, 2.2, null, 1.6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-01-28', 1000.9, 8.4, null, 1, 8.1, 4.9, 0.5, 3.5);
+VALUES('2018-01-28', 1000.9, 8.4, null, -1, 8.1, 4.9, 0.5, 3.5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2018-01-29', 994.7, 7.8, 0.3, 4.5, 13.6, 7.1, 6.1, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2018-01-30', 996.1, 6.2, null, 0.8, 8.9, 4, 8.5, 5.4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-01-31', 987.2, 8.8, null, 4.4, 3.5, 0.2, 2, 0.9);
+VALUES('2018-01-31', 987.2, 8.8, null, -4.4, 3.5, 0.2, 2, 0.9);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2018-02-01', 974.8, 9.3, 3.1, 1.3, 4.5, 3, null, 2.5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2018-02-02', 97.8, 9.0, null, 0.5, 4, 1.7, null, 1.6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-02-03', 975.3, 8.4, null, 3.3, 4, 1.5, 2.7, 1.9);
+VALUES('2018-02-03', 975.3, 8.4, null, -3.3, 4, 1.5, 2.7, 1.9);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-02-04', 985.9, 7.5, null, 0.1, 4.4, 1.5, 2.2, 1.7);
+VALUES('2018-02-04', 985.9, 7.5, null, -0.1, 4.4, 1.5, 2.2, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-02-05', 994.6, 7.7, null, 3.7, 1.7, 1.3, 3.1, 2.3);
+VALUES('2018-02-05', 994.6, 7.7, null, -3.7, 1.7, -1.3, 3.1, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-02-06', 989.2, 7.2, null, 5.2, 0.7, 1.9, 0.3, 4.6);
+VALUES('2018-02-06', 989.2, 7.2, null, -5.2, -0.7, -1.9, 0.3, 4.6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-02-07', 983.3, 9.0, 5.5, 1.3, 0.9, 0.1, null, 4.3);
+VALUES('2018-02-07', 983.3, 9.0, 5.5, -1.3, 0.9, 0.1, null, 4.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-02-08', 986.9, 8.2, 0.1, 0.2, 1.2, 0.3, null, 3.3);
+VALUES('2018-02-08', 986.9, 8.2, 0.1, -0.2, 1.2, 0.3, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-02-09', 987.7, 7.7, null, 1.7, 0.7, 1, null, 2.4);
+VALUES('2018-02-09', 987.7, 7.7, null, -1.7, 0.7, -1, null, 2.4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-02-10', 98.7, 7.7, null, 2.2, 0.6, 1.2, null, 2.3);
+VALUES('2018-02-10', 98.7, 7.7, null, -2.2, -0.6, -1.2, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-02-11', 980.2, 8.3, null, 2.4, 1.8, 0.1, 2.2, 1.9);
+VALUES('2018-02-11', 980.2, 8.3, null, -2.4, 1.8, 0.1, 2.2, 1.9);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-02-12', 982.6, 7.5, null, 0.8, 5.6, 1.8, 0.4, 2.1);
+VALUES('2018-02-12', 982.6, 7.5, null, -0.8, 5.6, 1.8, 0.4, 2.1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-02-13', 986.1, 8.0, 0.4, 1.6, 2.7, 0.9, null, 2.5);
+VALUES('2018-02-13', 986.1, 8.0, 0.4, -1.6, 2.7, 0.9, null, 2.5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-02-14', 987.7, 7.3, null, 1.4, 2.5, 0.2, 2.2, 4.6);
+VALUES('2018-02-14', 987.7, 7.3, null, -1.4, 2.5, 0.2, 2.2, 4.6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-02-15', 992.5, 7.4, 1.4, 1.6, 2.4, 0.3, 2.4, 3);
+VALUES('2018-02-15', 992.5, 7.4, 1.4, -1.6, 2.4, -0.3, 2.4, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-02-16', 995.7, 9.4, 2.1, 2.9, 1.9, 1.7, 0.1, 1.7);
+VALUES('2018-02-16', 995.7, 9.4, 2.1, -2.9, 1.9, -1.7, 0.1, 1.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-02-17', 993.5, 9.4, 2, 4.8, 0.2, 0.5, null, 3.8);
+VALUES('2018-02-17', 993.5, 9.4, 2, -4.8, 0.2, -0.5, null, 3.8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-02-18', 99.7, 8.1, null, 2.5, 2, 0.8, null, 2.7);
+VALUES('2018-02-18', 99.7, 8.1, null, -2.5, 2, -0.8, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-02-19', 992.4, 8.0, null, 8.7, 1.8, 4.1, 9, 2.3);
+VALUES('2018-02-19', 992.4, 8.0, null, -8.7, 1.8, -4.1, 9, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-02-20', 986.3, 7.5, null, 4.9, 0.5, 0.9, null, 2.2);
+VALUES('2018-02-20', 986.3, 7.5, null, -4.9, 0.5, -0.9, null, 2.2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-02-21', 98.9, 7.2, null, 2.9, 0.6, 1, 0.3, 5.7);
+VALUES('2018-02-21', 98.9, 7.2, null, -2.9, 0.6, -1, 0.3, 5.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-02-22', 989.1, 6.5, null, 2.4, 0.7, 1.7, 5.5, 8);
+VALUES('2018-02-22', 989.1, 6.5, null, -2.4, 0.7, -1.7, 5.5, 8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-02-23', 990.2, 6.5, null, 3.4, 0.3, 2.3, 4.6, 5.6);
+VALUES('2018-02-23', 990.2, 6.5, null, -3.4, 0.3, -2.3, 4.6, 5.6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-02-24', 993.2, 5.9, null, 7.7, 0.3, 5.4, 7.1, 6.8);
+VALUES('2018-02-24', 993.2, 5.9, null, -7.7, -0.3, -5.4, 7.1, 6.8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-02-25', 99.6, 5.8, null, 11.1, 5.9, 9.7, 7.3, 5.3);
+VALUES('2018-02-25', 99.6, 5.8, null, -11.1, -5.9, -9.7, 7.3, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-02-26', 990.9, 6.0, null, 11.6, 6.5, 9.5, 6.7, 6.6);
+VALUES('2018-02-26', 990.9, 6.0, null, -11.6, -6.5, -9.5, 6.7, 6.6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-02-27', 986.3, 5.6, null, 11.9, 8.3, 10.3, 2.4, 7.1);
+VALUES('2018-02-27', 986.3, 5.6, null, -11.9, -8.3, -10.3, 2.4, 7.1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-02-28', 99.1, 5.8, null, 12.4, 6.1, 9.5, 6, 7.1);
+VALUES('2018-02-28', 99.1, 5.8, null, -12.4, -6.1, -9.5, 6, 7.1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-03-01', 985.4, 6.6, null, 13.1, 3.9, 8.3, 9, 6.2);
+VALUES('2018-03-01', 985.4, 6.6, null, -13.1, -3.9, -8.3, 9, 6.2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-03-02', 972.9, 7.9, null, 8.9, 5.5, 6.5, null, 5.3);
+VALUES('2018-03-02', 972.9, 7.9, null, -8.9, -5.5, -6.5, null, 5.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-03-03', 973.4, 5.7, null, 7.7, 2.7, 5.4, 5.5, 5.4);
+VALUES('2018-03-03', 973.4, 5.7, null, -7.7, -2.7, -5.4, 5.5, 5.4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-03-04', 977.9, 6.8, null, 11.5, 2.2, 4.1, 8.1, 2.7);
+VALUES('2018-03-04', 977.9, 6.8, null, -11.5, 2.2, -4.1, 8.1, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-03-05', 974.5, 6.6, 0.6, 3.6, 0.5, 0.8, null, 4.7);
+VALUES('2018-03-05', 974.5, 6.6, 0.6, -3.6, 0.5, -0.8, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-03-06', 965.2, 9.3, 1.6, 0.6, 1.9, 0.7, null, 3.5);
+VALUES('2018-03-06', 965.2, 9.3, 1.6, -0.6, 1.9, 0.7, null, 3.5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-03-07', 968.7, 8.6, null, 0.6, 9.4, 2.8, 0.5, 2.1);
+VALUES('2018-03-07', 968.7, 8.6, null, -0.6, 9.4, 2.8, 0.5, 2.1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-03-08', 978.1, 6.8, null, 0.6, 11.3, 4.5, 6.9, 2.8);
+VALUES('2018-03-08', 978.1, 6.8, null, -0.6, 11.3, 4.5, 6.9, 2.8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2018-03-09', 981.3, 7.7, null, 0.1, 8, 4.5, 1, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -14045,29 +14045,29 @@ VALUES('2018-03-15', 977.8, 7.5, 0.4, 1.1, 10.7, 5.8, 4.3, 4.8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2018-03-16', 972.2, 8.7, 5.9, 4, 8.7, 5.7, null, 3.9);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-03-17', 975.8, 7.6, 0.2, 3.9, 4.1, 2.8, null, 9.4);
+VALUES('2018-03-17', 975.8, 7.6, 0.2, -3.9, 4.1, -2.8, null, 9.4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-03-18', 978.9, 5.9, null, 6.5, 2.2, 4.8, 2.4, 1.0);
+VALUES('2018-03-18', 978.9, 5.9, null, -6.5, -2.2, -4.8, 2.4, 1.0);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-03-19', 980.2, 6.2, null, 7.1, 2.6, 4.3, 2.8, 4.5);
+VALUES('2018-03-19', 980.2, 6.2, null, -7.1, -2.6, -4.3, 2.8, 4.5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-03-20', 983.3, 5.3, null, 3.8, 0.7, 1.5, null, 3.2);
+VALUES('2018-03-20', 983.3, 5.3, null, -3.8, 0.7, -1.5, null, 3.2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-03-21', 993.9, 5.4, null, 4.6, 4.2, 1.5, 8, 4.9);
+VALUES('2018-03-21', 993.9, 5.4, null, -4.6, 4.2, -1.5, 8, 4.9);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-03-22', 987.3, 5.6, null, 7.9, 7, 0.7, 10.1, 1.9);
+VALUES('2018-03-22', 987.3, 5.6, null, -7.9, 7, 0.7, 10.1, 1.9);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-03-23', 976.6, 7.1, null, 2.7, 6.7, 3.5, null, 2.3);
+VALUES('2018-03-23', 976.6, 7.1, null, -2.7, 6.7, 3.5, null, 2.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2018-03-24', 977.2, 6.7, null, 1, 9.4, 3.4, 8.3, 2.8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-03-25', 98.2, 6.9, null, 2.8, 6.7, 2.8, 2.9, 4);
+VALUES('2018-03-25', 98.2, 6.9, null, -2.8, 6.7, 2.8, 2.9, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2018-03-26', 983.1, 6.7, null, 0.3, 6.4, 3.6, 0.6, 1.8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2018-03-27', 984.3, 7.6, null, 1, 8.1, 3.5, 1.8, 2.9);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-03-28', 978.8, 7.5, 3.6, 1.4, 10.6, 6, 1.3, 2.9);
+VALUES('2018-03-28', 978.8, 7.5, 3.6, -1.4, 10.6, 6, 1.3, 2.9);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2018-03-29', 977.7, 6.3, null, 5.6, 12.3, 8.6, 5.9, 2.9);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -14535,11 +14535,11 @@ VALUES('2018-11-15', 1000.5, 7.4, null, 1.1, 10.2, 6, 8, 4.4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2018-11-16', 1003.2, 8.0, null, 1, 7.8, 4.3, 7.4, 4.9);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-11-17', 1002.9, 6.7, null, 0.9, 5.5, 1.5, 8.1, 5);
+VALUES('2018-11-17', 1002.9, 6.7, null, -0.9, 5.5, 1.5, 8.1, 5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-11-18', 994.8, 6.6, null, 3, 3.5, 0.6, 4, 3);
+VALUES('2018-11-18', 994.8, 6.6, null, -3, 3.5, 0.6, 4, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-11-19', 987.8, 6.9, null, 0.4, 2.6, 1, 0.8, 7.4);
+VALUES('2018-11-19', 987.8, 6.9, null, -0.4, 2.6, 1, 0.8, 7.4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2018-11-20', 985.2, 9.0, 4.7, 0.1, 1.7, 0.6, 0.3, 7.8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -14555,25 +14555,25 @@ VALUES('2018-11-25', 981.9, 8.9, 0.6, 4.4, 6.3, 5.6, null, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2018-11-26', 97.6, 7.4, null, 3.7, 6.8, 4.8, null, 7.8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-11-27', 987.9, 6.8, null, 0.6, 3.7, 0.2, 0.6, 6.1);
+VALUES('2018-11-27', 987.9, 6.8, null, -0.6, 3.7, 0.2, 0.6, 6.1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-11-28', 997.9, 6.5, null, 2.9, 3.8, 0.7, 6.7, 5.5);
+VALUES('2018-11-28', 997.9, 6.5, null, -2.9, 3.8, -0.7, 6.7, 5.5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-11-29', 1000.6, 7.2, null, 7.2, 0.3, 2.5, 8, 5.2);
+VALUES('2018-11-29', 1000.6, 7.2, null, -7.2, 0.3, -2.5, 8, 5.2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-11-30', 993.2, 7.1, 0.7, 4.6, 0.4, 3.4, 3.7, 4.9);
+VALUES('2018-11-30', 993.2, 7.1, 0.7, -4.6, 0.4, -3.4, 3.7, 4.9);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-12-01', 990.7, 9.2, 1.5, 5.3, 2.2, 3.1, null, 1.9);
+VALUES('2018-12-01', 990.7, 9.2, 1.5, -5.3, -2.2, -3.1, null, 1.9);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-12-02', 984.8, 9.7, 4.4, 2.7, 0.8, 1.4, null, 4.2);
+VALUES('2018-12-02', 984.8, 9.7, 4.4, -2.7, -0.8, -1.4, null, 4.2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-12-03', 979.8, 9.9, 3.4, 0.9, 2.1, 1.4, null, 2);
+VALUES('2018-12-03', 979.8, 9.9, 3.4, -0.9, 2.1, 1.4, null, 2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2018-12-04', 986.1, 8.9, null, 1.3, 8.3, 3.8, 2, 3.1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-12-05', 999.1, 8.8, null, 3.5, 4.6, 0.2, 7.6, 2.5);
+VALUES('2018-12-05', 999.1, 8.8, null, -3.5, 4.6, 0.2, 7.6, 2.5);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-12-06', 993.9, 8.8, 0.9, 3.8, 1.6, 0.4, 0.9, 3.2);
+VALUES('2018-12-06', 993.9, 8.8, 0.9, -3.8, 1.6, -0.4, 0.9, 3.2);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2018-12-07', 984.1, 9.6, 1.1, 0.1, 4.1, 2.4, null, 2.1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -14581,31 +14581,31 @@ VALUES('2018-12-08', 98.0, 7.9, 0.4, 1.3, 8.9, 4.1, 2.2, 3.6);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2018-12-09', 971.4, 7.7, 0.7, 1.8, 9.4, 5.4, 0.1, 5.4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-12-10', 982.2, 7.0, 0.1, 0.1, 6.1, 2.8, 1.9, 6.4);
+VALUES('2018-12-10', 982.2, 7.0, 0.1, -0.1, 6.1, 2.8, 1.9, 6.4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-12-11', 983.9, 8.8, 0.3, 2, 3.6, 1.7, null, 4.4);
+VALUES('2018-12-11', 983.9, 8.8, 0.3, -2, 3.6, 1.7, null, 4.4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-12-12', 99.0, 8.7, 0.7, 1.2, 2.2, 0.2, null, 3.1);
+VALUES('2018-12-12', 99.0, 8.7, 0.7, -1.2, 2.2, 0.2, null, 3.1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-12-13', 991.5, 8.2, null, 4, 0.1, 1.1, 6.7, 4.9);
+VALUES('2018-12-13', 991.5, 8.2, null, -4, -0.1, -1.1, 6.7, 4.9);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-12-14', 993.2, 8.3, 1.1, 4.3, 0.6, 1.2, 3.6, 4.1);
+VALUES('2018-12-14', 993.2, 8.3, 1.1, -4.3, 0.6, -1.2, 3.6, 4.1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-12-15', 992.8, 7.4, 0.4, 1.9, 0.1, 0.8, null, 4.7);
+VALUES('2018-12-15', 992.8, 7.4, 0.4, -1.9, -0.1, -0.8, null, 4.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-12-16', 988.7, 7.7, null, 2.4, 0.9, 2.2, null, 3);
+VALUES('2018-12-16', 988.7, 7.7, null, -2.4, -0.9, -2.2, null, 3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-12-17', 99.4, 8.6, 0.1, 2.5, 0.4, 1.3, null, 1.3);
+VALUES('2018-12-17', 99.4, 8.6, 0.1, -2.5, -0.4, -1.3, null, 1.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-12-18', 998.4, 9.1, null, 1.4, 2.2, 0.7, 0.3, 1.4);
+VALUES('2018-12-18', 998.4, 9.1, null, -1.4, 2.2, 0.7, 0.3, 1.4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-12-19', 993.9, 8.4, null, 2, 1.3, 0.8, 0.1, 4.4);
+VALUES('2018-12-19', 993.9, 8.4, null, -2, 1.3, -0.8, 0.1, 4.4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-12-20', 991.6, 9.0, null, 3.3, 1.2, 2.8, null, 3.1);
+VALUES('2018-12-20', 991.6, 9.0, null, -3.3, -1.2, -2.8, null, 3.1);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-12-21', 987.3, 9.6, 2.5, 2.7, null, 0.7, null, 2.7);
+VALUES('2018-12-21', 987.3, 9.6, 2.5, -2.7, null, -0.7, null, 2.7);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-12-22', 982.4, 8.8, 2, 1.4, 9.4, 5.2, 0.4, 2.8);
+VALUES('2018-12-22', 982.4, 8.8, 2, -1.4, 9.4, 5.2, 0.4, 2.8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2018-12-23', 988.8, 8.3, 7.9, 3, 8.7, 5.4, 1.1, 3.3);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
@@ -14623,4 +14623,4 @@ VALUES('2018-12-29', 997.3, 7.8, 0.7, 3.4, 6, 4.3, null, 3.8);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
 VALUES('2018-12-30', 992.7, 8.7, 0.1, 0.7, 6, 3.7, null, 4);
 INSERT INTO weather (date, avg_air_pressure, avg_humidity, total_rainfall, min_temperature, max_temperature, avg_temperature, sunshine, avg_wind_speed)
-VALUES('2018-12-31', 999.3, 7.2, null, 1.2, 6.2, 2.2, 5.5, 3.2);
+VALUES('2018-12-31', 999.3, 7.2, null, -1.2, 6.2, 2.2, 5.5, 3.2);

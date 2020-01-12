@@ -23,7 +23,7 @@ sub intOrNull {
 	my $value = valueOrNull(@_);
 
 	if ($value ne "null") {
-		if ($value =~ /(\d+)/) {
+		if ($value =~ /(\-?\d+)/) {
 			return "$1";
 		}
 	}
@@ -35,10 +35,10 @@ sub floatOrNull {
 	my $value = valueOrNull(@_);
 
 	if ($value ne "null") {
-		if ($value =~ /(\d+)[\.,]?(\d+)/) {
+		if ($value =~ /(\-?\d+)[\.,]?(\d+)/) {
 			return "$1.$2";
 		}
-		if ($value =~ /(\d+)/) {
+		if ($value =~ /(\-?\d+)/) {
 			return "$1";
 		}
 	}
