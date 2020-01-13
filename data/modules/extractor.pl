@@ -35,9 +35,7 @@ sub floatOrNull {
 	my $value = valueOrNull(@_);
 
 	if ($value ne "null") {
-		if ($value =~ /([-+]?[0-9]*)[\.,]?([0-9]*)/) {
-			return $1 . "." . ($2 ? $2 : "0");
-		}
+		return sprintf('%.2f', $value) || "null";
 	}
 	return "null";
 }
@@ -47,9 +45,7 @@ sub floatOrZero {
 	my $value = valueOrNull(@_);
 
 	if ($value ne "null") {
-		if ($value =~ /([-+]?[0-9]*)[\.,]?([0-9]*)/) {
-			return $1 . "." . ($2 ? $2 : "0");
-		}
+		return sprintf('%.2f', $value) || "0.0";
 	}
 	return "0.0";
 }

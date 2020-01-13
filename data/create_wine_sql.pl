@@ -39,6 +39,8 @@ foreach my $wine (@$raw_wines) {
 
 	if (isValidValue($wine->{"vinarska_oblast"}) and not defined $wine_regions->{$wine->{"vinarska_oblast"}}) {
 		$wine_regions->{$wine->{"vinarska_oblast"}}{id_wine_region} = (scalar keys $wine_regions) + 1;
+		$wine_regions->{$wine->{"vinarska_oblast"}}{area_name} = $wine->{"vinarska_oblast"};
+		$wine_regions->{$wine->{"vinarska_oblast"}}{full_data} = 0;
 	}
 
 	if (isValidValue($wine->{"druh_vina"}) and not defined $wine_types->{$wine->{"druh_vina"}}) {
@@ -62,20 +64,27 @@ foreach my $company (@{$raw_wine_companies->{"wine_company"}}) {
 	$wine_companies->{$company->{name}}{name} = $company->{name} || '';
 	$wine_companies->{$company->{name}}{headquarters} = $company->{headquarters} || '';
 	$wine_companies->{$company->{name}}{created_at} = $company->{created_at} || '';
-	$wine_companies->{$company->{name}}{employees} = $company->{employees} || '';
+	$wine_companies->{$company->{name}}{employees} = $company->{'num-employees'} || '';
 	$wine_companies->{$company->{name}}{initial_deposit} = $company->{initial_deposit} || '';
 }
 
 # find all regions and fill data from wine_region data
-foreach my $region (@{$raw_wine_regions}) {
-	if (not $wine_regions->{$region->{area_name}}{id_wine_region}) {
-		$wine_regions->{$region->{area_name}}{id_wine_region} = (scalar keys $wine_regions) + 1;
+foreach my $region_data (@{$raw_wine_regions}) {
+
+	# try mapping to existing records
+	foreach my $fill_region (keys %$wine_regions) {
+		if (not $wine_regions->{$fill_region}{full_data}) {
+			if ($region_data->{area_name} =~ $fill_region or $region_data->{area_name} =~ substr($fill_region, 0, 8)) {
+				$wine_regions->{$fill_region}{area_name} = $region_data->{area_name} || '';
+				$wine_regions->{$fill_region}{area_ha} = $region_data->{area_ha} || '';
+				$wine_regions->{$fill_region}{productivity} = $region_data->{productivity} || '';
+				$wine_regions->{$fill_region}{price_per_m_sq} = $region_data->{price_per_m2} || '';
+				$wine_regions->{$fill_region}{protection_class} = $region_data->{protection_class} || '';
+				$wine_regions->{$fill_region}{full_data} = 1;
+				last;
+			}
+		}
 	}
-	$wine_regions->{$region->{area_name}}{area_name} = $region->{area_name} || '';
-	$wine_regions->{$region->{area_name}}{area_ha} = $region->{area_ha} || '';
-	$wine_regions->{$region->{area_name}}{productivity} = $region->{productivity} || '';
-	$wine_regions->{$region->{area_name}}{price_per_m_sq} = $region->{price_per_m_sq} || '';
-	$wine_regions->{$region->{area_name}}{protection_class} = $region->{protection_class} || '';
 }
 
 
@@ -122,7 +131,7 @@ $sql_output_wine .= "\n";
 foreach my $wine_region (reverse sort { $wine_regions->{$b}{id_wine_region} <=> $wine_regions->{$a}{id_wine_region} } keys %$wine_regions) {
 	$sql_output_wine .= "INSERT INTO wine_region (id_wine_region, area_name, area_ha, productivity, price_per_m_sq, protection_class)\nVALUES(";
 	$sql_output_wine .= $wine_regions->{$wine_region}{id_wine_region} . $sql_val_delim;
-	$sql_output_wine .= stringOrNull($wine_region) . $sql_val_delim;
+	$sql_output_wine .= stringOrNull($wine_regions->{$wine_region}{area_name}) . $sql_val_delim;
 	$sql_output_wine .= floatOrNull($wine_regions->{$wine_region}{area_ha}) . $sql_val_delim;
 	$sql_output_wine .= floatOrNull($wine_regions->{$wine_region}{productivity}) . $sql_val_delim;
 	$sql_output_wine .= floatOrNull($wine_regions->{$wine_region}{price_per_m_sq}) . $sql_val_delim;
